@@ -10,7 +10,7 @@ import threading
 import time
 import traceback
 from collections import deque
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Any
 
@@ -41,6 +41,7 @@ if LIBERO_PATH_ENV:
     LIBERO_PATHS.extend([_libero_path, _libero_path.parent])
 
 module_paths = [
+    str(EVAL_BENCHMARK_DIR),
     str(RUNTIME_DIR),
     str(SCRIPTS_DIR),
     str(OPENPI_CLIENT_SRC),
@@ -68,6 +69,10 @@ from eval_task1_qwen3_async_openpi_inference_vla_cam import (
     _write_video,
     make_episode_logger,
 )
+from harness.config import HarnessConfig, load_harness_config
+from harness.controller import HarnessController
+from harness.primitives import release_gripper
+from memory_system.config import load_memory_system_config
 from keyframe_selection import build_visual_memory, get_frames_from_indices
 from robocerebra_adapter import obs_to_pi_element
 
@@ -190,6 +195,10 @@ class FullVlm26MemoryPlanner(SyncLoRAPlanner):
             trust_remote_code=True,
             local_files_only=True,
         )
+        self.harness_extra_context: str = ""
+        self.pinned_keyframe_steps: list[int] = []
+        self.salient_keyframe_steps: list[int] = []
+        self.memory_system_config = load_memory_system_config()
         self.set_task_info(task_info)
 
     def set_task_info(self, task_info: TaskInfo) -> None:
@@ -200,6 +209,18 @@ class FullVlm26MemoryPlanner(SyncLoRAPlanner):
     def reset_episode(self, instruction: str | None = None, run_dir=None, logger=None):
         super().reset_episode(instruction=instruction, run_dir=run_dir, logger=logger)
         self._current_subtask = self.default_subtask_prompt
+        self.harness_extra_context = ""
+        self.pinned_keyframe_steps = []
+        self.salient_keyframe_steps = []
+        self.memory_system_config = load_memory_system_config()
+
+    def pin_keyframe(self, step: int) -> None:
+        if step >= 0 and step not in self.pinned_keyframe_steps:
+            self.pinned_keyframe_steps.append(step)
+
+    def mark_salient_keyframe(self, step: int) -> None:
+        if step >= 0 and step not in self.salient_keyframe_steps:
+            self.salient_keyframe_steps.append(step)
 
     def _build_messages(
         self,
@@ -225,11 +246,28 @@ class FullVlm26MemoryPlanner(SyncLoRAPlanner):
                     f"{self.task_info.task_block}\n\n"
                     "Scene description:\n"
                     f"{self.task_info.scene_description or self.task_info.brief_description}\n\n"
+                ),
+            }
+        ]
+        if self.harness_extra_context.strip():
+            user_content.append(
+                {
+                    "type": "text",
+                    "text": (
+                        "Harness memory context (read-time evidence; use with historical keyframes):\n"
+                        f"{self.harness_extra_context.strip()}\n"
+                    ),
+                }
+            )
+        user_content.append(
+            {
+                "type": "text",
+                "text": (
                     f"{_camera_order_text(use_wrist_images)}\n"
                     "Current observation:"
                 ),
             }
-        ]
+        )
 
         def append_timestep_images(main_frames, wrist_frames) -> None:
             for idx, main_img in enumerate(main_frames):
@@ -324,14 +362,40 @@ class FullVlm26MemoryPlanner(SyncLoRAPlanner):
 
         if self.use_keyframe_memory:
             self.J_hist.append(j_abs)
-            raw_k_indices = build_visual_memory(self.J_hist, t=self.step, N=len(context_main_frames), d=self.d_merge)
-            self.K_indices_abs = [idx for idx in raw_k_indices if idx < recent_start]
+            prev_subtask = self._current_subtask
+            mem_cfg = self.memory_system_config
+            if mem_cfg.salience_subtask_change and vlm_subtask and vlm_subtask != prev_subtask:
+                self.mark_salient_keyframe(step_idx)
+            if mem_cfg.stage_anchor:
+                from memory_system.keyframe_bank import merge_keyframe_bank
+
+                self.K_indices_abs = merge_keyframe_bank(
+                    j_hist=self.J_hist,
+                    t=self.step,
+                    recent_window=len(context_main_frames),
+                    cluster_distance=mem_cfg.cluster_distance,
+                    pinned_steps=self.pinned_keyframe_steps,
+                    salient_steps=self.salient_keyframe_steps,
+                    bank_max=mem_cfg.bank_max,
+                )
+            else:
+                raw_k_indices = build_visual_memory(
+                    self.J_hist, t=self.step, N=len(context_main_frames), d=self.d_merge
+                )
+                self.K_indices_abs = [idx for idx in raw_k_indices if idx < recent_start]
             self.K_main_frames = get_frames_from_indices(self.K_indices_abs, self.frame_store_main)
             self.K_wrist_frames = [self.frame_store_wrist.get(idx) for idx in self.K_indices_abs]
-            if self.k_max > 0 and len(self.K_indices_abs) > self.k_max:
-                self.K_indices_abs = self.K_indices_abs[-self.k_max:]
-                self.K_main_frames = self.K_main_frames[-self.k_max:]
-                self.K_wrist_frames = self.K_wrist_frames[-self.k_max:]
+            cap = self.k_max if self.k_max > 0 else mem_cfg.bank_max
+            if cap > 0 and len(self.K_indices_abs) > cap:
+                pinned = set(self.pinned_keyframe_steps)
+                pinned_kept = [idx for idx in self.K_indices_abs if idx in pinned]
+                unpinned = [idx for idx in self.K_indices_abs if idx not in pinned]
+                if len(pinned_kept) >= cap:
+                    self.K_indices_abs = pinned_kept[-cap:]
+                else:
+                    self.K_indices_abs = pinned_kept + unpinned[-(cap - len(pinned_kept)) :]
+                self.K_main_frames = get_frames_from_indices(self.K_indices_abs, self.frame_store_main)
+                self.K_wrist_frames = [self.frame_store_wrist.get(idx) for idx in self.K_indices_abs]
 
         self._dump_new_keyframes()
         if vlm_subtask:
@@ -390,8 +454,12 @@ def run_episode_async_stateful(
     fail_on_extra_pour: bool,
     extra_pour_monitor_steps: int,
     post_goal_steps: int,
+    harness: HarnessController | None = None,
 ) -> tuple[float, dict[str, bool], bool | None, dict[str, Any], list[np.ndarray], list[np.ndarray]]:
     obs = env.reset()
+    if harness is not None and harness.attempt_idx > 0 and harness.config.release_gripper_on_retry:
+        release_gripper(env)
+        logger.info("harness release_gripper after env.reset (attempt=%s)", harness.attempt_idx)
     replay: list[np.ndarray] = []
     replay_wrist: list[np.ndarray] = []
     recent_vlm_frames: deque[tuple[np.ndarray, np.ndarray | None]] = deque(maxlen=args.n_recent)
@@ -436,7 +504,7 @@ def run_episode_async_stateful(
             return
         if args.vlm_interval > 1 and step_idx % args.vlm_interval != 0:
             return
-        payload = (step_idx, clone_recent_frames())
+        payload = (step_idx, clone_recent_frames(), planner.harness_extra_context)
         try:
             vlm_job_queue.put_nowait(payload)
             return
@@ -459,8 +527,9 @@ def run_episode_async_stateful(
                 continue
             if payload is None:
                 break
-            step_idx, frames = payload
+            step_idx, frames, harness_ctx = payload
             try:
+                planner.harness_extra_context = harness_ctx
                 subtask = planner.infer_sync(step_idx=step_idx, context_frames_np=frames)
                 if subtask:
                     write_subtask(step_idx, subtask)
@@ -501,17 +570,43 @@ def run_episode_async_stateful(
                 continue
 
             if args.async_vlm:
+                if harness is not None:
+                    planner.harness_extra_context = harness.get_vlm_context()
                 submit_vlm_job(effective_t)
                 latest_subtask, latest_step = read_subtask()
             else:
+                if harness is not None:
+                    planner.harness_extra_context = harness.get_vlm_context()
                 latest_subtask = planner.infer_sync(effective_t, clone_recent_frames())
                 latest_step = effective_t
+
+            if harness is not None:
+                override = harness.consume_subtask_override()
+                if override:
+                    write_subtask(latest_step if latest_step >= 0 else effective_t, override)
+                    latest_subtask = override
+                    logger.info("[t=%s] harness subtask override: %s", t, override)
 
             if latest_subtask and latest_subtask != current_subtask_prompt:
                 current_subtask_prompt = latest_subtask
                 logger.info("[t=%s] VLM prompt update from step=%s: %s", t, latest_step, current_subtask_prompt)
+                if harness is not None:
+                    harness.on_subtask_update(latest_step, current_subtask_prompt)
+
+            if harness is not None and harness.consume_force_replan():
+                planner.harness_extra_context = harness.get_vlm_context()
+                submit_vlm_job(effective_t)
+                logger.info("[t=%s] harness forced VLM replan after stall", t)
 
             prompt_for_vla = current_subtask_prompt or planner.default_subtask_prompt
+            if harness is not None:
+                prompt_for_vla = harness.override_vla_prompt(
+                    prompt_for_vla,
+                    stage_idx=stage_idx,
+                    stage_specs=stage_specs,
+                    stage_done=stage_done,
+                    step=t,
+                )
             element = obs_to_pi_element(obs, resize_size=args.resize_size, prompt=prompt_for_vla)
             out = client.infer(element)
             actions = np.asarray(out["actions"])
@@ -550,6 +645,16 @@ def run_episode_async_stateful(
                                 )
                         stage_idx += 1
                         current_stage_start = state["step_idx"]
+                        if planner.memory_system_config.stage_anchor:
+                            planner.pin_keyframe(int(current_stage_start))
+
+                if harness is not None and state is not None:
+                    harness.on_stage_progress(
+                        step=t,
+                        stage_idx=stage_idx,
+                        stage_specs=stage_specs,
+                        subtask=current_subtask_prompt or planner.default_subtask_prompt,
+                    )
 
                 if stage_idx >= len(stage_specs) and not all_stages_logged:
                     logger.info("[t=%s] all stages done", t)
@@ -634,6 +739,8 @@ def run_episode_async_stateful(
         ),
         "failure_reason": failure_reason,
     }
+    if harness is not None:
+        diagnostics.update(harness.diagnostics)
     goal_success = stage_success
     return stage_pct, stage_done, goal_success, diagnostics, replay, replay_wrist
 
@@ -690,6 +797,21 @@ def main() -> None:
     fail_on_extra_pour = os.environ.get("FAIL_ON_EXTRA_POUR", "1").strip().lower() in {"1", "true", "yes", "y", "on"}
     extra_pour_monitor_steps = int(os.environ.get("POST_STAGE_STEPS", os.environ.get("EXTRA_POUR_MONITOR_STEPS", "30")))
     post_goal_steps = int(os.environ.get("POST_GOAL_STEPS", "200"))
+    harness_config = load_harness_config()
+    if harness_config.enabled:
+        default_rules = REFERENCE_DIR.parent / "harness" / "global_rules.json"
+        if harness_config.global_rules_path is None and default_rules.is_file():
+            harness_config = replace(harness_config, global_rules_path=default_rules)
+        logging.info(
+            "Harness v2: max_retries=%s stall_steps=%s vlm_context=%s vla_hints=%s api_planner=%s smart_retry=%s skip_score=%s",
+            harness_config.max_episode_retries,
+            harness_config.stall_step_threshold,
+            harness_config.inject_vlm_context,
+            harness_config.inject_vla_hints,
+            harness_config.api_planner_enable,
+            harness_config.smart_retry,
+            harness_config.retry_skip_score_pct,
+        )
     _apply_vlm_input_profile(args)
 
     out_root.mkdir(parents=True, exist_ok=True)
@@ -741,6 +863,14 @@ def main() -> None:
         task_video.mkdir(parents=True, exist_ok=True)
         task_root = out_root / f"task{task_id}"
         task_root.mkdir(parents=True, exist_ok=True)
+        harness_ctrl = None
+        if harness_config.enabled:
+            harness_ctrl = HarnessController.create(
+                task_id=task_id,
+                task_info=task_info,
+                config=harness_config,
+                memory_root=out_root / "harness_memory",
+            )
         status = "completed"
         err = ""
         st = time.time()
@@ -769,22 +899,78 @@ def main() -> None:
                 run_dir = task_root / f"ep{ep}"
                 ep_logger = make_episode_logger(run_dir)
                 ep_logger.info("task_id=%s bddl=%s vlm_ckpt=%s", task_id, bddl_path, args.base_model_dir)
-                planner.reset_episode(instruction="", run_dir=run_dir, logger=ep_logger)
-                stage_pct, stage_done, goal_success, diagnostics, replay, replay_wrist = run_episode_async_stateful(
-                    task_id=task_id,
-                    env=env,
-                    client=client,
-                    planner=planner,
-                    args=args,
-                    stage_specs=stage_specs,
-                    goal_monitor_dict=goal_monitor_dict,
-                    goal_check_override=goal_check_override,
-                    vlm_camera_pose=None,
-                    logger=ep_logger,
-                    fail_on_extra_pour=fail_on_extra_pour,
-                    extra_pour_monitor_steps=extra_pour_monitor_steps,
-                    post_goal_steps=post_goal_steps,
+
+                best_stage_pct = -1.0
+                best_stage_done: dict[str, bool] = {spec.name: False for spec in stage_specs}
+                best_goal_success: bool | None = False
+                best_diagnostics: dict[str, Any] = {}
+                best_replay: list[np.ndarray] = []
+                best_replay_wrist: list[np.ndarray] = []
+
+                total_attempts = (
+                    harness_ctrl.total_attempts_for_task()
+                    if harness_ctrl is not None
+                    else (harness_config.total_attempts if harness_config.enabled else 1)
                 )
+                for attempt in range(total_attempts):
+                    if harness_ctrl is not None:
+                        harness_ctrl.begin_attempt(attempt)
+                    planner.reset_episode(instruction="", run_dir=run_dir / f"attempt{attempt}", logger=ep_logger)
+                    stage_pct, stage_done, goal_success, diagnostics, replay, replay_wrist = run_episode_async_stateful(
+                        task_id=task_id,
+                        env=env,
+                        client=client,
+                        planner=planner,
+                        args=args,
+                        stage_specs=stage_specs,
+                        goal_monitor_dict=goal_monitor_dict,
+                        goal_check_override=goal_check_override,
+                        vlm_camera_pose=None,
+                        logger=ep_logger,
+                        fail_on_extra_pour=fail_on_extra_pour,
+                        extra_pour_monitor_steps=extra_pour_monitor_steps,
+                        post_goal_steps=post_goal_steps,
+                        harness=harness_ctrl,
+                    )
+                    if harness_ctrl is not None:
+                        harness_ctrl.on_episode_end(
+                            stage_score_pct=stage_pct,
+                            stage_success=bool(diagnostics.get("stage_success")),
+                            failure_reason=diagnostics.get("failure_reason"),
+                            stage_done=stage_done,
+                            run_dir=run_dir / f"attempt{attempt}",
+                        )
+                    if stage_pct > best_stage_pct or (
+                        stage_pct == best_stage_pct and diagnostics.get("stage_success")
+                    ):
+                        best_stage_pct = stage_pct
+                        best_stage_done = dict(stage_done)
+                        best_goal_success = goal_success
+                        best_diagnostics = dict(diagnostics)
+                        best_replay = replay
+                        best_replay_wrist = replay_wrist
+                    ep_logger.info(
+                        "attempt=%s stage_score=%.1f stage_success=%s failure_reason=%s",
+                        attempt,
+                        stage_pct,
+                        diagnostics.get("stage_success"),
+                        diagnostics.get("failure_reason"),
+                    )
+                    if harness_ctrl is None or not harness_ctrl.should_retry(
+                        bool(diagnostics.get("stage_success")),
+                        stage_pct,
+                    ):
+                        break
+
+                stage_pct = best_stage_pct
+                stage_done = best_stage_done
+                goal_success = best_goal_success
+                diagnostics = best_diagnostics
+                replay = best_replay
+                replay_wrist = best_replay_wrist
+                if harness_ctrl is not None:
+                    diagnostics = dict(diagnostics)
+                    diagnostics["harness_total_attempts"] = harness_ctrl.attempt_idx + 1
                 stage_sum += stage_pct
                 stage_success_cnt += int(diagnostics["stage_success"])
                 goal_cnt += stage_pct / 100.0
@@ -868,7 +1054,14 @@ def main() -> None:
         "macro_goal_success_rate": sum(r["goal_success_rate"] for r in completed) / max(1, len(completed)),
         "num_tasks": len(results),
         "num_goal_scored_tasks": len(completed),
+        "harness_enabled": harness_config.enabled,
     }
+    if harness_config.enabled:
+        aggregate["harness_max_retries"] = harness_config.max_episode_retries
+        aggregate["harness_stall_steps"] = harness_config.stall_step_threshold
+        aggregate["harness_vlm_context"] = harness_config.inject_vlm_context
+        aggregate["harness_vla_hints"] = harness_config.inject_vla_hints
+        aggregate["harness_api_planner"] = harness_config.api_planner_enable
     (out_root / "aggregate.json").write_text(json.dumps(aggregate, ensure_ascii=False, indent=2), encoding="utf-8")
     logging.info("done aggregate=%s summary=%s", aggregate, summary_tsv)
 

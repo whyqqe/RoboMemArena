@@ -41,7 +41,8 @@ export MUJOCO_GL=${MUJOCO_GL:-egl}
 export PYTHONUNBUFFERED=1
 export PYTHONNOUSERSITE=1
 export OPENPI_ROOT OPENPI_INFERENCE_ROOT TARGET_LIBERO_PATH
-export PYTHONPATH="${TARGET_LIBERO_PATH}:${RUNTIME_DIR}:${OPENPI_ROOT}/packages/openpi-client/src:${OPENPI_ROOT}/packages/openpi/src:${OPENPI_ROOT}:${PYTHONPATH:-}"
+LIBERO_FORK_ROOT="${LIBERO_FORK_ROOT:-$(cd "${TARGET_LIBERO_PATH}/.." && pwd)}"
+export PYTHONPATH="${LIBERO_FORK_ROOT}:${TARGET_LIBERO_PATH}:${RUNTIME_DIR}:${OPENPI_ROOT}/packages/openpi-client/src:${OPENPI_ROOT}/packages/openpi/src:${OPENPI_ROOT}:${PYTHONPATH:-}"
 export OUT_ROOT VIDEO_DIR SUMMARY_JSON SUMMARY_TSV PROMPT_TRACE_TSV TASK_CONFIG
 export HOST=${HOST:-127.0.0.1}
 export PORT
@@ -94,7 +95,13 @@ PY
   if [ "${#TASK_GROUPS[@]}" -gt 1 ]; then
     for group in "${TASK_GROUPS[@]}"; do
       IFS=$'\t' read -r family group_tasks <<< "${group}"
-      PREDIMEM_ASSET_GROUP="${family}" TASKS_JSON="${group_tasks}" OUT_ROOT="${OUT_ROOT}/${family}" bash "${BASH_SOURCE[0]}"
+      # Child re-invocation must recompute paths from OUT_ROOT; inherited exports
+      # would otherwise write all phase summaries to the parent OUT_ROOT.
+      (
+        export PREDIMEM_ASSET_GROUP="${family}" TASKS_JSON="${group_tasks}" OUT_ROOT="${OUT_ROOT}/${family}"
+        unset SUMMARY_TSV SUMMARY_JSON PROMPT_TRACE_TSV VIDEO_DIR LOG_DIR SERVER_LOG EVAL_LOG
+        bash "${BASH_SOURCE[0]}"
+      )
     done
     exit 0
   fi

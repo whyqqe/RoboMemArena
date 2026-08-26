@@ -1,186 +1,164 @@
-# RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark
+# RoboMemArena
 
-RoboMemArena is a comprehensive and challenging robotic memory benchmark with 26 manipulation tasks, demonstration data, and evaluation BDDL.
+RoboMemArena is a robotic memory benchmark with 26 manipulation tasks, demonstration data, and evaluation BDDL specifications.
 
-## Links
+This repository provides:
 
-[![arXiv](https://img.shields.io/badge/arXiv-2605.10921-b31b1b?style=for-the-badge)](https://arxiv.org/html/2605.10921v1)
-[![Project Page](https://img.shields.io/badge/Project-Page-76b900?style=for-the-badge)](https://robomemarena.github.io/)
-[![Leaderboard Results](https://img.shields.io/badge/Leaderboard-Results-007ec6?style=for-the-badge)](https://robomemarena.github.io/leaderboard.html)
-[![Dataset Hugging Face](https://img.shields.io/badge/Dataset-Hugging%20Face-f3b900?style=for-the-badge)](https://huggingface.co/datasets/RoboMemArenaBenchmark/RoboMemArena)
-[![Dataset ModelScope](https://img.shields.io/badge/Dataset-ModelScope-2f80ed?style=for-the-badge)](https://modelscope.cn/profile/haodong123)
+- The **official evaluation benchmark** (adapter-based CSR/TSR for tasks 1–26)
+- A **PrediMem reference stack** (Qwen3-VL planner + π0.5 VLA)
+- An **inference-time extension** with an external execution harness and long-horizon memory modules (no model fine-tuning)
 
-## News
+[![arXiv](https://img.shields.io/badge/arXiv-2605.10921-b31b1b)](https://arxiv.org/html/2605.10921v1)
+[![Project Page](https://img.shields.io/badge/Project-Page-76b900)](https://robomemarena.github.io/)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-Results-007ec6)](https://robomemarena.github.io/leaderboard.html)
+[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-f3b900)](https://huggingface.co/datasets/RoboMemArenaBenchmark/RoboMemArena)
 
-**Jun. 2026** We released a major dataset update on **June 20**, with multiple bug fixes and substantial improvements to data quality, evaluation accuracy, and memory robustness. The updates include refreshing the affected dataset split, correcting subtask annotations for the impacted task, fixing the Task 6 evaluation logic in `evaluation_benchmark/scripts/task2_26_reference_stage.py`, increasing the memory dependency of Tasks 1–3 by introducing two identical baskets in the scene, and refreshing the Task 4 and Task 5 data with randomized object placement. The latest version is now available on ModelScope, with the Hugging Face mirror coming soon. 
+## Table of contents
 
-**Important: due to the significant changes in the June 20 release, please make sure to overwrite any previously downloaded dataset with the latest version.**
+- [Documentation](#documentation)
+- [Installation](#installation)
+- [Quick start](#quick-start)
+- [Repository layout](#repository-layout)
+- [Reproducibility](#reproducibility)
+- [Dataset](#dataset)
+- [Evaluate your own model](#evaluate-your-own-model)
+- [Citation](#citation)
+- [Contact](#contact)
 
-## Dataset Structure
+## Documentation
 
-The dataset is hosted on Hugging Face and mirrored on ModelScope:
+| Document | Description |
+|----------|-------------|
+| [docs/](docs/README.md) | Documentation index |
+| [Installation & dependencies](docs/setup/INSTALLATION.md) | Python environments, GPU, EGL rendering |
+| [Assets download](docs/setup/ASSETS.md) | PrediMem checkpoints and dataset |
+| [Reproducibility guide](docs/experiments/REPRODUCIBILITY.md) | Benchmark and extension experiments |
+| [System design](docs/design/harness_memory_system_design.md) | Harness and memory architecture |
+| [Dual-track evaluation report](docs/experiments/dual_track_report.md) | Decoupled memory vs. harness study |
+| [Supplementary experiments](docs/supplementary/README.md) | Extended ablations (optional) |
 
-[![Dataset Hugging Face](https://img.shields.io/badge/Dataset-Hugging%20Face-f3b900?style=for-the-badge)](https://huggingface.co/datasets/RoboMemArenaBenchmark/RoboMemArena)
-[![Dataset ModelScope](https://img.shields.io/badge/Dataset-ModelScope-2f80ed?style=for-the-badge)](https://modelscope.cn/profile/haodong123)
+## Installation
 
-The released dataset is organized as:
+**Requirements:** Linux, NVIDIA GPU (2 GPUs recommended for PrediMem reference eval), Python 3.11, CUDA 12.x–compatible driver.
 
-- 4 high-level category folders
-- each category folder contains task subfolders (for example, `1_cookies_tomato_basket_dataset`)
-- each task subfolder keeps the same internal structure
+```bash
+git clone https://github.com/OpenHelix-Team/RoboMemArena.git
+cd RoboMemArena
+bash scripts/setup_env.sh
+source scripts/activate_eval.sh
+bash scripts/download_assets.sh   # PrediMem weights (required for reference eval)
+```
+
+See [docs/setup/INSTALLATION.md](docs/setup/INSTALLATION.md) for details (dual virtualenv layout, headless EGL, troubleshooting).
+
+## Quick start
+
+**Single-task smoke test (PrediMem baseline):**
+
+```bash
+source scripts/activate_eval.sh
+cd evaluation_benchmark/async_vlm26_reference
+export TASKS_JSON='[1]' SEED=100 NUM_TRIALS=1
+bash run_fullvlm26_async_vlm_vla_csr_tsr.sh
+```
+
+**Recommended harness configuration (`harness_v21`):**
+
+```bash
+cd /path/to/RoboMemArena
+source scripts/run_harness_variant.sh harness_v21
+export TASKS_JSON='[1,4,5,11,14,16,18,22]' SEED=100
+cd evaluation_benchmark/async_vlm26_reference
+bash run_fullvlm26_async_vlm_vla_csr_tsr.sh
+```
+
+**Slurm (cluster):**
+
+```bash
+sbatch slurm/benchmark/reproduce_all26_1seed.sbatch
+sbatch slurm/benchmark/harness_dual_track.sbatch
+```
+
+## Repository layout
 
 ```
-<dataset_root>/
-├── <category_1>/
-│   └── 1_cookies_tomato_basket_dataset/
-│       ├── full_trajectory/      # Complete long-horizon HDF5 trajectories
-│       └── subtask_data/         # Keyframe-annotated HDF5 episodes (used for training)
-│           ├── pick_cookies_0_seed100_task1.hdf5
-│           ├── pick_cookies_0_seed101_task1.hdf5
-│           └── ...
-├── <category_2>/
-├── <category_3>/
-└── <category_4>/
+RoboMemArena/
+├── docs/                          # Documentation
+│   ├── setup/                     # Installation and assets
+│   ├── experiments/               # Reproducibility and reports
+│   ├── design/                    # Architecture reference
+│   └── supplementary/             # Optional ablation notes
+├── scripts/                       # Setup, download, harness variants, aggregation
+├── slurm/
+│   ├── benchmark/                 # Official and recommended experiments
+│   └── supplementary/             # Development and ablation jobs
+├── evaluation_benchmark/
+│   ├── harness/                   # External execution harness
+│   ├── memory_system/             # Long-horizon memory extensions
+│   ├── async_vlm26_reference/     # PrediMem reference evaluator
+│   ├── libero_fork/               # LIBERO-compatible simulation
+│   └── scripts/                   # Generic adapter-based evaluation
+├── third_party/openpi_minimal/    # OpenPI VLA server runtime
+├── bddl/                          # Task BDDL definitions (bundled)
+├── checkpoints/PrediMem/          # Downloaded weights (not in git)
+├── data/RoboMemArena/             # Downloaded dataset (not in git)
+└── outputs/                       # Evaluation logs and videos (not in git)
 ```
 
-Filename convention for subtask HDF5 files:
-`<primitive>_<subtask_order>_seed<seed>_task<task_id>.hdf5`, where
-`subtask_order` is the 0-based order index used in task decomposition.
+## Reproducibility
 
-The same task seed links multiple subtask files into one complete long-horizon
-trajectory. For example, files with `seed100` under the same task folder should
-be sorted by `subtask_order` and concatenated to reconstruct the full task
-episode. If your training target is the complete task rather than individual
-subtasks, group files by `task_id` and `seed`, then concatenate the ordered
-subtask episodes before training.
+We organize experiments into three tiers. Full protocols are in [docs/experiments/REPRODUCIBILITY.md](docs/experiments/REPRODUCIBILITY.md).
 
-The ModelScope mirror also provides `full_trajectory/` files for direct
-download. These files already store complete long-horizon trajectories, so users
-who do not need subtask-level training segments can use them directly without
-concatenating `subtask_data/` files.
+| Tier | Experiment | Slurm job |
+|------|------------|-----------|
+| **Benchmark** | PrediMem on all 26 tasks (official protocol) | `slurm/benchmark/reproduce_all26_1seed.sbatch` |
+| **Extension (primary)** | PrediMem vs. recommended harness (`harness_v21`) | `slurm/benchmark/harness_main_p0.sbatch` |
+| **Extension (ablation)** | Decoupled memory vs. harness vs. combined | `slurm/benchmark/harness_dual_track.sbatch` |
 
-### Key Directories
+**Extension summary** (8 memory-intensive tasks, 5 seeds, paired comparison):
 
-| Directory | Description |
-|-----------|-------------|
-| **full_trajectory/** | Complete long-horizon task trajectories, directly downloadable from the ModelScope release |
-| **subtask_data/** | Sub-episodes with **keyframe annotations**; each HDF5 contains `data/demo_*` with `actions`, `obs/agentview_rgb`, `obs/eye_in_hand_rgb`, `obs/ee_states`, `obs/gripper_states`, `obs/joint_states` |
+| Configuration | ΔCSR vs. baseline |
+|---------------|-------------------|
+| `memory_kf` (visual memory only) | +8.2 pp |
+| `harness_exec` (execution recovery only) | +8.6 pp |
+| `harness_v21` (combined, recommended) | +13.4 pp |
 
-### HDF5 Format (subtask_data)
+Details: [docs/experiments/dual_track_report.md](docs/experiments/dual_track_report.md).
 
-- `data/demo_{id}/actions` — (T, 7) end-effector actions
-- `data/demo_{id}/obs/agentview_rgb` — (T, 256, 256, 3) top-down view
-- `data/demo_{id}/obs/eye_in_hand_rgb` — (T, 256, 256, 3) wrist camera
-- `data/demo_{id}/obs/ee_states`, `gripper_states`, `joint_states` — robot state
+## Dataset
 
-## RLDS Conversion
+The dataset is hosted on [Hugging Face](https://huggingface.co/datasets/RoboMemArenaBenchmark/RoboMemArena) with a ModelScope mirror (see project page).
 
-Use `RoboMemArena_dataset_builder.py` to convert HDF5 to RLDS (TFDS) format:
+**Use the dataset release on or after June 20, 2026 (v2).** If you downloaded an older snapshot, replace it entirely.
 
-RLDS conversion is a data-only step; a CPU Python environment is sufficient.
+Simulation-based evaluation of PrediMem **does not require** the HDF5 training dataset. Download is only needed for RLDS conversion or model training. See [docs/setup/ASSETS.md](docs/setup/ASSETS.md).
 
-- Python 3.9
-- `tensorflow==2.13.0`
-- `tensorflow-datasets==4.9.2`
-- `h5py==3.9.0`
-- `numpy==1.24.3`
-
-Example environment setup:
+### RLDS conversion
 
 ```bash
 conda create -n robomemarena-rlds python=3.9 -y
-conda activate robomemarena-rlds
 pip install tensorflow==2.13.0 tensorflow-datasets==4.9.2 h5py==3.9.0 numpy==1.24.3
-```
-
-Set the source dataset root and run the builder from this repository root:
-
-```bash
-export ROBOMEMARENA_DATA_ROOT=/path/to/<dataset_root>
+export ROBOMEMARENA_DATA_ROOT=/path/to/dataset
 python -c "
 import RoboMemArena_dataset_builder as b
-import tensorflow_datasets as tfds
 ds_builder = b.RoboMemArenaDataset(data_dir='/path/to/output')
 ds_builder.download_and_prepare()
 "
 ```
 
-## Evaluation BDDL
+## Evaluate your own model
 
-Evaluation tasks are defined in the `bddl/` folder:
+- [Evaluation benchmark overview](evaluation_benchmark/README.md)
+- [Adapter integration guide](evaluation_benchmark/docs/evaluate_your_model.md)
+- [PrediMem reference runner](evaluation_benchmark/async_vlm26_reference/README.md)
 
-- `1_*.bddl` … `26_*.bddl` — 26 BDDL task definitions using contiguous benchmark task IDs
+## PrediMem training add-ons
 
-These BDDL files can be used with the provided LIBERO-compatible evaluation environment.
-The full 26-task benchmark descriptions are available here:
-
-- [Benchmark Task Details](https://robomemarena.github.io/#task-details)
-- [Evaluation Benchmark Overview](evaluation_benchmark/README.md)
-- [Evaluate Your Model on RoboMemArena](evaluation_benchmark/docs/evaluate_your_model.md)
-- [26-Task Reference Evaluation](evaluation_benchmark/reference_evaluation/README.md)
-- [Task Evaluation Code Guide](evaluation_benchmark/docs/task_evaluation_code_guide.md)
-
-To evaluate your own model under the official RoboMemArena setting, connect your policy through the generic
-adapter interface, or use the VLM/VLA reference runner if your system follows the reference two-system setup.
-The benchmark provides the RoboMemArena tasks, BDDL goals, rollouts, videos, and CSR/TSR metrics.
-
-## OpenPI Runtime Interface
-
-Evaluation scripts support two OpenPI runtime paths:
-
-- Bundled minimal runtime (default): `third_party/openpi_minimal`
-- External OpenPI source (optional): set `OPENPI_ROOT=/abs/path/to/openpi`
-
-If using external OpenPI source, ensure the following exist:
-
-- `scripts/serve_policy.py`
-- `packages/openpi/src`
-- `packages/openpi-client/src`
-
-## LIBERO Environment Setup
-
-Evaluation requires a LIBERO-compatible environment. This repo includes a local fork under `evaluation_benchmark/libero_fork/`:
-
-```bash
-# Clone RoboMemArena (includes submodules)
-git clone --recurse-submodules https://github.com/OpenHelix-Team/RoboMemArena.git
-cd RoboMemArena
-
-# If you already cloned without --recurse-submodules:
-# git submodule update --init --recursive
-
-# Make the local LIBERO fork importable
-export PYTHONPATH="${PWD}/evaluation_benchmark/libero_fork:${PYTHONPATH}"
-```
-
-Copy the `bddl/` folder from this repo to your evaluation config path, or set `LIBERO_BDDL_PATH` to point to `bddl/` for RoboMemArena task definitions.
-
-## PrediMem S2 Training Add-on
-
-This repo also includes a minimal add-on folder:
-
-- [predictive_coding_head/](predictive_coding_head/)
-
-It provides reusable integration logic for PrediMem S2 training with a **Predictive Coding Head** in a Qwen3-VL style training pipeline.
-See:
-
-- [predictive_coding_head/README.md](predictive_coding_head/README.md)
-
-For the S1 low-level policy, both the environment setup and the training logic
-can directly follow the official OpenPI repository:
-https://github.com/Physical-Intelligence/openpi
-
-For VLM training data construction, users may follow the official Qwen3-VL
-multimodal `messages` / `content` format described here:
-https://github.com/QwenLM/Qwen3-VL?tab=readme-ov-file#using-transformers-to-chat
-
-## Contact
-
-For questions, please contact me via WeChat: `leshuaigeye` or email: `leihuashuohit@gmail.com`.
+- [predictive_coding_head/](predictive_coding_head/) — Predictive Coding Head integration for PrediMem S2
+- Low-level policy (S1): [OpenPI](https://github.com/Physical-Intelligence/openpi)
+- VLM data format: [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 
 ## Citation
-
-If you find RoboMemArena useful in your research, please cite:
 
 ```bibtex
 @article{robomemarena2025,
@@ -190,3 +168,7 @@ If you find RoboMemArena useful in your research, please cite:
   year    = {2026}
 }
 ```
+
+## Contact
+
+WeChat: `leshuaigeye` · Email: `leihuashuohit@gmail.com`

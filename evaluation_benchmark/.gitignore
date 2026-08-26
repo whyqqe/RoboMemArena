@@ -3,4 +3,5 @@ __pycache__/
 *.pyo
 *.log
 outputs/
-
+api_key.txt
+**/api_key.txt

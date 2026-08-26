@@ -1,0 +1,29 @@
+# Secrets
+api_key.txt
+**/api_key.txt
+API.txt
+
+# Python / build
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.dist/
+
+# Runtime outputs (logs, eval results, slurm)
+outputs/
+download_scratch/
+
+# Large assets (download via scripts/download_assets.sh)
+data/RoboMemArena/
+checkpoints/PrediMem/
+
+# Local cache (override with CACHE_ROOT env)
+.cache/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

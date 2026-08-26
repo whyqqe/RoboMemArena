@@ -1,0 +1,9 @@
+# PyTorch for peilab SuperPod (NVIDIA H800, CUDA 12.x driver).
+# Install inside each venv AFTER creation.
+#
+#   pip install -r requirements-cu126.txt
+
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.6.0+cu126
+torchvision==0.21.0+cu126
+torchaudio==2.6.0+cu126

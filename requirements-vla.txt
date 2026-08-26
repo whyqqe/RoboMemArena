@@ -1,0 +1,37 @@
+# VLA policy server (OpenPI minimal runtime + PrediMem VLA checkpoint).
+# Python >= 3.11 recommended.
+
+-r requirements-cu126.txt
+
+numpy>=1.22.4,<2.0.0
+pillow>=11.0.0
+opencv-python>=4.10.0.84
+imageio>=2.36.1
+tqdm>=4.66.0
+tqdm-loggable>=0.2
+pytest>=8.0.0
+tyro>=0.9.5
+websockets>=12.0
+msgpack>=1.0.8
+safetensors>=0.4.5
+sentencepiece>=0.2.0
+einops>=0.8.0
+transformers==4.53.2
+filelock>=3.16.1
+typing-extensions>=4.12.2
+rich>=14.0.0
+orbax-checkpoint==0.11.13
+flax==0.10.2
+optax>=0.2.0
+chex==0.1.90
+jaxtyping==0.2.36
+ml_collections==1.0.0
+beartype==0.19.0
+augmax>=0.3.4
+dm-tree>=0.1.8
+fsspec[gcs]>=2024.6.0
+numpydantic>=1.6.6
+flatbuffers>=24.3.25
+
+# JAX GPU (CUDA 12). PrediMem VLA loads PyTorch weights but OpenPI still imports JAX.
+jax[cuda12]==0.5.3
