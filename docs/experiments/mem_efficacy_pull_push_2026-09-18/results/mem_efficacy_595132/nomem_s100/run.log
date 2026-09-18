@@ -1,0 +1,43 @@
+[INFO] PLANNER_BACKEND=api (skip local VLM checkpoint checks)
+[INFO] PLANNER_API_MODEL=gemini-3.8-flash
+[INFO] PLANNER_API_BASE_URL=https://api.closeai-asia.com/v1
+[INFO] PLANNER_API_KEY_LINE=1
+[INFO] OUT_ROOT=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100
+[INFO] TASK_CONFIG=/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/fullvlm_v2_26_memory_tasks.json
+[INFO] VLM_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+[INFO] VLA_CONFIG=pi05_robomemarena
+[INFO] VLA_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask
+[INFO] NORM_STATS_PATH=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets/policy_assets/norm_stats.json
+[INFO] PrediMem revision=e645741c2f34f27e1596bfa89e856d6f3560ed90
+[INFO] TASKS_JSON=[5]
+[INFO] starting VLA server on port 45132
+[INFO] VLA server ready at try 14
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /project/peilab/why/RoboMemArena/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+2026-09-18 12:08:02,458 | INFO | Harness v2: max_retries=2 stall_steps=80 vlm_context=False vla_hints=False api_planner=False smart_retry=True skip_score=95.0
+2026-09-18 12:08:02,470 | INFO | Waiting for server at ws://127.0.0.1:45132...
+2026-09-18 12:08:02,474 | INFO | Planner backend=api model=gemini-3.8-flash base_url=https://api.closeai-asia.com/v1
+2026-09-18 12:08:02,474 | INFO | PACT disabled (PACT_REWIND unset)
+task5:   0%|          | 0/10 [00:00<?, ?it/s]task5:  10%|█         | 1/10 [03:34<32:06, 214.11s/it]2026-09-18 12:13:14,052 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: 'provided at all!\nAnd: "If there is no keyframe in the recent window, keyframe_positions must be an empty list."\nSo if this drawer is not empty, it\'s definitely NOT a target keyframe, so `keyframe_positions: []`.\nWait, what if it IS empty? Is that brown thing the shadow or an object?\nIt clearly has height, rectangular shape, brownish-red color. It\'s an object inside the drawer (like an obstacle/distractor object).\nSo the middle drawer is NOT empty.\nTherefore, `keyframe_positions` is `[]`.\n\nNow, what is `current_primitive`?\nSince the middle drawer is open, and the robot has observed it (or finished opening it), the next'
+2026-09-18 12:13:37,449 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '04_Close_Middle_Drawer'
+task5:  20%|██        | 2/10 [06:50<27:09, 203.66s/it]task5:  30%|███       | 3/10 [10:14<23:46, 203.75s/it]2026-09-18 12:20:09,695 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '04_Close_Middle_Drawer'
+task5:  40%|████      | 4/10 [13:34<20:13, 202.25s/it]2026-09-18 12:23:33,328 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '05_Open_Bottom_Drawer'
+task5:  50%|█████     | 5/10 [16:55<16:49, 201.87s/it]2026-09-18 12:26:55,094 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '05_Open_Bottom_Drawer'
+task5:  60%|██████    | 6/10 [20:14<13:23, 200.83s/it]2026-09-18 12:30:20,061 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '05_Open_Bottom_Drawer'
+task5:  70%|███████   | 7/10 [23:32<09:59, 199.96s/it]2026-09-18 12:33:42,118 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '05_Open_Bottom_Drawer'
+task5:  80%|████████  | 8/10 [26:51<06:39, 199.77s/it]2026-09-18 12:37:10,049 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '_Drawer`\n`04_Close_Middle_Drawer`\nIf it\'s an enum or predefined stage list, what would stage 5 be?\n`05_Open_Bottom_Drawer`!\nWait, but why is the field called `current_primitive` instead of `current_stage`?\n"infer the robot\'s current primitive action"\n"current_primitive"\nWait, if the user prompt says:\n"infer the robot\'s current primitive action from historical keyframes before the current step and recent visual history within the same execution."\nWait, if the field is called `current_primitive`, but the harness says:\n"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_'
+task5:  90%|█████████ | 9/10 [30:12<03:20, 200.14s/it]2026-09-18 12:40:07,366 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '05_Open_Bottom_Drawer'
+task5: 100%|██████████| 10/10 [33:31<00:00, 199.64s/it]task5: 100%|██████████| 10/10 [33:31<00:00, 201.13s/it]
+2026-09-18 12:41:36,634 | INFO | task=5 status=completed stage_score=26.2 stage_success=0.000 goal=0.2625
+2026-09-18 12:41:36,638 | INFO | done aggregate={'macro_stage_score_pct': 26.25, 'macro_stage_success_rate': 0.0, 'macro_goal_success_rate': 0.2625, 'num_tasks': 1, 'num_goal_scored_tasks': 1, 'harness_enabled': True, 'harness_max_retries': 2, 'harness_stall_steps': 80, 'harness_vlm_context': False, 'harness_vla_hints': False, 'harness_api_planner': False} summary=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100/summary.tsv
+[INFO] eval rc=0
+[INFO] SERVER_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100/logs/serve_policy.log
+[INFO] EVAL_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100/logs/eval_fullvlm26_async_vlm_vla.log
+[INFO] SUMMARY_JSON=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100/summary.json
+[INFO] SUMMARY_TSV=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100/summary.tsv
+[INFO] AGGREGATE=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/nomem_s100/aggregate.json

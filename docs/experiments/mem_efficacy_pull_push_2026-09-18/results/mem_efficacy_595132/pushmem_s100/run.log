@@ -1,0 +1,36 @@
+[INFO] PLANNER_BACKEND=api (skip local VLM checkpoint checks)
+[INFO] PLANNER_API_MODEL=gemini-3.8-flash
+[INFO] PLANNER_API_BASE_URL=https://api.closeai-asia.com/v1
+[INFO] PLANNER_API_KEY_LINE=1
+[INFO] OUT_ROOT=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100
+[INFO] TASK_CONFIG=/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/fullvlm_v2_26_memory_tasks.json
+[INFO] VLM_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+[INFO] VLA_CONFIG=pi05_robomemarena
+[INFO] VLA_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask
+[INFO] NORM_STATS_PATH=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets/policy_assets/norm_stats.json
+[INFO] PrediMem revision=e645741c2f34f27e1596bfa89e856d6f3560ed90
+[INFO] TASKS_JSON=[5]
+[INFO] starting VLA server on port 45132
+[INFO] VLA server ready at try 8
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /project/peilab/why/RoboMemArena/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+2026-09-18 12:42:09,697 | INFO | Harness v2: max_retries=2 stall_steps=80 vlm_context=False vla_hints=False api_planner=False smart_retry=True skip_score=95.0
+2026-09-18 12:42:09,706 | INFO | Waiting for server at ws://127.0.0.1:45132...
+2026-09-18 12:42:09,709 | INFO | Planner backend=api model=gemini-3.8-flash base_url=https://api.closeai-asia.com/v1
+2026-09-18 12:42:09,709 | INFO | PACT disabled (PACT_REWIND unset)
+task5:   0%|          | 0/10 [00:00<?, ?it/s]task5:  10%|█         | 1/10 [03:36<32:28, 216.50s/it]task5:  20%|██        | 2/10 [07:00<27:52, 209.09s/it]task5:  30%|███       | 3/10 [10:21<23:57, 205.31s/it]task5:  40%|████      | 4/10 [13:46<20:31, 205.17s/it]task5:  50%|█████     | 5/10 [17:10<17:04, 204.95s/it]task5:  60%|██████    | 6/10 [20:32<13:34, 203.72s/it]task5:  70%|███████   | 7/10 [23:51<10:07, 202.41s/it]2026-09-18 13:07:45,701 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '-style evaluations for this dataset (often named "RoboMemory" or "Embodied Memory benchmark"):\nPrimitives are often:\n"open top drawer", "close top drawer", "open middle drawer", "close middle drawer", "open bottom drawer", "close bottom drawer", "pick butter", "place butter in drawer" / "put butter into bottom drawer".\nWait! Is the current primitive "open middle drawer" or "close middle drawer"?\nWait, why would it be "close middle drawer" if the drawer is already open?\nWait, if the middle drawer is already fully open in all 7 frames of the recent visual context, has "open middle drawer" finished?\nIf "open middle drawer" has finished, then the robot should execute "close middle drawer"!\nWait'
+task5:  80%|████████  | 8/10 [27:15<06:45, 202.82s/it]2026-09-18 13:09:31,229 | WARNING | [seam] planner emitted a NON-CANONICAL primitive: '"\n\nWait! What are the primitives for this task?\nLet\'s list the steps of the task:\n1. open top drawer\n2. close top drawer (or observe top drawer)\n3. open middle drawer\n4. close middle drawer\n5. open bottom drawer\n6. close bottom drawer\n7. pick butter / grasp butter\n8. open target drawer / place butter into target drawer?\nWait, what did the drawers contain?\nLet\'s look at historical keyframe 5:\nTop drawer: has a blue object inside (so top drawer is NOT empty!).\nWait, where is the middle drawer?\nDid the robot open the middle drawer?\nLook at Image 6: Top drawer is closed. The arm is at the middle drawer!'
+task5:  90%|█████████ | 9/10 [30:40<03:23, 203.52s/it]task5: 100%|██████████| 10/10 [34:02<00:00, 203.04s/it]task5: 100%|██████████| 10/10 [34:02<00:00, 204.25s/it]
+2026-09-18 13:16:14,840 | INFO | task=5 status=completed stage_score=28.8 stage_success=0.000 goal=0.2875
+2026-09-18 13:16:14,844 | INFO | done aggregate={'macro_stage_score_pct': 28.75, 'macro_stage_success_rate': 0.0, 'macro_goal_success_rate': 0.2875, 'num_tasks': 1, 'num_goal_scored_tasks': 1, 'harness_enabled': True, 'harness_max_retries': 2, 'harness_stall_steps': 80, 'harness_vlm_context': False, 'harness_vla_hints': False, 'harness_api_planner': False} summary=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100/summary.tsv
+[INFO] eval rc=0
+[INFO] SERVER_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100/logs/serve_policy.log
+[INFO] EVAL_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100/logs/eval_fullvlm26_async_vlm_vla.log
+[INFO] SUMMARY_JSON=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100/summary.json
+[INFO] SUMMARY_TSV=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100/summary.tsv
+[INFO] AGGREGATE=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pushmem_s100/aggregate.json

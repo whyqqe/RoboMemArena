@@ -1,0 +1,105 @@
+{
+  "task_id": 5,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      -1,
+      "open top drawer"
+    ],
+    [
+      690,
+      "open the top drawer"
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 690,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 690,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 690,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 0.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [],
+    "stalled_stage": "01_Open_Top_Drawer"
+  }
+}

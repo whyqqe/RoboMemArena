@@ -1,0 +1,23 @@
+/project/peilab/why/RoboMemArena/third_party/openpi_minimal/.venv/lib/python3.11/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO:root:Loading model...
+INFO:2026-09-18 14:16:54,920:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-09-18 14:16:54,921:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x155400d94a10>
+INFO:absl:Restoring checkpoint from /project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 1.1 GiB/s (total bytes: 6.2 GiB) (time elapsed: 5 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint in 5.77 seconds from /project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/params.
+WARNING:root:Failed loading norm stats for asset_id='robomemarena_assets' under /project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets: Norm stats file not found at: /project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets/robomemarena_assets/norm_stats.json. Trying fallback auto-detection.
+WARNING:root:Using fallback asset_id='policy_assets' from checkpoint assets because configured asset_id was unavailable.
+INFO:root:Loaded norm stats from /project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets/policy_assets
+INFO:root:Creating server (host: dgx-27, ip: 10.22.4.101)
+INFO:websockets.server:server listening on 0.0.0.0:45262
+INFO:websockets.server:connection closed
+INFO:websockets.server:connection open
+INFO:openpi.serving.websocket_policy_server:Connection from ('127.0.0.1', 54204) opened
+INFO:websockets.server:connection closed
+INFO:openpi.serving.websocket_policy_server:Connection from ('127.0.0.1', 54204) closed

@@ -1,0 +1,1431 @@
+2026-09-18 12:34:56,953 | INFO | task_id=5 bddl=/project/peilab/why/RoboMemArena/bddl/5_butter_middle_drawer.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-18 12:34:58,975 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-18 12:34:59,239 | INFO | [t=10] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:34:59,523 | INFO | [t=20] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:34:59,803 | INFO | [t=30] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:35:00,080 | INFO | [t=40] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:35:00,356 | INFO | [t=50] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:35:00,633 | INFO | [t=60] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:35:00,918 | INFO | [t=70] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:35:01,163 | INFO | [t=80] harness subtask override: open top drawer
+2026-09-18 12:35:01,163 | INFO | [t=80] VLM prompt update from step=-1: open top drawer
+2026-09-18 12:35:01,164 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-18 12:35:01,214 | INFO | [t=80] VLA chunk prompt=open top drawer
+2026-09-18 12:35:01,508 | INFO | [t=90] VLA chunk prompt=open top drawer
+2026-09-18 12:35:01,805 | INFO | [t=100] VLA chunk prompt=open top drawer
+2026-09-18 12:35:02,088 | INFO | [t=110] VLA chunk prompt=open top drawer
+2026-09-18 12:35:02,368 | INFO | [t=120] VLA chunk prompt=open top drawer
+2026-09-18 12:35:02,682 | INFO | [t=130] VLA chunk prompt=open top drawer
+2026-09-18 12:35:03,004 | INFO | [t=140] VLA chunk prompt=open top drawer
+2026-09-18 12:35:03,329 | INFO | [t=150] VLA chunk prompt=open top drawer
+2026-09-18 12:35:03,663 | INFO | [t=160] VLA chunk prompt=open top drawer
+2026-09-18 12:35:04,006 | INFO | [t=170] VLA chunk prompt=open top drawer
+2026-09-18 12:35:04,356 | INFO | [t=180] VLA chunk prompt=open top drawer
+2026-09-18 12:35:04,714 | INFO | [t=190] VLA chunk prompt=open top drawer
+2026-09-18 12:35:05,072 | INFO | [t=200] VLA chunk prompt=open top drawer
+2026-09-18 12:35:05,436 | INFO | [t=210] VLA chunk prompt=open top drawer
+2026-09-18 12:35:05,803 | INFO | [t=220] VLA chunk prompt=open top drawer
+2026-09-18 12:35:06,174 | INFO | [t=230] VLA chunk prompt=open top drawer
+2026-09-18 12:35:06,553 | INFO | [t=240] VLA chunk prompt=open top drawer
+2026-09-18 12:35:06,934 | INFO | [t=250] VLA chunk prompt=open top drawer
+2026-09-18 12:35:07,321 | INFO | [t=260] VLA chunk prompt=open top drawer
+2026-09-18 12:35:07,711 | INFO | [t=270] VLA chunk prompt=open top drawer
+2026-09-18 12:35:08,098 | INFO | [t=280] VLA chunk prompt=open top drawer
+2026-09-18 12:35:08,489 | INFO | [t=290] VLA chunk prompt=open top drawer
+2026-09-18 12:35:08,884 | INFO | [t=300] VLA chunk prompt=open top drawer
+2026-09-18 12:35:09,278 | INFO | [t=310] VLA chunk prompt=open top drawer
+2026-09-18 12:35:09,676 | INFO | [t=320] VLA chunk prompt=open top drawer
+2026-09-18 12:35:10,064 | INFO | [t=330] VLA chunk prompt=open top drawer
+2026-09-18 12:35:10,460 | INFO | [t=340] VLA chunk prompt=open top drawer
+2026-09-18 12:35:10,867 | INFO | [t=350] VLA chunk prompt=open top drawer
+2026-09-18 12:35:11,270 | INFO | [t=360] VLA chunk prompt=open top drawer
+2026-09-18 12:35:11,664 | INFO | [t=370] VLA chunk prompt=open top drawer
+2026-09-18 12:35:12,055 | INFO | [t=380] VLA chunk prompt=open top drawer
+2026-09-18 12:35:12,445 | INFO | [t=390] VLA chunk prompt=open top drawer
+2026-09-18 12:35:12,848 | INFO | [t=400] VLA chunk prompt=open top drawer
+2026-09-18 12:35:13,237 | INFO | [t=410] VLA chunk prompt=open top drawer
+2026-09-18 12:35:13,627 | INFO | [t=420] VLA chunk prompt=open top drawer
+2026-09-18 12:35:14,019 | INFO | [t=430] VLA chunk prompt=open top drawer
+2026-09-18 12:35:14,407 | INFO | [t=440] VLA chunk prompt=open top drawer
+2026-09-18 12:35:14,793 | INFO | [t=450] VLA chunk prompt=open top drawer
+2026-09-18 12:35:14,901 | INFO | API VLM @t=0 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 12:35:15,187 | INFO | [t=460] VLA chunk prompt=open top drawer
+2026-09-18 12:35:15,576 | INFO | [t=470] VLA chunk prompt=open top drawer
+2026-09-18 12:35:15,977 | INFO | [t=480] VLA chunk prompt=open top drawer
+2026-09-18 12:35:16,373 | INFO | [t=490] VLA chunk prompt=open top drawer
+2026-09-18 12:35:16,776 | INFO | [t=500] VLA chunk prompt=open top drawer
+2026-09-18 12:35:17,168 | INFO | [t=510] VLA chunk prompt=open top drawer
+2026-09-18 12:35:17,564 | INFO | [t=520] VLA chunk prompt=open top drawer
+2026-09-18 12:35:17,950 | INFO | [t=530] VLA chunk prompt=open top drawer
+2026-09-18 12:35:18,345 | INFO | [t=540] VLA chunk prompt=open top drawer
+2026-09-18 12:35:18,744 | INFO | [t=550] VLA chunk prompt=open top drawer
+2026-09-18 12:35:19,134 | INFO | [t=560] VLA chunk prompt=open top drawer
+2026-09-18 12:35:19,533 | INFO | [t=570] VLA chunk prompt=open top drawer
+2026-09-18 12:35:19,929 | INFO | [t=580] VLA chunk prompt=open top drawer
+2026-09-18 12:35:20,325 | INFO | [t=590] VLA chunk prompt=open top drawer
+2026-09-18 12:35:20,713 | INFO | [t=600] VLA chunk prompt=open top drawer
+2026-09-18 12:35:21,099 | INFO | [t=610] VLA chunk prompt=open top drawer
+2026-09-18 12:35:21,497 | INFO | [t=620] VLA chunk prompt=open top drawer
+2026-09-18 12:35:21,892 | INFO | [t=630] VLA chunk prompt=open top drawer
+2026-09-18 12:35:22,283 | INFO | [t=640] VLA chunk prompt=open top drawer
+2026-09-18 12:35:22,673 | INFO | [t=650] VLA chunk prompt=open top drawer
+2026-09-18 12:35:23,072 | INFO | [t=660] VLA chunk prompt=open top drawer
+2026-09-18 12:35:23,471 | INFO | [t=670] VLA chunk prompt=open top drawer
+2026-09-18 12:35:23,869 | INFO | [t=680] VLA chunk prompt=open top drawer
+2026-09-18 12:35:24,260 | INFO | [t=690] VLA chunk prompt=open top drawer
+2026-09-18 12:35:24,646 | INFO | [t=700] VLA chunk prompt=open top drawer
+2026-09-18 12:35:25,031 | INFO | [t=710] VLA chunk prompt=open top drawer
+2026-09-18 12:35:25,415 | INFO | [t=720] VLA chunk prompt=open top drawer
+2026-09-18 12:35:25,802 | INFO | [t=730] VLA chunk prompt=open top drawer
+2026-09-18 12:35:26,191 | INFO | [t=740] VLA chunk prompt=open top drawer
+2026-09-18 12:35:26,581 | INFO | [t=750] VLA chunk prompt=open top drawer
+2026-09-18 12:35:26,968 | INFO | [t=760] VLA chunk prompt=open top drawer
+2026-09-18 12:35:27,368 | INFO | [t=770] VLA chunk prompt=open top drawer
+2026-09-18 12:35:27,758 | INFO | [t=780] VLA chunk prompt=open top drawer
+2026-09-18 12:35:28,150 | INFO | [t=790] VLA chunk prompt=open top drawer
+2026-09-18 12:35:28,542 | INFO | [t=800] VLA chunk prompt=open top drawer
+2026-09-18 12:35:28,933 | INFO | [t=810] VLA chunk prompt=open top drawer
+2026-09-18 12:35:29,320 | INFO | [t=820] VLA chunk prompt=open top drawer
+2026-09-18 12:35:29,712 | INFO | [t=830] VLA chunk prompt=open top drawer
+2026-09-18 12:35:30,109 | INFO | [t=840] VLA chunk prompt=open top drawer
+2026-09-18 12:35:30,509 | INFO | [t=850] VLA chunk prompt=open top drawer
+2026-09-18 12:35:30,908 | INFO | [t=860] VLA chunk prompt=open top drawer
+2026-09-18 12:35:31,298 | INFO | [t=870] VLA chunk prompt=open top drawer
+2026-09-18 12:35:31,693 | INFO | [t=880] VLA chunk prompt=open top drawer
+2026-09-18 12:35:32,084 | INFO | [t=890] VLA chunk prompt=open top drawer
+2026-09-18 12:35:32,483 | INFO | [t=900] VLA chunk prompt=open top drawer
+2026-09-18 12:35:32,875 | INFO | [t=910] VLA chunk prompt=open top drawer
+2026-09-18 12:35:33,272 | INFO | [t=920] VLA chunk prompt=open top drawer
+2026-09-18 12:35:33,670 | INFO | [t=930] VLA chunk prompt=open top drawer
+2026-09-18 12:35:34,069 | INFO | [t=940] VLA chunk prompt=open top drawer
+2026-09-18 12:35:34,463 | INFO | [t=950] VLA chunk prompt=open top drawer
+2026-09-18 12:35:34,864 | INFO | [t=960] VLA chunk prompt=open top drawer
+2026-09-18 12:35:35,257 | INFO | [t=970] VLA chunk prompt=open top drawer
+2026-09-18 12:35:35,650 | INFO | [t=980] VLA chunk prompt=open top drawer
+2026-09-18 12:35:36,047 | INFO | [t=990] VLA chunk prompt=open top drawer
+2026-09-18 12:35:36,442 | INFO | [t=1000] VLA chunk prompt=open top drawer
+2026-09-18 12:35:36,844 | INFO | [t=1010] VLA chunk prompt=open top drawer
+2026-09-18 12:35:37,246 | INFO | [t=1020] VLA chunk prompt=open top drawer
+2026-09-18 12:35:37,649 | INFO | [t=1030] VLA chunk prompt=open top drawer
+2026-09-18 12:35:38,048 | INFO | [t=1040] VLA chunk prompt=open top drawer
+2026-09-18 12:35:38,460 | INFO | [t=1050] VLA chunk prompt=open top drawer
+2026-09-18 12:35:38,496 | INFO | API VLM @t=440 task=5 subtask=open the top drawer keyframes=[]
+2026-09-18 12:35:38,825 | INFO | [t=1060] VLM prompt update from step=440: open the top drawer
+2026-09-18 12:35:38,875 | INFO | [t=1060] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:39,275 | INFO | [t=1070] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:39,675 | INFO | [t=1080] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:40,071 | INFO | [t=1090] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:40,471 | INFO | [t=1100] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:40,863 | INFO | [t=1110] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:41,261 | INFO | [t=1120] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:41,653 | INFO | [t=1130] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:42,046 | INFO | [t=1140] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:42,438 | INFO | [t=1150] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:42,819 | INFO | [t=1160] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:43,202 | INFO | [t=1170] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:43,591 | INFO | [t=1180] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:43,974 | INFO | [t=1190] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:44,353 | INFO | [t=1200] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:44,738 | INFO | [t=1210] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:45,114 | INFO | [t=1220] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:45,492 | INFO | [t=1230] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:45,871 | INFO | [t=1240] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:46,256 | INFO | [t=1250] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:46,637 | INFO | [t=1260] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:47,016 | INFO | [t=1270] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:47,396 | INFO | [t=1280] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:47,779 | INFO | [t=1290] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:48,166 | INFO | [t=1300] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:48,550 | INFO | [t=1310] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:48,929 | INFO | [t=1320] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:49,309 | INFO | [t=1330] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:49,688 | INFO | [t=1340] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:50,069 | INFO | [t=1350] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:50,456 | INFO | [t=1360] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:50,841 | INFO | [t=1370] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:51,225 | INFO | [t=1380] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:51,609 | INFO | [t=1390] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:51,994 | INFO | [t=1400] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:52,383 | INFO | [t=1410] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:52,771 | INFO | [t=1420] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:53,155 | INFO | [t=1430] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:53,540 | INFO | [t=1440] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:53,923 | INFO | [t=1450] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:54,307 | INFO | [t=1460] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:54,693 | INFO | [t=1470] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:55,075 | INFO | [t=1480] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:55,459 | INFO | [t=1490] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:55,843 | INFO | [t=1500] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:56,227 | INFO | [t=1510] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:56,612 | INFO | [t=1520] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:56,999 | INFO | [t=1530] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:57,394 | INFO | [t=1540] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:57,790 | INFO | [t=1550] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:58,187 | INFO | [t=1560] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:58,584 | INFO | [t=1570] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:58,975 | INFO | [t=1580] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:59,361 | INFO | [t=1590] VLA chunk prompt=open the top drawer
+2026-09-18 12:35:59,745 | INFO | [t=1600] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:00,139 | INFO | [t=1610] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:00,527 | INFO | [t=1620] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:00,911 | INFO | [t=1630] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:01,298 | INFO | [t=1640] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:01,681 | INFO | [t=1650] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:02,064 | INFO | [t=1660] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:02,456 | INFO | [t=1670] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:02,839 | INFO | [t=1680] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:03,224 | INFO | [t=1690] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:03,608 | INFO | [t=1700] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:03,992 | INFO | [t=1710] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:04,381 | INFO | [t=1720] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:04,766 | INFO | [t=1730] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:05,150 | INFO | [t=1740] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:05,534 | INFO | [t=1750] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:05,921 | INFO | [t=1760] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:06,305 | INFO | [t=1770] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:06,690 | INFO | [t=1780] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:07,074 | INFO | [t=1790] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:07,461 | INFO | [t=1800] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:07,850 | INFO | [t=1810] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:08,239 | INFO | [t=1820] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:08,626 | INFO | [t=1830] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:09,010 | INFO | [t=1840] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:09,392 | INFO | [t=1850] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:09,776 | INFO | [t=1860] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:10,043 | INFO | API VLM @t=1040 task=5 subtask=close the top drawer keyframes=[1]
+2026-09-18 12:36:10,114 | INFO | [t=1870] VLM prompt update from step=1040: close the top drawer
+2026-09-18 12:36:10,165 | INFO | [t=1870] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:10,551 | INFO | [t=1880] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:10,941 | INFO | [t=1890] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:11,329 | INFO | [t=1900] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:11,722 | INFO | [t=1910] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:12,117 | INFO | [t=1920] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:12,504 | INFO | [t=1930] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:12,890 | INFO | [t=1940] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:13,277 | INFO | [t=1950] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:13,667 | INFO | [t=1960] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:14,053 | INFO | [t=1970] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:14,440 | INFO | [t=1980] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:14,827 | INFO | [t=1990] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:15,217 | INFO | [t=2000] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:15,605 | INFO | [t=2010] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:15,998 | INFO | [t=2020] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:16,395 | INFO | [t=2030] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:16,793 | INFO | [t=2040] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:17,198 | INFO | [t=2050] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:17,602 | INFO | [t=2060] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:18,009 | INFO | [t=2070] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:18,415 | INFO | [t=2080] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:18,823 | INFO | [t=2090] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:19,225 | INFO | [t=2100] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:19,621 | INFO | [t=2110] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:20,016 | INFO | [t=2120] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:20,412 | INFO | [t=2130] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:20,807 | INFO | [t=2140] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:21,206 | INFO | [t=2150] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:21,612 | INFO | [t=2160] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:22,018 | INFO | [t=2170] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:22,423 | INFO | [t=2180] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:22,824 | INFO | [t=2190] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:23,215 | INFO | [t=2200] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:23,602 | INFO | [t=2210] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:23,987 | INFO | [t=2220] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:24,367 | INFO | [t=2230] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:24,741 | INFO | [t=2240] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:25,112 | INFO | [t=2250] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:25,480 | INFO | [t=2260] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:25,847 | INFO | [t=2270] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:26,215 | INFO | [t=2280] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:26,587 | INFO | [t=2290] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:26,963 | INFO | [t=2300] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:27,340 | INFO | [t=2310] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:27,709 | INFO | [t=2320] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:28,075 | INFO | [t=2330] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:28,436 | INFO | [t=2340] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:28,794 | INFO | [t=2350] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:29,154 | INFO | [t=2360] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:29,513 | INFO | [t=2370] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:29,871 | INFO | [t=2380] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:30,229 | INFO | [t=2390] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:30,593 | INFO | [t=2400] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:30,965 | INFO | [t=2410] VLA chunk prompt=close the top drawer
+2026-09-18 12:36:31,226 | INFO | API VLM @t=1855 task=5 subtask=open the top drawer keyframes=[]
+2026-09-18 12:36:31,293 | INFO | [t=2420] VLM prompt update from step=1855: open the top drawer
+2026-09-18 12:36:31,344 | INFO | [t=2420] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:31,726 | INFO | [t=2430] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:32,110 | INFO | [t=2440] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:32,487 | INFO | [t=2450] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:32,863 | INFO | [t=2460] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:33,243 | INFO | [t=2470] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:33,616 | INFO | [t=2480] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:33,995 | INFO | [t=2490] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:34,375 | INFO | [t=2500] VLA chunk prompt=open the top drawer
+2026-09-18 12:36:37,737 | INFO | attempt=0 stage_score=0.0 stage_success=False failure_reason=incomplete_stage
+2026-09-18 12:36:39,698 | INFO | harness release_gripper after env.reset (attempt=1)
+2026-09-18 12:36:39,699 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-18 12:36:39,962 | INFO | [t=10] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:40,246 | INFO | [t=20] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:40,526 | INFO | [t=30] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:40,803 | INFO | [t=40] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:41,082 | INFO | [t=50] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:41,365 | INFO | [t=60] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:41,664 | INFO | [t=70] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 12:36:41,896 | INFO | [t=80] harness subtask override: open top drawer
+2026-09-18 12:36:41,896 | INFO | [t=80] VLM prompt update from step=-1: open top drawer
+2026-09-18 12:36:41,897 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-18 12:36:41,947 | INFO | [t=80] VLA chunk prompt=open top drawer
+2026-09-18 12:36:42,234 | INFO | [t=90] VLA chunk prompt=open top drawer
+2026-09-18 12:36:42,532 | INFO | [t=100] VLA chunk prompt=open top drawer
+2026-09-18 12:36:42,848 | INFO | [t=110] VLA chunk prompt=open top drawer
+2026-09-18 12:36:43,164 | INFO | [t=120] VLA chunk prompt=open top drawer
+2026-09-18 12:36:43,488 | INFO | [t=130] VLA chunk prompt=open top drawer
+2026-09-18 12:36:43,817 | INFO | [t=140] VLA chunk prompt=open top drawer
+2026-09-18 12:36:44,156 | INFO | [t=150] VLA chunk prompt=open top drawer
+2026-09-18 12:36:44,497 | INFO | [t=160] VLA chunk prompt=open top drawer
+2026-09-18 12:36:44,853 | INFO | [t=170] VLA chunk prompt=open top drawer
+2026-09-18 12:36:45,212 | INFO | [t=180] VLA chunk prompt=open top drawer
+2026-09-18 12:36:45,577 | INFO | [t=190] VLA chunk prompt=open top drawer
+2026-09-18 12:36:45,945 | INFO | [t=200] VLA chunk prompt=open top drawer
+2026-09-18 12:36:46,316 | INFO | [t=210] VLA chunk prompt=open top drawer
+2026-09-18 12:36:46,691 | INFO | [t=220] VLA chunk prompt=open top drawer
+2026-09-18 12:36:47,069 | INFO | [t=230] VLA chunk prompt=open top drawer
+2026-09-18 12:36:47,451 | INFO | [t=240] VLA chunk prompt=open top drawer
+2026-09-18 12:36:47,836 | INFO | [t=250] VLA chunk prompt=open top drawer
+2026-09-18 12:36:48,223 | INFO | [t=260] VLA chunk prompt=open top drawer
+2026-09-18 12:36:48,611 | INFO | [t=270] VLA chunk prompt=open top drawer
+2026-09-18 12:36:49,002 | INFO | [t=280] VLA chunk prompt=open top drawer
+2026-09-18 12:36:49,399 | INFO | [t=290] VLA chunk prompt=open top drawer
+2026-09-18 12:36:49,806 | INFO | [t=300] VLA chunk prompt=open top drawer
+2026-09-18 12:36:50,210 | INFO | [t=310] VLA chunk prompt=open top drawer
+2026-09-18 12:36:50,619 | INFO | [t=320] VLA chunk prompt=open top drawer
+2026-09-18 12:36:51,025 | INFO | [t=330] VLA chunk prompt=open top drawer
+2026-09-18 12:36:51,429 | INFO | [t=340] VLA chunk prompt=open top drawer
+2026-09-18 12:36:51,823 | INFO | [t=350] VLA chunk prompt=open top drawer
+2026-09-18 12:36:52,214 | INFO | [t=360] VLA chunk prompt=open top drawer
+2026-09-18 12:36:52,602 | INFO | [t=370] VLA chunk prompt=open top drawer
+2026-09-18 12:36:52,993 | INFO | [t=380] VLA chunk prompt=open top drawer
+2026-09-18 12:36:53,393 | INFO | [t=390] VLA chunk prompt=open top drawer
+2026-09-18 12:36:53,800 | INFO | [t=400] VLA chunk prompt=open top drawer
+2026-09-18 12:36:54,200 | INFO | [t=410] VLA chunk prompt=open top drawer
+2026-09-18 12:36:54,600 | INFO | [t=420] VLA chunk prompt=open top drawer
+2026-09-18 12:36:55,001 | INFO | [t=430] VLA chunk prompt=open top drawer
+2026-09-18 12:36:55,397 | INFO | [t=440] VLA chunk prompt=open top drawer
+2026-09-18 12:36:55,799 | INFO | [t=450] VLA chunk prompt=open top drawer
+2026-09-18 12:36:56,204 | INFO | [t=460] VLA chunk prompt=open top drawer
+2026-09-18 12:36:56,608 | INFO | [t=470] VLA chunk prompt=open top drawer
+2026-09-18 12:36:57,019 | INFO | [t=480] VLA chunk prompt=open top drawer
+2026-09-18 12:36:57,429 | INFO | [t=490] VLA chunk prompt=open top drawer
+2026-09-18 12:36:57,829 | INFO | [t=500] VLA chunk prompt=open top drawer
+2026-09-18 12:36:58,214 | INFO | [t=510] VLA chunk prompt=open top drawer
+2026-09-18 12:36:58,600 | INFO | [t=520] VLA chunk prompt=open top drawer
+2026-09-18 12:36:58,985 | INFO | [t=530] VLA chunk prompt=open top drawer
+2026-09-18 12:36:59,378 | INFO | [t=540] VLA chunk prompt=open top drawer
+2026-09-18 12:36:59,769 | INFO | [t=550] VLA chunk prompt=open top drawer
+2026-09-18 12:37:00,157 | INFO | [t=560] VLA chunk prompt=open top drawer
+2026-09-18 12:37:00,547 | INFO | [t=570] VLA chunk prompt=open top drawer
+2026-09-18 12:37:00,936 | INFO | [t=580] VLA chunk prompt=open top drawer
+2026-09-18 12:37:01,324 | INFO | [t=590] VLA chunk prompt=open top drawer
+2026-09-18 12:37:01,714 | INFO | [t=600] VLA chunk prompt=open top drawer
+2026-09-18 12:37:02,102 | INFO | [t=610] VLA chunk prompt=open top drawer
+2026-09-18 12:37:02,485 | INFO | [t=620] VLA chunk prompt=open top drawer
+2026-09-18 12:37:02,869 | INFO | [t=630] VLA chunk prompt=open top drawer
+2026-09-18 12:37:03,251 | INFO | [t=640] VLA chunk prompt=open top drawer
+2026-09-18 12:37:03,635 | INFO | [t=650] VLA chunk prompt=open top drawer
+2026-09-18 12:37:04,020 | INFO | [t=660] VLA chunk prompt=open top drawer
+2026-09-18 12:37:04,406 | INFO | [t=670] VLA chunk prompt=open top drawer
+2026-09-18 12:37:04,688 | INFO | API VLM @t=2405 task=5 subtask=open the top drawer keyframes=[]
+2026-09-18 12:37:04,799 | INFO | [t=680] VLA chunk prompt=open top drawer
+2026-09-18 12:37:05,193 | INFO | [t=690] VLA chunk prompt=open top drawer
+2026-09-18 12:37:05,588 | INFO | [t=700] VLA chunk prompt=open top drawer
+2026-09-18 12:37:05,982 | INFO | [t=710] VLA chunk prompt=open top drawer
+2026-09-18 12:37:06,377 | INFO | [t=720] VLA chunk prompt=open top drawer
+2026-09-18 12:37:06,763 | INFO | [t=730] VLA chunk prompt=open top drawer
+2026-09-18 12:37:07,148 | INFO | [t=740] VLA chunk prompt=open top drawer
+2026-09-18 12:37:07,535 | INFO | [t=750] VLA chunk prompt=open top drawer
+2026-09-18 12:37:07,918 | INFO | [t=760] VLA chunk prompt=open top drawer
+2026-09-18 12:37:08,303 | INFO | [t=770] VLA chunk prompt=open top drawer
+2026-09-18 12:37:08,690 | INFO | [t=780] VLA chunk prompt=open top drawer
+2026-09-18 12:37:09,075 | INFO | [t=790] VLA chunk prompt=open top drawer
+2026-09-18 12:37:09,460 | INFO | [t=800] VLA chunk prompt=open top drawer
+2026-09-18 12:37:09,846 | INFO | [t=810] VLA chunk prompt=open top drawer
+2026-09-18 12:37:10,049 | INFO | API VLM @t=0 task=5 subtask=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_ keyframes=[]
+2026-09-18 12:37:10,183 | INFO | [t=820] VLM prompt update from step=0: _Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:10,236 | INFO | [t=820] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:10,623 | INFO | [t=830] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:11,006 | INFO | [t=840] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:11,397 | INFO | [t=850] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:11,790 | INFO | [t=860] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:12,183 | INFO | [t=870] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:12,585 | INFO | [t=880] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:12,980 | INFO | [t=890] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:13,386 | INFO | [t=900] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:13,773 | INFO | [t=910] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:14,158 | INFO | [t=920] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:14,544 | INFO | [t=930] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:14,929 | INFO | [t=940] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:15,311 | INFO | [t=950] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:15,691 | INFO | [t=960] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:16,072 | INFO | [t=970] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:16,456 | INFO | [t=980] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:16,829 | INFO | [t=990] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:17,206 | INFO | [t=1000] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:17,588 | INFO | [t=1010] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:17,974 | INFO | [t=1020] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:18,359 | INFO | [t=1030] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:18,737 | INFO | [t=1040] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:19,110 | INFO | [t=1050] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:19,479 | INFO | [t=1060] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:19,847 | INFO | [t=1070] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:20,215 | INFO | [t=1080] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:20,583 | INFO | [t=1090] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:20,952 | INFO | [t=1100] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:21,330 | INFO | [t=1110] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:21,706 | INFO | [t=1120] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:22,078 | INFO | [t=1130] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:22,450 | INFO | [t=1140] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:22,823 | INFO | [t=1150] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:23,195 | INFO | [t=1160] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:23,568 | INFO | [t=1170] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:23,937 | INFO | [t=1180] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:24,309 | INFO | [t=1190] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:24,677 | INFO | [t=1200] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:25,043 | INFO | [t=1210] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:25,408 | INFO | [t=1220] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:25,777 | INFO | [t=1230] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:26,149 | INFO | [t=1240] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:26,525 | INFO | [t=1250] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:26,900 | INFO | [t=1260] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:27,269 | INFO | [t=1270] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:27,633 | INFO | [t=1280] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:28,000 | INFO | [t=1290] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:28,365 | INFO | [t=1300] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:28,730 | INFO | [t=1310] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:29,095 | INFO | [t=1320] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:29,461 | INFO | [t=1330] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:29,827 | INFO | [t=1340] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:30,192 | INFO | [t=1350] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:30,559 | INFO | [t=1360] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:30,934 | INFO | [t=1370] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:31,305 | INFO | [t=1380] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:31,672 | INFO | [t=1390] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:32,031 | INFO | [t=1400] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:32,391 | INFO | [t=1410] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:32,751 | INFO | [t=1420] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:33,110 | INFO | [t=1430] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:33,468 | INFO | [t=1440] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:33,828 | INFO | [t=1450] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:34,192 | INFO | [t=1460] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:34,556 | INFO | [t=1470] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:34,923 | INFO | [t=1480] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:35,293 | INFO | [t=1490] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:35,664 | INFO | [t=1500] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:36,035 | INFO | [t=1510] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:36,404 | INFO | [t=1520] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:36,773 | INFO | [t=1530] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:37,141 | INFO | [t=1540] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:37,509 | INFO | [t=1550] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:37,871 | INFO | [t=1560] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:38,233 | INFO | [t=1570] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:38,591 | INFO | [t=1580] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:38,952 | INFO | [t=1590] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:39,311 | INFO | [t=1600] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:39,672 | INFO | [t=1610] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:40,034 | INFO | [t=1620] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:40,391 | INFO | [t=1630] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:40,746 | INFO | [t=1640] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:41,100 | INFO | [t=1650] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:41,456 | INFO | [t=1660] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:41,817 | INFO | [t=1670] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:42,182 | INFO | [t=1680] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:42,550 | INFO | [t=1690] VLA chunk prompt=_Drawer`
+`04_Close_Middle_Drawer`
+If it's an enum or predefined stage list, what would stage 5 be?
+`05_Open_Bottom_Drawer`!
+Wait, but why is the field called `current_primitive` instead of `current_stage`?
+"infer the robot's current primitive action"
+"current_primitive"
+Wait, if the user prompt says:
+"infer the robot's current primitive action from historical keyframes before the current step and recent visual history within the same execution."
+Wait, if the field is called `current_primitive`, but the harness says:
+"Already completed stages: 01_Open_Top_Drawer, 02_Close_Top_
+2026-09-18 12:37:42,814 | INFO | API VLM @t=805 task=5 subtask=open top drawer keyframes=[5]
+2026-09-18 12:37:42,876 | INFO | [t=1700] VLM prompt update from step=805: open top drawer
+2026-09-18 12:37:42,926 | INFO | [t=1700] VLA chunk prompt=open top drawer
+2026-09-18 12:37:43,298 | INFO | [t=1710] VLA chunk prompt=open top drawer
+2026-09-18 12:37:43,670 | INFO | [t=1720] VLA chunk prompt=open top drawer
+2026-09-18 12:37:44,045 | INFO | [t=1730] VLA chunk prompt=open top drawer
+2026-09-18 12:37:44,422 | INFO | [t=1740] VLA chunk prompt=open top drawer
+2026-09-18 12:37:44,821 | INFO | [t=1750] VLA chunk prompt=open top drawer
+2026-09-18 12:37:45,242 | INFO | [t=1760] VLA chunk prompt=open top drawer
+2026-09-18 12:37:45,627 | INFO | [t=1770] VLA chunk prompt=open top drawer
+2026-09-18 12:37:46,004 | INFO | [t=1780] VLA chunk prompt=open top drawer
+2026-09-18 12:37:46,369 | INFO | [t=1790] VLA chunk prompt=open top drawer
+2026-09-18 12:37:46,734 | INFO | [t=1800] VLA chunk prompt=open top drawer
+2026-09-18 12:37:47,094 | INFO | [t=1810] VLA chunk prompt=open top drawer
+2026-09-18 12:37:47,441 | INFO | [t=1820] VLA chunk prompt=open top drawer
+2026-09-18 12:37:47,776 | INFO | [t=1830] VLA chunk prompt=open top drawer
+2026-09-18 12:37:48,106 | INFO | [t=1840] VLA chunk prompt=open top drawer
+2026-09-18 12:37:48,437 | INFO | [t=1850] VLA chunk prompt=open top drawer
+2026-09-18 12:37:48,788 | INFO | [t=1860] VLA chunk prompt=open top drawer
+2026-09-18 12:37:49,143 | INFO | [t=1870] VLA chunk prompt=open top drawer
+2026-09-18 12:37:49,499 | INFO | [t=1880] VLA chunk prompt=open top drawer
+2026-09-18 12:37:49,857 | INFO | [t=1890] VLA chunk prompt=open top drawer
+2026-09-18 12:37:50,216 | INFO | [t=1900] VLA chunk prompt=open top drawer
+2026-09-18 12:37:50,582 | INFO | [t=1910] VLA chunk prompt=open top drawer
+2026-09-18 12:37:50,952 | INFO | [t=1920] VLA chunk prompt=open top drawer
+2026-09-18 12:37:51,329 | INFO | [t=1930] VLA chunk prompt=open top drawer
+2026-09-18 12:37:51,721 | INFO | [t=1940] VLA chunk prompt=open top drawer
+2026-09-18 12:37:52,124 | INFO | [t=1950] VLA chunk prompt=open top drawer
+2026-09-18 12:37:52,531 | INFO | [t=1960] VLA chunk prompt=open top drawer
+2026-09-18 12:37:52,930 | INFO | [t=1970] VLA chunk prompt=open top drawer
+2026-09-18 12:37:53,293 | INFO | [t=1980] VLA chunk prompt=open top drawer
+2026-09-18 12:37:53,650 | INFO | [t=1990] VLA chunk prompt=open top drawer
+2026-09-18 12:37:54,004 | INFO | [t=2000] VLA chunk prompt=open top drawer
+2026-09-18 12:37:54,355 | INFO | [t=2010] VLA chunk prompt=open top drawer
+2026-09-18 12:37:54,709 | INFO | [t=2020] VLA chunk prompt=open top drawer
+2026-09-18 12:37:55,073 | INFO | [t=2030] VLA chunk prompt=open top drawer
+2026-09-18 12:37:55,350 | INFO | API VLM @t=1685 task=5 subtask=open the top drawer keyframes=[]
+2026-09-18 12:37:55,386 | INFO | [t=2040] VLM prompt update from step=1685: open the top drawer
+2026-09-18 12:37:55,436 | INFO | [t=2040] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:55,795 | INFO | [t=2050] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:56,153 | INFO | [t=2060] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:56,510 | INFO | [t=2070] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:56,867 | INFO | [t=2080] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:57,225 | INFO | [t=2090] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:57,585 | INFO | [t=2100] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:57,950 | INFO | [t=2110] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:58,317 | INFO | [t=2120] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:58,689 | INFO | [t=2130] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:59,061 | INFO | [t=2140] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:59,435 | INFO | [t=2150] VLA chunk prompt=open the top drawer
+2026-09-18 12:37:59,805 | INFO | [t=2160] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:00,189 | INFO | [t=2170] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:00,561 | INFO | [t=2180] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:00,931 | INFO | [t=2190] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:01,296 | INFO | [t=2200] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:01,658 | INFO | [t=2210] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:02,020 | INFO | [t=2220] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:02,386 | INFO | [t=2230] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:02,749 | INFO | [t=2240] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:03,123 | INFO | [t=2250] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:03,513 | INFO | [t=2260] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:03,829 | INFO | API VLM @t=2025 task=5 subtask=open the top drawer keyframes=[]
+2026-09-18 12:38:03,915 | INFO | [t=2270] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:04,315 | INFO | [t=2280] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:04,726 | INFO | [t=2290] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:05,124 | INFO | [t=2300] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:05,506 | INFO | [t=2310] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:05,874 | INFO | [t=2320] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:06,240 | INFO | [t=2330] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:06,592 | INFO | [t=2340] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:06,933 | INFO | [t=2350] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:07,272 | INFO | [t=2360] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:07,617 | INFO | [t=2370] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:07,963 | INFO | [t=2380] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:08,324 | INFO | [t=2390] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:08,689 | INFO | [t=2400] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:09,054 | INFO | [t=2410] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:09,424 | INFO | [t=2420] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:09,800 | INFO | [t=2430] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:10,185 | INFO | [t=2440] VLA chunk prompt=open the top drawer
+2026-09-18 12:38:10,273 | INFO | API VLM @t=2255 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 12:38:10,539 | INFO | [t=2450] VLM prompt update from step=2255: open top drawer
+2026-09-18 12:38:10,678 | INFO | [t=2450] VLA chunk prompt=open top drawer
+2026-09-18 12:38:11,092 | INFO | [t=2460] VLA chunk prompt=open top drawer
+2026-09-18 12:38:11,489 | INFO | [t=2470] VLA chunk prompt=open top drawer
+2026-09-18 12:38:11,882 | INFO | [t=2480] VLA chunk prompt=open top drawer
+2026-09-18 12:38:12,268 | INFO | [t=2490] VLA chunk prompt=open top drawer
+2026-09-18 12:38:12,656 | INFO | [t=2500] VLA chunk prompt=open top drawer
+2026-09-18 12:38:16,013 | INFO | attempt=1 stage_score=0.0 stage_success=False failure_reason=incomplete_stage
+2026-09-18 12:38:16,017 | INFO | Episode 8 seed=108 stage_score=0.0 stage_success=0 goal=0.000 failure_reason=incomplete_stage | 01_Open_Top_Drawer=N | 02_Close_Top_Drawer=N | 03_Open_Middle_Drawer=N | 04_Close_Middle_Drawer=N | 05_Open_Bottom_Drawer=N | 06_Close_Bottom_Drawer=N | 07_Open_Middle_Drawer_Again=N | 08_Put_Butter_Middle_Drawer=N | 09_Close_Middle_Drawer_Final=N
+2026-09-18 12:38:16,019 | INFO | API VLM @t=2435 task=5 subtask=open top drawer keyframes=[]

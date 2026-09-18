@@ -1,0 +1,2227 @@
+{
+  "task_id": 5,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      -1,
+      "open top drawer"
+    ],
+    [
+      0,
+      "open the top drawer"
+    ],
+    [
+      945,
+      "open top drawer"
+    ],
+    [
+      1250,
+      "open the middle drawer"
+    ],
+    [
+      1660,
+      "open the bottom drawer"
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 1906,
+      "event_type": "stall",
+      "subtask": "open middle drawer",
+      "stage_name": "04_Close_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 775,
+      "event_type": "subtask",
+      "subtask": "close middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1580,
+      "event_type": "subtask",
+      "subtask": "open middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 350,
+      "event_type": "subtask",
+      "subtask": "grasp top drawer handle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 670,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": -1,
+      "event_type": "retry",
+      "subtask": "",
+      "stage_name": null,
+      "metadata": {
+        "attempt_idx": 1,
+        "reason": "stage_checkpoint_retry"
+      }
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 93,
+      "event_type": "stage_complete",
+      "subtask": "open top drawer",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 173,
+      "event_type": "stall",
+      "subtask": "open top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 70,
+      "event_type": "subtask",
+      "subtask": "close top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 649,
+      "event_type": "stage_complete",
+      "subtask": "open top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 729,
+      "event_type": "stall",
+      "subtask": "open top drawer",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 240,
+      "event_type": "subtask",
+      "subtask": "close the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1000,
+      "event_type": "subtask",
+      "subtask": "open the middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1410,
+      "event_type": "subtask",
+      "subtask": "open the bottom drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 113,
+      "event_type": "stage_complete",
+      "subtask": "open top drawer",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 193,
+      "event_type": "stall",
+      "subtask": "open top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "close top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 221,
+      "event_type": "stage_complete",
+      "subtask": "close top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 301,
+      "event_type": "stall",
+      "subtask": "close top drawer",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 180,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1259,
+      "event_type": "stage_complete",
+      "subtask": "open the top drawer",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 1339,
+      "event_type": "stall",
+      "subtask": "open the top drawer",
+      "stage_name": "04_Close_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 180,
+      "event_type": "subtask",
+      "subtask": "close middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 885,
+      "event_type": "subtask",
+      "subtask": "close the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2071,
+      "event_type": "stage_complete",
+      "subtask": "close the top drawer",
+      "stage_name": "04_Close_Middle_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 2151,
+      "event_type": "stall",
+      "subtask": "close the top drawer",
+      "stage_name": "05_Open_Bottom_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 885,
+      "event_type": "subtask",
+      "subtask": "open bottom drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": -1,
+      "event_type": "retry",
+      "subtask": "",
+      "stage_name": null,
+      "metadata": {
+        "attempt_idx": 1,
+        "reason": "stage_checkpoint_retry"
+      }
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 187,
+      "event_type": "stage_complete",
+      "subtask": "open top drawer",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 267,
+      "event_type": "stall",
+      "subtask": "open top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 70,
+      "event_type": "subtask",
+      "subtask": "close top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 543,
+      "event_type": "stage_complete",
+      "subtask": "close top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 623,
+      "event_type": "stall",
+      "subtask": "open the top drawer",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 540,
+      "event_type": "subtask",
+      "subtask": "open the middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 535,
+      "event_type": "stage_complete",
+      "subtask": "open the top drawer",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 581,
+      "event_type": "stage_complete",
+      "subtask": "open the top drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 661,
+      "event_type": "stall",
+      "subtask": "open the top drawer",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 250,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1320,
+      "event_type": "subtask",
+      "subtask": "open the middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": -1,
+      "event_type": "retry",
+      "subtask": "",
+      "stage_name": null,
+      "metadata": {
+        "attempt_idx": 1,
+        "reason": "stage_checkpoint_retry"
+      }
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 945,
+      "event_type": "subtask",
+      "subtask": "open top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1250,
+      "event_type": "subtask",
+      "subtask": "open the middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1660,
+      "event_type": "subtask",
+      "subtask": "open the bottom drawer",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 805,
+      "action": "subtask_update",
+      "instruction": "open the middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1255,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1550,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 118,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 198,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 198,
+      "action": "subtask_override",
+      "instruction": "close top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Close_Top_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "close top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 236,
+      "action": "stage_complete",
+      "instruction": "close top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 316,
+      "action": "stall",
+      "instruction": "close top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 316,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1460,
+      "action": "stage_complete",
+      "instruction": "open the top drawer",
+      "outcome": "success",
+      "notes": "03_Open_Middle_Drawer"
+    },
+    {
+      "step": 1540,
+      "action": "stall",
+      "instruction": "open the top drawer",
+      "outcome": "stalled",
+      "notes": "04_Close_Middle_Drawer:80"
+    },
+    {
+      "step": 1540,
+      "action": "subtask_override",
+      "instruction": "close middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:04_Close_Middle_Drawer"
+    },
+    {
+      "step": 490,
+      "action": "subtask_update",
+      "instruction": "close middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1360,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 105,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 155,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 235,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 235,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1095,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 236,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 316,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 316,
+      "action": "subtask_override",
+      "instruction": "close top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Close_Top_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "close top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 385,
+      "action": "stage_complete",
+      "instruction": "close top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 465,
+      "action": "stall",
+      "instruction": "close top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 465,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 775,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1826,
+      "action": "stage_complete",
+      "instruction": "open middle drawer",
+      "outcome": "success",
+      "notes": "03_Open_Middle_Drawer"
+    },
+    {
+      "step": 1906,
+      "action": "stall",
+      "instruction": "open middle drawer",
+      "outcome": "stalled",
+      "notes": "04_Close_Middle_Drawer:80"
+    },
+    {
+      "step": 1906,
+      "action": "subtask_override",
+      "instruction": "close middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:04_Close_Middle_Drawer"
+    },
+    {
+      "step": 775,
+      "action": "subtask_update",
+      "instruction": "close middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1580,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 350,
+      "action": "subtask_update",
+      "instruction": "grasp top drawer handle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 670,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 93,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 173,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 173,
+      "action": "subtask_override",
+      "instruction": "close top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Close_Top_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "close top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 649,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 729,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 729,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 240,
+      "action": "subtask_update",
+      "instruction": "close the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1000,
+      "action": "subtask_update",
+      "instruction": "open the middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1410,
+      "action": "subtask_update",
+      "instruction": "open the bottom drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 113,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 193,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 193,
+      "action": "subtask_override",
+      "instruction": "close top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Close_Top_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "close top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 221,
+      "action": "stage_complete",
+      "instruction": "close top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 301,
+      "action": "stall",
+      "instruction": "close top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 301,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 180,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1259,
+      "action": "stage_complete",
+      "instruction": "open the top drawer",
+      "outcome": "success",
+      "notes": "03_Open_Middle_Drawer"
+    },
+    {
+      "step": 1339,
+      "action": "stall",
+      "instruction": "open the top drawer",
+      "outcome": "stalled",
+      "notes": "04_Close_Middle_Drawer:80"
+    },
+    {
+      "step": 1339,
+      "action": "subtask_override",
+      "instruction": "close middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:04_Close_Middle_Drawer"
+    },
+    {
+      "step": 180,
+      "action": "subtask_update",
+      "instruction": "close middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 885,
+      "action": "subtask_update",
+      "instruction": "close the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2071,
+      "action": "stage_complete",
+      "instruction": "close the top drawer",
+      "outcome": "success",
+      "notes": "04_Close_Middle_Drawer"
+    },
+    {
+      "step": 2151,
+      "action": "stall",
+      "instruction": "close the top drawer",
+      "outcome": "stalled",
+      "notes": "05_Open_Bottom_Drawer:80"
+    },
+    {
+      "step": 2151,
+      "action": "subtask_override",
+      "instruction": "open bottom drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:05_Open_Bottom_Drawer"
+    },
+    {
+      "step": 885,
+      "action": "subtask_update",
+      "instruction": "open bottom drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 187,
+      "action": "stage_complete",
+      "instruction": "open top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 267,
+      "action": "stall",
+      "instruction": "open top drawer",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 267,
+      "action": "subtask_override",
+      "instruction": "close top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Close_Top_Drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask_update",
+      "instruction": "close top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 543,
+      "action": "stage_complete",
+      "instruction": "close top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 623,
+      "action": "stall",
+      "instruction": "open the top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 623,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 540,
+      "action": "subtask_update",
+      "instruction": "open the middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 535,
+      "action": "stage_complete",
+      "instruction": "open the top drawer",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 581,
+      "action": "stage_complete",
+      "instruction": "open the top drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 661,
+      "action": "stall",
+      "instruction": "open the top drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 661,
+      "action": "subtask_override",
+      "instruction": "open middle drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Open_Middle_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 250,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1320,
+      "action": "subtask_update",
+      "instruction": "open the middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open top drawer",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Top_Drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 945,
+      "action": "subtask_update",
+      "instruction": "open top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1250,
+      "action": "subtask_update",
+      "instruction": "open the middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1660,
+      "action": "subtask_update",
+      "instruction": "open the bottom drawer",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 400,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 980,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 836,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 970,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 270,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 270,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 980,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1580,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 355,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1130,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 139,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 182,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1015,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 1290,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1835,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": 2469,
+      "action": "stage_complete",
+      "stage": "03_Open_Middle_Drawer",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1015,
+      "action": "subtask",
+      "prompt": "put butter into middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 300,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1070,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 290,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 700,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1295,
+      "action": "subtask",
+      "prompt": "open the bottom drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 487,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 647,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 285,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1055,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1445,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 805,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": 1255,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1550,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 118,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 236,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1460,
+      "action": "stage_complete",
+      "stage": "03_Open_Middle_Drawer",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 490,
+      "action": "subtask",
+      "prompt": "close middle drawer"
+    },
+    {
+      "step": 1360,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 105,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 155,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1095,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 236,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 385,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 775,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 1826,
+      "action": "stage_complete",
+      "stage": "03_Open_Middle_Drawer",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 775,
+      "action": "subtask",
+      "prompt": "close middle drawer"
+    },
+    {
+      "step": 1580,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 350,
+      "action": "subtask",
+      "prompt": "grasp top drawer handle"
+    },
+    {
+      "step": 670,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 93,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 649,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 240,
+      "action": "subtask",
+      "prompt": "close the top drawer"
+    },
+    {
+      "step": 1000,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": 1410,
+      "action": "subtask",
+      "prompt": "open the bottom drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 113,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 221,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 180,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1259,
+      "action": "stage_complete",
+      "stage": "03_Open_Middle_Drawer",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 180,
+      "action": "subtask",
+      "prompt": "close middle drawer"
+    },
+    {
+      "step": 885,
+      "action": "subtask",
+      "prompt": "close the top drawer"
+    },
+    {
+      "step": 2071,
+      "action": "stage_complete",
+      "stage": "04_Close_Middle_Drawer",
+      "prompt": "close the top drawer"
+    },
+    {
+      "step": 885,
+      "action": "subtask",
+      "prompt": "open bottom drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 187,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 70,
+      "action": "subtask",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 543,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "close top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 540,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 535,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 581,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open middle drawer"
+    },
+    {
+      "step": 250,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1320,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 945,
+      "action": "subtask",
+      "prompt": "open top drawer"
+    },
+    {
+      "step": 1250,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": 1660,
+      "action": "subtask",
+      "prompt": "open the bottom drawer"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 37.5,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer",
+        "03_Open_Middle_Drawer"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 37.5,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer",
+        "03_Open_Middle_Drawer"
+      ],
+      "stalled_stage": "04_Close_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 37.5,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer",
+        "03_Open_Middle_Drawer"
+      ],
+      "stalled_stage": "04_Close_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 50.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer",
+        "03_Open_Middle_Drawer",
+        "04_Close_Middle_Drawer"
+      ],
+      "stalled_stage": "05_Open_Bottom_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 50.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [
+      "01_Open_Top_Drawer",
+      "02_Close_Top_Drawer",
+      "03_Open_Middle_Drawer",
+      "04_Close_Middle_Drawer"
+    ],
+    "stalled_stage": "05_Open_Bottom_Drawer"
+  }
+}

@@ -1,0 +1,534 @@
+2026-09-18 14:27:21,968 | INFO | task_id=5 bddl=/project/peilab/why/RoboMemArena/bddl/5_butter_middle_drawer.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-18 14:27:23,956 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-18 14:27:24,211 | INFO | [t=10] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:24,487 | INFO | [t=20] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:24,759 | INFO | [t=30] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:25,029 | INFO | [t=40] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:25,300 | INFO | [t=50] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:25,573 | INFO | [t=60] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:25,850 | INFO | [t=70] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:27:26,089 | INFO | [t=80] harness subtask override: open top drawer
+2026-09-18 14:27:26,089 | INFO | [t=80] VLM prompt update from step=-1: open top drawer
+2026-09-18 14:27:26,089 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-18 14:27:26,140 | INFO | [t=80] VLA chunk prompt=open top drawer
+2026-09-18 14:27:26,426 | INFO | [t=90] VLA chunk prompt=open top drawer
+2026-09-18 14:27:26,711 | INFO | [t=100] VLA chunk prompt=open top drawer
+2026-09-18 14:27:27,000 | INFO | [t=110] VLA chunk prompt=open top drawer
+2026-09-18 14:27:27,285 | INFO | [t=120] VLA chunk prompt=open top drawer
+2026-09-18 14:27:27,578 | INFO | [t=130] VLA chunk prompt=open top drawer
+2026-09-18 14:27:27,904 | INFO | [t=140] VLA chunk prompt=open top drawer
+2026-09-18 14:27:28,228 | INFO | [t=150] VLA chunk prompt=open top drawer
+2026-09-18 14:27:28,555 | INFO | [t=160] VLA chunk prompt=open top drawer
+2026-09-18 14:27:28,892 | INFO | [t=170] VLA chunk prompt=open top drawer
+2026-09-18 14:27:29,071 | INFO | [t=176] stage done: 01_Open_Top_Drawer
+2026-09-18 14:27:29,266 | INFO | [t=180] VLA chunk prompt=open top drawer
+2026-09-18 14:27:29,608 | INFO | [t=190] VLA chunk prompt=open top drawer
+2026-09-18 14:27:29,960 | INFO | [t=200] VLA chunk prompt=open top drawer
+2026-09-18 14:27:30,316 | INFO | [t=210] VLA chunk prompt=open top drawer
+2026-09-18 14:27:30,671 | INFO | [t=220] VLA chunk prompt=open top drawer
+2026-09-18 14:27:30,766 | INFO | [t=223] stage done: 02_Close_Top_Drawer
+2026-09-18 14:27:31,038 | INFO | [t=230] VLA chunk prompt=open top drawer
+2026-09-18 14:27:31,405 | INFO | [t=240] VLA chunk prompt=open top drawer
+2026-09-18 14:27:31,783 | INFO | [t=250] VLA chunk prompt=open top drawer
+2026-09-18 14:27:32,152 | INFO | [t=260] VLA chunk prompt=open top drawer
+2026-09-18 14:27:32,523 | INFO | [t=270] VLA chunk prompt=open top drawer
+2026-09-18 14:27:32,894 | INFO | [t=280] VLA chunk prompt=open top drawer
+2026-09-18 14:27:33,265 | INFO | [t=290] VLA chunk prompt=open top drawer
+2026-09-18 14:27:33,639 | INFO | [t=300] VLA chunk prompt=open top drawer
+2026-09-18 14:27:33,956 | INFO | [t=310] harness subtask override: open middle drawer
+2026-09-18 14:27:33,956 | INFO | [t=310] VLM prompt update from step=70: open middle drawer
+2026-09-18 14:27:33,957 | INFO | [t=310] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-18 14:27:34,007 | INFO | [t=310] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:34,369 | INFO | [t=320] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:34,731 | INFO | [t=330] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:35,091 | INFO | [t=340] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:35,453 | INFO | [t=350] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:35,821 | INFO | [t=360] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:36,188 | INFO | [t=370] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:36,556 | INFO | [t=380] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:36,927 | INFO | [t=390] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:37,303 | INFO | [t=400] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:37,683 | INFO | [t=410] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:38,059 | INFO | [t=420] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:38,447 | INFO | [t=430] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:38,827 | INFO | [t=440] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:39,209 | INFO | [t=450] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:39,581 | INFO | [t=460] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:39,957 | INFO | [t=470] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:40,337 | INFO | [t=480] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:40,724 | INFO | [t=490] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:41,107 | INFO | [t=500] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:41,485 | INFO | [t=510] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:41,861 | INFO | [t=520] VLA chunk prompt=open middle drawer
+2026-09-18 14:27:42,139 | INFO | API VLM @t=0 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 14:27:42,184 | INFO | [t=530] VLM prompt update from step=0: open top drawer
+2026-09-18 14:27:42,235 | INFO | [t=530] VLA chunk prompt=open top drawer
+2026-09-18 14:27:42,616 | INFO | [t=540] VLA chunk prompt=open top drawer
+2026-09-18 14:27:42,991 | INFO | [t=550] VLA chunk prompt=open top drawer
+2026-09-18 14:27:43,217 | INFO | API VLM @t=2480 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 14:27:43,373 | INFO | [t=560] VLA chunk prompt=open top drawer
+2026-09-18 14:27:43,751 | INFO | [t=570] VLA chunk prompt=open top drawer
+2026-09-18 14:27:44,129 | INFO | [t=580] VLA chunk prompt=open top drawer
+2026-09-18 14:27:44,514 | INFO | [t=590] VLA chunk prompt=open top drawer
+2026-09-18 14:27:44,897 | INFO | [t=600] VLA chunk prompt=open top drawer
+2026-09-18 14:27:45,284 | INFO | [t=610] VLA chunk prompt=open top drawer
+2026-09-18 14:27:45,664 | INFO | [t=620] VLA chunk prompt=open top drawer
+2026-09-18 14:27:46,043 | INFO | [t=630] VLA chunk prompt=open top drawer
+2026-09-18 14:27:46,418 | INFO | [t=640] VLA chunk prompt=open top drawer
+2026-09-18 14:27:46,786 | INFO | [t=650] VLA chunk prompt=open top drawer
+2026-09-18 14:27:47,150 | INFO | [t=660] VLA chunk prompt=open top drawer
+2026-09-18 14:27:47,517 | INFO | [t=670] VLA chunk prompt=open top drawer
+2026-09-18 14:27:47,880 | INFO | [t=680] VLA chunk prompt=open top drawer
+2026-09-18 14:27:48,242 | INFO | [t=690] VLA chunk prompt=open top drawer
+2026-09-18 14:27:48,597 | INFO | [t=700] VLA chunk prompt=open top drawer
+2026-09-18 14:27:48,952 | INFO | [t=710] VLA chunk prompt=open top drawer
+2026-09-18 14:27:49,306 | INFO | [t=720] VLA chunk prompt=open top drawer
+2026-09-18 14:27:49,658 | INFO | [t=730] VLA chunk prompt=open top drawer
+2026-09-18 14:27:50,016 | INFO | [t=740] VLA chunk prompt=open top drawer
+2026-09-18 14:27:50,379 | INFO | [t=750] VLA chunk prompt=open top drawer
+2026-09-18 14:27:50,748 | INFO | [t=760] VLA chunk prompt=open top drawer
+2026-09-18 14:27:51,129 | INFO | [t=770] VLA chunk prompt=open top drawer
+2026-09-18 14:27:51,525 | INFO | [t=780] VLA chunk prompt=open top drawer
+2026-09-18 14:27:51,906 | INFO | [t=790] VLA chunk prompt=open top drawer
+2026-09-18 14:27:52,298 | INFO | [t=800] VLA chunk prompt=open top drawer
+2026-09-18 14:27:52,684 | INFO | [t=810] VLA chunk prompt=open top drawer
+2026-09-18 14:27:53,066 | INFO | [t=820] VLA chunk prompt=open top drawer
+2026-09-18 14:27:53,438 | INFO | [t=830] VLA chunk prompt=open top drawer
+2026-09-18 14:27:53,808 | INFO | [t=840] VLA chunk prompt=open top drawer
+2026-09-18 14:27:54,172 | INFO | [t=850] VLA chunk prompt=open top drawer
+2026-09-18 14:27:54,536 | INFO | [t=860] VLA chunk prompt=open top drawer
+2026-09-18 14:27:54,898 | INFO | [t=870] VLA chunk prompt=open top drawer
+2026-09-18 14:27:55,263 | INFO | [t=880] VLA chunk prompt=open top drawer
+2026-09-18 14:27:55,629 | INFO | [t=890] VLA chunk prompt=open top drawer
+2026-09-18 14:27:55,995 | INFO | [t=900] VLA chunk prompt=open top drawer
+2026-09-18 14:27:56,361 | INFO | [t=910] VLA chunk prompt=open top drawer
+2026-09-18 14:27:56,728 | INFO | [t=920] VLA chunk prompt=open top drawer
+2026-09-18 14:27:57,104 | INFO | [t=930] VLA chunk prompt=open top drawer
+2026-09-18 14:27:57,488 | INFO | [t=940] VLA chunk prompt=open top drawer
+2026-09-18 14:27:57,874 | INFO | [t=950] VLA chunk prompt=open top drawer
+2026-09-18 14:27:58,249 | INFO | [t=960] VLA chunk prompt=open top drawer
+2026-09-18 14:27:58,635 | INFO | [t=970] VLA chunk prompt=open top drawer
+2026-09-18 14:27:59,005 | INFO | [t=980] VLA chunk prompt=open top drawer
+2026-09-18 14:27:59,377 | INFO | [t=990] VLA chunk prompt=open top drawer
+2026-09-18 14:27:59,757 | INFO | [t=1000] VLA chunk prompt=open top drawer
+2026-09-18 14:28:00,146 | INFO | [t=1010] VLA chunk prompt=open top drawer
+2026-09-18 14:28:00,527 | INFO | [t=1020] VLA chunk prompt=open top drawer
+2026-09-18 14:28:00,920 | INFO | [t=1030] VLA chunk prompt=open top drawer
+2026-09-18 14:28:01,304 | INFO | [t=1040] VLA chunk prompt=open top drawer
+2026-09-18 14:28:01,686 | INFO | [t=1050] VLA chunk prompt=open top drawer
+2026-09-18 14:28:02,065 | INFO | [t=1060] VLA chunk prompt=open top drawer
+2026-09-18 14:28:02,444 | INFO | [t=1070] VLA chunk prompt=open top drawer
+2026-09-18 14:28:02,824 | INFO | [t=1080] VLA chunk prompt=open top drawer
+2026-09-18 14:28:03,203 | INFO | [t=1090] VLA chunk prompt=open top drawer
+2026-09-18 14:28:03,584 | INFO | [t=1100] VLA chunk prompt=open top drawer
+2026-09-18 14:28:03,970 | INFO | [t=1110] VLA chunk prompt=open top drawer
+2026-09-18 14:28:04,361 | INFO | [t=1120] VLA chunk prompt=open top drawer
+2026-09-18 14:28:04,754 | INFO | [t=1130] VLA chunk prompt=open top drawer
+2026-09-18 14:28:05,143 | INFO | [t=1140] VLA chunk prompt=open top drawer
+2026-09-18 14:28:05,527 | INFO | [t=1150] VLA chunk prompt=open top drawer
+2026-09-18 14:28:05,910 | INFO | [t=1160] VLA chunk prompt=open top drawer
+2026-09-18 14:28:06,293 | INFO | [t=1170] VLA chunk prompt=open top drawer
+2026-09-18 14:28:06,678 | INFO | [t=1180] VLA chunk prompt=open top drawer
+2026-09-18 14:28:07,064 | INFO | [t=1190] VLA chunk prompt=open top drawer
+2026-09-18 14:28:07,448 | INFO | [t=1200] VLA chunk prompt=open top drawer
+2026-09-18 14:28:07,832 | INFO | [t=1210] VLA chunk prompt=open top drawer
+2026-09-18 14:28:08,216 | INFO | [t=1220] VLA chunk prompt=open top drawer
+2026-09-18 14:28:08,600 | INFO | [t=1230] VLA chunk prompt=open top drawer
+2026-09-18 14:28:08,984 | INFO | [t=1240] VLA chunk prompt=open top drawer
+2026-09-18 14:28:09,373 | INFO | [t=1250] VLA chunk prompt=open top drawer
+2026-09-18 14:28:09,762 | INFO | [t=1260] VLA chunk prompt=open top drawer
+2026-09-18 14:28:10,154 | INFO | [t=1270] VLA chunk prompt=open top drawer
+2026-09-18 14:28:10,541 | INFO | [t=1280] VLA chunk prompt=open top drawer
+2026-09-18 14:28:10,924 | INFO | [t=1290] VLA chunk prompt=open top drawer
+2026-09-18 14:28:11,308 | INFO | [t=1300] VLA chunk prompt=open top drawer
+2026-09-18 14:28:11,692 | INFO | [t=1310] VLA chunk prompt=open top drawer
+2026-09-18 14:28:12,076 | INFO | [t=1320] VLA chunk prompt=open top drawer
+2026-09-18 14:28:12,464 | INFO | [t=1330] VLA chunk prompt=open top drawer
+2026-09-18 14:28:12,851 | INFO | [t=1340] VLA chunk prompt=open top drawer
+2026-09-18 14:28:13,243 | INFO | [t=1350] VLA chunk prompt=open top drawer
+2026-09-18 14:28:13,628 | INFO | [t=1360] VLA chunk prompt=open top drawer
+2026-09-18 14:28:14,015 | INFO | [t=1370] VLA chunk prompt=open top drawer
+2026-09-18 14:28:14,402 | INFO | [t=1380] VLA chunk prompt=open top drawer
+2026-09-18 14:28:14,786 | INFO | [t=1390] VLA chunk prompt=open top drawer
+2026-09-18 14:28:15,171 | INFO | [t=1400] VLA chunk prompt=open top drawer
+2026-09-18 14:28:15,544 | INFO | [t=1410] VLA chunk prompt=open top drawer
+2026-09-18 14:28:15,917 | INFO | [t=1420] VLA chunk prompt=open top drawer
+2026-09-18 14:28:16,285 | INFO | [t=1430] VLA chunk prompt=open top drawer
+2026-09-18 14:28:16,653 | INFO | [t=1440] VLA chunk prompt=open top drawer
+2026-09-18 14:28:17,018 | INFO | [t=1450] VLA chunk prompt=open top drawer
+2026-09-18 14:28:17,383 | INFO | [t=1460] VLA chunk prompt=open top drawer
+2026-09-18 14:28:17,750 | INFO | [t=1470] VLA chunk prompt=open top drawer
+2026-09-18 14:28:18,124 | INFO | [t=1480] VLA chunk prompt=open top drawer
+2026-09-18 14:28:18,497 | INFO | [t=1490] VLA chunk prompt=open top drawer
+2026-09-18 14:28:18,870 | INFO | [t=1500] VLA chunk prompt=open top drawer
+2026-09-18 14:28:19,252 | INFO | [t=1510] VLA chunk prompt=open top drawer
+2026-09-18 14:28:19,632 | INFO | [t=1520] VLA chunk prompt=open top drawer
+2026-09-18 14:28:20,012 | INFO | [t=1530] VLA chunk prompt=open top drawer
+2026-09-18 14:28:20,388 | INFO | [t=1540] VLA chunk prompt=open top drawer
+2026-09-18 14:28:20,765 | INFO | [t=1550] VLA chunk prompt=open top drawer
+2026-09-18 14:28:21,141 | INFO | [t=1560] VLA chunk prompt=open top drawer
+2026-09-18 14:28:21,515 | INFO | [t=1570] VLA chunk prompt=open top drawer
+2026-09-18 14:28:21,882 | INFO | [t=1580] VLA chunk prompt=open top drawer
+2026-09-18 14:28:22,246 | INFO | [t=1590] VLA chunk prompt=open top drawer
+2026-09-18 14:28:22,605 | INFO | [t=1600] VLA chunk prompt=open top drawer
+2026-09-18 14:28:22,965 | INFO | [t=1610] VLA chunk prompt=open top drawer
+2026-09-18 14:28:23,325 | INFO | [t=1620] VLA chunk prompt=open top drawer
+2026-09-18 14:28:23,686 | INFO | [t=1630] VLA chunk prompt=open top drawer
+2026-09-18 14:28:24,050 | INFO | [t=1640] VLA chunk prompt=open top drawer
+2026-09-18 14:28:24,412 | INFO | [t=1650] VLA chunk prompt=open top drawer
+2026-09-18 14:28:24,768 | INFO | [t=1660] VLA chunk prompt=open top drawer
+2026-09-18 14:28:25,124 | INFO | [t=1670] VLA chunk prompt=open top drawer
+2026-09-18 14:28:25,479 | INFO | [t=1680] VLA chunk prompt=open top drawer
+2026-09-18 14:28:25,691 | INFO | API VLM @t=515 task=5 subtask=open the top drawer keyframes=[]
+2026-09-18 14:28:25,782 | INFO | [t=1690] VLM prompt update from step=515: open the top drawer
+2026-09-18 14:28:25,832 | INFO | [t=1690] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:26,185 | INFO | [t=1700] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:26,542 | INFO | [t=1710] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:26,902 | INFO | [t=1720] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:27,256 | INFO | [t=1730] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:27,609 | INFO | [t=1740] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:27,962 | INFO | [t=1750] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:28,315 | INFO | [t=1760] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:28,672 | INFO | [t=1770] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:29,035 | INFO | [t=1780] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:29,416 | INFO | [t=1790] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:29,792 | INFO | [t=1800] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:30,167 | INFO | [t=1810] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:30,548 | INFO | [t=1820] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:30,932 | INFO | [t=1830] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:31,313 | INFO | [t=1840] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:31,694 | INFO | [t=1850] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:32,073 | INFO | [t=1860] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:32,455 | INFO | [t=1870] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:32,830 | INFO | [t=1880] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:33,212 | INFO | [t=1890] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:33,594 | INFO | [t=1900] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:33,973 | INFO | [t=1910] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:34,349 | INFO | [t=1920] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:34,721 | INFO | [t=1930] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:35,097 | INFO | [t=1940] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:35,481 | INFO | [t=1950] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:35,866 | INFO | [t=1960] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:36,254 | INFO | [t=1970] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:36,634 | INFO | [t=1980] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:37,012 | INFO | [t=1990] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:37,391 | INFO | [t=2000] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:37,766 | INFO | [t=2010] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:38,138 | INFO | [t=2020] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:38,510 | INFO | [t=2030] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:38,885 | INFO | [t=2040] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:39,261 | INFO | [t=2050] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:39,630 | INFO | [t=2060] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:40,003 | INFO | [t=2070] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:40,385 | INFO | [t=2080] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:40,765 | INFO | [t=2090] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:41,144 | INFO | [t=2100] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:41,525 | INFO | [t=2110] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:41,903 | INFO | [t=2120] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:42,278 | INFO | [t=2130] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:42,646 | INFO | [t=2140] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:43,010 | INFO | [t=2150] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:43,368 | INFO | [t=2160] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:43,725 | INFO | [t=2170] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:44,085 | INFO | [t=2180] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:44,442 | INFO | [t=2190] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:44,799 | INFO | [t=2200] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:45,164 | INFO | [t=2210] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:45,532 | INFO | [t=2220] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:45,904 | INFO | [t=2230] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:46,272 | INFO | [t=2240] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:46,635 | INFO | [t=2250] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:46,997 | INFO | [t=2260] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:47,361 | INFO | [t=2270] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:47,727 | INFO | [t=2280] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:48,093 | INFO | [t=2290] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:48,467 | INFO | [t=2300] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:48,842 | INFO | [t=2310] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:49,210 | INFO | [t=2320] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:49,573 | INFO | [t=2330] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:49,936 | INFO | [t=2340] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:50,299 | INFO | [t=2350] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:50,662 | INFO | [t=2360] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:51,029 | INFO | [t=2370] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:51,403 | INFO | [t=2380] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:51,780 | INFO | [t=2390] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:52,164 | INFO | [t=2400] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:52,545 | INFO | [t=2410] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:52,927 | INFO | [t=2420] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:53,303 | INFO | [t=2430] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:53,677 | INFO | [t=2440] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:54,044 | INFO | [t=2450] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:54,407 | INFO | [t=2460] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:54,767 | INFO | [t=2470] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:55,127 | INFO | [t=2480] VLA chunk prompt=open the top drawer
+2026-09-18 14:28:55,389 | INFO | API VLM @t=1675 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 14:28:55,441 | INFO | [t=2490] VLM prompt update from step=1675: open top drawer
+2026-09-18 14:28:55,491 | INFO | [t=2490] VLA chunk prompt=open top drawer
+2026-09-18 14:28:55,857 | INFO | [t=2500] VLA chunk prompt=open top drawer
+2026-09-18 14:28:59,192 | INFO | attempt=0 stage_score=25.0 stage_success=False failure_reason=incomplete_stage
+2026-09-18 14:29:01,139 | INFO | harness release_gripper after env.reset (attempt=1)
+2026-09-18 14:29:01,139 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-18 14:29:01,395 | INFO | [t=10] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:01,671 | INFO | [t=20] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:01,946 | INFO | [t=30] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:02,217 | INFO | [t=40] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:02,489 | INFO | [t=50] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:02,761 | INFO | [t=60] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:03,033 | INFO | [t=70] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-18 14:29:03,255 | INFO | [t=80] harness subtask override: open top drawer
+2026-09-18 14:29:03,256 | INFO | [t=80] VLM prompt update from step=-1: open top drawer
+2026-09-18 14:29:03,256 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-18 14:29:03,306 | INFO | [t=80] VLA chunk prompt=open top drawer
+2026-09-18 14:29:03,577 | INFO | [t=90] VLA chunk prompt=open top drawer
+2026-09-18 14:29:03,849 | INFO | [t=100] VLA chunk prompt=open top drawer
+2026-09-18 14:29:04,124 | INFO | [t=110] VLA chunk prompt=open top drawer
+2026-09-18 14:29:04,403 | INFO | [t=120] VLA chunk prompt=open top drawer
+2026-09-18 14:29:04,558 | INFO | [t=126] stage done: 01_Open_Top_Drawer
+2026-09-18 14:29:04,713 | INFO | [t=130] VLA chunk prompt=open top drawer
+2026-09-18 14:29:05,026 | INFO | [t=140] VLA chunk prompt=open top drawer
+2026-09-18 14:29:05,300 | INFO | [t=150] stage done: 02_Close_Top_Drawer
+2026-09-18 14:29:05,350 | INFO | [t=150] VLA chunk prompt=open top drawer
+2026-09-18 14:29:05,682 | INFO | [t=160] VLA chunk prompt=open top drawer
+2026-09-18 14:29:06,019 | INFO | [t=170] VLA chunk prompt=open top drawer
+2026-09-18 14:29:06,357 | INFO | [t=180] VLA chunk prompt=open top drawer
+2026-09-18 14:29:06,698 | INFO | [t=190] VLA chunk prompt=open top drawer
+2026-09-18 14:29:07,043 | INFO | [t=200] VLA chunk prompt=open top drawer
+2026-09-18 14:29:07,391 | INFO | [t=210] VLA chunk prompt=open top drawer
+2026-09-18 14:29:07,746 | INFO | [t=220] VLA chunk prompt=open top drawer
+2026-09-18 14:29:08,058 | INFO | [t=230] harness subtask override: open middle drawer
+2026-09-18 14:29:08,058 | INFO | [t=230] VLM prompt update from step=70: open middle drawer
+2026-09-18 14:29:08,059 | INFO | [t=230] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-18 14:29:08,109 | INFO | [t=230] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:08,477 | INFO | [t=240] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:08,849 | INFO | [t=250] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:09,230 | INFO | [t=260] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:09,603 | INFO | [t=270] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:09,981 | INFO | [t=280] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:10,364 | INFO | [t=290] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:10,746 | INFO | [t=300] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:11,132 | INFO | [t=310] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:11,515 | INFO | [t=320] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:11,898 | INFO | [t=330] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:12,282 | INFO | [t=340] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:12,661 | INFO | [t=350] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:13,045 | INFO | [t=360] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:13,423 | INFO | [t=370] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:13,801 | INFO | [t=380] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:14,182 | INFO | [t=390] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:14,571 | INFO | [t=400] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:14,959 | INFO | [t=410] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:15,355 | INFO | [t=420] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:15,749 | INFO | [t=430] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:16,137 | INFO | [t=440] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:16,518 | INFO | [t=450] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:16,901 | INFO | [t=460] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:17,282 | INFO | [t=470] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:17,663 | INFO | [t=480] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:18,044 | INFO | [t=490] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:18,428 | INFO | [t=500] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:18,812 | INFO | [t=510] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:19,192 | INFO | [t=520] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:19,571 | INFO | [t=530] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:19,951 | INFO | [t=540] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:20,330 | INFO | [t=550] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:20,709 | INFO | [t=560] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:21,095 | INFO | [t=570] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:21,480 | INFO | [t=580] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:21,869 | INFO | [t=590] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:22,257 | INFO | [t=600] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:22,644 | INFO | [t=610] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:23,029 | INFO | [t=620] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:23,414 | INFO | [t=630] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:23,801 | INFO | [t=640] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:24,185 | INFO | [t=650] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:24,569 | INFO | [t=660] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:24,955 | INFO | [t=670] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:25,339 | INFO | [t=680] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:25,722 | INFO | [t=690] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:26,105 | INFO | [t=700] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:26,492 | INFO | [t=710] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:26,876 | INFO | [t=720] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:27,261 | INFO | [t=730] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:27,646 | INFO | [t=740] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:28,031 | INFO | [t=750] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:28,417 | INFO | [t=760] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:28,801 | INFO | [t=770] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:29,189 | INFO | [t=780] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:29,578 | INFO | [t=790] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:29,968 | INFO | [t=800] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:30,361 | INFO | [t=810] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:30,753 | INFO | [t=820] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:31,142 | INFO | [t=830] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:31,528 | INFO | [t=840] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:31,910 | INFO | [t=850] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:32,291 | INFO | [t=860] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:32,671 | INFO | [t=870] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:33,051 | INFO | [t=880] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:33,430 | INFO | [t=890] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:33,810 | INFO | [t=900] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:34,189 | INFO | [t=910] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:34,568 | INFO | [t=920] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:34,949 | INFO | [t=930] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:35,329 | INFO | [t=940] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:35,714 | INFO | [t=950] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:36,098 | INFO | [t=960] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:36,482 | INFO | [t=970] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:36,866 | INFO | [t=980] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:37,251 | INFO | [t=990] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:37,637 | INFO | [t=1000] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:38,022 | INFO | [t=1010] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:38,406 | INFO | [t=1020] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:38,788 | INFO | [t=1030] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:39,169 | INFO | [t=1040] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:39,553 | INFO | [t=1050] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:39,793 | INFO | API VLM @t=2475 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 14:29:39,942 | INFO | [t=1060] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:40,327 | INFO | [t=1070] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:40,711 | INFO | [t=1080] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:41,093 | INFO | [t=1090] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:41,477 | INFO | [t=1100] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:41,855 | INFO | [t=1110] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:42,225 | INFO | [t=1120] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:42,594 | INFO | [t=1130] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:42,961 | INFO | [t=1140] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:43,329 | INFO | [t=1150] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:43,694 | INFO | [t=1160] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:44,061 | INFO | [t=1170] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:44,433 | INFO | [t=1180] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:44,805 | INFO | [t=1190] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:45,174 | INFO | [t=1200] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:45,544 | INFO | [t=1210] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:45,911 | INFO | [t=1220] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:46,272 | INFO | [t=1230] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:46,625 | INFO | [t=1240] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:46,980 | INFO | [t=1250] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:47,339 | INFO | [t=1260] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:47,690 | INFO | [t=1270] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:48,042 | INFO | [t=1280] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:48,398 | INFO | [t=1290] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:48,756 | INFO | [t=1300] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:49,116 | INFO | [t=1310] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:49,479 | INFO | [t=1320] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:49,840 | INFO | [t=1330] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:50,192 | INFO | [t=1340] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:50,543 | INFO | [t=1350] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:50,896 | INFO | [t=1360] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:51,247 | INFO | [t=1370] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:51,598 | INFO | [t=1380] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:51,952 | INFO | [t=1390] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:52,307 | INFO | [t=1400] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:52,665 | INFO | [t=1410] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:53,020 | INFO | [t=1420] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:53,373 | INFO | [t=1430] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:53,726 | INFO | [t=1440] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:54,077 | INFO | [t=1450] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:54,428 | INFO | [t=1460] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:54,781 | INFO | [t=1470] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:55,137 | INFO | [t=1480] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:55,495 | INFO | [t=1490] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:55,851 | INFO | [t=1500] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:56,213 | INFO | [t=1510] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:56,568 | INFO | [t=1520] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:56,935 | INFO | [t=1530] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:57,302 | INFO | [t=1540] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:57,667 | INFO | [t=1550] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:58,030 | INFO | [t=1560] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:58,401 | INFO | [t=1570] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:58,767 | INFO | [t=1580] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:59,130 | INFO | [t=1590] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:59,493 | INFO | [t=1600] VLA chunk prompt=open middle drawer
+2026-09-18 14:29:59,847 | INFO | [t=1610] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:00,194 | INFO | [t=1620] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:00,546 | INFO | [t=1630] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:00,905 | INFO | [t=1640] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:01,265 | INFO | [t=1650] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:01,621 | INFO | [t=1660] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:01,976 | INFO | [t=1670] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:02,336 | INFO | [t=1680] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:02,695 | INFO | [t=1690] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:03,057 | INFO | [t=1700] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:03,425 | INFO | [t=1710] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:03,789 | INFO | [t=1720] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:04,153 | INFO | [t=1730] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:04,511 | INFO | API VLM @t=0 task=5 subtask=open top drawer keyframes=[]
+2026-09-18 14:30:04,520 | INFO | [t=1740] VLA chunk prompt=open middle drawer
+2026-09-18 14:30:04,842 | INFO | [t=1750] VLM prompt update from step=0: open top drawer
+2026-09-18 14:30:04,892 | INFO | [t=1750] VLA chunk prompt=open top drawer
+2026-09-18 14:30:05,266 | INFO | [t=1760] VLA chunk prompt=open top drawer
+2026-09-18 14:30:05,642 | INFO | [t=1770] VLA chunk prompt=open top drawer
+2026-09-18 14:30:06,009 | INFO | [t=1780] VLA chunk prompt=open top drawer
+2026-09-18 14:30:06,369 | INFO | [t=1790] VLA chunk prompt=open top drawer
+2026-09-18 14:30:06,725 | INFO | [t=1800] VLA chunk prompt=open top drawer
+2026-09-18 14:30:07,086 | INFO | [t=1810] VLA chunk prompt=open top drawer
+2026-09-18 14:30:07,444 | INFO | [t=1820] VLA chunk prompt=open top drawer
+2026-09-18 14:30:07,803 | INFO | [t=1830] VLA chunk prompt=open top drawer
+2026-09-18 14:30:08,172 | INFO | [t=1840] VLA chunk prompt=open top drawer
+2026-09-18 14:30:08,552 | INFO | [t=1850] VLA chunk prompt=open top drawer
+2026-09-18 14:30:08,931 | INFO | [t=1860] VLA chunk prompt=open top drawer
+2026-09-18 14:30:09,321 | INFO | [t=1870] VLA chunk prompt=open top drawer
+2026-09-18 14:30:09,714 | INFO | [t=1880] VLA chunk prompt=open top drawer
+2026-09-18 14:30:10,099 | INFO | [t=1890] VLA chunk prompt=open top drawer
+2026-09-18 14:30:10,469 | INFO | [t=1900] VLA chunk prompt=open top drawer
+2026-09-18 14:30:10,833 | INFO | [t=1910] VLA chunk prompt=open top drawer
+2026-09-18 14:30:11,196 | INFO | [t=1920] VLA chunk prompt=open top drawer
+2026-09-18 14:30:11,559 | INFO | [t=1930] VLA chunk prompt=open top drawer
+2026-09-18 14:30:11,922 | INFO | [t=1940] VLA chunk prompt=open top drawer
+2026-09-18 14:30:12,288 | INFO | [t=1950] VLA chunk prompt=open top drawer
+2026-09-18 14:30:12,662 | INFO | [t=1960] VLA chunk prompt=open top drawer
+2026-09-18 14:30:13,042 | INFO | [t=1970] VLA chunk prompt=open top drawer
+2026-09-18 14:30:13,425 | INFO | [t=1980] VLA chunk prompt=open top drawer
+2026-09-18 14:30:13,802 | INFO | [t=1990] VLA chunk prompt=open top drawer
+2026-09-18 14:30:14,178 | INFO | [t=2000] VLA chunk prompt=open top drawer
+2026-09-18 14:30:14,563 | INFO | [t=2010] VLA chunk prompt=open top drawer
+2026-09-18 14:30:14,952 | INFO | [t=2020] VLA chunk prompt=open top drawer
+2026-09-18 14:30:15,339 | INFO | [t=2030] VLA chunk prompt=open top drawer
+2026-09-18 14:30:15,721 | INFO | [t=2040] VLA chunk prompt=open top drawer
+2026-09-18 14:30:16,111 | INFO | [t=2050] VLA chunk prompt=open top drawer
+2026-09-18 14:30:16,494 | INFO | [t=2060] VLA chunk prompt=open top drawer
+2026-09-18 14:30:16,859 | INFO | [t=2070] VLA chunk prompt=open top drawer
+2026-09-18 14:30:17,214 | INFO | [t=2080] VLA chunk prompt=open top drawer
+2026-09-18 14:30:17,568 | INFO | [t=2090] VLA chunk prompt=open top drawer
+2026-09-18 14:30:17,914 | INFO | [t=2100] VLA chunk prompt=open top drawer
+2026-09-18 14:30:18,250 | INFO | [t=2110] VLA chunk prompt=open top drawer
+2026-09-18 14:30:18,597 | INFO | [t=2120] VLA chunk prompt=open top drawer
+2026-09-18 14:30:18,955 | INFO | [t=2130] VLA chunk prompt=open top drawer
+2026-09-18 14:30:19,318 | INFO | [t=2140] VLA chunk prompt=open top drawer
+2026-09-18 14:30:19,686 | INFO | [t=2150] VLA chunk prompt=open top drawer
+2026-09-18 14:30:20,050 | INFO | [t=2160] VLA chunk prompt=open top drawer
+2026-09-18 14:30:20,427 | INFO | [t=2170] VLA chunk prompt=open top drawer
+2026-09-18 14:30:20,789 | INFO | [t=2180] VLA chunk prompt=open top drawer
+2026-09-18 14:30:21,144 | INFO | [t=2190] VLA chunk prompt=open top drawer
+2026-09-18 14:30:21,495 | INFO | [t=2200] VLA chunk prompt=open top drawer
+2026-09-18 14:30:21,853 | INFO | [t=2210] VLA chunk prompt=open top drawer
+2026-09-18 14:30:22,213 | INFO | [t=2220] VLA chunk prompt=open top drawer
+2026-09-18 14:30:22,577 | INFO | [t=2230] VLA chunk prompt=open top drawer
+2026-09-18 14:30:22,939 | INFO | [t=2240] VLA chunk prompt=open top drawer
+2026-09-18 14:30:23,294 | INFO | [t=2250] VLA chunk prompt=open top drawer
+2026-09-18 14:30:23,647 | INFO | [t=2260] VLA chunk prompt=open top drawer
+2026-09-18 14:30:24,003 | INFO | [t=2270] VLA chunk prompt=open top drawer
+2026-09-18 14:30:24,359 | INFO | [t=2280] VLA chunk prompt=open top drawer
+2026-09-18 14:30:24,715 | INFO | [t=2290] VLA chunk prompt=open top drawer
+2026-09-18 14:30:25,068 | INFO | [t=2300] VLA chunk prompt=open top drawer
+2026-09-18 14:30:25,419 | INFO | [t=2310] VLA chunk prompt=open top drawer
+2026-09-18 14:30:25,776 | INFO | [t=2320] VLA chunk prompt=open top drawer
+2026-09-18 14:30:26,131 | INFO | [t=2330] VLA chunk prompt=open top drawer
+2026-09-18 14:30:26,486 | INFO | [t=2340] VLA chunk prompt=open top drawer
+2026-09-18 14:30:26,837 | INFO | [t=2350] VLA chunk prompt=open top drawer
+2026-09-18 14:30:27,190 | INFO | [t=2360] VLA chunk prompt=open top drawer
+2026-09-18 14:30:27,544 | INFO | [t=2370] VLA chunk prompt=open top drawer
+2026-09-18 14:30:27,902 | INFO | [t=2380] VLA chunk prompt=open top drawer
+2026-09-18 14:30:28,261 | INFO | [t=2390] VLA chunk prompt=open top drawer
+2026-09-18 14:30:28,617 | INFO | [t=2400] VLA chunk prompt=open top drawer
+2026-09-18 14:30:28,971 | INFO | [t=2410] VLA chunk prompt=open top drawer
+2026-09-18 14:30:29,331 | INFO | [t=2420] VLA chunk prompt=open top drawer
+2026-09-18 14:30:29,688 | INFO | [t=2430] VLA chunk prompt=open top drawer
+2026-09-18 14:30:30,046 | INFO | [t=2440] VLA chunk prompt=open top drawer
+2026-09-18 14:30:30,409 | INFO | [t=2450] VLA chunk prompt=open top drawer
+2026-09-18 14:30:30,765 | INFO | [t=2460] VLA chunk prompt=open top drawer
+2026-09-18 14:30:31,116 | INFO | [t=2470] VLA chunk prompt=open top drawer
+2026-09-18 14:30:31,470 | INFO | [t=2480] VLA chunk prompt=open top drawer
+2026-09-18 14:30:31,826 | INFO | [t=2490] VLA chunk prompt=open top drawer
+2026-09-18 14:30:32,175 | INFO | [t=2500] VLA chunk prompt=open top drawer
+2026-09-18 14:30:35,505 | INFO | attempt=1 stage_score=25.0 stage_success=False failure_reason=incomplete_stage
+2026-09-18 14:30:35,509 | INFO | Episode 3 seed=103 stage_score=25.0 stage_success=0 goal=0.250 failure_reason=incomplete_stage | 01_Open_Top_Drawer=Y | 02_Close_Top_Drawer=Y | 03_Open_Middle_Drawer=N | 04_Close_Middle_Drawer=N | 05_Open_Bottom_Drawer=N | 06_Close_Bottom_Drawer=N | 07_Open_Middle_Drawer_Again=N | 08_Put_Butter_Middle_Drawer=N | 09_Close_Middle_Drawer_Final=N
+2026-09-18 14:30:36,485 | INFO | API VLM @t=1730 task=5 subtask=open top drawer keyframes=[]

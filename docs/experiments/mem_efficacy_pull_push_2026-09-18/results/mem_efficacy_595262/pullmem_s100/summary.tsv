@@ -1,0 +1,2 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+5	completed		31.2	0.0000	0.3125	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/videos/task5	1966.13

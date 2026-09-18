@@ -1,0 +1,35 @@
+[INFO] PLANNER_BACKEND=api (skip local VLM checkpoint checks)
+[INFO] PLANNER_API_MODEL=gemini-3.8-flash
+[INFO] PLANNER_API_BASE_URL=https://api.closeai-asia.com/v1
+[INFO] PLANNER_API_KEY_LINE=1
+[INFO] OUT_ROOT=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100
+[INFO] TASK_CONFIG=/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/fullvlm_v2_26_memory_tasks.json
+[INFO] VLM_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+[INFO] VLA_CONFIG=pi05_robomemarena
+[INFO] VLA_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask
+[INFO] NORM_STATS_PATH=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets/policy_assets/norm_stats.json
+[INFO] PrediMem revision=e645741c2f34f27e1596bfa89e856d6f3560ed90
+[INFO] TASKS_JSON=[5]
+[INFO] starting VLA server on port 45262
+[INFO] VLA server ready at try 12
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /project/peilab/why/RoboMemArena/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+2026-09-18 14:17:19,635 | INFO | Harness v2: max_retries=2 stall_steps=80 vlm_context=False vla_hints=False api_planner=False smart_retry=True skip_score=95.0
+2026-09-18 14:17:19,642 | INFO | Waiting for server at ws://127.0.0.1:45262...
+2026-09-18 14:17:19,645 | INFO | Planner backend=api model=gemini-3.8-flash base_url=https://api.closeai-asia.com/v1
+2026-09-18 14:17:19,646 | INFO | PACT disabled (PACT_REWIND unset)
+task5:   0%|          | 0/10 [00:00<?, ?it/s]task5:  10%|█         | 1/10 [03:30<31:31, 210.14s/it]task5:  20%|██        | 2/10 [06:43<26:41, 200.16s/it]task5:  30%|███       | 3/10 [09:59<23:09, 198.48s/it]task5:  40%|████      | 4/10 [13:15<19:43, 197.23s/it]task5:  50%|█████     | 5/10 [16:27<16:17, 195.56s/it]task5:  60%|██████    | 6/10 [19:41<13:00, 195.06s/it]task5:  70%|███████   | 7/10 [22:56<09:44, 194.79s/it]task5:  80%|████████  | 8/10 [26:07<06:27, 193.66s/it]2026-09-18 14:46:44,335 | WARNING | API chat completion failed: Expecting value: line 1 column 1 (char 0)
+task5:  90%|█████████ | 9/10 [29:28<03:16, 196.14s/it]task5: 100%|██████████| 10/10 [32:43<00:00, 195.64s/it]task5: 100%|██████████| 10/10 [32:43<00:00, 196.34s/it]
+2026-09-18 14:50:05,792 | INFO | task=5 status=completed stage_score=31.2 stage_success=0.000 goal=0.3125
+2026-09-18 14:50:05,796 | INFO | done aggregate={'macro_stage_score_pct': 31.25, 'macro_stage_success_rate': 0.0, 'macro_goal_success_rate': 0.3125, 'num_tasks': 1, 'num_goal_scored_tasks': 1, 'harness_enabled': True, 'harness_max_retries': 2, 'harness_stall_steps': 80, 'harness_vlm_context': False, 'harness_vla_hints': False, 'harness_api_planner': False} summary=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/summary.tsv
+[INFO] eval rc=0
+[INFO] SERVER_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/logs/serve_policy.log
+[INFO] EVAL_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/logs/eval_fullvlm26_async_vlm_vla.log
+[INFO] SUMMARY_JSON=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/summary.json
+[INFO] SUMMARY_TSV=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/summary.tsv
+[INFO] AGGREGATE=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595262/pullmem_s100/aggregate.json

@@ -1,0 +1,199 @@
+{
+  "active_stage": "02_Close_Top_Drawer",
+  "active_stage_idx": 1,
+  "active_stage_step": 2500,
+  "api_call_wrapped": true,
+  "api_errors": 4,
+  "broken_now": false,
+  "build_messages_wrapped": true,
+  "by_tool": {
+    "query_world": 19,
+    "search_memory": 48
+  },
+  "cap_hits": 0,
+  "cap_unresolved": 0,
+  "enabled_now": true,
+  "episodes_retired": 19,
+  "episodes_started": 20,
+  "errors": [],
+  "exit_report_registered": true,
+  "installed_at": "2026-09-18T14:17:03",
+  "loop_errors": 0,
+  "module_patched": true,
+  "pid": 1252457,
+  "primitive_returned": 54,
+  "reset_hooks": [
+    "reset_episode",
+    "set_task_info"
+  ],
+  "resets": [
+    {
+      "retired": 0,
+      "why": "set_task_info"
+    },
+    {
+      "retired": 0,
+      "why": "set_task_info"
+    },
+    {
+      "retired": 0,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    },
+    {
+      "retired": 1,
+      "why": "reset_episode"
+    }
+  ],
+  "seed_error": null,
+  "seeded_addresses": 240,
+  "seeded_stages": 9,
+  "seeded_task_id": 5,
+  "stage_active_events": 24,
+  "stage_hook_calls": 5000,
+  "stage_hook_installed": true,
+  "stage_names_seen": [
+    "01_Open_Top_Drawer",
+    "02_Close_Top_Drawer",
+    "03_Open_Middle_Drawer",
+    "04_Close_Middle_Drawer",
+    "05_Open_Bottom_Drawer"
+  ],
+  "steps": 59,
+  "steps_with_push": 59,
+  "steps_with_tool": 48,
+  "substrate": {
+    "addresses": 13,
+    "facts": 13,
+    "lookahead": 3,
+    "n_action_write": 2,
+    "n_frames_served_off_context": 4,
+    "n_query": 1,
+    "n_query_hit": 1,
+    "n_query_miss": 0,
+    "n_serve_empty_not_yet_observed": 0,
+    "n_spec_minted": 12,
+    "n_spec_unopened": 10,
+    "n_stage_active": 1,
+    "n_stage_verified": 1,
+    "n_unbound_minted": 1,
+    "serve_max": 4,
+    "unbound_now": 6
+  },
+  "substrate_cumulative": {
+    "n_action_write": 59,
+    "n_frames_served_off_context": 59,
+    "n_query": 19,
+    "n_query_hit": 19,
+    "n_spec_minted": 240,
+    "n_stage_active": 24,
+    "n_stage_verified": 27,
+    "n_unbound_minted": 20
+  },
+  "substrate_gauges": {
+    "addresses": 13,
+    "facts": 13,
+    "n_spec_unopened": 12,
+    "unbound_now": 13
+  },
+  "tool_calls": 67,
+  "tools": {
+    "by_tool": {
+      "query_world": 1,
+      "search_memory": 2
+    },
+    "n_calls": 3,
+    "n_frames_served": 4,
+    "n_repeat_calls": 0,
+    "n_search": 2,
+    "n_search_hit": 2,
+    "n_search_miss": 0,
+    "n_spec_shown": 2,
+    "search_max": 4
+  },
+  "tools_cumulative": {
+    "n_calls": 67,
+    "n_frames_served": 59,
+    "n_search": 48,
+    "n_search_hit": 48,
+    "n_spec_shown": 59
+  },
+  "tools_enabled_now": true,
+  "tools_module": "memexp_tools_search",
+  "tools_module_error": null,
+  "verified_stages": [
+    "01_Open_Top_Drawer"
+  ],
+  "written_at": "2026-09-18T14:50:05"
+}

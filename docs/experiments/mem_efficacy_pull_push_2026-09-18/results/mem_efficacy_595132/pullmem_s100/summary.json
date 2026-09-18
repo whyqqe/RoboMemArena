@@ -1,0 +1,12 @@
+[
+  {
+    "task_id": 5,
+    "status": "completed",
+    "error": "",
+    "stage_score_pct": 22.5,
+    "stage_success_rate": 0.0,
+    "goal_success_rate": 0.225,
+    "video_dir": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_595132/pullmem_s100/videos/task5",
+    "duration_sec": 2022.0
+  }
+]
