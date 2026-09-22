@@ -36,6 +36,9 @@
 | 记忆通道 | **全关**：`VLM_USE_KEYFRAME_MEMORY=0`、`K_MAX=0`、`N_RECENT=5`、`D_MERGE=6` |
 | 基线对齐 | `arms/nomem.sh` → `source arms/official_protocol.sh`，只做已声明的偏离 |
 
+> **路径约定**：本仓库不跟踪 `experiments/` 整个目录（见 `CODE.md` 第 2 节）。上表中
+> `arms/…`、`checkpoints/…` 等为工作树路径；`evaluation_benchmark/…` 为受跟踪路径。
+
 `nomem` 的定义即"官方协议 + harness，且每一条记忆通道都关闭"，由 `validate_arm.py` 在作业内断言（该作业 GATE 1 `preflight PASSED`）。
 
 **注意**：本 run 的 `TASKS_JSON=[12,13,17,20,23]`（5 个任务同批跑完）。本目录**只发布其中 2 个**，原因见第 3 节。原始 5 任务记录完整保留为 `*_all5tasks_original.*`。
@@ -95,7 +98,7 @@ task4/ep1  line 618:  12:54:01  Episode 1 seed=101  stage_score=12.5
 | `volo_aligned_t4t5_10x` | task4: 3 个、task5: 3 个 | rows=3 / unique=2（task4 重复） | ❌ 不可发布 |
 | `volo_aligned_selffamily_10x` | **0 个** | 正常 | ✅ 内部自洽 |
 
-**因此任务 4 / 5 需重跑**，且当前被 API 余额阻塞（见第 5 节）。原始数据保留在 `experiments/mem_efficacy/results/volo_aligned_t4t5_10x/`，未删除。
+**因此任务 4 / 5 需重跑**，且当前被 API 余额阻塞（见第 5 节）。原始数据保留在工作树的 `experiments/mem_efficacy/results/volo_aligned_t4t5_10x/`（该目录按仓库惯例不纳入版本控制），未删除。
 
 ### 3.3 为什么任务 20 / 23 是干净的 —— 机械论证，非修辞
 

@@ -45,6 +45,11 @@ de549ac98ef2ed28  code/evaluation_benchmark/tests/test_stage_mapper_tie.py
 
 四个脚本只读，不写任何基线目录。
 
+> **路径说明**：本仓库**不跟踪** `experiments/mem_efficacy/` 整个目录（`validate_arm.py`、
+> `census_channels.py` 等同样如此）。实验脚本的正式记录是各实验目录下的 `code/` 快照。
+> 因此下文以 `code/experiments/mem_efficacy/…` 为本仓库内可解析的路径，工作树中的等价
+> 路径为 `experiments/mem_efficacy/…`。
+
 ### `mapper_equivalence_for_clean_tasks.py` — 决定"哪些任务可发布"
 
 把缺陷版（从 `code_archive/` 按哈希加载）与修复版对同一批输入逐一对拍，扫遍每个 `stage_idx` × 典型 `current_subtask` × 每个 `ndone`。

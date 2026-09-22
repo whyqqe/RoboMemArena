@@ -92,7 +92,8 @@ task23   10 × open microwave +  8 × place cream   + 5 × place popcorn     ←
 
 `harness_memory.json` 的 `episodic` 流记录了每次 `stall` 事件**当时的活跃 `stage_name`**，因此可以把每次 override 归因到它发生时真正在跑的 stage，而不是 episode 结束时卡住的 stage。
 
-脚本：`experiments/mem_efficacy/attribute_overrides_to_stage.py`
+脚本：`code/experiments/mem_efficacy/attribute_overrides_to_stage.py`（本目录内，随本提交跟踪；
+工作树中的等价路径为 `experiments/mem_efficacy/`，该目录按仓库惯例不纳入版本控制）
 
 | 族 | 可归因 override | 正确 | **误导向** | 误导向率 |
 |---|---|---|---|---|
