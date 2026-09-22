@@ -1,0 +1,152 @@
+{
+  "runs": [
+    {
+      "run_dir": "experiments/mem_efficacy/results/volo_aligned_t4t5_10x/nomem_s100",
+      "tasks": {
+        "4": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": [
+            {
+              "ep": "ep1",
+              "records": [
+                {
+                  "ep": 1,
+                  "seed": 101,
+                  "stage_score": 12.5
+                },
+                {
+                  "ep": 1,
+                  "seed": 101,
+                  "stage_score": 50.0
+                }
+              ],
+              "backwards": 1,
+              "issue": "MULTIPLE Episode records (2), same seed [101], differing scores [12.5, 50.0]"
+            },
+            {
+              "ep": "ep2",
+              "records": [
+                {
+                  "ep": 2,
+                  "seed": 102,
+                  "stage_score": 50.0
+                },
+                {
+                  "ep": 2,
+                  "seed": 102,
+                  "stage_score": 50.0
+                }
+              ],
+              "backwards": 1,
+              "issue": "MULTIPLE Episode records (2), same seed [102]"
+            },
+            {
+              "ep": "ep6",
+              "records": [
+                {
+                  "ep": 6,
+                  "seed": 106,
+                  "stage_score": 25.0
+                },
+                {
+                  "ep": 6,
+                  "seed": 106,
+                  "stage_score": 75.0
+                }
+              ],
+              "backwards": 1,
+              "issue": "MULTIPLE Episode records (2), same seed [106], differing scores [25.0, 75.0]"
+            }
+          ]
+        },
+        "5": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": [
+            {
+              "ep": "ep2",
+              "records": [
+                {
+                  "ep": 2,
+                  "seed": 102,
+                  "stage_score": 50.0
+                },
+                {
+                  "ep": 2,
+                  "seed": 102,
+                  "stage_score": 25.0
+                }
+              ],
+              "backwards": 1,
+              "issue": "MULTIPLE Episode records (2), same seed [102], differing scores [25.0, 50.0]"
+            },
+            {
+              "ep": "ep5",
+              "records": [
+                {
+                  "ep": 5,
+                  "seed": 105,
+                  "stage_score": 37.5
+                },
+                {
+                  "ep": 5,
+                  "seed": 105,
+                  "stage_score": 50.0
+                }
+              ],
+              "backwards": 1,
+              "issue": "MULTIPLE Episode records (2), same seed [105], differing scores [37.5, 50.0]"
+            },
+            {
+              "ep": "ep6",
+              "records": [
+                {
+                  "ep": 6,
+                  "seed": 106,
+                  "stage_score": 37.5
+                }
+              ],
+              "backwards": 1,
+              "issue": "timestamps run backwards 1x"
+            }
+          ]
+        }
+      },
+      "summary_issue": "summary.json rows=3 unique=2; duplicated=[4] no_dir=[] not_in_summary=[]",
+      "clean": false
+    },
+    {
+      "run_dir": "experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100",
+      "tasks": {
+        "12": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": []
+        },
+        "13": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": []
+        },
+        "17": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": []
+        },
+        "20": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": []
+        },
+        "23": {
+          "eps": {},
+          "n_ep_dirs": 10,
+          "bad": []
+        }
+      },
+      "summary_issue": "",
+      "clean": true
+    }
+  ]
+}

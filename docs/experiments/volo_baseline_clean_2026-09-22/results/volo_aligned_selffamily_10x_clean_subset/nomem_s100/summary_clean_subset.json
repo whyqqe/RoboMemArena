@@ -1,0 +1,22 @@
+[
+  {
+    "task_id": 20,
+    "status": "completed",
+    "error": "",
+    "stage_score_pct": 50.0,
+    "stage_success_rate": 0.1,
+    "goal_success_rate": 0.5,
+    "video_dir": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task20",
+    "duration_sec": 934.4
+  },
+  {
+    "task_id": 23,
+    "status": "completed",
+    "error": "",
+    "stage_score_pct": 56.7,
+    "stage_success_rate": 0.4,
+    "goal_success_rate": 0.5667,
+    "video_dir": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task23",
+    "duration_sec": 599.15
+  }
+]

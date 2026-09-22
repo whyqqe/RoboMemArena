@@ -1,0 +1,437 @@
+2026-09-19 15:31:24,554 | INFO | task_id=20 bddl=/project/peilab/why/RoboMemArena/bddl/20_cookies_chocolate_microwave.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-19 15:31:26,280 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-19 15:31:26,497 | INFO | [t=10] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:26,733 | INFO | [t=20] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:26,967 | INFO | [t=30] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:27,205 | INFO | [t=40] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:27,440 | INFO | [t=50] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:27,676 | INFO | [t=60] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:27,909 | INFO | [t=70] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:31:28,096 | INFO | [t=80] harness subtask override: open microwave
+2026-09-19 15:31:28,096 | INFO | [t=80] VLM prompt update from step=-1: open microwave
+2026-09-19 15:31:28,096 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:31:28,146 | INFO | [t=80] VLA chunk prompt=open microwave
+2026-09-19 15:31:28,387 | INFO | [t=90] VLA chunk prompt=open microwave
+2026-09-19 15:31:28,632 | INFO | [t=100] VLA chunk prompt=open microwave
+2026-09-19 15:31:28,876 | INFO | [t=110] VLA chunk prompt=open microwave
+2026-09-19 15:31:29,041 | INFO | API VLM @t=0 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:29,088 | INFO | [t=120] VLM prompt update from step=0: open_microwave
+2026-09-19 15:31:29,138 | INFO | [t=120] VLA chunk prompt=open_microwave
+2026-09-19 15:31:29,409 | INFO | [t=130] VLA chunk prompt=open_microwave
+2026-09-19 15:31:29,684 | INFO | [t=140] VLA chunk prompt=open_microwave
+2026-09-19 15:31:29,820 | INFO | [t=146] stage done: 01_Open_Microwave
+2026-09-19 15:31:29,960 | INFO | [t=150] VLA chunk prompt=open_microwave
+2026-09-19 15:31:30,235 | INFO | [t=160] VLA chunk prompt=open_microwave
+2026-09-19 15:31:30,516 | INFO | [t=170] VLA chunk prompt=open_microwave
+2026-09-19 15:31:30,798 | INFO | [t=180] VLA chunk prompt=open_microwave
+2026-09-19 15:31:31,084 | INFO | [t=190] VLA chunk prompt=open_microwave
+2026-09-19 15:31:31,371 | INFO | [t=200] VLA chunk prompt=open_microwave
+2026-09-19 15:31:31,656 | INFO | [t=210] VLA chunk prompt=open_microwave
+2026-09-19 15:31:31,948 | INFO | [t=220] VLA chunk prompt=open_microwave
+2026-09-19 15:31:32,194 | INFO | [t=230] harness subtask override: place cookies
+2026-09-19 15:31:32,197 | INFO | [t=230] VLM prompt update from step=0: place cookies
+2026-09-19 15:31:32,198 | INFO | [t=230] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:31:32,218 | INFO | API VLM @t=105 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:32,248 | INFO | [t=230] VLA chunk prompt=place cookies
+2026-09-19 15:31:32,495 | INFO | [t=240] VLM prompt update from step=105: open_microwave
+2026-09-19 15:31:32,545 | INFO | [t=240] VLA chunk prompt=open_microwave
+2026-09-19 15:31:32,846 | INFO | [t=250] VLA chunk prompt=open_microwave
+2026-09-19 15:31:33,150 | INFO | [t=260] VLA chunk prompt=open_microwave
+2026-09-19 15:31:33,458 | INFO | [t=270] VLA chunk prompt=open_microwave
+2026-09-19 15:31:33,778 | INFO | [t=280] VLA chunk prompt=open_microwave
+2026-09-19 15:31:34,095 | INFO | [t=290] VLA chunk prompt=open_microwave
+2026-09-19 15:31:34,410 | INFO | [t=300] VLA chunk prompt=open_microwave
+2026-09-19 15:31:34,722 | INFO | [t=310] VLA chunk prompt=open_microwave
+2026-09-19 15:31:35,036 | INFO | [t=320] VLA chunk prompt=open_microwave
+2026-09-19 15:31:35,054 | INFO | API VLM @t=220 task=20 subtask=open the microwave keyframes=[]
+2026-09-19 15:31:35,303 | INFO | [t=330] VLM prompt update from step=220: open the microwave
+2026-09-19 15:31:35,353 | INFO | [t=330] VLA chunk prompt=open the microwave
+2026-09-19 15:31:35,666 | INFO | [t=340] VLA chunk prompt=open the microwave
+2026-09-19 15:31:35,979 | INFO | [t=350] VLA chunk prompt=open the microwave
+2026-09-19 15:31:36,292 | INFO | [t=360] VLA chunk prompt=open the microwave
+2026-09-19 15:31:36,608 | INFO | [t=370] VLA chunk prompt=open the microwave
+2026-09-19 15:31:36,922 | INFO | [t=380] VLA chunk prompt=open the microwave
+2026-09-19 15:31:37,233 | INFO | [t=390] VLA chunk prompt=open the microwave
+2026-09-19 15:31:37,547 | INFO | [t=400] VLA chunk prompt=open the microwave
+2026-09-19 15:31:37,733 | INFO | API VLM @t=310 task=20 subtask=reach_to_cookies keyframes=[]
+2026-09-19 15:31:37,812 | INFO | [t=410] VLM prompt update from step=310: reach_to_cookies
+2026-09-19 15:31:37,862 | INFO | [t=410] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:38,173 | INFO | [t=420] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:38,482 | INFO | [t=430] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:38,789 | INFO | [t=440] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:39,097 | INFO | [t=450] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:39,405 | INFO | [t=460] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:39,714 | INFO | [t=470] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:40,026 | INFO | [t=480] VLA chunk prompt=reach_to_cookies
+2026-09-19 15:31:40,257 | INFO | API VLM @t=395 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:40,289 | INFO | [t=490] VLM prompt update from step=395: open_microwave
+2026-09-19 15:31:40,339 | INFO | [t=490] VLA chunk prompt=open_microwave
+2026-09-19 15:31:40,652 | INFO | [t=500] VLA chunk prompt=open_microwave
+2026-09-19 15:31:40,967 | INFO | [t=510] VLA chunk prompt=open_microwave
+2026-09-19 15:31:41,293 | INFO | [t=520] VLA chunk prompt=open_microwave
+2026-09-19 15:31:41,607 | INFO | [t=530] VLA chunk prompt=open_microwave
+2026-09-19 15:31:41,923 | INFO | [t=540] VLA chunk prompt=open_microwave
+2026-09-19 15:31:42,236 | INFO | [t=550] VLA chunk prompt=open_microwave
+2026-09-19 15:31:42,551 | INFO | [t=560] VLA chunk prompt=open_microwave
+2026-09-19 15:31:42,865 | INFO | [t=570] VLA chunk prompt=open_microwave
+2026-09-19 15:31:42,955 | INFO | API VLM @t=475 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:43,180 | INFO | [t=580] VLA chunk prompt=open_microwave
+2026-09-19 15:31:43,493 | INFO | [t=590] VLA chunk prompt=open_microwave
+2026-09-19 15:31:43,806 | INFO | [t=600] VLA chunk prompt=open_microwave
+2026-09-19 15:31:44,119 | INFO | [t=610] VLA chunk prompt=open_microwave
+2026-09-19 15:31:44,434 | INFO | [t=620] VLA chunk prompt=open_microwave
+2026-09-19 15:31:44,745 | INFO | [t=630] VLA chunk prompt=open_microwave
+2026-09-19 15:31:45,055 | INFO | [t=640] VLA chunk prompt=open_microwave
+2026-09-19 15:31:45,365 | INFO | [t=650] VLA chunk prompt=open_microwave
+2026-09-19 15:31:45,676 | INFO | [t=660] VLA chunk prompt=open_microwave
+2026-09-19 15:31:45,985 | INFO | [t=670] VLA chunk prompt=open_microwave
+2026-09-19 15:31:46,140 | INFO | API VLM @t=560 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:46,296 | INFO | [t=680] VLA chunk prompt=open_microwave
+2026-09-19 15:31:46,600 | INFO | [t=690] VLA chunk prompt=open_microwave
+2026-09-19 15:31:46,921 | INFO | [t=700] VLA chunk prompt=open_microwave
+2026-09-19 15:31:47,243 | INFO | [t=710] VLA chunk prompt=open_microwave
+2026-09-19 15:31:47,550 | INFO | [t=720] VLA chunk prompt=open_microwave
+2026-09-19 15:31:47,855 | INFO | [t=730] VLA chunk prompt=open_microwave
+2026-09-19 15:31:48,165 | INFO | [t=740] VLA chunk prompt=open_microwave
+2026-09-19 15:31:48,474 | INFO | [t=750] VLA chunk prompt=open_microwave
+2026-09-19 15:31:48,778 | INFO | [t=760] VLA chunk prompt=open_microwave
+2026-09-19 15:31:48,978 | INFO | API VLM @t=665 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:49,084 | INFO | [t=770] VLA chunk prompt=open_microwave
+2026-09-19 15:31:49,386 | INFO | [t=780] VLA chunk prompt=open_microwave
+2026-09-19 15:31:49,687 | INFO | [t=790] VLA chunk prompt=open_microwave
+2026-09-19 15:31:49,990 | INFO | [t=800] VLA chunk prompt=open_microwave
+2026-09-19 15:31:50,291 | INFO | [t=810] VLA chunk prompt=open_microwave
+2026-09-19 15:31:50,592 | INFO | [t=820] VLA chunk prompt=open_microwave
+2026-09-19 15:31:50,893 | INFO | [t=830] VLA chunk prompt=open_microwave
+2026-09-19 15:31:51,194 | INFO | [t=840] VLA chunk prompt=open_microwave
+2026-09-19 15:31:51,493 | INFO | [t=850] VLA chunk prompt=open_microwave
+2026-09-19 15:31:51,674 | INFO | API VLM @t=755 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:51,796 | INFO | [t=860] VLA chunk prompt=open_microwave
+2026-09-19 15:31:52,094 | INFO | [t=870] VLA chunk prompt=open_microwave
+2026-09-19 15:31:52,392 | INFO | [t=880] VLA chunk prompt=open_microwave
+2026-09-19 15:31:52,690 | INFO | [t=890] VLA chunk prompt=open_microwave
+2026-09-19 15:31:52,989 | INFO | [t=900] VLA chunk prompt=open_microwave
+2026-09-19 15:31:53,291 | INFO | [t=910] VLA chunk prompt=open_microwave
+2026-09-19 15:31:53,597 | INFO | [t=920] VLA chunk prompt=open_microwave
+2026-09-19 15:31:53,904 | INFO | [t=930] VLA chunk prompt=open_microwave
+2026-09-19 15:31:54,108 | INFO | API VLM @t=845 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:54,213 | INFO | [t=940] VLA chunk prompt=open_microwave
+2026-09-19 15:31:54,517 | INFO | [t=950] VLA chunk prompt=open_microwave
+2026-09-19 15:31:54,817 | INFO | [t=960] VLA chunk prompt=open_microwave
+2026-09-19 15:31:55,114 | INFO | [t=970] VLA chunk prompt=open_microwave
+2026-09-19 15:31:55,409 | INFO | [t=980] VLA chunk prompt=open_microwave
+2026-09-19 15:31:55,708 | INFO | [t=990] VLA chunk prompt=open_microwave
+2026-09-19 15:31:56,004 | INFO | [t=1000] VLA chunk prompt=open_microwave
+2026-09-19 15:31:56,298 | INFO | [t=1010] VLA chunk prompt=open_microwave
+2026-09-19 15:31:56,593 | INFO | [t=1020] VLA chunk prompt=open_microwave
+2026-09-19 15:31:56,892 | INFO | [t=1030] VLA chunk prompt=open_microwave
+2026-09-19 15:31:57,140 | INFO | API VLM @t=925 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:57,189 | INFO | [t=1040] VLA chunk prompt=open_microwave
+2026-09-19 15:31:57,484 | INFO | [t=1050] VLA chunk prompt=open_microwave
+2026-09-19 15:31:57,782 | INFO | [t=1060] VLA chunk prompt=open_microwave
+2026-09-19 15:31:58,077 | INFO | [t=1070] VLA chunk prompt=open_microwave
+2026-09-19 15:31:58,373 | INFO | [t=1080] VLA chunk prompt=open_microwave
+2026-09-19 15:31:58,671 | INFO | [t=1090] VLA chunk prompt=open_microwave
+2026-09-19 15:31:58,972 | INFO | [t=1100] VLA chunk prompt=open_microwave
+2026-09-19 15:31:59,278 | INFO | [t=1110] VLA chunk prompt=open_microwave
+2026-09-19 15:31:59,553 | INFO | API VLM @t=1030 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:31:59,586 | INFO | [t=1120] VLA chunk prompt=open_microwave
+2026-09-19 15:31:59,908 | INFO | [t=1130] VLA chunk prompt=open_microwave
+2026-09-19 15:32:00,255 | INFO | [t=1140] VLA chunk prompt=open_microwave
+2026-09-19 15:32:00,595 | INFO | [t=1150] VLA chunk prompt=open_microwave
+2026-09-19 15:32:00,901 | INFO | [t=1160] VLA chunk prompt=open_microwave
+2026-09-19 15:32:01,200 | INFO | [t=1170] VLA chunk prompt=open_microwave
+2026-09-19 15:32:01,496 | INFO | [t=1180] VLA chunk prompt=open_microwave
+2026-09-19 15:32:01,792 | INFO | [t=1190] VLA chunk prompt=open_microwave
+2026-09-19 15:32:02,090 | INFO | [t=1200] VLA chunk prompt=open_microwave
+2026-09-19 15:32:02,163 | INFO | API VLM @t=1110 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:02,391 | INFO | [t=1210] VLA chunk prompt=open_microwave
+2026-09-19 15:32:02,686 | INFO | [t=1220] VLA chunk prompt=open_microwave
+2026-09-19 15:32:02,980 | INFO | [t=1230] VLA chunk prompt=open_microwave
+2026-09-19 15:32:03,275 | INFO | [t=1240] VLA chunk prompt=open_microwave
+2026-09-19 15:32:03,571 | INFO | [t=1250] VLA chunk prompt=open_microwave
+2026-09-19 15:32:03,864 | INFO | [t=1260] VLA chunk prompt=open_microwave
+2026-09-19 15:32:04,157 | INFO | [t=1270] VLA chunk prompt=open_microwave
+2026-09-19 15:32:04,450 | INFO | [t=1280] VLA chunk prompt=open_microwave
+2026-09-19 15:32:04,570 | INFO | API VLM @t=1190 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:04,746 | INFO | [t=1290] VLA chunk prompt=open_microwave
+2026-09-19 15:32:05,042 | INFO | [t=1300] VLA chunk prompt=open_microwave
+2026-09-19 15:32:05,336 | INFO | [t=1310] VLA chunk prompt=open_microwave
+2026-09-19 15:32:05,629 | INFO | [t=1320] VLA chunk prompt=open_microwave
+2026-09-19 15:32:05,922 | INFO | [t=1330] VLA chunk prompt=open_microwave
+2026-09-19 15:32:06,214 | INFO | [t=1340] VLA chunk prompt=open_microwave
+2026-09-19 15:32:06,502 | INFO | [t=1350] VLA chunk prompt=open_microwave
+2026-09-19 15:32:06,787 | INFO | [t=1360] VLA chunk prompt=open_microwave
+2026-09-19 15:32:07,073 | INFO | [t=1370] VLA chunk prompt=open_microwave
+2026-09-19 15:32:07,359 | INFO | [t=1380] VLA chunk prompt=open_microwave
+2026-09-19 15:32:07,649 | INFO | [t=1390] VLA chunk prompt=open_microwave
+2026-09-19 15:32:07,888 | INFO | API VLM @t=1270 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:07,943 | INFO | [t=1400] VLA chunk prompt=open_microwave
+2026-09-19 15:32:08,239 | INFO | [t=1410] VLA chunk prompt=open_microwave
+2026-09-19 15:32:08,533 | INFO | [t=1420] VLA chunk prompt=open_microwave
+2026-09-19 15:32:08,828 | INFO | [t=1430] VLA chunk prompt=open_microwave
+2026-09-19 15:32:09,123 | INFO | [t=1440] VLA chunk prompt=open_microwave
+2026-09-19 15:32:09,418 | INFO | [t=1450] VLA chunk prompt=open_microwave
+2026-09-19 15:32:09,713 | INFO | [t=1460] VLA chunk prompt=open_microwave
+2026-09-19 15:32:10,008 | INFO | [t=1470] VLA chunk prompt=open_microwave
+2026-09-19 15:32:10,303 | INFO | [t=1480] VLA chunk prompt=open_microwave
+2026-09-19 15:32:10,598 | INFO | [t=1490] VLA chunk prompt=open_microwave
+2026-09-19 15:32:10,615 | INFO | API VLM @t=1385 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:10,895 | INFO | [t=1500] VLA chunk prompt=open_microwave
+2026-09-19 15:32:11,192 | INFO | [t=1510] VLA chunk prompt=open_microwave
+2026-09-19 15:32:11,489 | INFO | [t=1520] VLA chunk prompt=open_microwave
+2026-09-19 15:32:11,786 | INFO | [t=1530] VLA chunk prompt=open_microwave
+2026-09-19 15:32:12,085 | INFO | [t=1540] VLA chunk prompt=open_microwave
+2026-09-19 15:32:12,384 | INFO | [t=1550] VLA chunk prompt=open_microwave
+2026-09-19 15:32:12,682 | INFO | [t=1560] VLA chunk prompt=open_microwave
+2026-09-19 15:32:12,981 | INFO | [t=1570] VLA chunk prompt=open_microwave
+2026-09-19 15:32:13,005 | INFO | API VLM @t=1480 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:13,282 | INFO | [t=1580] VLA chunk prompt=open_microwave
+2026-09-19 15:32:13,580 | INFO | [t=1590] VLA chunk prompt=open_microwave
+2026-09-19 15:32:13,878 | INFO | [t=1600] VLA chunk prompt=open_microwave
+2026-09-19 15:32:14,176 | INFO | [t=1610] VLA chunk prompt=open_microwave
+2026-09-19 15:32:14,475 | INFO | [t=1620] VLA chunk prompt=open_microwave
+2026-09-19 15:32:14,773 | INFO | [t=1630] VLA chunk prompt=open_microwave
+2026-09-19 15:32:15,070 | INFO | [t=1640] VLA chunk prompt=open_microwave
+2026-09-19 15:32:15,381 | INFO | [t=1650] VLA chunk prompt=open_microwave
+2026-09-19 15:32:15,581 | INFO | API VLM @t=1560 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:15,687 | INFO | [t=1660] VLA chunk prompt=open_microwave
+2026-09-19 15:32:15,984 | INFO | [t=1670] VLA chunk prompt=open_microwave
+2026-09-19 15:32:16,280 | INFO | [t=1680] VLA chunk prompt=open_microwave
+2026-09-19 15:32:16,576 | INFO | [t=1690] VLA chunk prompt=open_microwave
+2026-09-19 15:32:16,873 | INFO | [t=1700] VLA chunk prompt=open_microwave
+2026-09-19 15:32:17,170 | INFO | [t=1710] VLA chunk prompt=open_microwave
+2026-09-19 15:32:17,482 | INFO | [t=1720] VLA chunk prompt=open_microwave
+2026-09-19 15:32:17,801 | INFO | [t=1730] VLA chunk prompt=open_microwave
+2026-09-19 15:32:18,099 | INFO | [t=1740] VLA chunk prompt=open_microwave
+2026-09-19 15:32:18,395 | INFO | [t=1750] VLA chunk prompt=open_microwave
+2026-09-19 15:32:18,505 | INFO | API VLM @t=1645 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:18,694 | INFO | [t=1760] VLA chunk prompt=open_microwave
+2026-09-19 15:32:19,001 | INFO | [t=1770] VLA chunk prompt=open_microwave
+2026-09-19 15:32:19,305 | INFO | [t=1780] VLA chunk prompt=open_microwave
+2026-09-19 15:32:19,604 | INFO | [t=1790] VLA chunk prompt=open_microwave
+2026-09-19 15:32:19,905 | INFO | [t=1800] VLA chunk prompt=open_microwave
+2026-09-19 15:32:20,210 | INFO | [t=1810] VLA chunk prompt=open_microwave
+2026-09-19 15:32:20,512 | INFO | [t=1820] VLA chunk prompt=open_microwave
+2026-09-19 15:32:20,816 | INFO | [t=1830] VLA chunk prompt=open_microwave
+2026-09-19 15:32:21,120 | INFO | [t=1840] VLA chunk prompt=open_microwave
+2026-09-19 15:32:21,423 | INFO | [t=1850] VLA chunk prompt=open_microwave
+2026-09-19 15:32:21,727 | INFO | [t=1860] VLA chunk prompt=open_microwave
+2026-09-19 15:32:21,977 | INFO | API VLM @t=1740 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:22,032 | INFO | [t=1870] VLA chunk prompt=open_microwave
+2026-09-19 15:32:22,337 | INFO | [t=1880] VLA chunk prompt=open_microwave
+2026-09-19 15:32:22,645 | INFO | [t=1890] VLA chunk prompt=open_microwave
+2026-09-19 15:32:22,957 | INFO | [t=1900] VLA chunk prompt=open_microwave
+2026-09-19 15:32:23,269 | INFO | [t=1910] VLA chunk prompt=open_microwave
+2026-09-19 15:32:23,578 | INFO | [t=1920] VLA chunk prompt=open_microwave
+2026-09-19 15:32:23,886 | INFO | [t=1930] VLA chunk prompt=open_microwave
+2026-09-19 15:32:24,195 | INFO | [t=1940] VLA chunk prompt=open_microwave
+2026-09-19 15:32:24,492 | INFO | API VLM @t=1855 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:24,508 | INFO | [t=1950] VLA chunk prompt=open_microwave
+2026-09-19 15:32:24,826 | INFO | [t=1960] VLA chunk prompt=open_microwave
+2026-09-19 15:32:25,145 | INFO | [t=1970] VLA chunk prompt=open_microwave
+2026-09-19 15:32:25,458 | INFO | [t=1980] VLA chunk prompt=open_microwave
+2026-09-19 15:32:25,785 | INFO | [t=1990] VLA chunk prompt=open_microwave
+2026-09-19 15:32:26,107 | INFO | [t=2000] VLA chunk prompt=open_microwave
+2026-09-19 15:32:26,431 | INFO | [t=2010] VLA chunk prompt=open_microwave
+2026-09-19 15:32:26,747 | INFO | [t=2020] VLA chunk prompt=open_microwave
+2026-09-19 15:32:26,904 | INFO | API VLM @t=1940 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:27,063 | INFO | [t=2030] VLA chunk prompt=open_microwave
+2026-09-19 15:32:27,378 | INFO | [t=2040] VLA chunk prompt=open_microwave
+2026-09-19 15:32:27,692 | INFO | [t=2050] VLA chunk prompt=open_microwave
+2026-09-19 15:32:28,006 | INFO | [t=2060] VLA chunk prompt=open_microwave
+2026-09-19 15:32:28,321 | INFO | [t=2070] VLA chunk prompt=open_microwave
+2026-09-19 15:32:28,635 | INFO | [t=2080] VLA chunk prompt=open_microwave
+2026-09-19 15:32:28,955 | INFO | [t=2090] VLA chunk prompt=open_microwave
+2026-09-19 15:32:29,272 | INFO | [t=2100] VLA chunk prompt=open_microwave
+2026-09-19 15:32:29,581 | INFO | [t=2110] VLA chunk prompt=open_microwave
+2026-09-19 15:32:29,886 | INFO | [t=2120] VLA chunk prompt=open_microwave
+2026-09-19 15:32:30,043 | INFO | API VLM @t=2015 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:30,202 | INFO | [t=2130] VLA chunk prompt=open_microwave
+2026-09-19 15:32:30,514 | INFO | [t=2140] VLA chunk prompt=open_microwave
+2026-09-19 15:32:30,825 | INFO | [t=2150] VLA chunk prompt=open_microwave
+2026-09-19 15:32:31,136 | INFO | [t=2160] VLA chunk prompt=open_microwave
+2026-09-19 15:32:31,448 | INFO | [t=2170] VLA chunk prompt=open_microwave
+2026-09-19 15:32:31,760 | INFO | [t=2180] VLA chunk prompt=open_microwave
+2026-09-19 15:32:32,071 | INFO | [t=2190] VLA chunk prompt=open_microwave
+2026-09-19 15:32:32,385 | INFO | [t=2200] VLA chunk prompt=open_microwave
+2026-09-19 15:32:32,695 | INFO | [t=2210] VLA chunk prompt=open_microwave
+2026-09-19 15:32:33,006 | INFO | [t=2220] VLA chunk prompt=open_microwave
+2026-09-19 15:32:33,132 | INFO | API VLM @t=2115 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:33,319 | INFO | [t=2230] VLA chunk prompt=open_microwave
+2026-09-19 15:32:33,640 | INFO | [t=2240] VLA chunk prompt=open_microwave
+2026-09-19 15:32:33,957 | INFO | [t=2250] VLA chunk prompt=open_microwave
+2026-09-19 15:32:34,270 | INFO | [t=2260] VLA chunk prompt=open_microwave
+2026-09-19 15:32:34,585 | INFO | [t=2270] VLA chunk prompt=open_microwave
+2026-09-19 15:32:34,900 | INFO | [t=2280] VLA chunk prompt=open_microwave
+2026-09-19 15:32:35,218 | INFO | [t=2290] VLA chunk prompt=open_microwave
+2026-09-19 15:32:35,538 | INFO | [t=2300] VLA chunk prompt=open_microwave
+2026-09-19 15:32:35,863 | INFO | [t=2310] VLA chunk prompt=open_microwave
+2026-09-19 15:32:35,913 | INFO | API VLM @t=2210 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:36,192 | INFO | [t=2320] VLA chunk prompt=open_microwave
+2026-09-19 15:32:36,515 | INFO | [t=2330] VLA chunk prompt=open_microwave
+2026-09-19 15:32:36,838 | INFO | [t=2340] VLA chunk prompt=open_microwave
+2026-09-19 15:32:37,158 | INFO | [t=2350] VLA chunk prompt=open_microwave
+2026-09-19 15:32:37,478 | INFO | [t=2360] VLA chunk prompt=open_microwave
+2026-09-19 15:32:37,796 | INFO | [t=2370] VLA chunk prompt=open_microwave
+2026-09-19 15:32:38,109 | INFO | [t=2380] VLA chunk prompt=open_microwave
+2026-09-19 15:32:38,283 | INFO | API VLM @t=2300 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:38,424 | INFO | [t=2390] VLA chunk prompt=open_microwave
+2026-09-19 15:32:38,744 | INFO | [t=2400] VLA chunk prompt=open_microwave
+2026-09-19 15:32:39,058 | INFO | [t=2410] VLA chunk prompt=open_microwave
+2026-09-19 15:32:39,369 | INFO | [t=2420] VLA chunk prompt=open_microwave
+2026-09-19 15:32:39,681 | INFO | [t=2430] VLA chunk prompt=open_microwave
+2026-09-19 15:32:39,992 | INFO | [t=2440] VLA chunk prompt=open_microwave
+2026-09-19 15:32:40,304 | INFO | [t=2450] VLA chunk prompt=open_microwave
+2026-09-19 15:32:40,615 | INFO | [t=2460] VLA chunk prompt=open_microwave
+2026-09-19 15:32:40,926 | INFO | [t=2470] VLA chunk prompt=open_microwave
+2026-09-19 15:32:41,087 | INFO | API VLM @t=2375 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:41,246 | INFO | [t=2480] VLA chunk prompt=open_microwave
+2026-09-19 15:32:41,567 | INFO | [t=2490] VLA chunk prompt=open_microwave
+2026-09-19 15:32:41,888 | INFO | [t=2500] VLA chunk prompt=open_microwave
+2026-09-19 15:32:44,320 | INFO | API VLM @t=2465 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:44,344 | INFO | attempt=0 stage_score=33.3 stage_success=False failure_reason=incomplete_stage
+2026-09-19 15:32:46,019 | INFO | harness release_gripper after env.reset (attempt=1)
+2026-09-19 15:32:46,020 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-19 15:32:46,236 | INFO | [t=10] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:46,473 | INFO | [t=20] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:46,705 | INFO | [t=30] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:46,977 | INFO | [t=40] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:47,211 | INFO | [t=50] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:47,449 | INFO | [t=60] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:47,686 | INFO | [t=70] VLA chunk prompt=Put cookies into the microwave and then put chocolate into the location where the cookies were placed.
+2026-09-19 15:32:47,875 | INFO | [t=80] harness subtask override: open microwave
+2026-09-19 15:32:47,875 | INFO | [t=80] VLM prompt update from step=-1: open microwave
+2026-09-19 15:32:47,875 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:32:47,925 | INFO | [t=80] VLA chunk prompt=open microwave
+2026-09-19 15:32:48,171 | INFO | [t=90] VLA chunk prompt=open microwave
+2026-09-19 15:32:48,415 | INFO | [t=100] VLA chunk prompt=open microwave
+2026-09-19 15:32:48,651 | INFO | [t=110] VLA chunk prompt=open microwave
+2026-09-19 15:32:48,820 | INFO | API VLM @t=0 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:48,840 | INFO | [t=120] VLM prompt update from step=0: open_microwave
+2026-09-19 15:32:48,890 | INFO | [t=120] VLA chunk prompt=open_microwave
+2026-09-19 15:32:49,141 | INFO | [t=130] VLA chunk prompt=open_microwave
+2026-09-19 15:32:49,404 | INFO | [t=140] VLA chunk prompt=open_microwave
+2026-09-19 15:32:49,672 | INFO | [t=150] VLA chunk prompt=open_microwave
+2026-09-19 15:32:49,941 | INFO | [t=160] VLA chunk prompt=open_microwave
+2026-09-19 15:32:50,213 | INFO | [t=170] VLA chunk prompt=open_microwave
+2026-09-19 15:32:50,489 | INFO | [t=180] VLA chunk prompt=open_microwave
+2026-09-19 15:32:50,769 | INFO | [t=190] VLA chunk prompt=open_microwave
+2026-09-19 15:32:51,052 | INFO | [t=200] VLA chunk prompt=open_microwave
+2026-09-19 15:32:51,338 | INFO | [t=210] VLA chunk prompt=open_microwave
+2026-09-19 15:32:51,523 | INFO | API VLM @t=105 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:51,629 | INFO | [t=220] VLA chunk prompt=open_microwave
+2026-09-19 15:32:51,922 | INFO | [t=230] VLA chunk prompt=open_microwave
+2026-09-19 15:32:52,219 | INFO | [t=240] VLA chunk prompt=open_microwave
+2026-09-19 15:32:52,519 | INFO | [t=250] VLA chunk prompt=open_microwave
+2026-09-19 15:32:52,821 | INFO | [t=260] VLA chunk prompt=open_microwave
+2026-09-19 15:32:53,125 | INFO | [t=270] VLA chunk prompt=open_microwave
+2026-09-19 15:32:53,431 | INFO | [t=280] VLA chunk prompt=open_microwave
+2026-09-19 15:32:53,740 | INFO | [t=290] VLA chunk prompt=open_microwave
+2026-09-19 15:32:53,915 | INFO | API VLM @t=205 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:54,055 | INFO | [t=300] VLA chunk prompt=open_microwave
+2026-09-19 15:32:54,370 | INFO | [t=310] VLA chunk prompt=open_microwave
+2026-09-19 15:32:54,683 | INFO | [t=320] VLA chunk prompt=open_microwave
+2026-09-19 15:32:55,000 | INFO | [t=330] VLA chunk prompt=open_microwave
+2026-09-19 15:32:55,079 | INFO | [t=333] stage done: 01_Open_Microwave
+2026-09-19 15:32:55,312 | INFO | [t=340] VLA chunk prompt=open_microwave
+2026-09-19 15:32:55,623 | INFO | [t=350] VLA chunk prompt=open_microwave
+2026-09-19 15:32:55,938 | INFO | [t=360] VLA chunk prompt=open_microwave
+2026-09-19 15:32:56,247 | INFO | [t=370] VLA chunk prompt=open_microwave
+2026-09-19 15:32:56,393 | INFO | API VLM @t=285 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:56,555 | INFO | [t=380] VLA chunk prompt=open_microwave
+2026-09-19 15:32:56,862 | INFO | [t=390] VLA chunk prompt=open_microwave
+2026-09-19 15:32:57,170 | INFO | [t=400] VLA chunk prompt=open_microwave
+2026-09-19 15:32:57,482 | INFO | [t=410] VLA chunk prompt=open_microwave
+2026-09-19 15:32:57,743 | INFO | [t=420] harness subtask override: place cookies
+2026-09-19 15:32:57,743 | INFO | [t=420] VLM prompt update from step=285: place cookies
+2026-09-19 15:32:57,743 | INFO | [t=420] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:32:57,793 | INFO | [t=420] VLA chunk prompt=place cookies
+2026-09-19 15:32:58,103 | INFO | [t=430] VLA chunk prompt=place cookies
+2026-09-19 15:32:58,413 | INFO | [t=440] VLA chunk prompt=place cookies
+2026-09-19 15:32:58,723 | INFO | [t=450] VLA chunk prompt=place cookies
+2026-09-19 15:32:58,739 | INFO | API VLM @t=365 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:32:58,985 | INFO | [t=460] VLM prompt update from step=365: open_microwave
+2026-09-19 15:32:59,035 | INFO | [t=460] VLA chunk prompt=open_microwave
+2026-09-19 15:32:59,348 | INFO | [t=470] VLA chunk prompt=open_microwave
+2026-09-19 15:32:59,668 | INFO | [t=480] VLA chunk prompt=open_microwave
+2026-09-19 15:32:59,988 | INFO | [t=490] VLA chunk prompt=open_microwave
+2026-09-19 15:33:00,308 | INFO | [t=500] VLA chunk prompt=open_microwave
+2026-09-19 15:33:00,628 | INFO | [t=510] VLA chunk prompt=open_microwave
+2026-09-19 15:33:00,947 | INFO | [t=520] VLA chunk prompt=open_microwave
+2026-09-19 15:33:01,265 | INFO | [t=530] VLA chunk prompt=open_microwave
+2026-09-19 15:33:01,579 | INFO | [t=540] VLA chunk prompt=open_microwave
+2026-09-19 15:33:01,759 | INFO | API VLM @t=440 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:33:01,897 | INFO | [t=550] VLA chunk prompt=open_microwave
+2026-09-19 15:33:02,214 | INFO | [t=560] VLA chunk prompt=open_microwave
+2026-09-19 15:33:02,529 | INFO | [t=570] VLA chunk prompt=open_microwave
+2026-09-19 15:33:02,842 | INFO | [t=580] VLA chunk prompt=open_microwave
+2026-09-19 15:33:03,156 | INFO | [t=590] VLA chunk prompt=open_microwave
+2026-09-19 15:33:03,473 | INFO | [t=600] VLA chunk prompt=open_microwave
+2026-09-19 15:33:03,526 | INFO | [t=602] stage done: 02_Place_Cookies_Microwave
+2026-09-19 15:33:03,796 | INFO | [t=610] VLA chunk prompt=open_microwave
+2026-09-19 15:33:04,121 | INFO | [t=620] VLA chunk prompt=open_microwave
+2026-09-19 15:33:04,450 | INFO | API VLM @t=535 task=20 subtask=open the microwave keyframes=[]
+2026-09-19 15:33:04,451 | INFO | [t=630] VLA chunk prompt=open_microwave
+2026-09-19 15:33:04,730 | INFO | [t=640] VLM prompt update from step=535: open the microwave
+2026-09-19 15:33:04,780 | INFO | [t=640] VLA chunk prompt=open the microwave
+2026-09-19 15:33:05,115 | INFO | [t=650] VLA chunk prompt=open the microwave
+2026-09-19 15:33:05,447 | INFO | [t=660] VLA chunk prompt=open the microwave
+2026-09-19 15:33:05,775 | INFO | [t=670] VLA chunk prompt=open the microwave
+2026-09-19 15:33:06,103 | INFO | [t=680] VLA chunk prompt=open the microwave
+2026-09-19 15:33:06,380 | INFO | [t=690] harness subtask override: place chocolate
+2026-09-19 15:33:06,380 | INFO | [t=690] VLM prompt update from step=535: place chocolate
+2026-09-19 15:33:06,380 | INFO | [t=690] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:33:06,431 | INFO | [t=690] VLA chunk prompt=place chocolate
+2026-09-19 15:33:06,757 | INFO | [t=700] VLA chunk prompt=place chocolate
+2026-09-19 15:33:06,883 | INFO | API VLM @t=620 task=20 subtask=place_cookies_into_microwave keyframes=[]
+2026-09-19 15:33:07,031 | INFO | [t=710] VLM prompt update from step=620: place_cookies_into_microwave
+2026-09-19 15:33:07,082 | INFO | [t=710] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:07,398 | INFO | [t=720] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:07,717 | INFO | [t=730] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:08,046 | INFO | [t=740] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:08,359 | INFO | [t=750] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:08,669 | INFO | [t=760] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:08,979 | INFO | [t=770] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:09,294 | INFO | [t=780] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:09,455 | INFO | API VLM @t=690 task=20 subtask=place_cookies_into_microwave keyframes=[]
+2026-09-19 15:33:09,611 | INFO | [t=790] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:09,924 | INFO | [t=800] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:10,234 | INFO | [t=810] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:10,544 | INFO | [t=820] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:10,853 | INFO | [t=830] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:11,164 | INFO | [t=840] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:11,479 | INFO | [t=850] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:11,799 | INFO | [t=860] VLA chunk prompt=place_cookies_into_microwave
+2026-09-19 15:33:12,068 | INFO | API VLM @t=775 task=20 subtask=close_microwave keyframes=[]
+2026-09-19 15:33:12,072 | INFO | [t=870] VLM prompt update from step=775: close_microwave
+2026-09-19 15:33:12,122 | INFO | [t=870] VLA chunk prompt=close_microwave
+2026-09-19 15:33:12,440 | INFO | [t=880] VLA chunk prompt=close_microwave
+2026-09-19 15:33:12,755 | INFO | [t=890] VLA chunk prompt=close_microwave
+2026-09-19 15:33:13,071 | INFO | [t=900] VLA chunk prompt=close_microwave
+2026-09-19 15:33:13,386 | INFO | [t=910] VLA chunk prompt=close_microwave
+2026-09-19 15:33:13,702 | INFO | [t=920] VLA chunk prompt=close_microwave
+2026-09-19 15:33:14,018 | INFO | [t=930] VLA chunk prompt=close_microwave
+2026-09-19 15:33:14,335 | INFO | [t=940] VLA chunk prompt=close_microwave
+2026-09-19 15:33:14,652 | INFO | [t=950] VLA chunk prompt=close_microwave
+2026-09-19 15:33:14,771 | INFO | API VLM @t=855 task=20 subtask=pick_up_chocolate keyframes=[]
+2026-09-19 15:33:14,919 | INFO | [t=960] VLM prompt update from step=855: pick_up_chocolate
+2026-09-19 15:33:14,970 | INFO | [t=960] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:15,287 | INFO | [t=970] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:15,603 | INFO | [t=980] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:15,923 | INFO | [t=990] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:16,240 | INFO | [t=1000] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:16,557 | INFO | [t=1010] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:16,880 | INFO | [t=1020] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:17,197 | INFO | [t=1030] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:17,512 | INFO | [t=1040] VLA chunk prompt=pick_up_chocolate
+2026-09-19 15:33:17,568 | INFO | API VLM @t=940 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:33:17,781 | INFO | [t=1050] VLM prompt update from step=940: open_microwave
+2026-09-19 15:33:17,831 | INFO | [t=1050] VLA chunk prompt=open_microwave
+2026-09-19 15:33:18,150 | INFO | [t=1060] VLA chunk prompt=open_microwave
+2026-09-19 15:33:18,317 | INFO | [t=1066] stage done: 03_Place_Chocolate_Microwave
+2026-09-19 15:33:18,317 | INFO | [t=1066] all stages done
+2026-09-19 15:33:18,317 | INFO | [t=1066] required stages done
+2026-09-19 15:33:20,749 | INFO | API VLM @t=1030 task=20 subtask=open_microwave keyframes=[]
+2026-09-19 15:33:20,770 | INFO | attempt=1 stage_score=100.0 stage_success=True failure_reason=None
+2026-09-19 15:33:20,772 | INFO | Episode 1 seed=101 stage_score=100.0 stage_success=1 goal=1.000 failure_reason=None | 01_Open_Microwave=Y | 02_Place_Cookies_Microwave=Y | 03_Place_Chocolate_Microwave=Y

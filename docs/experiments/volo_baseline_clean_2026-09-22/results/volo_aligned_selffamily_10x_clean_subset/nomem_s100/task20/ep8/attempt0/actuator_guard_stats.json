@@ -1,0 +1,11 @@
+{
+  "n_actuator_emitted_vlm": 2606,
+  "n_actuator_redacted": 0,
+  "n_actuator_blocked_underspecified": 0,
+  "n_qualifier_from_bddl": 0,
+  "n_qualifier_from_memory": 0,
+  "n_qualifier_unresolved": 0,
+  "n_actuator_gate_open": 0,
+  "n_actuator_gate_closed_healthy": 0,
+  "n_actuator_gate_closed_respec": 0
+}

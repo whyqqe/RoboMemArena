@@ -1,0 +1,1891 @@
+{
+  "task_id": 20,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      -1,
+      "open microwave"
+    ],
+    [
+      0,
+      "open_microwave"
+    ],
+    [
+      1005,
+      "open the microwave"
+    ],
+    [
+      1105,
+      "open_microwave"
+    ],
+    [
+      1475,
+      "reach_to_microwave_door"
+    ],
+    [
+      1555,
+      "open_microwave"
+    ],
+    [
+      1835,
+      "open the microwave"
+    ],
+    [
+      1925,
+      "open_microwave"
+    ],
+    [
+      2370,
+      "open the microwave"
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 395,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": -1,
+      "event_type": "retry",
+      "subtask": "",
+      "stage_name": null,
+      "metadata": {
+        "attempt_idx": 1,
+        "reason": "stage_checkpoint_retry"
+      }
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 333,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 413,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cookies_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 285,
+      "event_type": "subtask",
+      "subtask": "place cookies",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 365,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 602,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cookies_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 535,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 682,
+      "event_type": "stall",
+      "subtask": "open the microwave",
+      "stage_name": "03_Place_Chocolate_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 535,
+      "event_type": "subtask",
+      "subtask": "place chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 620,
+      "event_type": "subtask",
+      "subtask": "place_cookies_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 775,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 855,
+      "event_type": "subtask",
+      "subtask": "pick_up_chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 940,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1066,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "03_Place_Chocolate_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 86,
+      "event_type": "stage_complete",
+      "subtask": "open microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 166,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cookies_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "place cookies",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 125,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 332,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cookies_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 310,
+      "event_type": "subtask",
+      "subtask": "place_cookies_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 412,
+      "event_type": "stall",
+      "subtask": "place_cookies_into_microwave",
+      "stage_name": "03_Place_Chocolate_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 310,
+      "event_type": "subtask",
+      "subtask": "place chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 390,
+      "event_type": "subtask",
+      "subtask": "pick_up_cookies",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 470,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1125,
+      "event_type": "subtask",
+      "subtask": "place_cookies_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1305,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1500,
+      "event_type": "subtask",
+      "subtask": "reach_to_microwave_door",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1595,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1910,
+      "event_type": "subtask",
+      "subtask": "reach_to_cookies",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1995,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 92,
+      "event_type": "stage_complete",
+      "subtask": "open microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 172,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cookies_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "place cookies",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 155,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 322,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cookies_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 402,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "03_Place_Chocolate_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 245,
+      "event_type": "subtask",
+      "subtask": "place chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 340,
+      "event_type": "subtask",
+      "subtask": "place_cookies_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 775,
+      "event_type": "subtask",
+      "subtask": "place cookies into the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 855,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1185,
+      "event_type": "subtask",
+      "subtask": "place_cookies_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1265,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2120,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2205,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1005,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1105,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1475,
+      "event_type": "subtask",
+      "subtask": "reach_to_microwave_door",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1555,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1835,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1925,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2370,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 400,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 480,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cookies_Microwave:80"
+    },
+    {
+      "step": 480,
+      "action": "subtask_override",
+      "instruction": "place cookies",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 320,
+      "action": "subtask_update",
+      "instruction": "place cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 420,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 510,
+      "action": "subtask_update",
+      "instruction": "reach_to_microwave_handle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 595,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2160,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2240,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 96,
+      "action": "stage_complete",
+      "instruction": "open microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 176,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cookies_Microwave:80"
+    },
+    {
+      "step": 176,
+      "action": "subtask_override",
+      "instruction": "place cookies",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 125,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 405,
+      "action": "subtask_update",
+      "instruction": "reach_to_cookie",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 490,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 560,
+      "action": "subtask_update",
+      "instruction": "reach_to_open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 645,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1265,
+      "action": "subtask_update",
+      "instruction": "reach_to_cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1370,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1640,
+      "action": "subtask_update",
+      "instruction": "pick_up_chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1720,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1875,
+      "action": "subtask_update",
+      "instruction": "pick_up_chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1990,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2065,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2145,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 146,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 226,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cookies_Microwave:80"
+    },
+    {
+      "step": 226,
+      "action": "subtask_override",
+      "instruction": "place cookies",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 105,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 220,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 310,
+      "action": "subtask_update",
+      "instruction": "reach_to_cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 395,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": -1,
+      "action": "retry",
+      "instruction": "",
+      "outcome": "resume",
+      "notes": "stage_checkpoint_retry"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 333,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 413,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cookies_Microwave:80"
+    },
+    {
+      "step": 413,
+      "action": "subtask_override",
+      "instruction": "place cookies",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 285,
+      "action": "subtask_update",
+      "instruction": "place cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 365,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 602,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 535,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 682,
+      "action": "stall",
+      "instruction": "open the microwave",
+      "outcome": "stalled",
+      "notes": "03_Place_Chocolate_Microwave:80"
+    },
+    {
+      "step": 682,
+      "action": "subtask_override",
+      "instruction": "place chocolate",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Place_Chocolate_Microwave"
+    },
+    {
+      "step": 535,
+      "action": "subtask_update",
+      "instruction": "place chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 620,
+      "action": "subtask_update",
+      "instruction": "place_cookies_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 775,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 855,
+      "action": "subtask_update",
+      "instruction": "pick_up_chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 940,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1066,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "03_Place_Chocolate_Microwave"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 86,
+      "action": "stage_complete",
+      "instruction": "open microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 166,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cookies_Microwave:80"
+    },
+    {
+      "step": 166,
+      "action": "subtask_override",
+      "instruction": "place cookies",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 125,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 332,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask_update",
+      "instruction": "place_cookies_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 412,
+      "action": "stall",
+      "instruction": "place_cookies_into_microwave",
+      "outcome": "stalled",
+      "notes": "03_Place_Chocolate_Microwave:80"
+    },
+    {
+      "step": 412,
+      "action": "subtask_override",
+      "instruction": "place chocolate",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Place_Chocolate_Microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask_update",
+      "instruction": "place chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 390,
+      "action": "subtask_update",
+      "instruction": "pick_up_cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 470,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1125,
+      "action": "subtask_update",
+      "instruction": "place_cookies_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1305,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1500,
+      "action": "subtask_update",
+      "instruction": "reach_to_microwave_door",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1595,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1910,
+      "action": "subtask_update",
+      "instruction": "reach_to_cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1995,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 92,
+      "action": "stage_complete",
+      "instruction": "open microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 172,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cookies_Microwave:80"
+    },
+    {
+      "step": 172,
+      "action": "subtask_override",
+      "instruction": "place cookies",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cookies",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 155,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 322,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "02_Place_Cookies_Microwave"
+    },
+    {
+      "step": 402,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "03_Place_Chocolate_Microwave:80"
+    },
+    {
+      "step": 402,
+      "action": "subtask_override",
+      "instruction": "place chocolate",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Place_Chocolate_Microwave"
+    },
+    {
+      "step": 245,
+      "action": "subtask_update",
+      "instruction": "place chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 340,
+      "action": "subtask_update",
+      "instruction": "place_cookies_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 775,
+      "action": "subtask_update",
+      "instruction": "place cookies into the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 855,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1185,
+      "action": "subtask_update",
+      "instruction": "place_cookies_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1265,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2120,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2205,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cookies into the microwave and then put chocolate into the location where the cookies were placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1005,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1105,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1475,
+      "action": "subtask_update",
+      "instruction": "reach_to_microwave_door",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1555,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1835,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1925,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2370,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 400,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 320,
+      "action": "subtask",
+      "prompt": "place cookies"
+    },
+    {
+      "step": 420,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 510,
+      "action": "subtask",
+      "prompt": "reach_to_microwave_handle"
+    },
+    {
+      "step": 595,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 2160,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 2240,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 96,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cookies"
+    },
+    {
+      "step": 125,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 405,
+      "action": "subtask",
+      "prompt": "reach_to_cookie"
+    },
+    {
+      "step": 490,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 560,
+      "action": "subtask",
+      "prompt": "reach_to_open_microwave"
+    },
+    {
+      "step": 645,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1265,
+      "action": "subtask",
+      "prompt": "reach_to_cookies"
+    },
+    {
+      "step": 1370,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1640,
+      "action": "subtask",
+      "prompt": "pick_up_chocolate"
+    },
+    {
+      "step": 1720,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1875,
+      "action": "subtask",
+      "prompt": "pick_up_chocolate"
+    },
+    {
+      "step": 1990,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 2065,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 2145,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 146,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cookies"
+    },
+    {
+      "step": 105,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 220,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask",
+      "prompt": "reach_to_cookies"
+    },
+    {
+      "step": 395,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 333,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 285,
+      "action": "subtask",
+      "prompt": "place cookies"
+    },
+    {
+      "step": 365,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 602,
+      "action": "stage_complete",
+      "stage": "02_Place_Cookies_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 535,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 535,
+      "action": "subtask",
+      "prompt": "place chocolate"
+    },
+    {
+      "step": 620,
+      "action": "subtask",
+      "prompt": "place_cookies_into_microwave"
+    },
+    {
+      "step": 775,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 855,
+      "action": "subtask",
+      "prompt": "pick_up_chocolate"
+    },
+    {
+      "step": 940,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1066,
+      "action": "stage_complete",
+      "stage": "03_Place_Chocolate_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 86,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cookies"
+    },
+    {
+      "step": 125,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 332,
+      "action": "stage_complete",
+      "stage": "02_Place_Cookies_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask",
+      "prompt": "place_cookies_into_microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask",
+      "prompt": "place chocolate"
+    },
+    {
+      "step": 390,
+      "action": "subtask",
+      "prompt": "pick_up_cookies"
+    },
+    {
+      "step": 470,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1125,
+      "action": "subtask",
+      "prompt": "place_cookies_into_microwave"
+    },
+    {
+      "step": 1305,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1500,
+      "action": "subtask",
+      "prompt": "reach_to_microwave_door"
+    },
+    {
+      "step": 1595,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1910,
+      "action": "subtask",
+      "prompt": "reach_to_cookies"
+    },
+    {
+      "step": 1995,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 92,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cookies"
+    },
+    {
+      "step": 155,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 322,
+      "action": "stage_complete",
+      "stage": "02_Place_Cookies_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 245,
+      "action": "subtask",
+      "prompt": "place chocolate"
+    },
+    {
+      "step": 340,
+      "action": "subtask",
+      "prompt": "place_cookies_into_microwave"
+    },
+    {
+      "step": 775,
+      "action": "subtask",
+      "prompt": "place cookies into the microwave"
+    },
+    {
+      "step": 855,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1185,
+      "action": "subtask",
+      "prompt": "place_cookies_into_microwave"
+    },
+    {
+      "step": 1265,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 2120,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 2205,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1005,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 1105,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1475,
+      "action": "subtask",
+      "prompt": "reach_to_microwave_door"
+    },
+    {
+      "step": 1555,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1835,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 1925,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 2370,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave"
+      ],
+      "stalled_stage": "02_Place_Cookies_Microwave"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave"
+      ],
+      "stalled_stage": "02_Place_Cookies_Microwave"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave"
+      ],
+      "stalled_stage": "02_Place_Cookies_Microwave"
+    },
+    {
+      "attempt_idx": 1,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Open_Microwave",
+        "02_Place_Cookies_Microwave",
+        "03_Place_Chocolate_Microwave"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave",
+        "02_Place_Cookies_Microwave"
+      ],
+      "stalled_stage": "03_Place_Chocolate_Microwave"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave",
+        "02_Place_Cookies_Microwave"
+      ],
+      "stalled_stage": "03_Place_Chocolate_Microwave"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Microwave"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 1,
+    "stage_score_pct": 100.0,
+    "stage_success": true,
+    "failure_reason": null,
+    "completed_stages": [
+      "01_Open_Microwave",
+      "02_Place_Cookies_Microwave",
+      "03_Place_Chocolate_Microwave"
+    ],
+    "stalled_stage": null
+  }
+}

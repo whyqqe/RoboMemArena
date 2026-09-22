@@ -1,0 +1,6 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+12	completed		43.3	0.0000	0.4333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task12	2081.16
+13	completed		50.0	0.2000	0.5000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task13	1711.58
+17	completed		63.3	0.1000	0.6333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task17	1743.29
+20	completed		50.0	0.1000	0.5000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task20	934.4
+23	completed		56.7	0.4000	0.5667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100/videos/task23	599.15

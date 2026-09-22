@@ -1,0 +1,3 @@
+task_id	status	stage_score_pct	stage_success_rate	goal_success_rate	duration_sec
+20	completed	50.0	0.1	0.5	934.4
+23	completed	56.7	0.4	0.5667	599.15

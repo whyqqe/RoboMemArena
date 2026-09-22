@@ -1,0 +1,116 @@
+2026-09-19 15:50:24,563 | INFO | task_id=23 bddl=/project/peilab/why/RoboMemArena/bddl/23_cream_popcorn_microwave.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-19 15:50:26,219 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-19 15:50:26,428 | INFO | [t=10] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:26,656 | INFO | [t=20] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:26,882 | INFO | [t=30] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:27,108 | INFO | [t=40] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:27,336 | INFO | [t=50] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:27,565 | INFO | [t=60] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:27,794 | INFO | [t=70] VLA chunk prompt=Put cream into the microwave and then put popcorn into the location where the cream was placed.
+2026-09-19 15:50:27,973 | INFO | [t=80] harness subtask override: open microwave
+2026-09-19 15:50:27,973 | INFO | [t=80] VLM prompt update from step=-1: open microwave
+2026-09-19 15:50:27,973 | INFO | [t=80] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:50:28,022 | INFO | [t=80] VLA chunk prompt=open microwave
+2026-09-19 15:50:28,251 | INFO | [t=90] VLA chunk prompt=open microwave
+2026-09-19 15:50:28,479 | INFO | [t=100] VLA chunk prompt=open microwave
+2026-09-19 15:50:28,707 | INFO | [t=110] VLA chunk prompt=open microwave
+2026-09-19 15:50:28,935 | INFO | API VLM @t=0 task=23 subtask=open_microwave keyframes=[]
+2026-09-19 15:50:28,936 | INFO | [t=120] VLA chunk prompt=open microwave
+2026-09-19 15:50:29,116 | INFO | [t=130] VLM prompt update from step=0: open_microwave
+2026-09-19 15:50:29,166 | INFO | [t=130] VLA chunk prompt=open_microwave
+2026-09-19 15:50:29,418 | INFO | [t=140] VLA chunk prompt=open_microwave
+2026-09-19 15:50:29,677 | INFO | [t=150] VLA chunk prompt=open_microwave
+2026-09-19 15:50:29,938 | INFO | [t=160] VLA chunk prompt=open_microwave
+2026-09-19 15:50:30,203 | INFO | [t=170] VLA chunk prompt=open_microwave
+2026-09-19 15:50:30,473 | INFO | [t=180] VLA chunk prompt=open_microwave
+2026-09-19 15:50:30,746 | INFO | [t=190] VLA chunk prompt=open_microwave
+2026-09-19 15:50:31,023 | INFO | [t=200] VLA chunk prompt=open_microwave
+2026-09-19 15:50:31,069 | INFO | [t=202] stage done: 01_Open_Microwave
+2026-09-19 15:50:31,302 | INFO | [t=210] VLA chunk prompt=open_microwave
+2026-09-19 15:50:31,324 | INFO | API VLM @t=110 task=23 subtask=open_microwave keyframes=[]
+2026-09-19 15:50:31,584 | INFO | [t=220] VLA chunk prompt=open_microwave
+2026-09-19 15:50:31,871 | INFO | [t=230] VLA chunk prompt=open_microwave
+2026-09-19 15:50:32,163 | INFO | [t=240] VLA chunk prompt=open_microwave
+2026-09-19 15:50:32,457 | INFO | [t=250] VLA chunk prompt=open_microwave
+2026-09-19 15:50:32,753 | INFO | [t=260] VLA chunk prompt=open_microwave
+2026-09-19 15:50:33,052 | INFO | [t=270] VLA chunk prompt=open_microwave
+2026-09-19 15:50:33,351 | INFO | [t=280] VLA chunk prompt=open_microwave
+2026-09-19 15:50:33,599 | INFO | [t=290] harness subtask override: place cream
+2026-09-19 15:50:33,599 | INFO | [t=290] VLM prompt update from step=110: place cream
+2026-09-19 15:50:33,599 | INFO | [t=290] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:50:33,649 | INFO | [t=290] VLA chunk prompt=place cream
+2026-09-19 15:50:33,906 | INFO | API VLM @t=200 task=23 subtask=open_microwave keyframes=[]
+2026-09-19 15:50:33,948 | INFO | [t=300] VLA chunk prompt=place cream
+2026-09-19 15:50:34,200 | INFO | [t=310] VLM prompt update from step=200: open_microwave
+2026-09-19 15:50:34,250 | INFO | [t=310] VLA chunk prompt=open_microwave
+2026-09-19 15:50:34,551 | INFO | [t=320] VLA chunk prompt=open_microwave
+2026-09-19 15:50:34,852 | INFO | [t=330] VLA chunk prompt=open_microwave
+2026-09-19 15:50:35,154 | INFO | [t=340] VLA chunk prompt=open_microwave
+2026-09-19 15:50:35,457 | INFO | [t=350] VLA chunk prompt=open_microwave
+2026-09-19 15:50:35,764 | INFO | [t=360] VLA chunk prompt=open_microwave
+2026-09-19 15:50:36,084 | INFO | [t=370] VLA chunk prompt=open_microwave
+2026-09-19 15:50:36,418 | INFO | [t=380] VLA chunk prompt=open_microwave
+2026-09-19 15:50:36,726 | INFO | [t=390] VLA chunk prompt=open_microwave
+2026-09-19 15:50:36,929 | INFO | API VLM @t=290 task=23 subtask=open_microwave keyframes=[]
+2026-09-19 15:50:37,035 | INFO | [t=400] VLA chunk prompt=open_microwave
+2026-09-19 15:50:37,342 | INFO | [t=410] VLA chunk prompt=open_microwave
+2026-09-19 15:50:37,648 | INFO | [t=420] VLA chunk prompt=open_microwave
+2026-09-19 15:50:37,953 | INFO | [t=430] VLA chunk prompt=open_microwave
+2026-09-19 15:50:38,261 | INFO | [t=440] VLA chunk prompt=open_microwave
+2026-09-19 15:50:38,565 | INFO | [t=450] VLA chunk prompt=open_microwave
+2026-09-19 15:50:38,866 | INFO | [t=460] VLA chunk prompt=open_microwave
+2026-09-19 15:50:39,168 | INFO | [t=470] VLA chunk prompt=open_microwave
+2026-09-19 15:50:39,472 | INFO | [t=480] VLA chunk prompt=open_microwave
+2026-09-19 15:50:39,778 | INFO | [t=490] VLA chunk prompt=open_microwave
+2026-09-19 15:50:39,855 | INFO | [t=493] stage done: 02_Place_Cream_Microwave
+2026-09-19 15:50:39,971 | INFO | API VLM @t=385 task=23 subtask=open_microwave keyframes=[]
+2026-09-19 15:50:40,088 | INFO | [t=500] VLA chunk prompt=open_microwave
+2026-09-19 15:50:40,399 | INFO | [t=510] VLA chunk prompt=open_microwave
+2026-09-19 15:50:40,714 | INFO | [t=520] VLA chunk prompt=open_microwave
+2026-09-19 15:50:41,025 | INFO | [t=530] VLA chunk prompt=open_microwave
+2026-09-19 15:50:41,335 | INFO | [t=540] VLA chunk prompt=open_microwave
+2026-09-19 15:50:41,642 | INFO | [t=550] VLA chunk prompt=open_microwave
+2026-09-19 15:50:41,946 | INFO | [t=560] VLA chunk prompt=open_microwave
+2026-09-19 15:50:42,248 | INFO | [t=570] VLA chunk prompt=open_microwave
+2026-09-19 15:50:42,498 | INFO | [t=580] harness subtask override: place popcorn
+2026-09-19 15:50:42,498 | INFO | [t=580] VLM prompt update from step=385: place popcorn
+2026-09-19 15:50:42,498 | INFO | [t=580] harness forced VLM replan after stall (pmh visual retrieve armed)
+2026-09-19 15:50:42,548 | INFO | [t=580] VLA chunk prompt=place popcorn
+2026-09-19 15:50:42,847 | INFO | [t=590] VLA chunk prompt=place popcorn
+2026-09-19 15:50:42,999 | INFO | API VLM @t=485 task=23 subtask=reach_to_cream keyframes=[]
+2026-09-19 15:50:43,100 | INFO | [t=600] VLM prompt update from step=485: reach_to_cream
+2026-09-19 15:50:43,150 | INFO | [t=600] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:43,452 | INFO | [t=610] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:43,749 | INFO | [t=620] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:44,045 | INFO | [t=630] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:44,346 | INFO | [t=640] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:44,649 | INFO | [t=650] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:44,949 | INFO | [t=660] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:45,249 | INFO | [t=670] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:45,550 | INFO | [t=680] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:45,851 | INFO | [t=690] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:46,155 | INFO | [t=700] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:46,466 | INFO | [t=710] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:46,740 | INFO | API VLM @t=585 task=23 subtask=pick_up_popcorn keyframes=[]
+2026-09-19 15:50:46,775 | INFO | [t=720] VLA chunk prompt=reach_to_cream
+2026-09-19 15:50:47,032 | INFO | [t=730] VLM prompt update from step=585: pick_up_popcorn
+2026-09-19 15:50:47,082 | INFO | [t=730] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:47,387 | INFO | [t=740] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:47,693 | INFO | [t=750] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:48,000 | INFO | [t=760] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:48,308 | INFO | [t=770] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:48,616 | INFO | [t=780] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:48,923 | INFO | [t=790] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:49,237 | INFO | [t=800] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:49,553 | INFO | [t=810] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:49,859 | INFO | [t=820] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:50,148 | INFO | API VLM @t=710 task=23 subtask=close_microwave keyframes=[]
+2026-09-19 15:50:50,165 | INFO | [t=830] VLA chunk prompt=pick_up_popcorn
+2026-09-19 15:50:50,421 | INFO | [t=840] VLM prompt update from step=710: close_microwave
+2026-09-19 15:50:50,471 | INFO | [t=840] VLA chunk prompt=close_microwave
+2026-09-19 15:50:50,704 | INFO | [t=849] stage done: 03_Place_Popcorn_Microwave
+2026-09-19 15:50:50,704 | INFO | [t=849] all stages done
+2026-09-19 15:50:50,704 | INFO | [t=849] required stages done
+2026-09-19 15:50:52,654 | INFO | API VLM @t=820 task=23 subtask=close_microwave keyframes=[]
+2026-09-19 15:50:52,679 | INFO | attempt=0 stage_score=100.0 stage_success=True failure_reason=None
+2026-09-19 15:50:52,679 | INFO | Episode 6 seed=106 stage_score=100.0 stage_success=1 goal=1.000 failure_reason=None | 01_Open_Microwave=Y | 02_Place_Cream_Microwave=Y | 03_Place_Popcorn_Microwave=Y

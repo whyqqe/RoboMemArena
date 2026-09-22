@@ -1,0 +1,35 @@
+==============================================================================================================
+  stall ladder 逐事件归因：每次 override 是否把机器人推回【已完成】的 stage
+==============================================================================================================
+   task  override     可归因     正确      回退已完成 stage      其它错误      回归率
+  ----------------------------------------------------------------------------------------------------------
+     12        40      40     20               20         0   50.0%
+     13        31      31     17               14         0   45.2%
+     17        42      41     17               24         0   58.5%
+     20        28      27     26                0         1    0.0%
+     23        23      22     21                0         1    0.0%
+  ----------------------------------------------------------------------------------------------------------
+    ALL       164     161    101               58         2   36.0%
+
+==============================================================================================================
+  典型误导向实例（velocity: 在 place 阶段被推回 open 阶段）
+==============================================================================================================
+  task12 @t=720: 活跃 stage=02_Place_Cookies_Middle_Drawer
+      ladder 给了 'open middle drawer'   正确应为 'place cookies'   
+  task12 @t=970: 活跃 stage=02_Place_Cookies_Middle_Drawer
+      ladder 给了 'open middle drawer'   正确应为 'place cookies'   
+  task13 @t=1090: 活跃 stage=02_Place_Cookies_Middle_Drawer
+      ladder 给了 'open middle drawer'   正确应为 'place cookies'   
+  task13 @t=210: 活跃 stage=02_Place_Cookies_Middle_Drawer
+      ladder 给了 'open middle drawer'   正确应为 'place cookies'   
+  task17 @t=480: 活跃 stage=02_Place_Butter_Middle_Drawer
+      ladder 给了 'open middle drawer'   正确应为 'place butter'   
+  task17 @t=1890: 活跃 stage=03_Place_Chocolate_Middle_Drawer
+      ladder 给了 'open middle drawer'   正确应为 'place chocolate'   
+
+==============================================================================================================
+  drawer  : 可归因 override  112  正确   54  误导向   58  (51.8%)
+  micro   : 可归因 override   49  正确   47  误导向    0  (0.0%)
+  t4t5: 无
+==============================================================================================================
+  已写出: docs/experiments/volo_baseline_clean_2026-09-22/results/audit/override_attribution.json

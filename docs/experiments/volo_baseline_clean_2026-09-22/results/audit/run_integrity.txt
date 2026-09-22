@@ -1,0 +1,35 @@
+====================================================================================================
+  运行完整性检查：同一输出目录是否被两个写入者共享（作业碰撞）
+====================================================================================================
+
+  ── volo_aligned_t4t5_10x/nomem_s100 ──
+     ❌ summary.json: summary.json rows=3 unique=2; duplicated=[4] no_dir=[] not_in_summary=[]
+     ❌ task4: 10 个 ep 目录，其中 3 个异常
+          ep1: MULTIPLE Episode records (2), same seed [101], differing scores [12.5, 50.0]
+             记录: [(101, 12.5), (101, 50.0)]
+          ep2: MULTIPLE Episode records (2), same seed [102]
+             记录: [(102, 50.0), (102, 50.0)]
+          ep6: MULTIPLE Episode records (2), same seed [106], differing scores [25.0, 75.0]
+             记录: [(106, 25.0), (106, 75.0)]
+     ❌ task5: 10 个 ep 目录，其中 3 个异常
+          ep2: MULTIPLE Episode records (2), same seed [102], differing scores [25.0, 50.0]
+             记录: [(102, 50.0), (102, 25.0)]
+          ep5: MULTIPLE Episode records (2), same seed [105], differing scores [37.5, 50.0]
+             记录: [(105, 37.5), (105, 50.0)]
+          ep6: timestamps run backwards 1x
+     判定: ❌ 不自洽 —— 不可发布
+
+  ── volo_aligned_selffamily_10x/nomem_s100 ──
+     ✅ task12: 10 个 ep 目录
+     ✅ task13: 10 个 ep 目录
+     ✅ task17: 10 个 ep 目录
+     ✅ task20: 10 个 ep 目录
+     ✅ task23: 10 个 ep 目录
+     判定: ✅ 内部自洽
+
+====================================================================================================
+  结论: 1/2 个运行内部自洽
+        不自洽的运行来自「两个作业写同一输出目录」，其 episode 级 JSON/视频
+        无法确定归属哪个记录，summary 也已重复计数 —— 必须重跑，不能发布。
+====================================================================================================
+  已写出: docs/experiments/volo_baseline_clean_2026-09-22/results/audit/run_integrity.json

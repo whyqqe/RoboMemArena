@@ -1,0 +1,1601 @@
+{
+  "task_id": 23,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      -1,
+      "open microwave"
+    ],
+    [
+      0,
+      "open the microwave"
+    ],
+    [
+      105,
+      "open_microwave"
+    ],
+    [
+      1130,
+      "open the microwave"
+    ],
+    [
+      1215,
+      "open_microwave"
+    ],
+    [
+      1625,
+      "close_microwave"
+    ],
+    [
+      1710,
+      "open_microwave"
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 101,
+      "event_type": "stage_complete",
+      "subtask": "open microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 181,
+      "event_type": "stall",
+      "subtask": "open the microwave",
+      "stage_name": "02_Place_Cream_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "place cream",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 110,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 200,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 388,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cream_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 468,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "03_Place_Popcorn_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 200,
+      "event_type": "subtask",
+      "subtask": "place popcorn",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 335,
+      "event_type": "subtask",
+      "subtask": "place_cream_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 460,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 840,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1005,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1115,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1635,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1725,
+      "event_type": "subtask",
+      "subtask": "reach_to_popcorn",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1865,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2035,
+      "event_type": "subtask",
+      "subtask": "reach_to_cream",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2115,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 158,
+      "event_type": "stage_complete",
+      "subtask": "open the microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 238,
+      "event_type": "stall",
+      "subtask": "open the microwave",
+      "stage_name": "02_Place_Cream_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 135,
+      "event_type": "subtask",
+      "subtask": "place cream",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 220,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 390,
+      "event_type": "subtask",
+      "subtask": "pick_up_cream",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 490,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1860,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1940,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 110,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 503,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 583,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cream_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 410,
+      "event_type": "subtask",
+      "subtask": "place cream",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 550,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 630,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1670,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1775,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2065,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2285,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 93,
+      "event_type": "stage_complete",
+      "subtask": "open microwave",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 173,
+      "event_type": "stall",
+      "subtask": "open the microwave",
+      "stage_name": "02_Place_Cream_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "place cream",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 105,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 398,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "02_Place_Cream_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 478,
+      "event_type": "stall",
+      "subtask": "open_microwave",
+      "stage_name": "03_Place_Popcorn_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 295,
+      "event_type": "subtask",
+      "subtask": "place popcorn",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 390,
+      "event_type": "subtask",
+      "subtask": "place_cream_into_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 550,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 737,
+      "event_type": "stage_complete",
+      "subtask": "open_microwave",
+      "stage_name": "03_Place_Popcorn_Microwave",
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "stage_name": "01_Open_Microwave",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "open microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 105,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1130,
+      "event_type": "subtask",
+      "subtask": "open the microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1215,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1625,
+      "event_type": "subtask",
+      "subtask": "close_microwave",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1710,
+      "event_type": "subtask",
+      "subtask": "open_microwave",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 95,
+      "action": "stage_complete",
+      "instruction": "open microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 175,
+      "action": "stall",
+      "instruction": "open the microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cream_Microwave:80"
+    },
+    {
+      "step": 175,
+      "action": "subtask_override",
+      "instruction": "place cream",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cream_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 105,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 362,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "02_Place_Cream_Microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask_update",
+      "instruction": "place_cream_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 442,
+      "action": "stall",
+      "instruction": "place_cream_into_microwave",
+      "outcome": "stalled",
+      "notes": "03_Place_Popcorn_Microwave:80"
+    },
+    {
+      "step": 442,
+      "action": "subtask_override",
+      "instruction": "place popcorn",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Place_Popcorn_Microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask_update",
+      "instruction": "place popcorn",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 390,
+      "action": "subtask_update",
+      "instruction": "place_cream_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 475,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 565,
+      "action": "subtask_update",
+      "instruction": "reach_to_popcorn",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 737,
+      "action": "stage_complete",
+      "instruction": "reach_to_popcorn",
+      "outcome": "success",
+      "notes": "03_Place_Popcorn_Microwave"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 101,
+      "action": "stage_complete",
+      "instruction": "open microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 181,
+      "action": "stall",
+      "instruction": "open the microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cream_Microwave:80"
+    },
+    {
+      "step": 181,
+      "action": "subtask_override",
+      "instruction": "place cream",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cream_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 110,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 200,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 388,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "02_Place_Cream_Microwave"
+    },
+    {
+      "step": 468,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "03_Place_Popcorn_Microwave:80"
+    },
+    {
+      "step": 468,
+      "action": "subtask_override",
+      "instruction": "place popcorn",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Place_Popcorn_Microwave"
+    },
+    {
+      "step": 200,
+      "action": "subtask_update",
+      "instruction": "place popcorn",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 335,
+      "action": "subtask_update",
+      "instruction": "place_cream_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 460,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 840,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1005,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1115,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1635,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1725,
+      "action": "subtask_update",
+      "instruction": "reach_to_popcorn",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1865,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2035,
+      "action": "subtask_update",
+      "instruction": "reach_to_cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2115,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 158,
+      "action": "stage_complete",
+      "instruction": "open the microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 238,
+      "action": "stall",
+      "instruction": "open the microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cream_Microwave:80"
+    },
+    {
+      "step": 238,
+      "action": "subtask_override",
+      "instruction": "place cream",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cream_Microwave"
+    },
+    {
+      "step": 135,
+      "action": "subtask_update",
+      "instruction": "place cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 220,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 390,
+      "action": "subtask_update",
+      "instruction": "pick_up_cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 490,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1860,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1940,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 110,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 503,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 583,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cream_Microwave:80"
+    },
+    {
+      "step": 583,
+      "action": "subtask_override",
+      "instruction": "place cream",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cream_Microwave"
+    },
+    {
+      "step": 410,
+      "action": "subtask_update",
+      "instruction": "place cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 550,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 630,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1670,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1775,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2065,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2285,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 93,
+      "action": "stage_complete",
+      "instruction": "open microwave",
+      "outcome": "success",
+      "notes": "01_Open_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 173,
+      "action": "stall",
+      "instruction": "open the microwave",
+      "outcome": "stalled",
+      "notes": "02_Place_Cream_Microwave:80"
+    },
+    {
+      "step": 173,
+      "action": "subtask_override",
+      "instruction": "place cream",
+      "outcome": "planned",
+      "notes": "stall_recovery:02_Place_Cream_Microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place cream",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 105,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 398,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "02_Place_Cream_Microwave"
+    },
+    {
+      "step": 478,
+      "action": "stall",
+      "instruction": "open_microwave",
+      "outcome": "stalled",
+      "notes": "03_Place_Popcorn_Microwave:80"
+    },
+    {
+      "step": 478,
+      "action": "subtask_override",
+      "instruction": "place popcorn",
+      "outcome": "planned",
+      "notes": "stall_recovery:03_Place_Popcorn_Microwave"
+    },
+    {
+      "step": 295,
+      "action": "subtask_update",
+      "instruction": "place popcorn",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 390,
+      "action": "subtask_update",
+      "instruction": "place_cream_into_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 550,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 737,
+      "action": "stage_complete",
+      "instruction": "open_microwave",
+      "outcome": "success",
+      "notes": "03_Place_Popcorn_Microwave"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Put cream into the microwave and then put popcorn into the location where the cream was placed.",
+      "outcome": "stalled",
+      "notes": "01_Open_Microwave:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "open microwave",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Open_Microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "open microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 105,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1130,
+      "action": "subtask_update",
+      "instruction": "open the microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1215,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1625,
+      "action": "subtask_update",
+      "instruction": "close_microwave",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1710,
+      "action": "subtask_update",
+      "instruction": "open_microwave",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 95,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cream"
+    },
+    {
+      "step": 105,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 362,
+      "action": "stage_complete",
+      "stage": "02_Place_Cream_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask",
+      "prompt": "place_cream_into_microwave"
+    },
+    {
+      "step": 310,
+      "action": "subtask",
+      "prompt": "place popcorn"
+    },
+    {
+      "step": 390,
+      "action": "subtask",
+      "prompt": "place_cream_into_microwave"
+    },
+    {
+      "step": 475,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 565,
+      "action": "subtask",
+      "prompt": "reach_to_popcorn"
+    },
+    {
+      "step": 737,
+      "action": "stage_complete",
+      "stage": "03_Place_Popcorn_Microwave",
+      "prompt": "reach_to_popcorn"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 101,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cream"
+    },
+    {
+      "step": 110,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 200,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 388,
+      "action": "stage_complete",
+      "stage": "02_Place_Cream_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 200,
+      "action": "subtask",
+      "prompt": "place popcorn"
+    },
+    {
+      "step": 335,
+      "action": "subtask",
+      "prompt": "place_cream_into_microwave"
+    },
+    {
+      "step": 460,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 840,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1005,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 1115,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1635,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 1725,
+      "action": "subtask",
+      "prompt": "reach_to_popcorn"
+    },
+    {
+      "step": 1865,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 2035,
+      "action": "subtask",
+      "prompt": "reach_to_cream"
+    },
+    {
+      "step": 2115,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 158,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 135,
+      "action": "subtask",
+      "prompt": "place cream"
+    },
+    {
+      "step": 220,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 390,
+      "action": "subtask",
+      "prompt": "pick_up_cream"
+    },
+    {
+      "step": 490,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1860,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 1940,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 110,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 503,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 410,
+      "action": "subtask",
+      "prompt": "place cream"
+    },
+    {
+      "step": 550,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 630,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1670,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 1775,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 2065,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 2285,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 93,
+      "action": "stage_complete",
+      "stage": "01_Open_Microwave",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place cream"
+    },
+    {
+      "step": 105,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 398,
+      "action": "stage_complete",
+      "stage": "02_Place_Cream_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 295,
+      "action": "subtask",
+      "prompt": "place popcorn"
+    },
+    {
+      "step": 390,
+      "action": "subtask",
+      "prompt": "place_cream_into_microwave"
+    },
+    {
+      "step": 550,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 737,
+      "action": "stage_complete",
+      "stage": "03_Place_Popcorn_Microwave",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "open microwave"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 105,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1130,
+      "action": "subtask",
+      "prompt": "open the microwave"
+    },
+    {
+      "step": 1215,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    },
+    {
+      "step": 1625,
+      "action": "subtask",
+      "prompt": "close_microwave"
+    },
+    {
+      "step": 1710,
+      "action": "subtask",
+      "prompt": "open_microwave"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Open_Microwave",
+        "02_Place_Cream_Microwave",
+        "03_Place_Popcorn_Microwave"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave",
+        "02_Place_Cream_Microwave"
+      ],
+      "stalled_stage": "03_Place_Popcorn_Microwave"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave"
+      ],
+      "stalled_stage": "02_Place_Cream_Microwave"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Microwave"
+      ],
+      "stalled_stage": "02_Place_Cream_Microwave"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Open_Microwave",
+        "02_Place_Cream_Microwave",
+        "03_Place_Popcorn_Microwave"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Microwave"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 100.0,
+    "stage_success": true,
+    "failure_reason": null,
+    "completed_stages": [
+      "01_Open_Microwave",
+      "02_Place_Cream_Microwave",
+      "03_Place_Popcorn_Microwave"
+    ],
+    "stalled_stage": null
+  }
+}
