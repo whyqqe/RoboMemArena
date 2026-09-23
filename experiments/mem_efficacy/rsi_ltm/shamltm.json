@@ -1,0 +1,30 @@
+{
+  "schema": "rsi.cross_task_ltm.v1",
+  "arm": "shamltm",
+  "note": "FORM CONTROL for the RSI treatment. Deliberately the same schema, the same trigger (an opening stage held for min_steps_on_stage), the same header, the same entry count, and a near-identical character length -- with content drawn from a DISJOINT family (the counting/pour tasks) so that it cannot transfer to an occlusion or occluded-location task. Its job is to separate the treatment's CONTENT from the effect of putting a targeted block in the prompt at that moment at all.",
+  "provenance": {
+    "why_a_sham_is_mandatory": "Any text in a prompt changes behaviour, so an effect measured against a text-free baseline cannot be attributed to content. Without this arm, 'the experience memory helped' and 'a longer prompt helped at the stuck moment' are the same number.",
+    "how_the_content_was_chosen": "From the counting / counting+occlusion family's stage vocabulary (02_Pour_One, 03_Pour_Two) and its objects. Applied to an occlusion task it is structurally valid and operationally irrelevant.",
+    "length_match": "The treatment entry is 505 characters and this one is 491, a 2.8% difference. Measured, not estimated -- the injected block length is matched closely enough that it cannot plausibly account for a delta, but it is not byte-identical and is not claimed to be."
+  },
+  "entries": [
+    {
+      "id": "pour_failed_diversify_v1",
+      "stage_pattern": "open",
+      "min_steps_on_stage": 240,
+      "grounding": "SHAM. Not mined from these tasks. It is the treatment entry with the family's vocabulary replaced by the pouring family's, which is what makes it a form control rather than a second treatment.",
+      "checkable_tokens": [
+        "vessel",
+        "pour",
+        "pick_up_",
+        "pour_into_"
+      ],
+      "text": "The tasks in this family begin by pouring into a vessel. Pouring is a motion the controller performs, so re-issuing the command does not retry the motion differently: three pouring commands in a row produce the same approach three times. When the vessel has not registered after two attempts, the next command should name something else -- the receiving container (pour_into_<vessel>, pick_up_<vessel>) -- so the arm approaches from a new pose; issue another pouring command only after that.",
+      "deliver_to_families": [
+        "occlusion",
+        "occluded-location"
+      ],
+      "delivery_scoping": "SET TO THE EXPERIMENT'S OWN FAMILIES ON PURPOSE, and this is the whole design of the control. The field governs DELIVERY, not applicability: a sham scoped to `counting` would never be delivered on tasks 12/13/17/20/23, which makes it a SECOND BASELINE rather than a form control -- and a second baseline is worse than no control, because it looks like one. The content is what is controlled here, and it is drawn from the pour family so it cannot apply."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+2	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task2	43.08
+3	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task3	26.38
+4	completed		50.0	0.0000	0.5000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task4	209.69
+5	completed		0.0	0.0000	0.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task5	207.09
+6	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task6	169.73
+7	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task7	172.45
+8	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task8	181.08
+9	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task9	130.99
+10	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task10	31.13
+11	completed		40.0	0.0000	0.4000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task11	215.53
+12	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task12	221.1
+13	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task13	90.12
+14	completed		40.0	0.0000	0.4000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task14	219.64
+15	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task15	169.73
+16	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task16	170.83
+17	completed		33.3	0.0000	0.3333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task17	217.96
+18	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task18	51.33
+19	completed		33.3	0.0000	0.3333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task19	218.14
+20	completed		33.3	0.0000	0.3333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task20	171.83
+21	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task21	32.04
+22	completed		0.0	0.0000	0.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task22	88.83
+23	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task23	30.29
+24	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task24	32.85
+25	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task25	34.88
+26	completed		0.0	0.0000	0.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/nomem_s100/tasks2to26/videos/task26	181.81

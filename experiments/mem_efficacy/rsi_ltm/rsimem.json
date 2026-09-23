@@ -1,0 +1,57 @@
+{
+  "schema": "rsi.cross_task_ltm.v1",
+  "arm": "rsimem",
+  "note": "Cross-task experience entries for the RSI treatment arm. Mined from the measured failure traces of the VoLo-aligned nomem baseline (tasks 12/13/17/20/23, seeds 100-109, 50 episodes) and delivered to tasks in the SAME FAMILY, so a single entry crosses tasks by construction.",
+  "provenance": {
+    "source_run": "experiments/mem_efficacy/results/volo_aligned_selffamily_10x/nomem_s100",
+    "n_episodes": 50,
+    "measured_contrast": {
+      "score_100": {
+        "n": 8,
+        "open_step_share": 0.55,
+        "max_consecutive_open": 9.0,
+        "distinct_non_open_primitives": 4.6
+      },
+      "score_partial": {
+        "n": 38,
+        "open_step_share": 0.81,
+        "max_consecutive_open": 17.0,
+        "distinct_non_open_primitives": 3.1
+      },
+      "score_0": {
+        "n": 4,
+        "open_step_share": 0.96,
+        "max_consecutive_open": 19.2,
+        "distinct_non_open_primitives": 1.2
+      }
+    },
+    "measured_failure_mode": "primitive lock-in on the container-opening stage: the planner re-emits an opening command (or a lexical variant of the same action) for up to 34 consecutive planning steps. The episodes that reached 100.0 left that sub-goal within two attempts and then named a task object (reach_to_cookies, pick_up_popcorn, pick_up_butter, place_cream_into_microwave).",
+    "independent_check": "experiments/mem_efficacy/volo_container_state_probe.py judged the container at the stuck decision points as closed or only partially open, with moved_between_frames=false in every case. The container is not moving, so this failure is partly motor-side and the repeated command is not itself wrong. Statement of scope: the entry below asks the planner to change WHAT IT NAMES, which is the one thing it controls; it does not claim the container will then open.",
+    "known_confound": "Successful episodes are SHORT (task 23: 7-13 planning steps at score 100.0 against 19-28 at score 0.0), so they have fewer opportunities to repeat. The trace cannot separate cause from symptom. The arm comparison is randomised, so a paired delta is not explainable by episode difficulty.",
+    "mined_from_tasks": [
+      12,
+      13,
+      17
+    ]
+  },
+  "entries": [
+    {
+      "id": "open_failed_diversify_v1",
+      "stage_pattern": "open",
+      "min_steps_on_stage": 240,
+      "grounding": "The measured success/failure contrast above. 240 env steps is ~3 planner calls at the measured ~80 env steps per call on these tasks, i.e. the count at which the failing episodes have already exhausted two attempts.",
+      "checkable_tokens": [
+        "container",
+        "open",
+        "pick_up_",
+        "reach_to_"
+      ],
+      "text": "The tasks in this family begin by opening a container. Opening is a motion the controller performs, so re-issuing the command does not retry the motion differently: three opening commands in a row produce the same approach three times. When the container has not opened after two attempts, the next command should name something else -- the object that goes inside the container (pick_up_<object>, reach_to_<object>) -- so the arm approaches from a new pose; issue another opening command only after that.",
+      "deliver_to_families": [
+        "occlusion",
+        "occluded-location"
+      ],
+      "delivery_scoping": "The families the entry was mined from and the family the cross-task claim is made to: 12/13/17 are an occlusion task and 20/21/23/24 are an occluded-location task, so the entry crosses from a drawer family to a microwave family."
+    }
+  ]
+}

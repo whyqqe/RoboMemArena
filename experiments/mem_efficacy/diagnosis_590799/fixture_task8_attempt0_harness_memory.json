@@ -1,0 +1,128 @@
+{
+  "task_id": 8,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      -1,
+      "pick tomato sauce"
+    ],
+    [
+      0,
+      "pick up chocolate"
+    ],
+    [
+      930,
+      "pick tomato sauce"
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": -1,
+      "event_type": "subtask",
+      "subtask": "pick tomato sauce",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "pick up chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 930,
+      "event_type": "subtask",
+      "subtask": "pick tomato sauce",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 80,
+      "action": "subtask_override",
+      "instruction": "pick tomato sauce",
+      "outcome": "planned",
+      "notes": "stall_recovery:01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": -1,
+      "action": "subtask_update",
+      "instruction": "pick tomato sauce",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "pick up chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 930,
+      "action": "subtask_update",
+      "instruction": "pick tomato sauce",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": -1,
+      "action": "subtask",
+      "prompt": "pick tomato sauce"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "pick up chocolate"
+    },
+    {
+      "step": 930,
+      "action": "subtask",
+      "prompt": "pick tomato sauce"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 0.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [],
+    "stalled_stage": "01_Lift_Tomato_Sauce"
+  }
+}

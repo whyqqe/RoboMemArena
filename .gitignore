@@ -2,6 +2,14 @@
 api_key.txt
 **/api_key.txt
 API.txt
+closeai_api.txt
+**/closeai_api.txt
+fenno_api.txt
+new_api.txt
+
+# Experiment run outputs (keep code; never commit 15G result trees)
+experiments/mem_efficacy/results/
+experiments/**/results/
 
 # Python / build
 .venv/

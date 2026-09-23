@@ -1,0 +1,8 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+2	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task2	46.01
+3	completed		100.0	1.0000	1.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task3	27.15
+4	completed		25.0	0.0000	0.2500	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task4	201.81
+5	completed		25.0	0.0000	0.2500	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task5	208.18
+6	completed		0.0	0.0000	0.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task6	167.37
+7	completed		66.7	0.0000	0.6667	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task7	171.7
+8	completed		0.0	0.0000	0.0000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/mem_efficacy_590799/pushmem_s100/tasks2to26/videos/task8	180.75

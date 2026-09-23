@@ -1,0 +1,20 @@
+{
+  "schema": "rsi.cross_task_ltm.v1",
+  "arm": "rsimem2",
+  "mechanism": "confirmed-stage-ledger disclosure, regression-triggered",
+  "provenance": {
+    "mined_from": "outputs/mem_efficacy_local/pilot_armparts_0920_1757/nomem/nomem_s100",
+    "cells": "tasks 12/13/17/20/23 x seeds 100-102, 15 cells, plan-step traces + per-attempt harness_memory.json",
+    "measurement": "In 9 of the 15 cells the episode ends in a terminal run whose primitive belongs to a stage that had ALREADY confirmed. Those terminal runs hold 20-83% of the 2500-step budget. Cases: task20/ep2 held 'open microwave' for 2080 steps with stages 01 and 02 confirmed and stage 03 never attempted (scored 66.7); task12/ep0 held 'open middle drawer' for 1320 steps with 01 confirmed; task23/ep2 held 'open microwave' for 660 steps with 01 and 02 confirmed; task13/ep1 held 'open middle drawer' for 270 steps with 01 and 02 confirmed. In 4 further cells (task20/ep0, ep1; task23/ep0, ep1) EVERY stage had confirmed and the planner still re-issued a confirmed stage's primitive for 1720-1870 steps.",
+    "why_the_planner_cannot_see_it": "rsi_replay_dump.py wire payload for task12/ep1 t=1665 contains exactly four text parts: the task objective, the camera order, 'Recent visual context: 5 consecutive frames', and the output schema. No confirmed-stage ledger is delivered, so the planner can only re-derive the container state from pixels.",
+    "caveat": "The causal direction is not established by the trace alone (successful episodes are shorter, so they have fewer chances to repeat). The arm comparison is randomised, which is what the observational correlation cannot be."
+  },
+  "entries": [
+    {
+      "id": "confirmed-stage-sink-v2",
+      "deliver_to_families": ["occlusion", "occluded-location"],
+      "note": "One entry, two family tags, so the rule mined from the drawer (occlusion) traces is delivered to the microwave (occluded-location) traces and vice versa. That shared delivery is the cross-task claim; a task-keyed bank would only be cross-episode.",
+      "text": "Across 15 measured episodes of this task family, the largest single sink of the step budget was re-issuing the primitive of a stage that had ALREADY confirmed: 9 of the 15 episodes did it, and those episodes held it for 20-83% of the 2500-step budget. A stage that has confirmed is already satisfied, so re-issuing its primitive cannot satisfy any other stage's predicate."
+    }
+  ]
+}
