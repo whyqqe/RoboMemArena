@@ -54,5 +54,5 @@
 
 | 作业 | MEMPROF | 模型 | 臂 | 任务 | trials | OUT_BASE | 状态 |
 |---|---|---|---|---|---|---|---|
-| 609328 | h0 | gpt-6-luna | pullmem | [5] | 1 | `.../stage1_h0_gpt-6-luna_609328/` | **FAILED GATE 0**：继承了交互式 probe 的 `PLANNER_API_MAX_TOKENS=256`，且 GATE 0 原始 urllib 仍发 `max_tokens`（luna 拒收）。已修 runner + GATE 0 |
-| **609345** | h0 | gpt-6-luna | pullmem | [5] | 1 | `experiments/mem_efficacy/results/stage1_h0_gpt-6-luna_609345/` | submitted 2026-09-23（修复后） |
+| 609328 | h0 | gpt-6-luna | pullmem | [5] | 1 | `.../stage1_h0_gpt-6-luna_609328/` | **FAILED GATE 0**：继承交互式 `PLANNER_API_MAX_TOKENS=256` + GATE0 原始 `max_tokens`；已修 |
+| **609345** | h0 | gpt-6-luna | pullmem | [5] | 1 | `experiments/mem_efficacy/results/stage1_h0_gpt-6-luna_609345/` | **流水线通过**：eval RC=0；H0 开关正确；pull 7 次工具调用 / 4 帧；task5 单 trial `stage_score=0.0`（分数不作结论）。原 job 因 census 读裸 arm 的 `MEM_STAGE_ANCHOR=1` 误报 nomination FAIL（RC=4）；修 census 后本地复检 **PASSED** |

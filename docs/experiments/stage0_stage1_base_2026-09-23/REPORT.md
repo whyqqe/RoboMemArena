@@ -60,8 +60,8 @@ ARM_OVERRIDE="nomem pushmem pullmem" sbatch experiments/mem_efficacy/run_stage1.
 |---|---|
 | 运行台账 + 指标定义 + 旧结论清单 | 本目录三文件 |
 | Hlegacy / H0 可复用配置 | `profiles/*.sh` |
-| 预检 | `profile_preflight.py` |
-| task5 smoke | `run_stage1.sbatch`（提交后回填 LEDGER） |
+| 预检 | `profile_preflight.py`（本地 PASSED） |
+| task5 smoke | job **609345**：H0+pullmem+gpt-6-luna；机制（工具拉取）OK；分数单 trial 不作结论 |
 | 不重跑 VoLo | 遵守 |
 
-阶段 2（同版三臂复核 + H0 四臂）在 smoke 与额度确认后再开。
+阶段 2（同版三臂复核 + H0 四臂）在额度确认后再开。

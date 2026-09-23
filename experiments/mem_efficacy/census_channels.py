@@ -531,16 +531,29 @@ def main(argv: list[str]) -> int:
         for arm, arm_dir in runs:
             print(f"\n  ===== arm={arm}  dir={arm_dir} =====")
 
-            # Per-arm expectation, read back from the arm file itself.
+            # Per-arm expectation. Prefer the run's frozen `resolved_env.txt` over re-sourcing
+            # the arm file: Stage-1 MEMPROF overlays (H0) flip MEM_STAGE_ANCHOR / retry AFTER the
+            # arm is sourced, and those flips are load-bearing for the census branch. Job 609345
+            # failed with "nomination prompt ON but 0 nominations" because census read the arm's
+            # MEM_STAGE_ANCHOR=1 while the live run had H0's MEM_STAGE_ANCHOR=0 — wrong branch.
             try:
                 env = dump_arm_env(arm)
             except Exception as exc:
                 print(f"    !! cannot source arms/{arm}.sh: {type(exc).__name__}: {exc}")
                 problems.append(f"{run_root}/{arm}: cannot source the arm file")
                 continue
+            recorded = read_resolved_env(arm_dir)
+            if recorded:
+                env = {**env, **recorded}
+                env_src = "resolved_env.txt (overlays arm file)"
+            else:
+                env_src = "arm file only (no resolved_env.txt)"
             kf_on = env.get("VLM_USE_KEYFRAME_MEMORY", "1") in {"1", "true", "yes"}
             anchor_on = env.get("MEM_STAGE_ANCHOR", "0") not in {"0", "", "false", "no", "off"}
-            print(f"    declared: VLM_USE_KEYFRAME_MEMORY={int(kf_on)} MEM_STAGE_ANCHOR={int(anchor_on)}")
+            print(f"    declared: VLM_USE_KEYFRAME_MEMORY={int(kf_on)} MEM_STAGE_ANCHOR={int(anchor_on)}"
+                  f"  [{env_src}]")
+            if str(env.get("MEMPROF_NAME", "")).strip():
+                print(f"    MEMPROF_NAME={env.get('MEMPROF_NAME')}")
 
             traces = find_traces(arm_dir)
             rows, macros = find_summaries(arm_dir)
@@ -640,13 +653,22 @@ def main(argv: list[str]) -> int:
                         print("      -> PASS: K and memory empty on every step; channel B is dead")
                 elif not anchor_on:
                     if live:
-                        print("      -> PASS: the Planner DID nominate, so the official bank is live")
+                        print("      -> PASS: historical frames reached context without stage-anchor")
+                        print("         (dense store and/or nominations; H0-compatible)")
+                        _nom_declared = str(env.get("MEM_KF_NOMINATION_PROMPT", "")).strip().lower() in {
+                            "1", "true", "yes", "on", "y", "t",
+                        }
+                        if _nom_declared and b["steps_with_planner_nomination"] == 0:
+                            print("      note: MEM_KF_NOMINATION_PROMPT is ON but nominations=0;")
+                            print("            frames came from dense store/spread, not PrediMem nomination.")
+                            voids.append(
+                                f"{run_root}/{arm}: nomination claim unproven under MEM_STAGE_ANCHOR=0"
+                            )
                     else:
                         print("      -> VOID: the arm turns the channel on but MEM_STAGE_ANCHOR=0,")
-                        print("         so the bank is a pure function of the Planner's nominations.")
-                        print("         Nominations=0 => the prompt block was never emitted. This")
-                        print("         comparison is VOID, not negative. Use an arm with")
-                        print("         MEM_STAGE_ANCHOR=1 for a live image channel.")
+                        print("         so without a live dense store the bank is a pure function of")
+                        print("         the Planner's nominations. Nominations=0 => no image channel.")
+                        print("         This comparison is VOID, not negative.")
                         voids.append(f"{run_root}/{arm}: channel B is VOID (nominations=0)")
                 else:
                     if live:
