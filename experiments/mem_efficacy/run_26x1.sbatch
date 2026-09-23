@@ -294,62 +294,55 @@ echo "  nomination-policy probe: ${GATE0_NOM_PROBE} (derived from arms: ${ARMS_T
 unset _ga
 
 "${EVAL_PY}" - <<'PY'
-import json, os, sys, time, urllib.error, urllib.request
+import base64, json, os, sys, time
+from io import BytesIO
 
 ROOT = os.environ["ROOT"]
 sys.path.insert(0, os.path.join(ROOT, "evaluation_benchmark"))
+sys.path.insert(0, os.path.join(ROOT, "evaluation_benchmark", "openpi_minimal_runtime"))
+
+from harness.api_planner import chat_completions, load_api_key  # noqa: E402
+
 base = os.environ["PLANNER_API_BASE_URL"].rstrip("/")
 model = os.environ["PLANNER_API_MODEL"]
-key_path = os.environ["PLANNER_API_KEY_FILE"]
-line = int(os.environ.get("PLANNER_API_KEY_LINE", "1") or 1)
-lines = [l.strip() for l in open(key_path).read().splitlines() if l.strip() and not l.startswith("#")]
-key = lines[line - 1] if 0 < line <= len(lines) else lines[0]
-print(f"  key: ...{key[-8:]} (line {line} of {len(lines)})")
-
-def post(payload, timeout=180):
-    req = urllib.request.Request(base + "/chat/completions",
-                                 data=json.dumps(payload).encode(), method="POST")
-    req.add_header("Authorization", f"Bearer {key}")
-    req.add_header("Content-Type", "application/json")
-    t0 = time.time()
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.status, r.read().decode(), time.time() - t0
-    except urllib.error.HTTPError as e:
-        return e.code, e.read().decode(), time.time() - t0
-    except Exception as e:
-        return None, f"{type(e).__name__}: {e}", time.time() - t0
+key = load_api_key()
+if not key:
+    print("  key: <missing>")
+    raise SystemExit(4)
+print(f"  key: ...{key[-8:]}")
+print(f"  gate0 uses harness.api_planner.chat_completions (model-aware token/temperature keys)")
 
 fail = []
-# The reachability probe gets BOUNDED RETRIES, and this is a measured decision, not leniency.
-# Job 598599 (2026-09-20) was the third of three arms submitted in the same second and got
-# `HTTP 403` on its FIRST call, while 598597 and 598598 got `HTTP 200` on theirs. Twelve sequential
-# probes one second apart then succeeded 12/12. So the 403 is a BURST throttle on simultaneous
-# connections, not a dead endpoint, and failing the gate on a single sample would have thrown away
-# a healthy job. Four attempts spanning ~30s is enough to separate "bursty" from "blocked": a run
-# against the genuinely blocked endpoint of jobs 598082-598084 would fail all four.
-probe = {"model": model, "max_tokens": 32,
-         "messages": [{"role": "user", "content": "Reply with exactly: OK"}]}
-st = body = None
+# Reachability via the SAME client the evaluator uses. Raw urllib with hard-coded
+# `max_tokens` rejects gpt-6-luna / gpt-5* (HTTP 400) and used to burn 4x10s retries
+# on a permanent parameter error — that is wasted money and a false "endpoint down".
+out = None
 for attempt in range(4):
-    st, body, dt = post(probe)
-    if st == 200:
+    out = chat_completions(
+        messages=[{"role": "user", "content": "Reply with exactly: OK"}],
+        api_key=key,
+        base_url=base,
+        model=model,
+        timeout_sec=60.0,
+        max_tokens=64,
+    )
+    if out and str(out).strip():
         break
-    print(f"     probe attempt {attempt + 1}/4 -> HTTP {st}; retrying in 10s")
-    time.sleep(10)
-print(f"  1) reachability  HTTP {st} {dt:.2f}s")
-if st != 200:
-    fail.append(f"planner endpoint not usable after 4 attempts: HTTP {st} {body[:200]}")
+    print(f"     probe attempt {attempt + 1}/4 -> empty; backing off 5s")
+    time.sleep(5)
+print(f"  1) reachability  -> {out!r}")
+if not out or not str(out).strip():
+    fail.append("planner endpoint not usable after 4 chat_completions attempts (empty reply)")
 
 try:
-    from harness.api_planner import load_api_key, suggest_subtask_via_api
+    from harness.api_planner import suggest_subtask_via_api
     got = suggest_subtask_via_api(
         task_block="put the butter in the empty drawer",
         stage_name="open top drawer",
         current_subtask="open top drawer",
         primitive_labels=["open top drawer", "check contents", "close drawer", "place butter"],
         memory_context="the middle drawer is empty",
-        api_key=load_api_key(),
+        api_key=key,
         base_url=os.environ["HARNESS_API_BASE_URL"],
         model=os.environ["HARNESS_API_MODEL"],
     )
@@ -415,18 +408,21 @@ if str(os.environ.get("GATE0_NOM_PROBE", "0")).strip().lower() in {"1","true","y
                 {"type": "text", "text": KF_NOMINATION_POLICY},
             ]},
         ]
-        st, body, dt = post({"model": model, "max_tokens": int(os.environ.get("PLANNER_API_MAX_TOKENS", "4096")),
-                             "messages": msgs}, timeout=180)
-        txt = ""
-        if st == 200:
-            try:
-                txt = json.loads(body)["choices"][0]["message"]["content"]
-            except Exception as exc:
-                txt = f"<unparsable envelope: {exc!r}>"
-        print(f"  3) nomination channel HTTP {st} {dt:.2f}s")
+        budget = int(os.environ.get("PLANNER_API_MAX_TOKENS", "4096") or 4096)
+        t0 = time.time()
+        txt = chat_completions(
+            messages=msgs,
+            api_key=key,
+            base_url=base,
+            model=model,
+            timeout_sec=180.0,
+            max_tokens=budget,
+        ) or ""
+        dt = time.time() - t0
+        print(f"  3) nomination channel via chat_completions {dt:.2f}s")
         print(f"     raw -> {txt[:300]!r}")
-        if st != 200:
-            fail.append(f"nomination probe not usable: HTTP {st} {body[:200]}")
+        if not str(txt).strip():
+            fail.append("nomination probe not usable: empty reply from chat_completions")
         else:
             try:
                 from harness.vlm_output_parser import parse_vlm_output

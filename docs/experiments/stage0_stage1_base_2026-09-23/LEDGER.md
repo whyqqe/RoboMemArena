@@ -54,4 +54,5 @@
 
 | 作业 | MEMPROF | 模型 | 臂 | 任务 | trials | OUT_BASE | 状态 |
 |---|---|---|---|---|---|---|---|
-| **609328** | h0 | gpt-6-luna | pullmem | [5] | 1 | `experiments/mem_efficacy/results/stage1_h0_gpt-6-luna_609328/` | submitted 2026-09-23；早停开启 |
+| 609328 | h0 | gpt-6-luna | pullmem | [5] | 1 | `.../stage1_h0_gpt-6-luna_609328/` | **FAILED GATE 0**：继承了交互式 probe 的 `PLANNER_API_MAX_TOKENS=256`，且 GATE 0 原始 urllib 仍发 `max_tokens`（luna 拒收）。已修 runner + GATE 0 |
+| **609345** | h0 | gpt-6-luna | pullmem | [5] | 1 | `experiments/mem_efficacy/results/stage1_h0_gpt-6-luna_609345/` | submitted 2026-09-23（修复后） |

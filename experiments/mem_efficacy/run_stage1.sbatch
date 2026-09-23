@@ -45,7 +45,17 @@ cd "${ROOT}"
 EXP_DIR="${ROOT}/experiments/mem_efficacy"
 JOB_TAG="${SLURM_JOB_ID:-manual}"
 
-# --- Stage-1 defaults (caller overrides win) --------------------------------------------
+# --- Stage-1 defaults -----------------------------------------------------------------
+# sbatch inherits the submitting shell. An interactive probe that exported
+# PLANNER_API_MAX_TOKENS=256 would otherwise shrink the real run (job 609328).
+# Only neutralize undersized leftovers; intentional ARM_OVERRIDE / MEMPROF still win.
+_tok="${PLANNER_API_MAX_TOKENS:-}"
+if [[ -n "${_tok}" && "${_tok}" =~ ^[0-9]+$ && "${_tok}" -lt 1024 ]]; then
+  echo "[WARN] ignoring inherited PLANNER_API_MAX_TOKENS=${_tok} (<1024); using Stage-1 default"
+  unset PLANNER_API_MAX_TOKENS
+fi
+unset _tok
+
 export MEMPROF="${MEMPROF:-h0}"
 export PLANNER_API_MODEL="${PLANNER_API_MODEL:-gpt-6-luna}"
 export HARNESS_API_MODEL="${HARNESS_API_MODEL:-${PLANNER_API_MODEL}}"
