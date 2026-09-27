@@ -1,0 +1,309 @@
+2026-09-27 12:47:35,079 | INFO | task_id=5 bddl=/project/peilab/why/RoboMemArena/bddl/5_butter_middle_drawer.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-27 12:47:35,086 | INFO | [redact] enabled task=5 registered_phrases=6 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:47:36,983 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-27 12:47:37,186 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:47:37,238 | INFO | [t=10] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:37,514 | INFO | [t=20] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:37,798 | INFO | [t=30] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:38,073 | INFO | [t=40] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:38,344 | INFO | [t=50] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:38,616 | INFO | [t=60] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:38,894 | INFO | [t=70] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:39,181 | INFO | [t=80] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:39,471 | INFO | [t=90] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:39,760 | INFO | [t=100] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:39,954 | INFO | [t=108] stage done: 01_Open_Top_Drawer
+2026-09-27 12:47:40,056 | INFO | [t=110] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:40,361 | INFO | [t=120] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:40,682 | INFO | [t=130] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:41,015 | INFO | [t=140] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:41,366 | INFO | [t=150] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:41,731 | INFO | API VLM @t=0 task=5 subtask=Open the next drawer and inspect its contents. keyframes=[]
+2026-09-27 12:47:41,733 | INFO | [t=160] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-27 12:47:41,734 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:47:42,066 | INFO | [t=170] VLM prompt update from step=0: Open the next drawer and inspect its contents.
+2026-09-27 12:47:42,120 | INFO | [t=170] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:42,515 | INFO | [t=180] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:42,914 | INFO | [t=190] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:43,318 | INFO | [t=200] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:43,731 | INFO | [t=210] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:44,153 | INFO | [t=220] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:44,586 | INFO | [t=230] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:45,042 | INFO | [t=240] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:45,449 | INFO | [t=250] VLA chunk prompt=Open the next drawer and inspect its contents.
+2026-09-27 12:47:45,506 | INFO | API VLM @t=150 task=5 subtask=Close the currently open drawer. keyframes=[7]
+2026-09-27 12:47:45,508 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:47:45,812 | INFO | [t=260] VLM prompt update from step=150: Close the currently open drawer.
+2026-09-27 12:47:45,863 | INFO | [t=260] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:46,264 | INFO | [t=270] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:46,657 | INFO | [t=280] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:47,052 | INFO | [t=290] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:47,429 | INFO | [t=300] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:47,804 | INFO | [t=310] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:48,176 | INFO | [t=320] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:48,308 | INFO | [t=324] stage done: 02_Close_Top_Drawer
+2026-09-27 12:47:48,562 | INFO | [t=330] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:48,952 | INFO | [t=340] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:49,328 | INFO | [t=350] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:49,696 | INFO | [t=360] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:50,057 | INFO | [t=370] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:50,420 | INFO | [t=380] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:50,797 | INFO | [t=390] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:51,167 | INFO | [t=400] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:51,540 | INFO | [t=410] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:51,926 | INFO | [t=420] VLA chunk prompt=Close the currently open drawer.
+2026-09-27 12:47:52,222 | INFO | API VLM @t=240 task=5 subtask=close the open drawer keyframes=[]
+2026-09-27 12:47:52,224 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:47:52,264 | INFO | [t=430] VLM prompt update from step=240: close the open drawer
+2026-09-27 12:47:52,315 | INFO | [t=430] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:52,715 | INFO | [t=440] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:53,103 | INFO | [t=450] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:53,492 | INFO | [t=460] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:53,871 | INFO | [t=470] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:54,252 | INFO | [t=480] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:54,643 | INFO | [t=490] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:55,030 | INFO | [t=500] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:55,403 | INFO | [t=510] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:55,766 | INFO | [t=520] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:56,127 | INFO | [t=530] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:56,491 | INFO | [t=540] VLA chunk prompt=close the open drawer
+2026-09-27 12:47:56,538 | INFO | API VLM @t=415 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:47:56,540 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:47:56,812 | INFO | [t=550] VLM prompt update from step=415: Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:56,864 | INFO | [t=550] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:57,226 | INFO | [t=560] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:57,596 | INFO | [t=570] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:57,969 | INFO | [t=580] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:58,342 | INFO | [t=590] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:58,722 | INFO | [t=600] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:59,109 | INFO | [t=610] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:59,489 | INFO | [t=620] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:47:59,866 | INFO | [t=630] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:00,247 | INFO | [t=640] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:00,629 | INFO | [t=650] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:01,016 | INFO | [t=660] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:01,334 | INFO | API VLM @t=530 task=5 subtask=Pull open the relevant drawer and inspect its contents. keyframes=[]
+2026-09-27 12:48:01,336 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:01,342 | INFO | [t=670] VLM prompt update from step=530: Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:01,399 | INFO | [t=670] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:01,775 | INFO | [t=680] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:02,152 | INFO | [t=690] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:02,533 | INFO | [t=700] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:02,923 | INFO | [t=710] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:03,306 | INFO | [t=720] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:03,684 | INFO | [t=730] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:04,061 | INFO | [t=740] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:04,442 | INFO | [t=750] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:04,823 | INFO | [t=760] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:05,214 | INFO | [t=770] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:05,595 | INFO | [t=780] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:06,012 | INFO | [t=790] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:06,427 | INFO | [t=800] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:06,823 | INFO | [t=810] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:07,224 | INFO | [t=820] VLA chunk prompt=Pull open the relevant drawer and inspect its contents.
+2026-09-27 12:48:07,295 | INFO | API VLM @t=655 task=5 subtask=Pull the drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:07,298 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:07,588 | INFO | [t=830] VLM prompt update from step=655: Pull the drawer open to inspect its contents.
+2026-09-27 12:48:07,643 | INFO | [t=830] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:08,043 | INFO | [t=840] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:08,443 | INFO | [t=850] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:08,844 | INFO | [t=860] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:09,234 | INFO | [t=870] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:09,637 | INFO | [t=880] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:10,036 | INFO | [t=890] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:10,434 | INFO | [t=900] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:10,831 | INFO | [t=910] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:11,229 | INFO | [t=920] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:11,627 | INFO | [t=930] VLA chunk prompt=Pull the drawer open to inspect its contents.
+2026-09-27 12:48:11,727 | INFO | API VLM @t=810 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:11,729 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:11,960 | INFO | [t=940] VLM prompt update from step=810: Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:12,014 | INFO | [t=940] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:12,392 | INFO | [t=950] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:12,764 | INFO | [t=960] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:13,140 | INFO | [t=970] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:13,517 | INFO | [t=980] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:13,905 | INFO | [t=990] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:14,294 | INFO | [t=1000] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:14,673 | INFO | [t=1010] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:15,047 | INFO | [t=1020] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:15,418 | INFO | [t=1030] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:15,791 | INFO | [t=1040] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:16,169 | INFO | [t=1050] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:16,559 | INFO | [t=1060] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:16,738 | INFO | API VLM @t=920 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:16,743 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:16,954 | INFO | [t=1070] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:17,342 | INFO | [t=1080] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:17,723 | INFO | [t=1090] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:18,100 | INFO | [t=1100] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:18,480 | INFO | [t=1110] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:18,857 | INFO | [t=1120] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:19,232 | INFO | [t=1130] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:19,606 | INFO | [t=1140] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:19,973 | INFO | [t=1150] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:20,336 | INFO | [t=1160] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:20,695 | INFO | [t=1170] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:21,049 | INFO | [t=1180] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:21,412 | INFO | [t=1190] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:21,771 | INFO | [t=1200] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:21,870 | INFO | API VLM @t=1055 task=5 subtask=Pull the next drawer outward until it is open, then inspect its contents. keyframes=[]
+2026-09-27 12:48:21,873 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:22,080 | INFO | [t=1210] VLM prompt update from step=1055: Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:22,133 | INFO | [t=1210] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:22,487 | INFO | [t=1220] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:22,842 | INFO | [t=1230] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:23,200 | INFO | [t=1240] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:23,560 | INFO | [t=1250] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:23,936 | INFO | [t=1260] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:24,312 | INFO | [t=1270] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:24,684 | INFO | [t=1280] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:25,054 | INFO | [t=1290] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:25,442 | INFO | [t=1300] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:25,818 | INFO | [t=1310] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:26,201 | INFO | [t=1320] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:26,585 | INFO | [t=1330] VLA chunk prompt=Pull the next drawer outward until it is open, then inspect its contents.
+2026-09-27 12:48:26,672 | INFO | API VLM @t=1190 task=5 subtask=Grip the next drawer’s front and pull it fully open to inspect its contents. keyframes=[]
+2026-09-27 12:48:26,674 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:26,911 | INFO | [t=1340] VLM prompt update from step=1190: Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:26,964 | INFO | [t=1340] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:27,339 | INFO | [t=1350] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:27,711 | INFO | [t=1360] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:28,079 | INFO | [t=1370] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:28,450 | INFO | [t=1380] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:28,826 | INFO | [t=1390] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:29,201 | INFO | [t=1400] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:29,585 | INFO | [t=1410] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:29,964 | INFO | [t=1420] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:30,346 | INFO | [t=1430] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:30,723 | INFO | [t=1440] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:31,106 | INFO | [t=1450] VLA chunk prompt=Grip the next drawer’s front and pull it fully open to inspect its contents.
+2026-09-27 12:48:31,293 | INFO | API VLM @t=1320 task=5 subtask=Pull open the next drawer to inspect its contents. keyframes=[]
+2026-09-27 12:48:31,295 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:31,432 | INFO | [t=1460] VLM prompt update from step=1320: Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:31,482 | INFO | [t=1460] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:31,856 | INFO | [t=1470] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:32,241 | INFO | [t=1480] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:32,622 | INFO | [t=1490] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:33,001 | INFO | [t=1500] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:33,382 | INFO | [t=1510] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:33,763 | INFO | [t=1520] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:34,150 | INFO | [t=1530] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:34,550 | INFO | [t=1540] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:34,956 | INFO | [t=1550] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:35,356 | INFO | [t=1560] VLA chunk prompt=Pull open the next drawer to inspect its contents.
+2026-09-27 12:48:35,563 | INFO | API VLM @t=1445 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:35,566 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:35,707 | INFO | [t=1570] VLM prompt update from step=1445: Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:35,758 | INFO | [t=1570] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:36,164 | INFO | [t=1580] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:36,571 | INFO | [t=1590] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:36,982 | INFO | [t=1600] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:37,390 | INFO | [t=1610] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:37,793 | INFO | [t=1620] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:38,176 | INFO | [t=1630] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:38,556 | INFO | [t=1640] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:38,943 | INFO | [t=1650] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:39,329 | INFO | [t=1660] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:39,720 | INFO | [t=1670] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:40,110 | INFO | [t=1680] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:40,495 | INFO | [t=1690] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:40,559 | INFO | API VLM @t=1555 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:40,561 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:40,883 | INFO | [t=1700] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:41,267 | INFO | [t=1710] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:41,647 | INFO | [t=1720] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:42,035 | INFO | [t=1730] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:42,419 | INFO | [t=1740] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:42,801 | INFO | [t=1750] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:43,180 | INFO | [t=1760] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:43,559 | INFO | [t=1770] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:43,946 | INFO | [t=1780] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:44,336 | INFO | [t=1790] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:44,731 | INFO | [t=1800] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:45,119 | INFO | [t=1810] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:45,363 | INFO | API VLM @t=1680 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:45,366 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:45,512 | INFO | [t=1820] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:45,894 | INFO | [t=1830] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:46,281 | INFO | [t=1840] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:46,667 | INFO | [t=1850] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:47,068 | INFO | [t=1860] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:47,458 | INFO | [t=1870] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:47,852 | INFO | [t=1880] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:48,230 | INFO | [t=1890] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:48,603 | INFO | [t=1900] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:48,969 | INFO | [t=1910] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:49,340 | INFO | [t=1920] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:49,721 | INFO | [t=1930] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:49,838 | INFO | API VLM @t=1805 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:49,840 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:50,108 | INFO | [t=1940] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:50,496 | INFO | [t=1950] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:50,880 | INFO | [t=1960] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:51,260 | INFO | [t=1970] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:51,636 | INFO | [t=1980] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:52,008 | INFO | [t=1990] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:52,372 | INFO | [t=2000] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:52,739 | INFO | [t=2010] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:53,117 | INFO | [t=2020] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:53,484 | INFO | [t=2030] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:53,854 | INFO | [t=2040] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:54,230 | INFO | [t=2050] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:54,607 | INFO | [t=2060] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:54,979 | INFO | [t=2070] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:55,361 | INFO | [t=2080] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:55,738 | INFO | [t=2090] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:55,835 | INFO | API VLM @t=1920 task=5 subtask=Pull the next drawer open to inspect its contents. keyframes=[]
+2026-09-27 12:48:55,837 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:48:56,120 | INFO | [t=2100] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:56,493 | INFO | [t=2110] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:56,868 | INFO | [t=2120] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:57,240 | INFO | [t=2130] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:57,613 | INFO | [t=2140] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:57,994 | INFO | [t=2150] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:58,372 | INFO | [t=2160] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:58,751 | INFO | [t=2170] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:59,124 | INFO | [t=2180] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:59,501 | INFO | [t=2190] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:48:59,874 | INFO | [t=2200] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:49:00,246 | INFO | [t=2210] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:49:00,629 | INFO | [t=2220] VLA chunk prompt=Pull the next drawer open to inspect its contents.
+2026-09-27 12:49:00,837 | INFO | API VLM @t=2080 task=5 subtask=Open the next drawer in order and inspect its contents. keyframes=[]
+2026-09-27 12:49:00,839 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:49:00,957 | INFO | [t=2230] VLM prompt update from step=2080: Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:01,010 | INFO | [t=2230] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:01,385 | INFO | [t=2240] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:01,761 | INFO | [t=2250] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:02,139 | INFO | [t=2260] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:02,520 | INFO | [t=2270] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:02,911 | INFO | [t=2280] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:03,294 | INFO | [t=2290] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:03,674 | INFO | [t=2300] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:04,048 | INFO | [t=2310] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:04,420 | INFO | [t=2320] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:04,792 | INFO | [t=2330] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:05,170 | INFO | [t=2340] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:05,558 | INFO | [t=2350] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:05,949 | INFO | [t=2360] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:06,332 | INFO | [t=2370] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:06,706 | INFO | [t=2380] VLA chunk prompt=Open the next drawer in order and inspect its contents.
+2026-09-27 12:49:06,864 | INFO | API VLM @t=2215 task=5 subtask=Grip the next drawer's handle and pull it open far enough to inspect inside. keyframes=[]
+2026-09-27 12:49:06,867 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:49:07,032 | INFO | [t=2390] VLM prompt update from step=2215: Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:07,083 | INFO | [t=2390] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:07,456 | INFO | [t=2400] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:07,840 | INFO | [t=2410] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:08,219 | INFO | [t=2420] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:08,599 | INFO | [t=2430] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:08,979 | INFO | [t=2440] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:09,359 | INFO | [t=2450] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:09,744 | INFO | [t=2460] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:10,130 | INFO | [t=2470] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:10,519 | INFO | [t=2480] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:10,909 | INFO | [t=2490] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:11,300 | INFO | [t=2500] VLA chunk prompt=Grip the next drawer's handle and pull it open far enough to inspect inside.
+2026-09-27 12:49:11,625 | INFO | API VLM @t=2370 task=5 subtask=Open the next drawer in order and pull it open to inspect its contents. keyframes=[]
+2026-09-27 12:49:11,627 | INFO | [redact] enabled task=5 registered_phrases=0 terms=['bottom drawer', 'bottom_drawer', 'middle drawer', 'middle_drawer', 'top drawer', 'top_drawer']
+2026-09-27 12:49:14,668 | INFO | attempt=0 stage_score=25.0 stage_success=False failure_reason=incomplete_stage
+2026-09-27 12:49:14,668 | INFO | Episode 4 seed=104 stage_score=25.0 stage_success=0 goal=0.250 failure_reason=incomplete_stage | 01_Open_Top_Drawer=Y | 02_Close_Top_Drawer=Y | 03_Open_Middle_Drawer=N | 04_Close_Middle_Drawer=N | 05_Open_Bottom_Drawer=N | 06_Close_Bottom_Drawer=N | 07_Open_Middle_Drawer_Again=N | 08_Put_Butter_Middle_Drawer=N | 09_Close_Middle_Drawer_Final=N

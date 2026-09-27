@@ -1,0 +1,83 @@
+2026-09-27 12:43:13,276 | INFO | task_id=22 bddl=/project/peilab/why/RoboMemArena/bddl/22_pour_tomato_cookies_microwave.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-27 12:43:13,281 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:43:14,866 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-27 12:43:15,048 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:43:15,103 | INFO | [t=10] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:15,352 | INFO | [t=20] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:15,589 | INFO | [t=30] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:15,826 | INFO | [t=40] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:16,066 | INFO | [t=50] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:16,306 | INFO | [t=60] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:16,551 | INFO | [t=70] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:16,792 | INFO | [t=80] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:17,035 | INFO | [t=90] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:17,276 | INFO | [t=100] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:17,514 | INFO | [t=110] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:17,754 | INFO | [t=120] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:18,018 | INFO | [t=130] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:18,288 | INFO | [t=140] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:18,562 | INFO | [t=150] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:18,844 | INFO | [t=160] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:18,934 | INFO | [t=164] stage done: 01_Lift_Tomato_Sauce
+2026-09-27 12:43:19,128 | INFO | [t=170] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:19,415 | INFO | [t=180] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:19,666 | INFO | API VLM @t=0 task=22 subtask=Reach for and grasp the tomato sauce bottle, then lift it. keyframes=[]
+2026-09-27 12:43:19,668 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:43:19,704 | INFO | [t=190] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:43:19,950 | INFO | [t=200] VLM prompt update from step=0: Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:20,002 | INFO | [t=200] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:20,300 | INFO | [t=210] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:20,603 | INFO | [t=220] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:20,911 | INFO | [t=230] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:21,221 | INFO | [t=240] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:21,533 | INFO | [t=250] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:21,849 | INFO | [t=260] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:22,168 | INFO | [t=270] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:22,494 | INFO | [t=280] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:22,818 | INFO | [t=290] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:23,149 | INFO | [t=300] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:43:23,204 | INFO | API VLM @t=180 task=22 subtask=Tilt the sauce bottle over the cookie to pour sauce onto it once. keyframes=[]
+2026-09-27 12:43:23,206 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:43:23,423 | INFO | [t=310] VLM prompt update from step=180: Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:23,475 | INFO | [t=310] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:23,794 | INFO | [t=320] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:24,116 | INFO | [t=330] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:24,329 | INFO | [t=338] stage done: 02_Pour_One
+2026-09-27 12:43:24,435 | INFO | [t=340] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:24,753 | INFO | [t=350] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:25,072 | INFO | [t=360] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:25,395 | INFO | [t=370] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:25,716 | INFO | [t=380] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:26,035 | INFO | [t=390] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:26,357 | INFO | [t=400] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:26,681 | INFO | [t=410] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:27,003 | INFO | [t=420] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:27,111 | INFO | API VLM @t=290 task=22 subtask=Tilt the sauce bottle over the cookie to pour sauce onto it once. keyframes=[]
+2026-09-27 12:43:27,113 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:43:27,337 | INFO | [t=430] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:27,719 | INFO | [t=440] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:28,037 | INFO | [t=450] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:28,361 | INFO | [t=460] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:28,681 | INFO | [t=470] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:29,016 | INFO | [t=480] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:29,341 | INFO | [t=490] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:29,662 | INFO | [t=500] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:29,985 | INFO | [t=510] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:30,309 | INFO | [t=520] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:30,631 | INFO | [t=530] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:30,954 | INFO | [t=540] VLA chunk prompt=Tilt the sauce bottle over the cookie to pour sauce onto it once.
+2026-09-27 12:43:31,226 | INFO | API VLM @t=410 task=22 subtask=Pour tomato sauce over the cookies again. keyframes=[]
+2026-09-27 12:43:31,227 | INFO | [t=550] VLM prompt update from step=410: Pour tomato sauce over the cookies again.
+2026-09-27 12:43:31,228 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:43:31,278 | INFO | [t=550] VLA chunk prompt=Pour tomato sauce over the cookies again.
+2026-09-27 12:43:31,609 | INFO | [t=560] VLA chunk prompt=Pour tomato sauce over the cookies again.
+2026-09-27 12:43:31,935 | INFO | [t=570] VLA chunk prompt=Pour tomato sauce over the cookies again.
+2026-09-27 12:43:32,020 | INFO | [t=573] stage done: 03_Pour_Two
+2026-09-27 12:43:32,020 | INFO | [t=573] extra-pour monitor started; deadline=603
+2026-09-27 12:43:32,020 | INFO | [t=573] all stages done
+2026-09-27 12:43:32,266 | INFO | [t=580] VLA chunk prompt=Pour tomato sauce over the cookies again.
+2026-09-27 12:43:32,589 | INFO | [t=590] VLA chunk prompt=Pour tomato sauce over the cookies again.
+2026-09-27 12:43:32,920 | INFO | [t=600] VLA chunk prompt=Pour tomato sauce over the cookies again.
+2026-09-27 12:43:36,024 | INFO | attempt=0 stage_score=100.0 stage_success=True failure_reason=None
+2026-09-27 12:43:36,025 | INFO | Episode 3 seed=103 stage_score=100.0 stage_success=1 goal=1.000 failure_reason=None | 01_Lift_Tomato_Sauce=Y | 02_Pour_One=Y | 03_Pour_Two=Y
+2026-09-27 12:43:36,729 | INFO | API VLM @t=535 task=22 subtask=Pour the tomato sauce over the cookies a second time. keyframes=[]

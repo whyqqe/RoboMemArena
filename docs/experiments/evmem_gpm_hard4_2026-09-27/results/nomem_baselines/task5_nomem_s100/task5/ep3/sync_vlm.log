@@ -1,0 +1,277 @@
+2026-09-26 14:43:29,753 | INFO | task_id=5 bddl=/project/peilab/why/RoboMemArena/bddl/5_butter_middle_drawer.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-26 14:43:31,601 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-26 14:43:31,857 | INFO | [t=10] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:32,134 | INFO | [t=20] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:32,407 | INFO | [t=30] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:32,678 | INFO | [t=40] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:32,950 | INFO | [t=50] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:33,223 | INFO | [t=60] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:33,495 | INFO | [t=70] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:33,768 | INFO | [t=80] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:34,049 | INFO | [t=90] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:34,332 | INFO | [t=100] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:34,616 | INFO | [t=110] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:34,932 | INFO | [t=120] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:35,252 | INFO | [t=130] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:35,575 | INFO | [t=140] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:35,689 | INFO | [t=144] stage done: 01_Open_Top_Drawer
+2026-09-26 14:43:35,910 | INFO | [t=150] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:36,251 | INFO | [t=160] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:36,584 | INFO | [t=170] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:36,916 | INFO | [t=180] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:37,252 | INFO | [t=190] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:37,597 | INFO | [t=200] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:37,944 | INFO | [t=210] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:38,291 | INFO | [t=220] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:38,640 | INFO | [t=230] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:38,997 | INFO | [t=240] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:39,364 | INFO | [t=250] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:39,732 | INFO | [t=260] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:40,099 | INFO | [t=270] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:40,466 | INFO | [t=280] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:40,834 | INFO | [t=290] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:41,195 | INFO | [t=300] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:41,557 | INFO | [t=310] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:41,918 | INFO | [t=320] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:42,280 | INFO | [t=330] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:42,641 | INFO | [t=340] VLA chunk prompt=Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.
+2026-09-26 14:43:42,693 | INFO | API VLM @t=0 task=5 subtask=Open the top drawer to inspect whether it is empty. keyframes=[]
+2026-09-26 14:43:42,952 | INFO | [t=350] VLM prompt update from step=0: Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:43,002 | INFO | [t=350] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:43,358 | INFO | [t=360] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:43,716 | INFO | [t=370] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:44,072 | INFO | [t=380] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:44,429 | INFO | [t=390] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:44,786 | INFO | [t=400] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:45,149 | INFO | [t=410] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:45,507 | INFO | [t=420] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:45,869 | INFO | [t=430] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:46,241 | INFO | [t=440] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:46,614 | INFO | [t=450] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:46,993 | INFO | [t=460] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:47,386 | INFO | [t=470] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:47,780 | INFO | [t=480] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:48,170 | INFO | [t=490] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:48,559 | INFO | [t=500] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:48,953 | INFO | [t=510] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:49,348 | INFO | [t=520] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:49,737 | INFO | [t=530] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:50,121 | INFO | [t=540] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:50,506 | INFO | [t=550] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:50,890 | INFO | [t=560] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:51,275 | INFO | [t=570] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:51,672 | INFO | [t=580] VLA chunk prompt=Open the top drawer to inspect whether it is empty.
+2026-09-26 14:43:51,768 | INFO | API VLM @t=330 task=5 subtask=Reach to pick up the butter from the tabletop keyframes=[]
+2026-09-26 14:43:52,022 | INFO | [t=590] VLM prompt update from step=330: Reach to pick up the butter from the tabletop
+2026-09-26 14:43:52,072 | INFO | [t=590] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:52,457 | INFO | [t=600] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:52,835 | INFO | [t=610] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:53,206 | INFO | [t=620] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:53,568 | INFO | [t=630] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:53,929 | INFO | [t=640] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:54,295 | INFO | [t=650] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:54,645 | INFO | [t=660] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:54,996 | INFO | [t=670] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:55,350 | INFO | [t=680] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:55,706 | INFO | [t=690] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:56,062 | INFO | [t=700] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:56,419 | INFO | [t=710] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:56,781 | INFO | [t=720] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:57,150 | INFO | [t=730] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:57,519 | INFO | [t=740] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:57,887 | INFO | [t=750] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:58,250 | INFO | [t=760] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:58,611 | INFO | [t=770] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:58,984 | INFO | [t=780] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:59,358 | INFO | [t=790] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:43:59,737 | INFO | [t=800] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:44:00,109 | INFO | [t=810] VLA chunk prompt=Reach to pick up the butter from the tabletop
+2026-09-26 14:44:00,345 | INFO | API VLM @t=570 task=5 subtask=place the butter into the remembered empty drawer keyframes=[]
+2026-09-26 14:44:00,439 | INFO | [t=820] VLM prompt update from step=570: place the butter into the remembered empty drawer
+2026-09-26 14:44:00,489 | INFO | [t=820] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:00,864 | INFO | [t=830] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:01,238 | INFO | [t=840] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:01,606 | INFO | [t=850] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:01,965 | INFO | [t=860] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:02,329 | INFO | [t=870] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:02,694 | INFO | [t=880] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:03,062 | INFO | [t=890] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:03,190 | INFO | [t=894] stage done: 02_Close_Top_Drawer
+2026-09-26 14:44:03,437 | INFO | [t=900] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:03,821 | INFO | [t=910] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:04,205 | INFO | [t=920] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:04,587 | INFO | [t=930] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:04,969 | INFO | [t=940] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:05,359 | INFO | [t=950] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:05,752 | INFO | [t=960] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:06,136 | INFO | [t=970] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:06,513 | INFO | [t=980] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:06,894 | INFO | [t=990] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:07,271 | INFO | [t=1000] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:07,645 | INFO | [t=1010] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:08,015 | INFO | [t=1020] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:08,380 | INFO | [t=1030] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:08,740 | INFO | [t=1040] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:09,098 | INFO | [t=1050] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:09,456 | INFO | [t=1060] VLA chunk prompt=place the butter into the remembered empty drawer
+2026-09-26 14:44:09,601 | INFO | API VLM @t=805 task=5 subtask=place the butter into the open target drawer keyframes=[]
+2026-09-26 14:44:09,769 | INFO | [t=1070] VLM prompt update from step=805: place the butter into the open target drawer
+2026-09-26 14:44:09,818 | INFO | [t=1070] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:10,176 | INFO | [t=1080] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:10,538 | INFO | [t=1090] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:10,914 | INFO | [t=1100] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:11,303 | INFO | [t=1110] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:11,685 | INFO | [t=1120] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:12,068 | INFO | [t=1130] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:12,457 | INFO | [t=1140] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:12,846 | INFO | [t=1150] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:13,235 | INFO | [t=1160] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:13,615 | INFO | [t=1170] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:13,989 | INFO | [t=1180] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:14,374 | INFO | [t=1190] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:14,760 | INFO | [t=1200] VLA chunk prompt=place the butter into the open target drawer
+2026-09-26 14:44:14,874 | INFO | API VLM @t=1050 task=5 subtask=Open the current drawer by pulling its handle. keyframes=[]
+2026-09-26 14:44:15,097 | INFO | [t=1210] VLM prompt update from step=1050: Open the current drawer by pulling its handle.
+2026-09-26 14:44:15,147 | INFO | [t=1210] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:15,534 | INFO | [t=1220] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:15,915 | INFO | [t=1230] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:16,299 | INFO | [t=1240] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:16,689 | INFO | [t=1250] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:17,066 | INFO | [t=1260] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:17,437 | INFO | [t=1270] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:17,803 | INFO | [t=1280] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:18,163 | INFO | [t=1290] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:18,518 | INFO | [t=1300] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:18,870 | INFO | [t=1310] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:19,212 | INFO | [t=1320] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:19,557 | INFO | [t=1330] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:19,924 | INFO | [t=1340] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:20,291 | INFO | [t=1350] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:20,661 | INFO | [t=1360] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:21,034 | INFO | [t=1370] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:21,410 | INFO | [t=1380] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:21,780 | INFO | [t=1390] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:22,144 | INFO | [t=1400] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:22,469 | INFO | API VLM @t=1190 task=5 subtask=Pull open the drawer to inspect it. keyframes=[]
+2026-09-26 14:44:22,501 | INFO | [t=1410] VLA chunk prompt=Open the current drawer by pulling its handle.
+2026-09-26 14:44:22,808 | INFO | [t=1420] VLM prompt update from step=1190: Pull open the drawer to inspect it.
+2026-09-26 14:44:22,858 | INFO | [t=1420] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:23,207 | INFO | [t=1430] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:23,556 | INFO | [t=1440] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:23,902 | INFO | [t=1450] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:24,263 | INFO | [t=1460] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:24,622 | INFO | [t=1470] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:24,982 | INFO | [t=1480] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:25,343 | INFO | [t=1490] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:25,699 | INFO | [t=1500] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:26,060 | INFO | [t=1510] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:26,414 | INFO | [t=1520] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:26,765 | INFO | [t=1530] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:27,116 | INFO | [t=1540] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:27,475 | INFO | [t=1550] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:27,835 | INFO | [t=1560] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:28,185 | INFO | [t=1570] VLA chunk prompt=Pull open the drawer to inspect it.
+2026-09-26 14:44:28,386 | INFO | API VLM @t=1400 task=5 subtask=open the top drawer keyframes=[]
+2026-09-26 14:44:28,484 | INFO | [t=1580] VLM prompt update from step=1400: open the top drawer
+2026-09-26 14:44:28,534 | INFO | [t=1580] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:28,882 | INFO | [t=1590] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:29,231 | INFO | [t=1600] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:29,580 | INFO | [t=1610] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:29,934 | INFO | [t=1620] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:30,291 | INFO | [t=1630] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:30,651 | INFO | [t=1640] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:31,014 | INFO | [t=1650] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:31,372 | INFO | [t=1660] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:31,721 | INFO | [t=1670] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:32,068 | INFO | [t=1680] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:32,415 | INFO | [t=1690] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:32,762 | INFO | [t=1700] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:33,109 | INFO | [t=1710] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:33,462 | INFO | [t=1720] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:33,819 | INFO | [t=1730] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:34,177 | INFO | [t=1740] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:34,528 | INFO | [t=1750] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:34,878 | INFO | [t=1760] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:35,228 | INFO | [t=1770] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:35,579 | INFO | [t=1780] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:35,933 | INFO | [t=1790] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:36,288 | INFO | [t=1800] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:36,645 | INFO | [t=1810] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:37,002 | INFO | [t=1820] VLA chunk prompt=open the top drawer
+2026-09-26 14:44:37,282 | INFO | API VLM @t=1565 task=5 subtask=Open the currently targeted drawer to inspect whether it is empty. keyframes=[]
+2026-09-26 14:44:37,300 | INFO | [t=1830] VLM prompt update from step=1565: Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:37,350 | INFO | [t=1830] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:37,698 | INFO | [t=1840] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:38,045 | INFO | [t=1850] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:38,393 | INFO | [t=1860] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:38,740 | INFO | [t=1870] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:39,088 | INFO | [t=1880] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:39,442 | INFO | [t=1890] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:39,798 | INFO | [t=1900] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:40,152 | INFO | [t=1910] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:40,504 | INFO | [t=1920] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:40,857 | INFO | [t=1930] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:41,211 | INFO | [t=1940] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:41,564 | INFO | [t=1950] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:41,921 | INFO | [t=1960] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:42,279 | INFO | [t=1970] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:42,638 | INFO | [t=1980] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:42,991 | INFO | [t=1990] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:43,344 | INFO | [t=2000] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:43,697 | INFO | [t=2010] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:44,048 | INFO | [t=2020] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:44,398 | INFO | [t=2030] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:44,749 | INFO | [t=2040] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:45,100 | INFO | [t=2050] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:45,464 | INFO | [t=2060] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:45,830 | INFO | [t=2070] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:46,196 | INFO | [t=2080] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:46,565 | INFO | [t=2090] VLA chunk prompt=Open the currently targeted drawer to inspect whether it is empty.
+2026-09-26 14:44:46,858 | INFO | API VLM @t=1815 task=5 subtask=Open the top drawer to inspect it. keyframes=[]
+2026-09-26 14:44:46,890 | INFO | [t=2100] VLM prompt update from step=1815: Open the top drawer to inspect it.
+2026-09-26 14:44:46,940 | INFO | [t=2100] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:47,313 | INFO | [t=2110] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:47,687 | INFO | [t=2120] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:48,063 | INFO | [t=2130] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:48,432 | INFO | [t=2140] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:48,797 | INFO | [t=2150] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:49,162 | INFO | [t=2160] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:49,525 | INFO | [t=2170] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:49,892 | INFO | [t=2180] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:50,261 | INFO | [t=2190] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:50,632 | INFO | [t=2200] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:51,002 | INFO | [t=2210] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:51,367 | INFO | [t=2220] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:51,729 | INFO | [t=2230] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:52,095 | INFO | [t=2240] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:52,460 | INFO | [t=2250] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:52,830 | INFO | [t=2260] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:53,202 | INFO | [t=2270] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:53,577 | INFO | [t=2280] VLA chunk prompt=Open the top drawer to inspect it.
+2026-09-26 14:44:53,751 | INFO | API VLM @t=2085 task=5 subtask=pick up the butter keyframes=[]
+2026-09-26 14:44:53,899 | INFO | [t=2290] VLM prompt update from step=2085: pick up the butter
+2026-09-26 14:44:53,949 | INFO | [t=2290] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:54,315 | INFO | [t=2300] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:54,682 | INFO | [t=2310] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:55,056 | INFO | [t=2320] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:55,426 | INFO | [t=2330] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:55,801 | INFO | [t=2340] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:56,170 | INFO | [t=2350] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:56,524 | INFO | [t=2360] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:56,871 | INFO | [t=2370] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:57,219 | INFO | [t=2380] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:57,564 | INFO | [t=2390] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:57,910 | INFO | [t=2400] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:58,266 | INFO | [t=2410] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:58,621 | INFO | [t=2420] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:58,978 | INFO | [t=2430] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:59,336 | INFO | [t=2440] VLA chunk prompt=pick up the butter
+2026-09-26 14:44:59,696 | INFO | [t=2450] VLA chunk prompt=pick up the butter
+2026-09-26 14:45:00,058 | INFO | [t=2460] VLA chunk prompt=pick up the butter
+2026-09-26 14:45:00,422 | INFO | [t=2470] VLA chunk prompt=pick up the butter
+2026-09-26 14:45:00,796 | INFO | [t=2480] VLA chunk prompt=pick up the butter
+2026-09-26 14:45:01,178 | INFO | [t=2490] VLA chunk prompt=pick up the butter
+2026-09-26 14:45:01,542 | INFO | [t=2500] VLA chunk prompt=pick up the butter
+2026-09-26 14:45:04,872 | INFO | attempt=0 stage_score=25.0 stage_success=False failure_reason=incomplete_stage
+2026-09-26 14:45:04,872 | INFO | Episode 3 seed=103 stage_score=25.0 stage_success=0 goal=0.250 failure_reason=incomplete_stage | 01_Open_Top_Drawer=Y | 02_Close_Top_Drawer=Y | 03_Open_Middle_Drawer=N | 04_Close_Middle_Drawer=N | 05_Open_Bottom_Drawer=N | 06_Close_Bottom_Drawer=N | 07_Open_Middle_Drawer_Again=N | 08_Put_Butter_Middle_Drawer=N | 09_Close_Middle_Drawer_Final=N
+2026-09-26 14:45:04,999 | INFO | API VLM @t=2275 task=5 subtask=place the butter into the open empty drawer keyframes=[]

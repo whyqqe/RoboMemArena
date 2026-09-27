@@ -1,0 +1,2 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+22	completed		73.3	0.6000	0.7333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/evmem_gpm_t22_evmem_h0_1x10/h0/evmem_s100/videos/task22	535.62

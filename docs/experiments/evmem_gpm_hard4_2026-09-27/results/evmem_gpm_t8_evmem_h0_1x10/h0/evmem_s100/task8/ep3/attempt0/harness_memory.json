@@ -1,0 +1,1277 @@
+{
+  "task_id": 8,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      480,
+      "Reach for and grasp the tomato sauce bottle, then lift it from the table."
+    ],
+    [
+      605,
+      "Grasp the tomato sauce bottle and lift it until it is raised."
+    ],
+    [
+      750,
+      "Reach for and grasp the tomato sauce bottle, then lift it."
+    ],
+    [
+      870,
+      "Reach for and grasp the tomato sauce bottle, then lift it clear of the table."
+    ],
+    [
+      1000,
+      "Reach down, grasp the tomato sauce bottle, and lift it clear of the tabletop."
+    ],
+    [
+      1140,
+      "Reach for and grasp the tomato sauce bottle, then lift it."
+    ],
+    [
+      1395,
+      "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    ],
+    [
+      1520,
+      "Reach for and grasp the tomato sauce bottle, then lift it."
+    ],
+    [
+      1660,
+      "Reach down, grasp the tomato sauce bottle, and lift it up."
+    ],
+    [
+      1810,
+      "Reach for and grasp the tomato sauce bottle, then lift it."
+    ],
+    [
+      2085,
+      "Reach to the tomato sauce bottle, grasp its body firmly, and lift it off the table."
+    ],
+    [
+      2220,
+      "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 120,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 574,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 420,
+      "event_type": "subtask",
+      "subtask": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 654,
+      "event_type": "stall",
+      "subtask": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 659,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "stage_name": "02_Pour_One",
+      "metadata": {}
+    },
+    {
+      "step": 560,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 739,
+      "event_type": "stall",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 690,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce a second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 850,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle and pour it over the chocolate in the frypan for the second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1025,
+      "event_type": "subtask",
+      "subtask": "Pour the tomato sauce over the chocolate in the frypan for the second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1170,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1345,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce onto it again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1490,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1625,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce onto it again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1785,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle and pour it over the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1950,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle to pour it over the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2095,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2245,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 425,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 644,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 724,
+      "event_type": "stall",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 727,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "02_Pour_One",
+      "metadata": {}
+    },
+    {
+      "step": 807,
+      "event_type": "stall",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 818,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 315,
+      "event_type": "subtask",
+      "subtask": "Reach for the tomato sauce bottle, grasp it, and lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 534,
+      "event_type": "stage_complete",
+      "subtask": "Reach for the tomato sauce bottle, grasp it, and lift it.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 460,
+      "event_type": "subtask",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 614,
+      "event_type": "stall",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 627,
+      "event_type": "stage_complete",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": "02_Pour_One",
+      "metadata": {}
+    },
+    {
+      "step": 707,
+      "event_type": "stall",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 595,
+      "event_type": "subtask",
+      "subtask": "Pour the tomato sauce over the chocolate in the frypan once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 765,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce a second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 915,
+      "event_type": "subtask",
+      "subtask": "Pour the tomato sauce over the chocolate in the frypan for the second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1070,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle and pour it over the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1330,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle and tilt it over the chocolate in the frypan to pour sauce onto it again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1520,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle and pour it over the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1665,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1800,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1955,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2255,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the chocolate in the frypan again to pour sauce onto it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach for and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 150,
+      "event_type": "subtask",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 305,
+      "event_type": "subtask",
+      "subtask": "Reach for, grasp, and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 480,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it from the table.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 605,
+      "event_type": "subtask",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 750,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 870,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it clear of the table.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1000,
+      "event_type": "subtask",
+      "subtask": "Reach down, grasp the tomato sauce bottle, and lift it clear of the tabletop.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1140,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1395,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1520,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1660,
+      "event_type": "subtask",
+      "subtask": "Reach down, grasp the tomato sauce bottle, and lift it up.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1810,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2085,
+      "event_type": "subtask",
+      "subtask": "Reach to the tomato sauce bottle, grasp its body firmly, and lift it off the table.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2220,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 120,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 574,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 420,
+      "action": "subtask_update",
+      "instruction": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 654,
+      "action": "stall",
+      "instruction": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 659,
+      "action": "stage_complete",
+      "instruction": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 560,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 739,
+      "action": "stall",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 690,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 850,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle and pour it over the chocolate in the frypan for the second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1025,
+      "action": "subtask_update",
+      "instruction": "Pour the tomato sauce over the chocolate in the frypan for the second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1170,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1345,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce onto it again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1490,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1625,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce onto it again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1785,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle and pour it over the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1950,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle to pour it over the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2095,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2245,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 425,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 644,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 724,
+      "action": "stall",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 727,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 807,
+      "action": "stall",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 818,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 315,
+      "action": "subtask_update",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 534,
+      "action": "stage_complete",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 460,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 614,
+      "action": "stall",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 627,
+      "action": "stage_complete",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 707,
+      "action": "stall",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 595,
+      "action": "subtask_update",
+      "instruction": "Pour the tomato sauce over the chocolate in the frypan once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 765,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 915,
+      "action": "subtask_update",
+      "instruction": "Pour the tomato sauce over the chocolate in the frypan for the second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1070,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle and pour it over the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1330,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle and tilt it over the chocolate in the frypan to pour sauce onto it again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1520,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle and pour it over the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1665,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1800,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1955,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2255,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the chocolate in the frypan again to pour sauce onto it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 150,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 305,
+      "action": "subtask_update",
+      "instruction": "Reach for, grasp, and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 480,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it from the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 605,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 750,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 870,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it clear of the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1000,
+      "action": "subtask_update",
+      "instruction": "Reach down, grasp the tomato sauce bottle, and lift it clear of the tabletop.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1140,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1395,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1520,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1660,
+      "action": "subtask_update",
+      "instruction": "Reach down, grasp the tomato sauce bottle, and lift it up.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1810,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2085,
+      "action": "subtask_update",
+      "instruction": "Reach to the tomato sauce bottle, grasp its body firmly, and lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2220,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 120,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 574,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 420,
+      "action": "subtask",
+      "prompt": "Reach for and pick up the tomato sauce bottle, lifting it off the table."
+    },
+    {
+      "step": 659,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Reach for and pick up the tomato sauce bottle, lifting it off the table."
+    },
+    {
+      "step": 560,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 690,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce a second time."
+    },
+    {
+      "step": 850,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle and pour it over the chocolate in the frypan for the second time."
+    },
+    {
+      "step": 1025,
+      "action": "subtask",
+      "prompt": "Pour the tomato sauce over the chocolate in the frypan for the second time."
+    },
+    {
+      "step": 1170,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the chocolate in the frypan again."
+    },
+    {
+      "step": 1345,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce onto it again."
+    },
+    {
+      "step": 1490,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again."
+    },
+    {
+      "step": 1625,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce onto it again."
+    },
+    {
+      "step": 1785,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle and pour it over the chocolate in the frypan again."
+    },
+    {
+      "step": 1950,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle to pour it over the chocolate in the frypan again."
+    },
+    {
+      "step": 2095,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again."
+    },
+    {
+      "step": 2245,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour onto the chocolate in the frypan again."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 425,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 644,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 727,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 818,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 315,
+      "action": "subtask",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it."
+    },
+    {
+      "step": 534,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it."
+    },
+    {
+      "step": 460,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it until it is raised."
+    },
+    {
+      "step": 627,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Grasp the tomato sauce bottle and lift it until it is raised."
+    },
+    {
+      "step": 595,
+      "action": "subtask",
+      "prompt": "Pour the tomato sauce over the chocolate in the frypan once."
+    },
+    {
+      "step": 765,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the chocolate in the frypan to pour sauce a second time."
+    },
+    {
+      "step": 915,
+      "action": "subtask",
+      "prompt": "Pour the tomato sauce over the chocolate in the frypan for the second time."
+    },
+    {
+      "step": 1070,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle and pour it over the chocolate in the frypan again."
+    },
+    {
+      "step": 1330,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle and tilt it over the chocolate in the frypan to pour sauce onto it again."
+    },
+    {
+      "step": 1520,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle and pour it over the chocolate in the frypan again."
+    },
+    {
+      "step": 1665,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour onto the chocolate in the frypan again."
+    },
+    {
+      "step": 1800,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the chocolate in the frypan again."
+    },
+    {
+      "step": 1955,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle to pour sauce onto the chocolate in the frypan again."
+    },
+    {
+      "step": 2255,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the chocolate in the frypan again to pour sauce onto it."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and lift the tomato sauce bottle."
+    },
+    {
+      "step": 150,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 305,
+      "action": "subtask",
+      "prompt": "Reach for, grasp, and lift the tomato sauce bottle."
+    },
+    {
+      "step": 480,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it from the table."
+    },
+    {
+      "step": 605,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it until it is raised."
+    },
+    {
+      "step": 750,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 870,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it clear of the table."
+    },
+    {
+      "step": 1000,
+      "action": "subtask",
+      "prompt": "Reach down, grasp the tomato sauce bottle, and lift it clear of the tabletop."
+    },
+    {
+      "step": 1140,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 1395,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    },
+    {
+      "step": 1520,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 1660,
+      "action": "subtask",
+      "prompt": "Reach down, grasp the tomato sauce bottle, and lift it up."
+    },
+    {
+      "step": 1810,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 2085,
+      "action": "subtask",
+      "prompt": "Reach to the tomato sauce bottle, grasp its body firmly, and lift it off the table."
+    },
+    {
+      "step": 2220,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One"
+      ],
+      "stalled_stage": "03_Pour_Two"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One"
+      ],
+      "stalled_stage": "03_Pour_Two"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 100.0,
+    "stage_success": true,
+    "failure_reason": null,
+    "completed_stages": [
+      "01_Lift_Tomato_Sauce",
+      "02_Pour_One",
+      "03_Pour_Two"
+    ],
+    "stalled_stage": null
+  }
+}

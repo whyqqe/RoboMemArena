@@ -1,0 +1,305 @@
+{
+  "task_id": 5,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "reach toward the top drawer to open it"
+    ],
+    [
+      0,
+      "open the top drawer"
+    ],
+    [
+      660,
+      "open the drawer"
+    ],
+    [
+      805,
+      "Open the top drawer by pulling its handle."
+    ],
+    [
+      935,
+      "open the top drawer"
+    ],
+    [
+      1085,
+      "open the drawer"
+    ],
+    [
+      1330,
+      "open the top drawer"
+    ],
+    [
+      1540,
+      "Pull open the drawer."
+    ],
+    [
+      1720,
+      "Open the current drawer to inspect its contents."
+    ],
+    [
+      1990,
+      "open the drawer"
+    ],
+    [
+      2170,
+      "Open the top drawer by pulling its handle."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "reach toward the top drawer to open it",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "reach toward the top drawer to open it",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 660,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 805,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer by pulling its handle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 935,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1085,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1330,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1540,
+      "event_type": "subtask",
+      "subtask": "Pull open the drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1720,
+      "event_type": "subtask",
+      "subtask": "Open the current drawer to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1990,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2170,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer by pulling its handle.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "reach toward the top drawer to open it",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "reach toward the top drawer to open it",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 660,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 805,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer by pulling its handle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 935,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1085,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1330,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1540,
+      "action": "subtask_update",
+      "instruction": "Pull open the drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1720,
+      "action": "subtask_update",
+      "instruction": "Open the current drawer to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1990,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2170,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer by pulling its handle.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "reach toward the top drawer to open it"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 660,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 805,
+      "action": "subtask",
+      "prompt": "Open the top drawer by pulling its handle."
+    },
+    {
+      "step": 935,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1085,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 1330,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1540,
+      "action": "subtask",
+      "prompt": "Pull open the drawer."
+    },
+    {
+      "step": 1720,
+      "action": "subtask",
+      "prompt": "Open the current drawer to inspect its contents."
+    },
+    {
+      "step": 1990,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 2170,
+      "action": "subtask",
+      "prompt": "Open the top drawer by pulling its handle."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 0.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [],
+    "stalled_stage": "01_Open_Top_Drawer"
+  }
+}

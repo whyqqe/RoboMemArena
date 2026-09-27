@@ -1,0 +1,20 @@
+{
+  "arm": "evmem",
+  "pid": 3912942,
+  "version": "gpm_l0l1",
+  "totals": {
+    "n_ledgers": 0,
+    "n_events": 0,
+    "n_plan_steps": 0,
+    "n_looks": 0,
+    "n_auto_looks": 0,
+    "n_looks_new_frames": 0,
+    "n_fluent_steps": 0,
+    "n_evidence_mode_steps": 0,
+    "n_control_rejects": 0,
+    "n_label_rejects": 0,
+    "n_evidence_carried": 0,
+    "n_tool_trace": 0
+  },
+  "ledgers": []
+}

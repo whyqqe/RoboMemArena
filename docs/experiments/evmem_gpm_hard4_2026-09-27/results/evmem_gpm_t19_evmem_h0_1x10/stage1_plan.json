@@ -1,0 +1,33 @@
+{
+  "job_id": "615190",
+  "planner_model": "gpt-6-luna",
+  "planner_max_tokens": 2048,
+  "profiles": [
+    "h0"
+  ],
+  "arms": [
+    "evmem"
+  ],
+  "task_scope": "[19]",
+  "trials_per_profile": {
+    "h0": 10
+  },
+  "note": "Single-task declared subset. stage_score_pct here is a macro mean over the tasks that were RUN and is NOT comparable to a 26-task protocol number.",
+  "expected_episodes_min": 10,
+  "expected_episodes_max": 10,
+  "wall_budget_sec": 6400,
+  "cells": [
+    {
+      "profile": "h0",
+      "arm": "evmem",
+      "task_scope": "[19]",
+      "seed_start": 100,
+      "num_trials": 10,
+      "seed_range": [
+        100,
+        109
+      ],
+      "out_base": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/evmem_gpm_t19_evmem_h0_1x10/h0"
+    }
+  ]
+}

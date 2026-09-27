@@ -1,0 +1,12 @@
+[
+  {
+    "task_id": 19,
+    "status": "completed",
+    "error": "",
+    "stage_score_pct": 26.7,
+    "stage_success_rate": 0.0,
+    "goal_success_rate": 0.2667,
+    "video_dir": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/evmem_gpm_t19_evmem_h0_1x10/h0/evmem_s100/videos/task19",
+    "duration_sec": 1108.4
+  }
+]

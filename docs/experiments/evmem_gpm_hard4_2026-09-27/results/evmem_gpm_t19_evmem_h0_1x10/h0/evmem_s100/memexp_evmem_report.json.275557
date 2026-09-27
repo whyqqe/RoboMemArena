@@ -1,0 +1,401 @@
+{
+  "arm": "evmem",
+  "pid": 275557,
+  "version": "gpm_l0l1",
+  "totals": {
+    "n_ledgers": 10,
+    "n_events": 201,
+    "n_plan_steps": 201,
+    "n_looks": 150,
+    "n_auto_looks": 150,
+    "n_looks_new_frames": 148,
+    "n_fluent_steps": 51,
+    "n_evidence_mode_steps": 150,
+    "n_control_rejects": 0,
+    "n_label_rejects": 0,
+    "n_evidence_carried": 548,
+    "n_tool_trace": 150
+  },
+  "ledgers": [
+    {
+      "n_claims": 3,
+      "n_events": 20,
+      "n_plan_steps": 20,
+      "n_looks": 17,
+      "n_auto_looks": 17,
+      "n_looks_new_frames": 17,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 3,
+      "n_evidence_mode_steps": 17,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 68,
+      "evidence_abs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 17,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 0/3\ncurrent c1 step 1 of 3  status=SEEN  attempts=19\nNEED: place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall="
+    },
+    {
+      "n_claims": 3,
+      "n_events": 23,
+      "n_plan_steps": 23,
+      "n_looks": 18,
+      "n_auto_looks": 18,
+      "n_looks_new_frames": 17,
+      "n_looks_zero_gain": 1,
+      "n_rereads": 0,
+      "n_fluent_steps": 5,
+      "n_evidence_mode_steps": 18,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 62,
+      "evidence_abs": [
+        410,
+        520,
+        960,
+        1080,
+        1215,
+        1315
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 18,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 1/3\ncurrent c2 step 2 of 3  status=SEEN  attempts=15\nNEED: place the object as required (Place Milk Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall=2  evide"
+    },
+    {
+      "n_claims": 3,
+      "n_events": 20,
+      "n_plan_steps": 20,
+      "n_looks": 11,
+      "n_auto_looks": 11,
+      "n_looks_new_frames": 11,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 9,
+      "n_evidence_mode_steps": 11,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 39,
+      "evidence_abs": [
+        440,
+        575,
+        960,
+        1145,
+        1310,
+        1440
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 11,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 2/3\ncurrent c3 step 3 of 3  status=SEEN  attempts=12\nNEED: place the object as required (Place Orange Juice Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall="
+    },
+    {
+      "n_claims": 3,
+      "n_events": 18,
+      "n_plan_steps": 18,
+      "n_looks": 15,
+      "n_auto_looks": 15,
+      "n_looks_new_frames": 15,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 3,
+      "n_evidence_mode_steps": 15,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 57,
+      "evidence_abs": [
+        150,
+        275,
+        405,
+        535
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 15,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 0/3\ncurrent c1 step 1 of 3  status=SEEN  attempts=17\nNEED: place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall="
+    },
+    {
+      "n_claims": 3,
+      "n_events": 20,
+      "n_plan_steps": 20,
+      "n_looks": 12,
+      "n_auto_looks": 12,
+      "n_looks_new_frames": 12,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 8,
+      "n_evidence_mode_steps": 12,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 42,
+      "evidence_abs": [
+        720,
+        840,
+        1390,
+        1530,
+        1675,
+        1815
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 12,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 2/3\ncurrent c3 step 3 of 3  status=SEEN  attempts=9\nNEED: place the object as required (Place Orange Juice Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall=3"
+    },
+    {
+      "n_claims": 3,
+      "n_events": 18,
+      "n_plan_steps": 18,
+      "n_looks": 15,
+      "n_auto_looks": 15,
+      "n_looks_new_frames": 15,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 3,
+      "n_evidence_mode_steps": 15,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 57,
+      "evidence_abs": [
+        175,
+        300,
+        395,
+        530
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 15,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 0/3\ncurrent c1 step 1 of 3  status=SEEN  attempts=17\nNEED: place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall="
+    },
+    {
+      "n_claims": 3,
+      "n_events": 23,
+      "n_plan_steps": 23,
+      "n_looks": 18,
+      "n_auto_looks": 18,
+      "n_looks_new_frames": 17,
+      "n_looks_zero_gain": 1,
+      "n_rereads": 0,
+      "n_fluent_steps": 5,
+      "n_evidence_mode_steps": 18,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 62,
+      "evidence_abs": [
+        390,
+        500,
+        1220,
+        1330,
+        1440,
+        1570
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 18,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 1/3\ncurrent c2 step 2 of 3  status=SEEN  attempts=13\nNEED: place the object as required (Place Milk Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall=1  evide"
+    },
+    {
+      "n_claims": 3,
+      "n_events": 21,
+      "n_plan_steps": 21,
+      "n_looks": 18,
+      "n_auto_looks": 18,
+      "n_looks_new_frames": 18,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 3,
+      "n_evidence_mode_steps": 18,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 69,
+      "evidence_abs": [
+        140,
+        255,
+        380,
+        515
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 18,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 0/3\ncurrent c1 step 1 of 3  status=SEEN  attempts=20\nNEED: place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall="
+    },
+    {
+      "n_claims": 3,
+      "n_events": 20,
+      "n_plan_steps": 20,
+      "n_looks": 11,
+      "n_auto_looks": 11,
+      "n_looks_new_frames": 11,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 9,
+      "n_evidence_mode_steps": 11,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 35,
+      "evidence_abs": [
+        1250,
+        1365,
+        1780,
+        1935,
+        2110,
+        2225
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 11,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 2/3\ncurrent c3 step 3 of 3  status=SEEN  attempts=5\nNEED: place the object as required (Place Orange Juice Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall=2"
+    },
+    {
+      "n_claims": 3,
+      "n_events": 18,
+      "n_plan_steps": 18,
+      "n_looks": 15,
+      "n_auto_looks": 15,
+      "n_looks_new_frames": 15,
+      "n_looks_zero_gain": 0,
+      "n_rereads": 0,
+      "n_fluent_steps": 3,
+      "n_evidence_mode_steps": 15,
+      "n_label_rejects": 0,
+      "n_control_rejects": 0,
+      "n_digest_redacted": 0,
+      "n_seeded": 3,
+      "n_evidence_carried": 57,
+      "evidence_abs": [
+        200,
+        335,
+        460,
+        590
+      ],
+      "events_eq_steps": true,
+      "n_tool_trace": 15,
+      "last_mode": "evidence",
+      "labels": [
+        "step 1 of 3",
+        "step 2 of 3",
+        "step 3 of 3"
+      ],
+      "predicates": [
+        "place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity",
+        "place the object as required (Place Milk Cabinet2) without naming drawer identity",
+        "place the object as required (Place Orange Juice Cabinet2) without naming drawer identity"
+      ],
+      "last_digest_head": "=== evidence mode ===\nverified 0/3\ncurrent c1 step 1 of 3  status=SEEN  attempts=17\nNEED: place the object as required (Place Tomato Sauce Cabinet2) without naming drawer identity\nDo not copy step labels or stage ids.\nForbidden now: open/use microwave; place food into microwave.\nIgnore later recipe steps in the task brief until current NEED is VERIFIED.\nAdmissible templates (paraphrase OK, same intent):\n  - Place the object into the open container.\n  - Put the object into the open drawer.\nstall="
+    }
+  ]
+}

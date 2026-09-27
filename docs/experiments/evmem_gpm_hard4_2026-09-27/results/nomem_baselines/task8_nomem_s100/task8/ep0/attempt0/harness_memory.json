@@ -1,0 +1,259 @@
+{
+  "task_id": 8,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Pick up the chocolate and place it into the frypan."
+    ],
+    [
+      445,
+      "Pick up the chocolate from the table to place it in the frypan."
+    ],
+    [
+      695,
+      "Pick up the chocolate block to place it in the frypan"
+    ],
+    [
+      885,
+      "Pick up the chocolate and place it in the frypan."
+    ],
+    [
+      1225,
+      "pour tomato sauce over the chocolate"
+    ],
+    [
+      1500,
+      "Pick up the chocolate and place it in the frypan."
+    ],
+    [
+      1720,
+      "Pick up the chocolate from the table to place it in the frypan."
+    ],
+    [
+      1935,
+      "Pick up the chocolate and place it into the frypan."
+    ],
+    [
+      2120,
+      "Pick up the chocolate and place it in the frypan."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it into the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick up the chocolate and place it into the frypan.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 445,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate from the table to place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 695,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate block to place it in the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 885,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1225,
+      "event_type": "subtask",
+      "subtask": "pour tomato sauce over the chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1500,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1720,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate from the table to place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1935,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it into the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2120,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 445,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 695,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate block to place it in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 885,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1225,
+      "action": "subtask_update",
+      "instruction": "pour tomato sauce over the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1500,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1720,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1935,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2120,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan."
+    },
+    {
+      "step": 445,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 695,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate block to place it in the frypan"
+    },
+    {
+      "step": 885,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 1225,
+      "action": "subtask",
+      "prompt": "pour tomato sauce over the chocolate"
+    },
+    {
+      "step": 1500,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 1720,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 1935,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan."
+    },
+    {
+      "step": 2120,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 0.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [],
+    "stalled_stage": "01_Lift_Tomato_Sauce"
+  }
+}

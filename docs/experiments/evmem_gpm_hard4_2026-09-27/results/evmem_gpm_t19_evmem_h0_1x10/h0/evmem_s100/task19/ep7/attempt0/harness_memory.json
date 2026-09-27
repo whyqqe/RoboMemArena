@@ -1,0 +1,1745 @@
+{
+  "task_id": 19,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Place the tomato sauce in cabinet2"
+    ],
+    [
+      140,
+      "Place the tomato sauce into the target cabinet."
+    ],
+    [
+      255,
+      "Place the tomato sauce in cabinet2."
+    ],
+    [
+      380,
+      "Place the tomato sauce into the open container."
+    ],
+    [
+      730,
+      "Place the tomato sauce into the open target container."
+    ],
+    [
+      865,
+      "Place the tomato sauce into the open container."
+    ],
+    [
+      2335,
+      "Place the tomato sauce inside the open container."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 1670,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1790,
+      "event_type": "subtask",
+      "subtask": "Place the orange juice into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "place tomato sauce in cabinet2",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 150,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 275,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 405,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1330,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1470,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1790,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1920,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach toward and grasp the tomato sauce in cabinet1",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 282,
+      "event_type": "stage_complete",
+      "subtask": "Reach toward and grasp the tomato sauce in cabinet1",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {}
+    },
+    {
+      "step": 225,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 362,
+      "event_type": "stall",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": "02_Place_Milk_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 340,
+      "event_type": "subtask",
+      "subtask": "Place the milk in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 590,
+      "event_type": "subtask",
+      "subtask": "Place the milk carton in cabinet2 and release it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 720,
+      "event_type": "subtask",
+      "subtask": "Place the milk into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 930,
+      "event_type": "subtask",
+      "subtask": "Move the milk over the open target container and release it inside.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1045,
+      "event_type": "subtask",
+      "subtask": "Place the milk into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1163,
+      "event_type": "stage_complete",
+      "subtask": "Place the milk into the open container.",
+      "stage_name": "02_Place_Milk_Cabinet2",
+      "metadata": {}
+    },
+    {
+      "step": 1243,
+      "event_type": "stall",
+      "subtask": "Place the milk into the open container.",
+      "stage_name": "03_Place_Orange_Juice_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 1255,
+      "event_type": "subtask",
+      "subtask": "Place the orange juice into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1530,
+      "event_type": "subtask",
+      "subtask": "Place the orange juice in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1675,
+      "event_type": "subtask",
+      "subtask": "Place the orange juice into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1945,
+      "event_type": "subtask",
+      "subtask": "Put the orange juice into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2080,
+      "event_type": "subtask",
+      "subtask": "Place the orange juice into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 175,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 300,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 395,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 530,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 900,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1170,
+      "event_type": "subtask",
+      "subtask": "Put the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1310,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1600,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1735,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1900,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2055,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2235,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 240,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 390,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 500,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 620,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1051,
+      "event_type": "stage_complete",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {}
+    },
+    {
+      "step": 1131,
+      "event_type": "stall",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": "02_Place_Milk_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 1110,
+      "event_type": "subtask",
+      "subtask": "Place the milk into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1220,
+      "event_type": "subtask",
+      "subtask": "Place the milk into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1330,
+      "event_type": "subtask",
+      "subtask": "Place the milk in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1440,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1570,
+      "event_type": "subtask",
+      "subtask": "Place the milk into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2280,
+      "event_type": "subtask",
+      "subtask": "Place the object into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 140,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the target cabinet.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 255,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 380,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 730,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open target container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 865,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into the open container.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2335,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce inside the open container.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce from cabinet1 and place it inside cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick up the tomato sauce from cabinet1 and place it inside cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 5,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 155,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 940,
+      "action": "subtask_update",
+      "instruction": "Carefully lower the tomato sauce into the open container and release it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1110,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1565,
+      "action": "subtask_update",
+      "instruction": "Put the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1710,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1975,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2110,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 190,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 410,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 813,
+      "action": "stage_complete",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 893,
+      "action": "stall",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 845,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 960,
+      "action": "subtask_update",
+      "instruction": "Place the milk in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1080,
+      "action": "subtask_update",
+      "instruction": "Place the milk in cabinet2 and release it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1215,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1510,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1610,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2125,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2230,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 120,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 341,
+      "action": "stage_complete",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 421,
+      "action": "stall",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 340,
+      "action": "subtask_update",
+      "instruction": "Place the milk into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 440,
+      "action": "subtask_update",
+      "instruction": "Place the milk in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 575,
+      "action": "subtask_update",
+      "instruction": "Place the milk carton into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 732,
+      "action": "stage_complete",
+      "instruction": "Place the milk carton into cabinet2.",
+      "outcome": "success",
+      "notes": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "step": 812,
+      "action": "stall",
+      "instruction": "Place the milk carton into cabinet2.",
+      "outcome": "stalled",
+      "notes": "03_Place_Orange_Juice_Cabinet2:80"
+    },
+    {
+      "step": 680,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 825,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1310,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1670,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1790,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "place tomato sauce in cabinet2",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 150,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 275,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 405,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1330,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1470,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1790,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1920,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach toward and grasp the tomato sauce in cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 282,
+      "action": "stage_complete",
+      "instruction": "Reach toward and grasp the tomato sauce in cabinet1",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 225,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 362,
+      "action": "stall",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 340,
+      "action": "subtask_update",
+      "instruction": "Place the milk in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 590,
+      "action": "subtask_update",
+      "instruction": "Place the milk carton in cabinet2 and release it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 720,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 930,
+      "action": "subtask_update",
+      "instruction": "Move the milk over the open target container and release it inside.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1045,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1163,
+      "action": "stage_complete",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "success",
+      "notes": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "step": 1243,
+      "action": "stall",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "stalled",
+      "notes": "03_Place_Orange_Juice_Cabinet2:80"
+    },
+    {
+      "step": 1255,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1530,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1675,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1945,
+      "action": "subtask_update",
+      "instruction": "Put the orange juice into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2080,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 175,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 300,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 395,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 530,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 900,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1170,
+      "action": "subtask_update",
+      "instruction": "Put the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1310,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1600,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1735,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1900,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2055,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2235,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 240,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 390,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 500,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 620,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1051,
+      "action": "stage_complete",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 1131,
+      "action": "stall",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 1110,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1220,
+      "action": "subtask_update",
+      "instruction": "Place the milk into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1330,
+      "action": "subtask_update",
+      "instruction": "Place the milk in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1440,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1570,
+      "action": "subtask_update",
+      "instruction": "Place the milk into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2280,
+      "action": "subtask_update",
+      "instruction": "Place the object into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 140,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the target cabinet.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 255,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 380,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 730,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open target container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 865,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into the open container.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2335,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce inside the open container.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce from cabinet1 and place it inside cabinet2."
+    },
+    {
+      "step": 5,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 155,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 940,
+      "action": "subtask",
+      "prompt": "Carefully lower the tomato sauce into the open container and release it."
+    },
+    {
+      "step": 1110,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1565,
+      "action": "subtask",
+      "prompt": "Put the tomato sauce into the open container."
+    },
+    {
+      "step": 1710,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1975,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 2110,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 190,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 410,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 813,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 845,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 960,
+      "action": "subtask",
+      "prompt": "Place the milk in cabinet2."
+    },
+    {
+      "step": 1080,
+      "action": "subtask",
+      "prompt": "Place the milk in cabinet2 and release it."
+    },
+    {
+      "step": 1215,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 1510,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1610,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 2125,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 2230,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 120,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 341,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 340,
+      "action": "subtask",
+      "prompt": "Place the milk into cabinet2."
+    },
+    {
+      "step": 440,
+      "action": "subtask",
+      "prompt": "Place the milk in cabinet2."
+    },
+    {
+      "step": 575,
+      "action": "subtask",
+      "prompt": "Place the milk carton into cabinet2."
+    },
+    {
+      "step": 732,
+      "action": "stage_complete",
+      "stage": "02_Place_Milk_Cabinet2",
+      "prompt": "Place the milk carton into cabinet2."
+    },
+    {
+      "step": 680,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 825,
+      "action": "subtask",
+      "prompt": "Place the orange juice into cabinet2."
+    },
+    {
+      "step": 1310,
+      "action": "subtask",
+      "prompt": "Place the orange juice into the open container."
+    },
+    {
+      "step": 1670,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1790,
+      "action": "subtask",
+      "prompt": "Place the orange juice into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "place tomato sauce in cabinet2"
+    },
+    {
+      "step": 150,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 275,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 405,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1330,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open drawer."
+    },
+    {
+      "step": 1470,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1790,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1920,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach toward and grasp the tomato sauce in cabinet1"
+    },
+    {
+      "step": 282,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Reach toward and grasp the tomato sauce in cabinet1"
+    },
+    {
+      "step": 225,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 340,
+      "action": "subtask",
+      "prompt": "Place the milk in cabinet2."
+    },
+    {
+      "step": 590,
+      "action": "subtask",
+      "prompt": "Place the milk carton in cabinet2 and release it."
+    },
+    {
+      "step": 720,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 930,
+      "action": "subtask",
+      "prompt": "Move the milk over the open target container and release it inside."
+    },
+    {
+      "step": 1045,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 1163,
+      "action": "stage_complete",
+      "stage": "02_Place_Milk_Cabinet2",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 1255,
+      "action": "subtask",
+      "prompt": "Place the orange juice into cabinet2."
+    },
+    {
+      "step": 1530,
+      "action": "subtask",
+      "prompt": "Place the orange juice in cabinet2."
+    },
+    {
+      "step": 1675,
+      "action": "subtask",
+      "prompt": "Place the orange juice into the open container."
+    },
+    {
+      "step": 1945,
+      "action": "subtask",
+      "prompt": "Put the orange juice into the open container."
+    },
+    {
+      "step": 2080,
+      "action": "subtask",
+      "prompt": "Place the orange juice into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 175,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 300,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 395,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 530,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 900,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1170,
+      "action": "subtask",
+      "prompt": "Put the object into the open container."
+    },
+    {
+      "step": 1310,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1600,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1735,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1900,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 2055,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 2235,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 240,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 390,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 500,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 620,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1051,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 1110,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 1220,
+      "action": "subtask",
+      "prompt": "Place the milk into cabinet2."
+    },
+    {
+      "step": 1330,
+      "action": "subtask",
+      "prompt": "Place the milk in cabinet2."
+    },
+    {
+      "step": 1440,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 1570,
+      "action": "subtask",
+      "prompt": "Place the milk into the open container."
+    },
+    {
+      "step": 2280,
+      "action": "subtask",
+      "prompt": "Place the object into the open container."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2"
+    },
+    {
+      "step": 140,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the target cabinet."
+    },
+    {
+      "step": 255,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 380,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 730,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open target container."
+    },
+    {
+      "step": 865,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into the open container."
+    },
+    {
+      "step": 2335,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce inside the open container."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2"
+      ],
+      "stalled_stage": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2",
+        "02_Place_Milk_Cabinet2"
+      ],
+      "stalled_stage": "03_Place_Orange_Juice_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2",
+        "02_Place_Milk_Cabinet2"
+      ],
+      "stalled_stage": "03_Place_Orange_Juice_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2"
+      ],
+      "stalled_stage": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 66.66666666666667,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [
+      "01_Place_Tomato_Sauce_Cabinet2",
+      "02_Place_Milk_Cabinet2"
+    ],
+    "stalled_stage": "03_Place_Orange_Juice_Cabinet2"
+  }
+}

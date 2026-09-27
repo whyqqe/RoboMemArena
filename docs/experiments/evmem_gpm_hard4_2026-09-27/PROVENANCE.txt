@@ -1,0 +1,8 @@
+package=docs/experiments/evmem_gpm_hard4_2026-09-27
+created_utc=2026-09-27T05:14:49Z
+git_sha=8af37b4462291d5f6edd2b6f5b4afb5d323befc0
+git_short=8af37b4
+source_tree=experiments/mem_efficacy
+model=EvMem-GPM (Goal-Predicate Memory)
+protocol=h0 1x10 seed100 WALL=9000
+tasks=5,8,19,22

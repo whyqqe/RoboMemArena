@@ -1,0 +1,304 @@
+2026-09-27 12:40:57,610 | INFO | task_id=19 bddl=/project/peilab/why/RoboMemArena/bddl/19_tomato_milk_orange_cabinet.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-27 12:40:57,610 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:40:59,776 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-27 12:41:00,023 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:05,755 | INFO | API VLM @t=0 task=19 subtask=Place the tomato sauce in cabinet2. keyframes=[]
+2026-09-27 12:41:05,758 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:10,369 | INFO | API VLM @t=0 task=19 subtask=Pick up the tomato sauce from cabinet1 and place it inside cabinet2. keyframes=[]
+2026-09-27 12:41:13,406 | INFO | [t=10] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:41:13,571 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:13,739 | INFO | [t=20] VLM prompt update from step=0: Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:13,794 | INFO | [t=20] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:14,172 | INFO | [t=30] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:14,543 | INFO | [t=40] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:14,912 | INFO | [t=50] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:15,288 | INFO | [t=60] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:15,674 | INFO | [t=70] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:16,051 | INFO | [t=80] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:16,433 | INFO | [t=90] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:16,812 | INFO | [t=100] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:17,191 | INFO | [t=110] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:17,580 | INFO | [t=120] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:17,970 | INFO | [t=130] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:18,359 | INFO | [t=140] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:18,752 | INFO | [t=150] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:19,148 | INFO | [t=160] VLA chunk prompt=Pick up the tomato sauce from cabinet1 and place it inside cabinet2.
+2026-09-27 12:41:19,371 | INFO | API VLM @t=5 task=19 subtask=Place the tomato sauce into cabinet2. keyframes=[]
+2026-09-27 12:41:19,373 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:19,493 | INFO | [t=170] VLM prompt update from step=5: Place the tomato sauce into cabinet2.
+2026-09-27 12:41:19,547 | INFO | [t=170] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:19,924 | INFO | [t=180] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:20,297 | INFO | [t=190] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:20,667 | INFO | [t=200] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:21,032 | INFO | [t=210] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:21,417 | INFO | [t=220] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:21,780 | INFO | [t=230] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:22,149 | INFO | [t=240] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:22,507 | INFO | [t=250] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:22,878 | INFO | [t=260] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:23,273 | INFO | [t=270] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:23,680 | INFO | [t=280] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:24,072 | INFO | [t=290] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:24,448 | INFO | [t=300] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:24,811 | INFO | API VLM @t=155 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:41:24,813 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:24,832 | INFO | [t=310] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:41:25,151 | INFO | [t=320] VLM prompt update from step=155: Place the tomato sauce into the open container.
+2026-09-27 12:41:25,204 | INFO | [t=320] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:25,582 | INFO | [t=330] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:25,961 | INFO | [t=340] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:26,347 | INFO | [t=350] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:26,751 | INFO | [t=360] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:27,150 | INFO | [t=370] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:27,552 | INFO | [t=380] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:27,956 | INFO | [t=390] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:28,360 | INFO | [t=400] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:28,771 | INFO | [t=410] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:29,183 | INFO | [t=420] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:29,401 | INFO | API VLM @t=300 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:41:29,404 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:29,598 | INFO | [t=430] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:29,993 | INFO | [t=440] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:30,383 | INFO | [t=450] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:30,780 | INFO | [t=460] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:31,183 | INFO | [t=470] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:31,578 | INFO | [t=480] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:31,971 | INFO | [t=490] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:32,365 | INFO | [t=500] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:32,759 | INFO | [t=510] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:33,146 | INFO | [t=520] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:33,537 | INFO | [t=530] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:33,942 | INFO | [t=540] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:34,337 | INFO | [t=550] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:34,690 | INFO | API VLM @t=415 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:41:34,692 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:34,730 | INFO | [t=560] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:35,121 | INFO | [t=570] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:35,513 | INFO | [t=580] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:35,888 | INFO | [t=590] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:36,278 | INFO | [t=600] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:36,668 | INFO | [t=610] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:37,060 | INFO | [t=620] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:37,429 | INFO | [t=630] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:37,810 | INFO | [t=640] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:38,189 | INFO | [t=650] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:38,567 | INFO | [t=660] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:38,947 | INFO | [t=670] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:39,308 | INFO | [t=680] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:39,646 | INFO | API VLM @t=550 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:41:39,648 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:39,686 | INFO | [t=690] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:40,064 | INFO | [t=700] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:40,447 | INFO | [t=710] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:40,834 | INFO | [t=720] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:41,226 | INFO | [t=730] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:41,612 | INFO | [t=740] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:42,005 | INFO | [t=750] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:42,405 | INFO | [t=760] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:42,826 | INFO | [t=770] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:43,217 | INFO | [t=780] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:43,609 | INFO | [t=790] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:44,004 | INFO | [t=800] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:44,390 | INFO | [t=810] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:44,777 | INFO | [t=820] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:45,007 | INFO | API VLM @t=680 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:41:45,009 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:45,155 | INFO | [t=830] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:45,515 | INFO | [t=840] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:45,873 | INFO | [t=850] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:46,232 | INFO | [t=860] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:46,608 | INFO | [t=870] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:46,980 | INFO | [t=880] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:47,334 | INFO | [t=890] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:47,703 | INFO | [t=900] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:48,065 | INFO | [t=910] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:48,440 | INFO | [t=920] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:48,819 | INFO | [t=930] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:49,200 | INFO | [t=940] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:49,586 | INFO | [t=950] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:49,692 | INFO | API VLM @t=815 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:41:49,695 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:49,965 | INFO | [t=960] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:50,342 | INFO | [t=970] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:50,715 | INFO | [t=980] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:51,071 | INFO | [t=990] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:51,422 | INFO | [t=1000] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:51,782 | INFO | [t=1010] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:52,147 | INFO | [t=1020] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:52,504 | INFO | [t=1030] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:52,856 | INFO | [t=1040] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:53,206 | INFO | [t=1050] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:53,566 | INFO | [t=1060] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:53,962 | INFO | [t=1070] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:54,342 | INFO | [t=1080] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:54,708 | INFO | [t=1090] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:55,069 | INFO | [t=1100] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:55,436 | INFO | [t=1110] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:55,750 | INFO | API VLM @t=940 task=19 subtask=Carefully lower the tomato sauce into the open container and release it. keyframes=[]
+2026-09-27 12:41:55,753 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:41:55,799 | INFO | [t=1120] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:41:56,115 | INFO | [t=1130] VLM prompt update from step=940: Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:56,169 | INFO | [t=1130] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:56,534 | INFO | [t=1140] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:56,902 | INFO | [t=1150] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:57,263 | INFO | [t=1160] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:57,633 | INFO | [t=1170] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:57,995 | INFO | [t=1180] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:58,357 | INFO | [t=1190] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:58,719 | INFO | [t=1200] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:59,087 | INFO | [t=1210] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:59,463 | INFO | [t=1220] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:41:59,826 | INFO | [t=1230] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:42:00,220 | INFO | [t=1240] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:42:00,594 | INFO | [t=1250] VLA chunk prompt=Carefully lower the tomato sauce into the open container and release it.
+2026-09-27 12:42:00,824 | INFO | API VLM @t=1110 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:00,827 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:00,917 | INFO | [t=1260] VLM prompt update from step=1110: Place the tomato sauce into the open container.
+2026-09-27 12:42:00,971 | INFO | [t=1260] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:01,335 | INFO | [t=1270] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:01,696 | INFO | [t=1280] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:02,062 | INFO | [t=1290] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:02,434 | INFO | [t=1300] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:02,826 | INFO | [t=1310] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:03,207 | INFO | [t=1320] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:03,595 | INFO | [t=1330] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:03,981 | INFO | [t=1340] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:04,371 | INFO | [t=1350] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:04,758 | INFO | [t=1360] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:05,145 | INFO | [t=1370] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:05,540 | INFO | [t=1380] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:05,949 | INFO | [t=1390] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:06,335 | INFO | [t=1400] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:06,727 | INFO | [t=1410] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:06,940 | INFO | API VLM @t=1245 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:06,943 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:07,121 | INFO | [t=1420] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:07,531 | INFO | [t=1430] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:07,924 | INFO | [t=1440] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:08,330 | INFO | [t=1450] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:08,730 | INFO | [t=1460] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:09,127 | INFO | [t=1470] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:09,532 | INFO | [t=1480] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:09,947 | INFO | [t=1490] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:10,342 | INFO | [t=1500] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:10,740 | INFO | [t=1510] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:11,125 | INFO | [t=1520] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:11,503 | INFO | [t=1530] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:11,889 | INFO | [t=1540] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:12,279 | INFO | [t=1550] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:12,671 | INFO | [t=1560] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:13,064 | INFO | [t=1570] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:13,308 | INFO | API VLM @t=1405 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:13,310 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:13,444 | INFO | [t=1580] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:13,824 | INFO | [t=1590] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:14,192 | INFO | [t=1600] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:14,589 | INFO | [t=1610] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:14,985 | INFO | [t=1620] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:15,379 | INFO | [t=1630] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:15,760 | INFO | [t=1640] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:16,149 | INFO | [t=1650] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:16,542 | INFO | [t=1660] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:16,931 | INFO | [t=1670] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:17,314 | INFO | [t=1680] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:17,702 | INFO | [t=1690] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:18,090 | INFO | [t=1700] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:18,469 | INFO | [t=1710] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:18,849 | INFO | [t=1720] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:18,875 | INFO | API VLM @t=1565 task=19 subtask=Put the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:18,877 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:19,185 | INFO | [t=1730] VLM prompt update from step=1565: Put the tomato sauce into the open container.
+2026-09-27 12:42:19,240 | INFO | [t=1730] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:19,613 | INFO | [t=1740] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:19,989 | INFO | [t=1750] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:20,364 | INFO | [t=1760] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:20,749 | INFO | [t=1770] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:21,139 | INFO | [t=1780] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:21,523 | INFO | [t=1790] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:21,910 | INFO | [t=1800] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:22,296 | INFO | [t=1810] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:22,699 | INFO | [t=1820] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:23,086 | INFO | [t=1830] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:23,482 | INFO | [t=1840] VLA chunk prompt=Put the tomato sauce into the open container.
+2026-09-27 12:42:23,584 | INFO | API VLM @t=1710 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:23,586 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:23,830 | INFO | [t=1850] VLM prompt update from step=1710: Place the tomato sauce into the open container.
+2026-09-27 12:42:23,885 | INFO | [t=1850] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:24,295 | INFO | [t=1860] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:24,711 | INFO | [t=1870] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:25,119 | INFO | [t=1880] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:25,527 | INFO | [t=1890] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:25,938 | INFO | [t=1900] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:26,347 | INFO | [t=1910] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:26,745 | INFO | [t=1920] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:27,147 | INFO | [t=1930] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:27,550 | INFO | [t=1940] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:27,950 | INFO | [t=1950] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:28,348 | INFO | [t=1960] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:28,743 | INFO | [t=1970] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:29,139 | INFO | [t=1980] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:29,324 | INFO | API VLM @t=1830 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:29,327 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:29,540 | INFO | [t=1990] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:29,932 | INFO | [t=2000] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:30,327 | INFO | [t=2010] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:30,725 | INFO | [t=2020] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:31,122 | INFO | [t=2030] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:31,512 | INFO | [t=2040] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:31,893 | INFO | [t=2050] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:32,288 | INFO | [t=2060] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:32,674 | INFO | [t=2070] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:33,049 | INFO | [t=2080] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:33,417 | INFO | [t=2090] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:33,789 | INFO | [t=2100] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:34,166 | INFO | [t=2110] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:34,540 | INFO | [t=2120] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:34,569 | INFO | API VLM @t=1975 task=19 subtask=Place the object into the open container. keyframes=[]
+2026-09-27 12:42:34,571 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:34,866 | INFO | [t=2130] VLM prompt update from step=1975: Place the object into the open container.
+2026-09-27 12:42:34,920 | INFO | [t=2130] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:35,287 | INFO | [t=2140] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:35,652 | INFO | [t=2150] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:36,006 | INFO | [t=2160] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:36,357 | INFO | [t=2170] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:36,724 | INFO | [t=2180] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:37,069 | INFO | [t=2190] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:37,427 | INFO | [t=2200] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:37,796 | INFO | [t=2210] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:38,164 | INFO | [t=2220] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:38,538 | INFO | [t=2230] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:38,911 | INFO | [t=2240] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:39,287 | INFO | [t=2250] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:39,658 | INFO | [t=2260] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:40,006 | INFO | API VLM @t=2110 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:40,008 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:40,037 | INFO | [t=2270] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:42:40,369 | INFO | [t=2280] VLM prompt update from step=2110: Place the tomato sauce into the open container.
+2026-09-27 12:42:40,422 | INFO | [t=2280] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:40,809 | INFO | [t=2290] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:41,194 | INFO | [t=2300] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:41,590 | INFO | [t=2310] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:41,981 | INFO | [t=2320] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:42,367 | INFO | [t=2330] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:42,750 | INFO | [t=2340] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:43,131 | INFO | [t=2350] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:43,511 | INFO | [t=2360] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:43,891 | INFO | [t=2370] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:44,258 | INFO | [t=2380] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:44,622 | INFO | [t=2390] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:44,974 | INFO | [t=2400] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:45,221 | INFO | API VLM @t=2260 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:45,224 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:42:45,331 | INFO | [t=2410] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:45,702 | INFO | [t=2420] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:46,066 | INFO | [t=2430] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:46,432 | INFO | [t=2440] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:46,796 | INFO | [t=2450] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:47,159 | INFO | [t=2460] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:47,513 | INFO | [t=2470] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:47,898 | INFO | [t=2480] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:48,282 | INFO | [t=2490] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:48,660 | INFO | [t=2500] VLA chunk prompt=Place the tomato sauce into the open container.
+2026-09-27 12:42:50,831 | INFO | API VLM @t=2395 task=19 subtask=Place the tomato sauce into the open container. keyframes=[]
+2026-09-27 12:42:50,840 | INFO | attempt=0 stage_score=0.0 stage_success=False failure_reason=incomplete_stage
+2026-09-27 12:42:50,840 | INFO | Episode 0 seed=100 stage_score=0.0 stage_success=0 goal=0.000 failure_reason=incomplete_stage | 01_Place_Tomato_Sauce_Cabinet2=N | 02_Place_Milk_Cabinet2=N | 03_Place_Orange_Juice_Cabinet2=N

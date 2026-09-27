@@ -1,0 +1,12 @@
+[
+  {
+    "task_id": 5,
+    "status": "completed",
+    "error": "",
+    "stage_score_pct": 13.8,
+    "stage_success_rate": 0.0,
+    "goal_success_rate": 0.1375,
+    "video_dir": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/videos/task5",
+    "duration_sec": 1006.51
+  }
+]

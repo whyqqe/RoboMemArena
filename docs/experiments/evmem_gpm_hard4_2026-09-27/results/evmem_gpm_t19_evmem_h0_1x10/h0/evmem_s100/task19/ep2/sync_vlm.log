@@ -1,0 +1,307 @@
+2026-09-27 12:44:52,670 | INFO | task_id=19 bddl=/project/peilab/why/RoboMemArena/bddl/19_tomato_milk_orange_cabinet.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-27 12:44:52,681 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:44:55,208 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-27 12:44:55,454 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:44:55,509 | INFO | [t=10] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:55,835 | INFO | [t=20] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:56,161 | INFO | [t=30] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:56,487 | INFO | [t=40] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:56,814 | INFO | [t=50] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:57,153 | INFO | [t=60] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:57,492 | INFO | [t=70] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:57,815 | INFO | [t=80] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:58,187 | INFO | [t=90] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:58,559 | INFO | [t=100] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:58,949 | INFO | [t=110] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:59,344 | INFO | [t=120] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:59,739 | INFO | [t=130] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-27 12:44:59,760 | INFO | API VLM @t=0 task=19 subtask=Place the tomato sauce into cabinet2. keyframes=[]
+2026-09-27 12:44:59,762 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:00,091 | INFO | [t=140] VLM prompt update from step=0: Place the tomato sauce into cabinet2.
+2026-09-27 12:45:00,144 | INFO | [t=140] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:00,547 | INFO | [t=150] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:00,954 | INFO | [t=160] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:01,361 | INFO | [t=170] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:01,777 | INFO | [t=180] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:02,201 | INFO | [t=190] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:02,625 | INFO | [t=200] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:03,045 | INFO | [t=210] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:03,461 | INFO | [t=220] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:03,879 | INFO | [t=230] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:04,297 | INFO | [t=240] VLA chunk prompt=Place the tomato sauce into cabinet2.
+2026-09-27 12:45:04,442 | INFO | API VLM @t=120 task=19 subtask=Place the tomato sauce in cabinet2. keyframes=[]
+2026-09-27 12:45:04,444 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:04,668 | INFO | [t=250] VLM prompt update from step=120: Place the tomato sauce in cabinet2.
+2026-09-27 12:45:04,722 | INFO | [t=250] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:05,156 | INFO | [t=260] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:05,591 | INFO | [t=270] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:06,011 | INFO | [t=280] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:06,425 | INFO | [t=290] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:06,842 | INFO | [t=300] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:07,253 | INFO | [t=310] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:07,656 | INFO | [t=320] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:08,068 | INFO | [t=330] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:08,472 | INFO | [t=340] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:08,507 | INFO | [t=341] stage done: 01_Place_Tomato_Sauce_Cabinet2
+2026-09-27 12:45:08,869 | INFO | [t=350] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:09,031 | INFO | API VLM @t=230 task=19 subtask=Place the tomato sauce in cabinet2. keyframes=[]
+2026-09-27 12:45:09,033 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:09,274 | INFO | [t=360] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:09,680 | INFO | [t=370] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:10,092 | INFO | [t=380] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:10,510 | INFO | [t=390] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:10,913 | INFO | [t=400] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:11,311 | INFO | [t=410] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:11,714 | INFO | [t=420] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:12,132 | INFO | [t=430] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:12,538 | INFO | [t=440] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:12,962 | INFO | [t=450] VLA chunk prompt=Place the tomato sauce in cabinet2.
+2026-09-27 12:45:12,967 | INFO | API VLM @t=340 task=19 subtask=Place the milk into cabinet2. keyframes=[]
+2026-09-27 12:45:12,969 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:13,333 | INFO | [t=460] VLM prompt update from step=340: Place the milk into cabinet2.
+2026-09-27 12:45:13,386 | INFO | [t=460] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:13,795 | INFO | [t=470] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:14,183 | INFO | [t=480] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:14,588 | INFO | [t=490] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:14,978 | INFO | [t=500] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:15,369 | INFO | [t=510] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:15,756 | INFO | [t=520] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:16,145 | INFO | [t=530] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:16,528 | INFO | [t=540] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:16,923 | INFO | [t=550] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:17,311 | INFO | [t=560] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:17,694 | INFO | [t=570] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:18,095 | INFO | [t=580] VLA chunk prompt=Place the milk into cabinet2.
+2026-09-27 12:45:18,298 | INFO | API VLM @t=440 task=19 subtask=Place the milk in cabinet2. keyframes=[]
+2026-09-27 12:45:18,300 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:18,439 | INFO | [t=590] VLM prompt update from step=440: Place the milk in cabinet2.
+2026-09-27 12:45:18,492 | INFO | [t=590] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:18,889 | INFO | [t=600] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:19,302 | INFO | [t=610] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:19,717 | INFO | [t=620] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:20,121 | INFO | [t=630] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:20,527 | INFO | [t=640] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:20,924 | INFO | [t=650] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:21,320 | INFO | [t=660] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:21,711 | INFO | [t=670] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:22,102 | INFO | [t=680] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:22,506 | INFO | [t=690] VLA chunk prompt=Place the milk in cabinet2.
+2026-09-27 12:45:22,672 | INFO | API VLM @t=575 task=19 subtask=Place the milk carton into cabinet2. keyframes=[]
+2026-09-27 12:45:22,675 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:22,862 | INFO | [t=700] VLM prompt update from step=575: Place the milk carton into cabinet2.
+2026-09-27 12:45:22,916 | INFO | [t=700] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:23,307 | INFO | [t=710] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:23,704 | INFO | [t=720] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:24,087 | INFO | [t=730] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:24,153 | INFO | [t=732] stage done: 02_Place_Milk_Cabinet2
+2026-09-27 12:45:24,468 | INFO | [t=740] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:24,860 | INFO | [t=750] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:25,252 | INFO | [t=760] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:25,647 | INFO | [t=770] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:26,046 | INFO | [t=780] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:26,435 | INFO | [t=790] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:26,830 | INFO | [t=800] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:27,211 | INFO | [t=810] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:27,628 | INFO | [t=820] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:28,046 | INFO | [t=830] VLA chunk prompt=Place the milk carton into cabinet2.
+2026-09-27 12:45:28,247 | INFO | API VLM @t=680 task=19 subtask=Place the milk into the open container. keyframes=[]
+2026-09-27 12:45:28,250 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:28,408 | INFO | [t=840] VLM prompt update from step=680: Place the milk into the open container.
+2026-09-27 12:45:28,462 | INFO | [t=840] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:28,867 | INFO | [t=850] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:29,276 | INFO | [t=860] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:29,680 | INFO | [t=870] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:30,095 | INFO | [t=880] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:30,505 | INFO | [t=890] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:30,932 | INFO | [t=900] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:31,353 | INFO | [t=910] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:31,771 | INFO | [t=920] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:32,183 | INFO | [t=930] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:32,607 | INFO | [t=940] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:33,033 | INFO | [t=950] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:33,448 | INFO | [t=960] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:33,856 | INFO | [t=970] VLA chunk prompt=Place the milk into the open container.
+2026-09-27 12:45:33,890 | INFO | API VLM @t=825 task=19 subtask=Place the orange juice into cabinet2. keyframes=[]
+2026-09-27 12:45:33,892 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:34,221 | INFO | [t=980] VLM prompt update from step=825: Place the orange juice into cabinet2.
+2026-09-27 12:45:34,275 | INFO | [t=980] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:34,695 | INFO | [t=990] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:35,126 | INFO | [t=1000] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:35,547 | INFO | [t=1010] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:35,979 | INFO | [t=1020] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:36,408 | INFO | [t=1030] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:36,843 | INFO | [t=1040] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:37,279 | INFO | [t=1050] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:37,710 | INFO | [t=1060] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:38,148 | INFO | [t=1070] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:38,566 | INFO | [t=1080] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:38,983 | INFO | [t=1090] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:39,395 | INFO | [t=1100] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:39,810 | INFO | [t=1110] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:40,218 | INFO | [t=1120] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:40,625 | INFO | [t=1130] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:41,027 | INFO | [t=1140] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:41,429 | INFO | [t=1150] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:41,612 | INFO | API VLM @t=960 task=19 subtask=Place the orange juice into cabinet2. keyframes=[]
+2026-09-27 12:45:41,615 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:41,830 | INFO | [t=1160] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:42,227 | INFO | [t=1170] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:42,627 | INFO | [t=1180] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:43,026 | INFO | [t=1190] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:43,426 | INFO | [t=1200] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:43,826 | INFO | [t=1210] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:44,237 | INFO | [t=1220] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:44,655 | INFO | [t=1230] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:45,077 | INFO | [t=1240] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:45,512 | INFO | [t=1250] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:45,944 | INFO | [t=1260] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:46,375 | INFO | [t=1270] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:46,805 | INFO | [t=1280] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:47,234 | INFO | [t=1290] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:47,661 | INFO | [t=1300] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:48,100 | INFO | [t=1310] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:48,532 | INFO | [t=1320] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:48,648 | INFO | API VLM @t=1145 task=19 subtask=Place the orange juice into cabinet2. keyframes=[]
+2026-09-27 12:45:48,651 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:48,969 | INFO | [t=1330] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:49,396 | INFO | [t=1340] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:49,826 | INFO | [t=1350] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:50,274 | INFO | [t=1360] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:50,712 | INFO | [t=1370] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:51,147 | INFO | [t=1380] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:51,570 | INFO | [t=1390] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:51,991 | INFO | [t=1400] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:52,408 | INFO | [t=1410] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:52,831 | INFO | [t=1420] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:53,251 | INFO | [t=1430] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:53,666 | INFO | [t=1440] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:54,085 | INFO | [t=1450] VLA chunk prompt=Place the orange juice into cabinet2.
+2026-09-27 12:45:54,197 | INFO | API VLM @t=1310 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:45:54,199 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:54,458 | INFO | [t=1460] VLM prompt update from step=1310: Place the orange juice into the open container.
+2026-09-27 12:45:54,512 | INFO | [t=1460] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:54,930 | INFO | [t=1470] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:55,348 | INFO | [t=1480] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:55,766 | INFO | [t=1490] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:56,187 | INFO | [t=1500] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:56,597 | INFO | [t=1510] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:57,005 | INFO | [t=1520] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:57,408 | INFO | [t=1530] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:57,821 | INFO | [t=1540] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:58,251 | INFO | [t=1550] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:58,666 | INFO | [t=1560] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:59,066 | INFO | [t=1570] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:59,400 | INFO | API VLM @t=1440 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:45:59,402 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:45:59,475 | INFO | [t=1580] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:45:59,876 | INFO | [t=1590] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:00,300 | INFO | [t=1600] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:00,692 | INFO | [t=1610] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:01,164 | INFO | [t=1620] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:01,573 | INFO | [t=1630] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:01,976 | INFO | [t=1640] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:02,385 | INFO | [t=1650] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:02,794 | INFO | [t=1660] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:03,213 | INFO | [t=1670] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:03,692 | INFO | [t=1680] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:03,714 | INFO | API VLM @t=1565 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:46:03,716 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:04,108 | INFO | [t=1690] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:04,565 | INFO | [t=1700] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:04,952 | INFO | [t=1710] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:05,344 | INFO | [t=1720] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:05,732 | INFO | [t=1730] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:06,135 | INFO | [t=1740] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:06,527 | INFO | [t=1750] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:06,924 | INFO | [t=1760] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:07,313 | INFO | [t=1770] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:07,707 | INFO | [t=1780] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:08,115 | INFO | [t=1790] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:08,504 | INFO | API VLM @t=1670 task=19 subtask=Place the object into the open container. keyframes=[]
+2026-09-27 12:46:08,506 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:08,522 | INFO | [t=1800] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:08,878 | INFO | [t=1810] VLM prompt update from step=1670: Place the object into the open container.
+2026-09-27 12:46:08,931 | INFO | [t=1810] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:09,329 | INFO | [t=1820] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:09,723 | INFO | [t=1830] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:10,121 | INFO | [t=1840] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:10,536 | INFO | [t=1850] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:10,930 | INFO | [t=1860] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:11,327 | INFO | [t=1870] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:11,734 | INFO | [t=1880] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:12,147 | INFO | [t=1890] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:12,564 | INFO | [t=1900] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:12,988 | INFO | [t=1910] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:13,400 | INFO | [t=1920] VLA chunk prompt=Place the object into the open container.
+2026-09-27 12:46:13,659 | INFO | API VLM @t=1790 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:46:13,662 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:13,766 | INFO | [t=1930] VLM prompt update from step=1790: Place the orange juice into the open container.
+2026-09-27 12:46:13,822 | INFO | [t=1930] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:14,240 | INFO | [t=1940] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:14,660 | INFO | [t=1950] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:15,078 | INFO | [t=1960] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:15,498 | INFO | [t=1970] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:15,906 | INFO | [t=1980] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:16,318 | INFO | [t=1990] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:16,731 | INFO | [t=2000] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:17,129 | INFO | [t=2010] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:17,530 | INFO | [t=2020] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:17,943 | INFO | [t=2030] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:18,361 | INFO | [t=2040] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:18,762 | INFO | [t=2050] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:18,869 | INFO | API VLM @t=1915 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:46:18,872 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:19,164 | INFO | [t=2060] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:19,559 | INFO | [t=2070] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:19,952 | INFO | [t=2080] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:20,359 | INFO | [t=2090] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:20,746 | INFO | [t=2100] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:21,142 | INFO | [t=2110] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:21,531 | INFO | [t=2120] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:21,920 | INFO | [t=2130] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:22,322 | INFO | [t=2140] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:22,713 | INFO | [t=2150] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:23,104 | INFO | [t=2160] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:23,505 | INFO | [t=2170] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:23,907 | INFO | [t=2180] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:24,315 | INFO | [t=2190] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:24,716 | INFO | [t=2200] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:25,109 | INFO | [t=2210] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:25,504 | INFO | [t=2220] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:25,804 | INFO | API VLM @t=2040 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:46:25,806 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:25,916 | INFO | [t=2230] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:26,330 | INFO | [t=2240] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:26,748 | INFO | [t=2250] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:27,158 | INFO | [t=2260] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:27,568 | INFO | [t=2270] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:27,982 | INFO | [t=2280] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:28,400 | INFO | [t=2290] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:28,827 | INFO | [t=2300] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:29,243 | INFO | [t=2310] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:29,656 | INFO | [t=2320] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:30,069 | INFO | [t=2330] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:30,484 | INFO | [t=2340] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:30,744 | INFO | API VLM @t=2215 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:46:30,747 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:30,904 | INFO | [t=2350] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:31,312 | INFO | [t=2360] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:31,723 | INFO | [t=2370] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:32,136 | INFO | [t=2380] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:32,551 | INFO | [t=2390] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:32,968 | INFO | [t=2400] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:33,382 | INFO | [t=2410] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:33,795 | INFO | [t=2420] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:34,211 | INFO | [t=2430] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:34,630 | INFO | [t=2440] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:35,050 | INFO | [t=2450] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:35,477 | INFO | [t=2460] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:35,904 | INFO | [t=2470] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:36,321 | INFO | [t=2480] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:36,621 | INFO | API VLM @t=2335 task=19 subtask=Place the orange juice into the open container. keyframes=[]
+2026-09-27 12:46:36,625 | INFO | [redact] enabled task=19 registered_phrases=0 terms=[]
+2026-09-27 12:46:36,749 | INFO | [t=2490] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:37,166 | INFO | [t=2500] VLA chunk prompt=Place the orange juice into the open container.
+2026-09-27 12:46:40,555 | INFO | attempt=0 stage_score=66.7 stage_success=False failure_reason=incomplete_stage
+2026-09-27 12:46:40,555 | INFO | Episode 2 seed=102 stage_score=66.7 stage_success=0 goal=0.667 failure_reason=incomplete_stage | 01_Place_Tomato_Sauce_Cabinet2=Y | 02_Place_Milk_Cabinet2=Y | 03_Place_Orange_Juice_Cabinet2=N
+2026-09-27 12:46:41,749 | INFO | API VLM @t=2475 task=19 subtask=Place the orange juice into the open container. keyframes=[]

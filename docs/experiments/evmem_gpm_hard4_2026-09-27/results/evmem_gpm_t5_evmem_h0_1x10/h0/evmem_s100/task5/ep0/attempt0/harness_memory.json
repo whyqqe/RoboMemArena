@@ -1,0 +1,259 @@
+{
+  "task_id": 5,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Move to the top drawer, pull it open, and observe its contents."
+    ],
+    [
+      5,
+      "Open the relevant drawer and inspect its contents."
+    ],
+    [
+      165,
+      "Pull the next drawer open to inspect its contents."
+    ],
+    [
+      1260,
+      "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents."
+    ],
+    [
+      1440,
+      "Open the next drawer in order and inspect its contents."
+    ],
+    [
+      1575,
+      "Pull the next drawer open and inspect its contents."
+    ],
+    [
+      1800,
+      "Pull the next drawer open to inspect its contents."
+    ],
+    [
+      2170,
+      "Open the next drawer in order and inspect its contents."
+    ],
+    [
+      2310,
+      "Pull open the next drawer in order to inspect its contents."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Move to the top drawer, pull it open, and observe its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Move to the top drawer, pull it open, and observe its contents.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 5,
+      "event_type": "subtask",
+      "subtask": "Open the relevant drawer and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 165,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1260,
+      "event_type": "subtask",
+      "subtask": "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1440,
+      "event_type": "subtask",
+      "subtask": "Open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1575,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1800,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2170,
+      "event_type": "subtask",
+      "subtask": "Open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2310,
+      "event_type": "subtask",
+      "subtask": "Pull open the next drawer in order to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Move to the top drawer, pull it open, and observe its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Move to the top drawer, pull it open, and observe its contents.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 5,
+      "action": "subtask_update",
+      "instruction": "Open the relevant drawer and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 165,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1260,
+      "action": "subtask_update",
+      "instruction": "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1440,
+      "action": "subtask_update",
+      "instruction": "Open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1575,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1800,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2170,
+      "action": "subtask_update",
+      "instruction": "Open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2310,
+      "action": "subtask_update",
+      "instruction": "Pull open the next drawer in order to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Move to the top drawer, pull it open, and observe its contents."
+    },
+    {
+      "step": 5,
+      "action": "subtask",
+      "prompt": "Open the relevant drawer and inspect its contents."
+    },
+    {
+      "step": 165,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1260,
+      "action": "subtask",
+      "prompt": "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents."
+    },
+    {
+      "step": 1440,
+      "action": "subtask",
+      "prompt": "Open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 1575,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open and inspect its contents."
+    },
+    {
+      "step": 1800,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 2170,
+      "action": "subtask",
+      "prompt": "Open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 2310,
+      "action": "subtask",
+      "prompt": "Pull open the next drawer in order to inspect its contents."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 0.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [],
+    "stalled_stage": "01_Open_Top_Drawer"
+  }
+}

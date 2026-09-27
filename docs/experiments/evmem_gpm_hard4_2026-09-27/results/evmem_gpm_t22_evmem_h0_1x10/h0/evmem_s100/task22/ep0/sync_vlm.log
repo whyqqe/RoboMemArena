@@ -1,0 +1,63 @@
+2026-09-27 12:40:54,017 | INFO | task_id=22 bddl=/project/peilab/why/RoboMemArena/bddl/22_pour_tomato_cookies_microwave.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-27 12:40:54,017 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:40:55,609 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-27 12:40:55,815 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:40:59,773 | INFO | API VLM @t=0 task=22 subtask=Reach for and lift the tomato sauce bottle. keyframes=[]
+2026-09-27 12:40:59,776 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:41:03,946 | INFO | API VLM @t=0 task=22 subtask=Grasp the tomato sauce bottle and lift it. keyframes=[]
+2026-09-27 12:41:08,720 | INFO | [t=10] VLA chunk prompt=Pour tomato sauce over cookies twice, then put the cookies into the microwave.
+2026-09-27 12:41:08,861 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:41:08,994 | INFO | [t=20] VLM prompt update from step=0: Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:09,048 | INFO | [t=20] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:09,373 | INFO | [t=30] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:09,696 | INFO | [t=40] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:10,015 | INFO | [t=50] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:10,346 | INFO | [t=60] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:10,665 | INFO | [t=70] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:10,988 | INFO | [t=80] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:11,310 | INFO | [t=90] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:11,630 | INFO | [t=100] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:11,951 | INFO | [t=110] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:12,274 | INFO | [t=120] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:12,598 | INFO | [t=130] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:12,919 | INFO | [t=140] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:13,245 | INFO | [t=150] VLA chunk prompt=Grasp the tomato sauce bottle and lift it.
+2026-09-27 12:41:13,534 | INFO | API VLM @t=5 task=22 subtask=Grasp and lift the tomato sauce bottle from the table. keyframes=[]
+2026-09-27 12:41:13,535 | INFO | [t=160] VLM prompt update from step=5: Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:13,536 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:41:13,590 | INFO | [t=160] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:13,702 | INFO | [t=164] stage done: 01_Lift_Tomato_Sauce
+2026-09-27 12:41:13,929 | INFO | [t=170] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:14,273 | INFO | [t=180] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:14,605 | INFO | [t=190] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:14,940 | INFO | [t=200] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:15,278 | INFO | [t=210] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:15,615 | INFO | [t=220] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:15,953 | INFO | [t=230] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:16,290 | INFO | [t=240] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:16,624 | INFO | [t=250] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:16,795 | INFO | [t=256] stage done: 02_Pour_One
+2026-09-27 12:41:16,958 | INFO | [t=260] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:17,296 | INFO | [t=270] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:17,636 | INFO | [t=280] VLA chunk prompt=Grasp and lift the tomato sauce bottle from the table.
+2026-09-27 12:41:17,861 | INFO | API VLM @t=145 task=22 subtask=Reach for and grasp the tomato sauce bottle, then lift it. keyframes=[]
+2026-09-27 12:41:17,864 | INFO | [redact] enabled task=22 registered_phrases=0 terms=[]
+2026-09-27 12:41:17,928 | INFO | [t=290] VLM prompt update from step=145: Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:17,981 | INFO | [t=290] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:18,312 | INFO | [t=300] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:18,644 | INFO | [t=310] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:18,979 | INFO | [t=320] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:19,316 | INFO | [t=330] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:19,658 | INFO | [t=340] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:19,993 | INFO | [t=350] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:20,329 | INFO | [t=360] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:20,662 | INFO | [t=370] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:20,938 | INFO | [t=380] stage done: 03_Pour_Two
+2026-09-27 12:41:20,938 | INFO | [t=380] extra-pour monitor started; deadline=410
+2026-09-27 12:41:20,938 | INFO | [t=380] all stages done
+2026-09-27 12:41:20,991 | INFO | [t=380] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:21,314 | INFO | [t=390] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:21,641 | INFO | [t=400] VLA chunk prompt=Reach for and grasp the tomato sauce bottle, then lift it.
+2026-09-27 12:41:24,740 | INFO | API VLM @t=275 task=22 subtask=Pick up the tomato sauce bottle and pour it over the cookies for the second time. keyframes=[]
+2026-09-27 12:41:24,750 | INFO | attempt=0 stage_score=100.0 stage_success=True failure_reason=None
+2026-09-27 12:41:24,750 | INFO | Episode 0 seed=100 stage_score=100.0 stage_success=1 goal=1.000 failure_reason=None | 01_Lift_Tomato_Sauce=Y | 02_Pour_One=Y | 03_Pour_Two=Y

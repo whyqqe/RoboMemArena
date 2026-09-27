@@ -1,0 +1,274 @@
+2026-09-26 20:00:33,530 | INFO | task_id=8 bddl=/project/peilab/why/RoboMemArena/bddl/8_pick_chocolate_in_frypan_pour_tomato_sauce_twice.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-26 20:00:35,185 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-26 20:00:35,417 | INFO | [t=10] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:35,660 | INFO | [t=20] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:35,900 | INFO | [t=30] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:36,136 | INFO | [t=40] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:36,373 | INFO | [t=50] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:36,610 | INFO | [t=60] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:36,847 | INFO | [t=70] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:37,085 | INFO | [t=80] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:37,323 | INFO | [t=90] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:37,561 | INFO | [t=100] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:37,798 | INFO | [t=110] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:38,038 | INFO | [t=120] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:38,313 | INFO | [t=130] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:38,600 | INFO | [t=140] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:38,892 | INFO | [t=150] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:39,179 | INFO | [t=160] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:39,473 | INFO | [t=170] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:39,770 | INFO | [t=180] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:40,066 | INFO | [t=190] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:40,371 | INFO | [t=200] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:40,679 | INFO | [t=210] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:40,987 | INFO | [t=220] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:41,303 | INFO | [t=230] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:41,619 | INFO | [t=240] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:41,950 | INFO | [t=250] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:42,280 | INFO | [t=260] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:42,610 | INFO | [t=270] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:42,938 | INFO | [t=280] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:43,267 | INFO | [t=290] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:43,595 | INFO | [t=300] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:43,924 | INFO | [t=310] VLA chunk prompt=Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.
+2026-09-26 20:00:44,072 | INFO | API VLM @t=0 task=8 subtask=Pick up the chocolate from the table to place it in the frypan. keyframes=[]
+2026-09-26 20:00:44,207 | INFO | [t=320] VLM prompt update from step=0: Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:44,257 | INFO | [t=320] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:44,588 | INFO | [t=330] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:44,918 | INFO | [t=340] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:45,250 | INFO | [t=350] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:45,580 | INFO | [t=360] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:45,908 | INFO | [t=370] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:46,235 | INFO | [t=380] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:46,561 | INFO | [t=390] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:46,885 | INFO | [t=400] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:47,214 | INFO | [t=410] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:47,539 | INFO | [t=420] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:47,862 | INFO | [t=430] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:48,183 | INFO | [t=440] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:48,502 | INFO | [t=450] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:48,823 | INFO | [t=460] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:49,145 | INFO | [t=470] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:49,467 | INFO | [t=480] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:49,791 | INFO | [t=490] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:50,114 | INFO | [t=500] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:50,436 | INFO | [t=510] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:50,759 | INFO | [t=520] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:51,081 | INFO | [t=530] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:51,400 | INFO | [t=540] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:51,719 | INFO | [t=550] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:52,038 | INFO | [t=560] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:52,355 | INFO | [t=570] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:52,673 | INFO | [t=580] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:52,990 | INFO | [t=590] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:53,306 | INFO | [t=600] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:53,624 | INFO | [t=610] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:53,953 | INFO | [t=620] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:54,315 | INFO | [t=630] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:54,672 | INFO | [t=640] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:55,028 | INFO | [t=650] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:55,345 | INFO | API VLM @t=305 task=8 subtask=pick up the chocolate from the table keyframes=[]
+2026-09-26 20:00:55,382 | INFO | [t=660] VLA chunk prompt=Pick up the chocolate from the table to place it in the frypan.
+2026-09-26 20:00:55,684 | INFO | [t=670] VLM prompt update from step=305: pick up the chocolate from the table
+2026-09-26 20:00:55,734 | INFO | [t=670] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:56,085 | INFO | [t=680] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:56,437 | INFO | [t=690] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:56,788 | INFO | [t=700] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:57,137 | INFO | [t=710] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:57,487 | INFO | [t=720] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:57,836 | INFO | [t=730] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:58,184 | INFO | [t=740] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:58,531 | INFO | [t=750] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:58,878 | INFO | [t=760] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:58,967 | INFO | [t=763] stage done: 01_Lift_Tomato_Sauce
+2026-09-26 20:00:59,221 | INFO | [t=770] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:59,563 | INFO | [t=780] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:00:59,908 | INFO | [t=790] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:00,253 | INFO | [t=800] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:00,597 | INFO | [t=810] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:00,942 | INFO | [t=820] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:01,287 | INFO | [t=830] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:01,628 | INFO | [t=840] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:01,656 | INFO | [t=841] stage done: 02_Pour_One
+2026-09-26 20:01:01,962 | INFO | [t=850] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:02,298 | INFO | [t=860] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:02,633 | INFO | [t=870] VLA chunk prompt=pick up the chocolate from the table
+2026-09-26 20:01:02,686 | INFO | API VLM @t=650 task=8 subtask=pick up the tomato sauce bottle keyframes=[]
+2026-09-26 20:01:02,920 | INFO | [t=880] VLM prompt update from step=650: pick up the tomato sauce bottle
+2026-09-26 20:01:02,970 | INFO | [t=880] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:03,305 | INFO | [t=890] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:03,640 | INFO | [t=900] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:03,980 | INFO | [t=910] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:04,319 | INFO | [t=920] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:04,659 | INFO | [t=930] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:04,999 | INFO | [t=940] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:05,342 | INFO | [t=950] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:05,690 | INFO | [t=960] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:06,041 | INFO | [t=970] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:06,393 | INFO | [t=980] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:06,747 | INFO | [t=990] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:07,099 | INFO | [t=1000] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:07,438 | INFO | [t=1010] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:07,770 | INFO | [t=1020] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:08,096 | INFO | [t=1030] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:08,416 | INFO | [t=1040] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:08,736 | INFO | [t=1050] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:09,055 | INFO | [t=1060] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:09,374 | INFO | [t=1070] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:09,699 | INFO | [t=1080] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:10,022 | INFO | [t=1090] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:10,345 | INFO | [t=1100] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:10,668 | INFO | [t=1110] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:10,989 | INFO | [t=1120] VLA chunk prompt=pick up the tomato sauce bottle
+2026-09-26 20:01:11,005 | INFO | API VLM @t=860 task=8 subtask=Pour tomato sauce over the chocolate in the frypan. keyframes=[]
+2026-09-26 20:01:11,263 | INFO | [t=1130] VLM prompt update from step=860: Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:11,319 | INFO | [t=1130] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:11,642 | INFO | [t=1140] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:11,962 | INFO | [t=1150] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:12,281 | INFO | [t=1160] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:12,600 | INFO | [t=1170] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:12,924 | INFO | [t=1180] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:13,242 | INFO | [t=1190] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:13,557 | INFO | [t=1200] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:13,873 | INFO | [t=1210] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:14,188 | INFO | [t=1220] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:14,501 | INFO | [t=1230] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:14,814 | INFO | [t=1240] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:15,128 | INFO | [t=1250] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:15,441 | INFO | [t=1260] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:15,755 | INFO | [t=1270] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:16,068 | INFO | [t=1280] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:16,379 | INFO | [t=1290] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:16,688 | INFO | [t=1300] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:16,997 | INFO | [t=1310] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:17,306 | INFO | [t=1320] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:17,614 | INFO | [t=1330] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:17,922 | INFO | [t=1340] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:18,232 | INFO | [t=1350] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:18,543 | INFO | [t=1360] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:18,624 | INFO | API VLM @t=1110 task=8 subtask=place the tomato sauce bottle into the bowl drainer keyframes=[]
+2026-09-26 20:01:18,807 | INFO | [t=1370] VLM prompt update from step=1110: place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:18,857 | INFO | [t=1370] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:19,167 | INFO | [t=1380] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:19,476 | INFO | [t=1390] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:19,786 | INFO | [t=1400] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:20,097 | INFO | [t=1410] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:20,413 | INFO | [t=1420] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:20,731 | INFO | [t=1430] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:21,048 | INFO | [t=1440] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:21,365 | INFO | [t=1450] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:21,684 | INFO | [t=1460] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:22,003 | INFO | [t=1470] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:22,320 | INFO | [t=1480] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:22,636 | INFO | [t=1490] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:22,953 | INFO | [t=1500] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:23,268 | INFO | [t=1510] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:23,583 | INFO | [t=1520] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:23,899 | INFO | [t=1530] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:24,213 | INFO | [t=1540] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:24,527 | INFO | [t=1550] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:24,837 | INFO | [t=1560] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:25,148 | INFO | [t=1570] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:25,458 | INFO | [t=1580] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:25,526 | INFO | API VLM @t=1350 task=8 subtask=Place the tomato sauce bottle into the bowl drainer. keyframes=[]
+2026-09-26 20:01:25,721 | INFO | [t=1590] VLM prompt update from step=1350: Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:25,771 | INFO | [t=1590] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:26,078 | INFO | [t=1600] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:26,385 | INFO | [t=1610] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:26,692 | INFO | [t=1620] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:27,000 | INFO | [t=1630] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:27,306 | INFO | [t=1640] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:27,611 | INFO | [t=1650] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:27,916 | INFO | [t=1660] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:28,219 | INFO | [t=1670] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:28,520 | INFO | [t=1680] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:28,819 | INFO | [t=1690] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:29,120 | INFO | [t=1700] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:29,419 | INFO | [t=1710] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:29,718 | INFO | [t=1720] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:30,017 | INFO | [t=1730] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:30,317 | INFO | [t=1740] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:30,616 | INFO | [t=1750] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:30,916 | INFO | [t=1760] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:31,216 | INFO | [t=1770] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:31,517 | INFO | [t=1780] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:31,817 | INFO | [t=1790] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:32,118 | INFO | [t=1800] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:32,418 | INFO | [t=1810] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:32,719 | INFO | [t=1820] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:33,020 | INFO | [t=1830] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:33,159 | INFO | API VLM @t=1570 task=8 subtask=Place the tomato sauce bottle into the bowl drainer. keyframes=[]
+2026-09-26 20:01:33,322 | INFO | [t=1840] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:33,625 | INFO | [t=1850] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:33,927 | INFO | [t=1860] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:34,230 | INFO | [t=1870] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:34,533 | INFO | [t=1880] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:34,837 | INFO | [t=1890] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:35,142 | INFO | [t=1900] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:35,445 | INFO | [t=1910] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:35,749 | INFO | [t=1920] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:36,054 | INFO | [t=1930] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:36,360 | INFO | [t=1940] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:36,666 | INFO | [t=1950] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:36,975 | INFO | [t=1960] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:37,283 | INFO | [t=1970] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:37,597 | INFO | [t=1980] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:37,913 | INFO | [t=1990] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:38,231 | INFO | [t=2000] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:38,550 | INFO | [t=2010] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:38,870 | INFO | [t=2020] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:39,187 | INFO | [t=2030] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:39,507 | INFO | [t=2040] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:39,827 | INFO | [t=2050] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:40,146 | INFO | [t=2060] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:40,465 | INFO | [t=2070] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:40,781 | INFO | [t=2080] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:41,101 | INFO | [t=2090] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:41,422 | INFO | [t=2100] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:41,743 | INFO | [t=2110] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:42,063 | INFO | [t=2120] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:42,382 | INFO | [t=2130] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:42,699 | INFO | [t=2140] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:43,015 | INFO | [t=2150] VLA chunk prompt=Place the tomato sauce bottle into the bowl drainer.
+2026-09-26 20:01:43,080 | INFO | API VLM @t=1825 task=8 subtask=Pour tomato sauce over the chocolate in the frypan. keyframes=[]
+2026-09-26 20:01:43,282 | INFO | [t=2160] VLM prompt update from step=1825: Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:43,332 | INFO | [t=2160] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:43,654 | INFO | [t=2170] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:43,979 | INFO | [t=2180] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:44,307 | INFO | [t=2190] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:44,629 | INFO | [t=2200] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:44,947 | INFO | [t=2210] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:45,258 | INFO | [t=2220] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:45,577 | INFO | [t=2230] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:45,893 | INFO | [t=2240] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:46,217 | INFO | [t=2250] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:46,543 | INFO | [t=2260] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:46,867 | INFO | [t=2270] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:47,187 | INFO | [t=2280] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:47,507 | INFO | [t=2290] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:47,827 | INFO | [t=2300] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:48,145 | INFO | [t=2310] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:48,469 | INFO | [t=2320] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:48,794 | INFO | [t=2330] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:49,116 | INFO | [t=2340] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:49,447 | INFO | [t=2350] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:49,776 | INFO | [t=2360] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:50,101 | INFO | [t=2370] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:50,425 | INFO | [t=2380] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:50,737 | INFO | API VLM @t=2140 task=8 subtask=place the tomato sauce bottle into the bowl drainer keyframes=[]
+2026-09-26 20:01:50,751 | INFO | [t=2390] VLA chunk prompt=Pour tomato sauce over the chocolate in the frypan.
+2026-09-26 20:01:51,026 | INFO | [t=2400] VLM prompt update from step=2140: place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:51,076 | INFO | [t=2400] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:51,402 | INFO | [t=2410] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:51,727 | INFO | [t=2420] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:52,053 | INFO | [t=2430] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:52,377 | INFO | [t=2440] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:52,702 | INFO | [t=2450] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:53,029 | INFO | [t=2460] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:53,353 | INFO | [t=2470] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:53,678 | INFO | [t=2480] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:54,003 | INFO | [t=2490] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:54,327 | INFO | [t=2500] VLA chunk prompt=place the tomato sauce bottle into the bowl drainer
+2026-09-26 20:01:57,696 | INFO | attempt=0 stage_score=66.7 stage_success=False failure_reason=incomplete_stage
+2026-09-26 20:01:57,696 | INFO | Episode 1 seed=101 stage_score=66.7 stage_success=0 goal=0.667 failure_reason=incomplete_stage | 01_Lift_Tomato_Sauce=Y | 02_Pour_One=Y | 03_Pour_Two=N
+2026-09-26 20:01:58,094 | INFO | API VLM @t=2380 task=8 subtask=No action; the task appears complete, with the chocolate in the frypan and the sauce bottle in the bowl drainer. keyframes=[]

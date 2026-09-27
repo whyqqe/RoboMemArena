@@ -1,0 +1,1646 @@
+{
+  "task_id": 19,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Reach for the tomato sauce in cabinet1"
+    ],
+    [
+      315,
+      "Place the tomato sauce into cabinet2."
+    ],
+    [
+      570,
+      "Pick up the tomato sauce from cabinet1."
+    ],
+    [
+      765,
+      "Grasp the milk carton from cabinet1."
+    ],
+    [
+      1230,
+      "Reach to grasp the milk carton from cabinet1"
+    ],
+    [
+      1400,
+      "Reach for and grasp the milk carton from cabinet1."
+    ],
+    [
+      1635,
+      "Pick up the milk carton from cabinet1."
+    ],
+    [
+      1880,
+      "Reach toward the orange juice in cabinet1 to grasp it."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 421,
+      "event_type": "stall",
+      "subtask": "Reach to grasp the tomato sauce in cabinet1.",
+      "stage_name": "02_Place_Milk_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 290,
+      "event_type": "subtask",
+      "subtask": "Place the currently held item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 555,
+      "event_type": "subtask",
+      "subtask": "Reach for the orange juice in cabinet1 to transfer it to cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 790,
+      "event_type": "subtask",
+      "subtask": "Reach to grasp the tomato sauce from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1080,
+      "event_type": "subtask",
+      "subtask": "Close cabinet2 after completing the transfer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1370,
+      "event_type": "subtask",
+      "subtask": "Grasp the milk carton from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1590,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into cabinet2",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1830,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2075,
+      "event_type": "subtask",
+      "subtask": "Place the held object into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2280,
+      "event_type": "subtask",
+      "subtask": "Pick up the milk carton from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Transfer the held orange juice to cabinet2 and place it inside.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 315,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the next item for transfer to cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 580,
+      "event_type": "subtask",
+      "subtask": "Place the current item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 810,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the next item in sequence, the tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1035,
+      "event_type": "subtask",
+      "subtask": "Open cabinet1 to begin transferring the tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1260,
+      "event_type": "subtask",
+      "subtask": "open the cabinet door",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1625,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1905,
+      "event_type": "subtask",
+      "subtask": "Pick up the orange juice from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach to grasp the tomato sauce from cabinet1",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 284,
+      "event_type": "stage_complete",
+      "subtask": "Reach to grasp the tomato sauce from cabinet1",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {}
+    },
+    {
+      "step": 364,
+      "event_type": "stall",
+      "subtask": "Reach to grasp the tomato sauce from cabinet1",
+      "stage_name": "02_Place_Milk_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 210,
+      "event_type": "subtask",
+      "subtask": "open cabinet1 to access the tomato sauce",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 555,
+      "event_type": "subtask",
+      "subtask": "Reach toward the tomato sauce at source cabinet1 to begin transferring it to cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 760,
+      "event_type": "subtask",
+      "subtask": "Transfer the tomato sauce to cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1005,
+      "event_type": "subtask",
+      "subtask": "open cabinet2",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1350,
+      "event_type": "subtask",
+      "subtask": "Place the current item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1575,
+      "event_type": "subtask",
+      "subtask": "reach toward the next item to transfer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1820,
+      "event_type": "subtask",
+      "subtask": "Open cabinet1 to access the tomato sauce",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2050,
+      "event_type": "subtask",
+      "subtask": "Pick up the next remaining drink container from cabinet1 and place it in cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 265,
+      "event_type": "subtask",
+      "subtask": "open the cabinet door",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 520,
+      "event_type": "subtask",
+      "subtask": "Move the next item from cabinet1 toward cabinet2 and place it inside.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 815,
+      "event_type": "subtask",
+      "subtask": "Grasp the next item from cabinet1",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1040,
+      "event_type": "subtask",
+      "subtask": "Open cabinet1 to access the next item.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1325,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the next item, tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1555,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to pick up the tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1750,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1980,
+      "event_type": "subtask",
+      "subtask": "Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce in cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 230,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to pick up the next item in the transfer sequence.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 475,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the next item in sequence, tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 655,
+      "event_type": "subtask",
+      "subtask": "Reach into cabinet1 to grasp the tomato sauce.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1056,
+      "event_type": "stage_complete",
+      "subtask": "Reach into cabinet1 to grasp the tomato sauce.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {}
+    },
+    {
+      "step": 880,
+      "event_type": "subtask",
+      "subtask": "Reach to grasp the next item, tomato sauce, from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1136,
+      "event_type": "stall",
+      "subtask": "Reach to grasp the next item, tomato sauce, from cabinet1.",
+      "stage_name": "02_Place_Milk_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 1115,
+      "event_type": "subtask",
+      "subtask": "place the current item into cabinet2",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1300,
+      "event_type": "subtask",
+      "subtask": "Place the currently held item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1520,
+      "event_type": "subtask",
+      "subtask": "Place the current item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1680,
+      "event_type": "subtask",
+      "subtask": "Place the currently carried object into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1875,
+      "event_type": "subtask",
+      "subtask": "Place the held item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2070,
+      "event_type": "subtask",
+      "subtask": "Place the currently held item into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "stage_name": "01_Place_Tomato_Sauce_Cabinet2",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach for the tomato sauce in cabinet1",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 315,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce into cabinet2.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 570,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 765,
+      "event_type": "subtask",
+      "subtask": "Grasp the milk carton from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1230,
+      "event_type": "subtask",
+      "subtask": "Reach to grasp the milk carton from cabinet1",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1400,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the milk carton from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1635,
+      "event_type": "subtask",
+      "subtask": "Pick up the milk carton from cabinet1.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1880,
+      "event_type": "subtask",
+      "subtask": "Reach toward the orange juice in cabinet1 to grasp it.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach toward and grasp the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Reach toward and grasp the tomato sauce from cabinet1.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 5,
+      "action": "subtask_update",
+      "instruction": "Place the orange juice in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 200,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 395,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the orange juice from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 685,
+      "action": "subtask_update",
+      "instruction": "Reach toward the tomato sauce in cabinet1 to grasp it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 940,
+      "action": "subtask_update",
+      "instruction": "Reach to pick up the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1215,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce in cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1390,
+      "action": "subtask_update",
+      "instruction": "Reach for the tomato sauce in cabinet1 to begin transferring it to cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1720,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1925,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2175,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce in cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "grasp the tomato sauce from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 360,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 798,
+      "action": "stage_complete",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1.",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 595,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 878,
+      "action": "stall",
+      "instruction": "Grasp the tomato sauce from cabinet1",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 805,
+      "action": "subtask_update",
+      "instruction": "Place the currently held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1010,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1145,
+      "action": "subtask_update",
+      "instruction": "Place the currently held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1355,
+      "action": "subtask_update",
+      "instruction": "Place the current item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1495,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1945,
+      "action": "subtask_update",
+      "instruction": "Place the object being held into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2150,
+      "action": "subtask_update",
+      "instruction": "Place the held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce in cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 341,
+      "action": "stage_complete",
+      "instruction": "Reach to grasp the tomato sauce in cabinet1.",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 421,
+      "action": "stall",
+      "instruction": "Reach to grasp the tomato sauce in cabinet1.",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 290,
+      "action": "subtask_update",
+      "instruction": "Place the currently held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 555,
+      "action": "subtask_update",
+      "instruction": "Reach for the orange juice in cabinet1 to transfer it to cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 790,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1080,
+      "action": "subtask_update",
+      "instruction": "Close cabinet2 after completing the transfer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1370,
+      "action": "subtask_update",
+      "instruction": "Grasp the milk carton from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1590,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1830,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2075,
+      "action": "subtask_update",
+      "instruction": "Place the held object into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2280,
+      "action": "subtask_update",
+      "instruction": "Pick up the milk carton from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Transfer the held orange juice to cabinet2 and place it inside.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 315,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the next item for transfer to cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 580,
+      "action": "subtask_update",
+      "instruction": "Place the current item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 810,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the next item in sequence, the tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1035,
+      "action": "subtask_update",
+      "instruction": "Open cabinet1 to begin transferring the tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1260,
+      "action": "subtask_update",
+      "instruction": "open the cabinet door",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1625,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1905,
+      "action": "subtask_update",
+      "instruction": "Pick up the orange juice from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 284,
+      "action": "stage_complete",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 364,
+      "action": "stall",
+      "instruction": "Reach to grasp the tomato sauce from cabinet1",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 210,
+      "action": "subtask_update",
+      "instruction": "open cabinet1 to access the tomato sauce",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 555,
+      "action": "subtask_update",
+      "instruction": "Reach toward the tomato sauce at source cabinet1 to begin transferring it to cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 760,
+      "action": "subtask_update",
+      "instruction": "Transfer the tomato sauce to cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1005,
+      "action": "subtask_update",
+      "instruction": "open cabinet2",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1350,
+      "action": "subtask_update",
+      "instruction": "Place the current item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1575,
+      "action": "subtask_update",
+      "instruction": "reach toward the next item to transfer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1820,
+      "action": "subtask_update",
+      "instruction": "Open cabinet1 to access the tomato sauce",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2050,
+      "action": "subtask_update",
+      "instruction": "Pick up the next remaining drink container from cabinet1 and place it in cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 265,
+      "action": "subtask_update",
+      "instruction": "open the cabinet door",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 520,
+      "action": "subtask_update",
+      "instruction": "Move the next item from cabinet1 toward cabinet2 and place it inside.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 815,
+      "action": "subtask_update",
+      "instruction": "Grasp the next item from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1040,
+      "action": "subtask_update",
+      "instruction": "Open cabinet1 to access the next item.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1325,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the next item, tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1555,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to pick up the tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1750,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1980,
+      "action": "subtask_update",
+      "instruction": "Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce in cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 230,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to pick up the next item in the transfer sequence.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 475,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the next item in sequence, tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 655,
+      "action": "subtask_update",
+      "instruction": "Reach into cabinet1 to grasp the tomato sauce.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1056,
+      "action": "stage_complete",
+      "instruction": "Reach into cabinet1 to grasp the tomato sauce.",
+      "outcome": "success",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "step": 880,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the next item, tomato sauce, from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1136,
+      "action": "stall",
+      "instruction": "Reach to grasp the next item, tomato sauce, from cabinet1.",
+      "outcome": "stalled",
+      "notes": "02_Place_Milk_Cabinet2:80"
+    },
+    {
+      "step": 1115,
+      "action": "subtask_update",
+      "instruction": "place the current item into cabinet2",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1300,
+      "action": "subtask_update",
+      "instruction": "Place the currently held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1520,
+      "action": "subtask_update",
+      "instruction": "Place the current item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1680,
+      "action": "subtask_update",
+      "instruction": "Place the currently carried object into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1875,
+      "action": "subtask_update",
+      "instruction": "Place the held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2070,
+      "action": "subtask_update",
+      "instruction": "Place the currently held item into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.",
+      "outcome": "stalled",
+      "notes": "01_Place_Tomato_Sauce_Cabinet2:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for the tomato sauce in cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 315,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce into cabinet2.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 570,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 765,
+      "action": "subtask_update",
+      "instruction": "Grasp the milk carton from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1230,
+      "action": "subtask_update",
+      "instruction": "Reach to grasp the milk carton from cabinet1",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1400,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the milk carton from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1635,
+      "action": "subtask_update",
+      "instruction": "Pick up the milk carton from cabinet1.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1880,
+      "action": "subtask_update",
+      "instruction": "Reach toward the orange juice in cabinet1 to grasp it.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach toward and grasp the tomato sauce from cabinet1."
+    },
+    {
+      "step": 5,
+      "action": "subtask",
+      "prompt": "Place the orange juice in cabinet2."
+    },
+    {
+      "step": 200,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1"
+    },
+    {
+      "step": 395,
+      "action": "subtask",
+      "prompt": "Reach to grasp the orange juice from cabinet1"
+    },
+    {
+      "step": 685,
+      "action": "subtask",
+      "prompt": "Reach toward the tomato sauce in cabinet1 to grasp it."
+    },
+    {
+      "step": 940,
+      "action": "subtask",
+      "prompt": "Reach to pick up the tomato sauce from cabinet1."
+    },
+    {
+      "step": 1215,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce in cabinet1."
+    },
+    {
+      "step": 1390,
+      "action": "subtask",
+      "prompt": "Reach for the tomato sauce in cabinet1 to begin transferring it to cabinet2."
+    },
+    {
+      "step": 1720,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1."
+    },
+    {
+      "step": 1925,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce from cabinet1."
+    },
+    {
+      "step": 2175,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce in cabinet1."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "grasp the tomato sauce from cabinet1"
+    },
+    {
+      "step": 360,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1."
+    },
+    {
+      "step": 798,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1."
+    },
+    {
+      "step": 595,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce from cabinet1"
+    },
+    {
+      "step": 805,
+      "action": "subtask",
+      "prompt": "Place the currently held item into cabinet2."
+    },
+    {
+      "step": 1010,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce in cabinet2."
+    },
+    {
+      "step": 1145,
+      "action": "subtask",
+      "prompt": "Place the currently held item into cabinet2."
+    },
+    {
+      "step": 1355,
+      "action": "subtask",
+      "prompt": "Place the current item into cabinet2."
+    },
+    {
+      "step": 1495,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 1945,
+      "action": "subtask",
+      "prompt": "Place the object being held into cabinet2."
+    },
+    {
+      "step": 2150,
+      "action": "subtask",
+      "prompt": "Place the held item into cabinet2."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce in cabinet1."
+    },
+    {
+      "step": 341,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Reach to grasp the tomato sauce in cabinet1."
+    },
+    {
+      "step": 290,
+      "action": "subtask",
+      "prompt": "Place the currently held item into cabinet2."
+    },
+    {
+      "step": 555,
+      "action": "subtask",
+      "prompt": "Reach for the orange juice in cabinet1 to transfer it to cabinet2."
+    },
+    {
+      "step": 790,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1."
+    },
+    {
+      "step": 1080,
+      "action": "subtask",
+      "prompt": "Close cabinet2 after completing the transfer."
+    },
+    {
+      "step": 1370,
+      "action": "subtask",
+      "prompt": "Grasp the milk carton from cabinet1."
+    },
+    {
+      "step": 1590,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2"
+    },
+    {
+      "step": 1830,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce from cabinet1."
+    },
+    {
+      "step": 2075,
+      "action": "subtask",
+      "prompt": "Place the held object into cabinet2."
+    },
+    {
+      "step": 2280,
+      "action": "subtask",
+      "prompt": "Pick up the milk carton from cabinet1."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Transfer the held orange juice to cabinet2 and place it inside."
+    },
+    {
+      "step": 315,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the next item for transfer to cabinet2."
+    },
+    {
+      "step": 580,
+      "action": "subtask",
+      "prompt": "Place the current item into cabinet2."
+    },
+    {
+      "step": 810,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the next item in sequence, the tomato sauce."
+    },
+    {
+      "step": 1035,
+      "action": "subtask",
+      "prompt": "Open cabinet1 to begin transferring the tomato sauce."
+    },
+    {
+      "step": 1260,
+      "action": "subtask",
+      "prompt": "open the cabinet door"
+    },
+    {
+      "step": 1625,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce from cabinet1."
+    },
+    {
+      "step": 1905,
+      "action": "subtask",
+      "prompt": "Pick up the orange juice from cabinet1."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1"
+    },
+    {
+      "step": 284,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Reach to grasp the tomato sauce from cabinet1"
+    },
+    {
+      "step": 210,
+      "action": "subtask",
+      "prompt": "open cabinet1 to access the tomato sauce"
+    },
+    {
+      "step": 555,
+      "action": "subtask",
+      "prompt": "Reach toward the tomato sauce at source cabinet1 to begin transferring it to cabinet2."
+    },
+    {
+      "step": 760,
+      "action": "subtask",
+      "prompt": "Transfer the tomato sauce to cabinet2."
+    },
+    {
+      "step": 1005,
+      "action": "subtask",
+      "prompt": "open cabinet2"
+    },
+    {
+      "step": 1350,
+      "action": "subtask",
+      "prompt": "Place the current item into cabinet2."
+    },
+    {
+      "step": 1575,
+      "action": "subtask",
+      "prompt": "reach toward the next item to transfer"
+    },
+    {
+      "step": 1820,
+      "action": "subtask",
+      "prompt": "Open cabinet1 to access the tomato sauce"
+    },
+    {
+      "step": 2050,
+      "action": "subtask",
+      "prompt": "Pick up the next remaining drink container from cabinet1 and place it in cabinet2."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the tomato sauce."
+    },
+    {
+      "step": 265,
+      "action": "subtask",
+      "prompt": "open the cabinet door"
+    },
+    {
+      "step": 520,
+      "action": "subtask",
+      "prompt": "Move the next item from cabinet1 toward cabinet2 and place it inside."
+    },
+    {
+      "step": 815,
+      "action": "subtask",
+      "prompt": "Grasp the next item from cabinet1"
+    },
+    {
+      "step": 1040,
+      "action": "subtask",
+      "prompt": "Open cabinet1 to access the next item."
+    },
+    {
+      "step": 1325,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the next item, tomato sauce."
+    },
+    {
+      "step": 1555,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to pick up the tomato sauce."
+    },
+    {
+      "step": 1750,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the tomato sauce."
+    },
+    {
+      "step": 1980,
+      "action": "subtask",
+      "prompt": "Reach into source cabinet1 to pick up the next item in sequence, tomato sauce."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce in cabinet1."
+    },
+    {
+      "step": 230,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to pick up the next item in the transfer sequence."
+    },
+    {
+      "step": 475,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the next item in sequence, tomato sauce."
+    },
+    {
+      "step": 655,
+      "action": "subtask",
+      "prompt": "Reach into cabinet1 to grasp the tomato sauce."
+    },
+    {
+      "step": 1056,
+      "action": "stage_complete",
+      "stage": "01_Place_Tomato_Sauce_Cabinet2",
+      "prompt": "Reach into cabinet1 to grasp the tomato sauce."
+    },
+    {
+      "step": 880,
+      "action": "subtask",
+      "prompt": "Reach to grasp the next item, tomato sauce, from cabinet1."
+    },
+    {
+      "step": 1115,
+      "action": "subtask",
+      "prompt": "place the current item into cabinet2"
+    },
+    {
+      "step": 1300,
+      "action": "subtask",
+      "prompt": "Place the currently held item into cabinet2."
+    },
+    {
+      "step": 1520,
+      "action": "subtask",
+      "prompt": "Place the current item into cabinet2."
+    },
+    {
+      "step": 1680,
+      "action": "subtask",
+      "prompt": "Place the currently carried object into cabinet2."
+    },
+    {
+      "step": 1875,
+      "action": "subtask",
+      "prompt": "Place the held item into cabinet2."
+    },
+    {
+      "step": 2070,
+      "action": "subtask",
+      "prompt": "Place the currently held item into cabinet2."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for the tomato sauce in cabinet1"
+    },
+    {
+      "step": 315,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce into cabinet2."
+    },
+    {
+      "step": 570,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce from cabinet1."
+    },
+    {
+      "step": 765,
+      "action": "subtask",
+      "prompt": "Grasp the milk carton from cabinet1."
+    },
+    {
+      "step": 1230,
+      "action": "subtask",
+      "prompt": "Reach to grasp the milk carton from cabinet1"
+    },
+    {
+      "step": 1400,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the milk carton from cabinet1."
+    },
+    {
+      "step": 1635,
+      "action": "subtask",
+      "prompt": "Pick up the milk carton from cabinet1."
+    },
+    {
+      "step": 1880,
+      "action": "subtask",
+      "prompt": "Reach toward the orange juice in cabinet1 to grasp it."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2"
+      ],
+      "stalled_stage": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2"
+      ],
+      "stalled_stage": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2"
+      ],
+      "stalled_stage": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Place_Tomato_Sauce_Cabinet2"
+      ],
+      "stalled_stage": "02_Place_Milk_Cabinet2"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Place_Tomato_Sauce_Cabinet2"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 33.333333333333336,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [
+      "01_Place_Tomato_Sauce_Cabinet2"
+    ],
+    "stalled_stage": "02_Place_Milk_Cabinet2"
+  }
+}

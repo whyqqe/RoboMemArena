@@ -1,0 +1,1323 @@
+{
+  "task_id": 5,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Open the top drawer to inspect its contents."
+    ],
+    [
+      150,
+      "Close the currently open drawer."
+    ],
+    [
+      435,
+      "Push the open drawer closed."
+    ],
+    [
+      590,
+      "Close the currently open drawer."
+    ],
+    [
+      915,
+      "Open the next drawer in order and inspect its contents."
+    ],
+    [
+      1030,
+      "Pull the relevant drawer open and inspect its contents."
+    ],
+    [
+      1185,
+      "Pull the drawer open and inspect its contents."
+    ],
+    [
+      1305,
+      "Pull open the next drawer in order and inspect its contents."
+    ],
+    [
+      1435,
+      "Pull the next drawer open to inspect its contents."
+    ],
+    [
+      1570,
+      "Pull open the next drawer in order and inspect its contents."
+    ],
+    [
+      1710,
+      "Pull the next drawer open to inspect its contents."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Move to the top drawer, pull it open, and observe its contents.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 5,
+      "event_type": "subtask",
+      "subtask": "Open the relevant drawer and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 165,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1260,
+      "event_type": "subtask",
+      "subtask": "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1440,
+      "event_type": "subtask",
+      "subtask": "Open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1575,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1800,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2170,
+      "event_type": "subtask",
+      "subtask": "Open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2310,
+      "event_type": "subtask",
+      "subtask": "Pull open the next drawer in order to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 125,
+      "event_type": "stage_complete",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach to the top drawer and pull it open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 205,
+      "event_type": "stall",
+      "subtask": "Reach to the top drawer and pull it open to inspect its contents.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 304,
+      "event_type": "stage_complete",
+      "subtask": "Reach to the top drawer and pull it open to inspect its contents.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 165,
+      "event_type": "subtask",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 384,
+      "event_type": "stall",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 310,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 445,
+      "event_type": "subtask",
+      "subtask": "Pull the drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 630,
+      "event_type": "subtask",
+      "subtask": "Open the relevant drawer and observe its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 755,
+      "event_type": "subtask",
+      "subtask": "Grip the next drawer's handle and pull it open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 860,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1234,
+      "event_type": "stage_complete",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 1314,
+      "event_type": "stall",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": "04_Close_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 1230,
+      "event_type": "subtask",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1419,
+      "event_type": "stage_complete",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": "04_Close_Middle_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 1499,
+      "event_type": "stall",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": "05_Open_Bottom_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 1490,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1620,
+      "event_type": "subtask",
+      "subtask": "Pull the drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1790,
+      "event_type": "subtask",
+      "subtask": "Open the drawer to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1920,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2065,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Open the relevant drawer to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 398,
+      "event_type": "stage_complete",
+      "subtask": "Open the relevant drawer to inspect its contents.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 185,
+      "event_type": "subtask",
+      "subtask": "Open the drawer and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 463,
+      "event_type": "stage_complete",
+      "subtask": "Open the drawer and inspect its contents.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 380,
+      "event_type": "subtask",
+      "subtask": "Pull open the drawer to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 543,
+      "event_type": "stall",
+      "subtask": "Pull open the drawer to inspect its contents.",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 515,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 635,
+      "event_type": "subtask",
+      "subtask": "Pull the drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 805,
+      "event_type": "subtask",
+      "subtask": "Pull the drawer open to observe its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 960,
+      "event_type": "subtask",
+      "subtask": "Grip the handle of the next drawer in order and pull it straight out to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1130,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1435,
+      "event_type": "subtask",
+      "subtask": "Open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1710,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1815,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1935,
+      "event_type": "subtask",
+      "subtask": "Move to the next drawer’s handle and pull it open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2095,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 144,
+      "event_type": "stage_complete",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 224,
+      "event_type": "stall",
+      "subtask": "Open the top drawer to inspect its contents.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 150,
+      "event_type": "subtask",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 435,
+      "event_type": "subtask",
+      "subtask": "Push the open drawer closed.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 590,
+      "event_type": "subtask",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 872,
+      "event_type": "stage_complete",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 952,
+      "event_type": "stall",
+      "subtask": "Close the currently open drawer.",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 915,
+      "event_type": "subtask",
+      "subtask": "Open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1030,
+      "event_type": "subtask",
+      "subtask": "Pull the relevant drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1185,
+      "event_type": "subtask",
+      "subtask": "Pull the drawer open and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1305,
+      "event_type": "subtask",
+      "subtask": "Pull open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1435,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1570,
+      "event_type": "subtask",
+      "subtask": "Pull open the next drawer in order and inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1710,
+      "event_type": "subtask",
+      "subtask": "Pull the next drawer open to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Move to the top drawer, pull it open, and observe its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Move to the top drawer, pull it open, and observe its contents.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 5,
+      "action": "subtask_update",
+      "instruction": "Open the relevant drawer and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 165,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1260,
+      "action": "subtask_update",
+      "instruction": "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1440,
+      "action": "subtask_update",
+      "instruction": "Open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1575,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1800,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2170,
+      "action": "subtask_update",
+      "instruction": "Open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2310,
+      "action": "subtask_update",
+      "instruction": "Pull open the next drawer in order to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 125,
+      "action": "stage_complete",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach to the top drawer and pull it open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 205,
+      "action": "stall",
+      "instruction": "Reach to the top drawer and pull it open to inspect its contents.",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 304,
+      "action": "stage_complete",
+      "instruction": "Reach to the top drawer and pull it open to inspect its contents.",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 165,
+      "action": "subtask_update",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 384,
+      "action": "stall",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 310,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 445,
+      "action": "subtask_update",
+      "instruction": "Pull the drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 630,
+      "action": "subtask_update",
+      "instruction": "Open the relevant drawer and observe its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 755,
+      "action": "subtask_update",
+      "instruction": "Grip the next drawer's handle and pull it open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 860,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1234,
+      "action": "stage_complete",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "success",
+      "notes": "03_Open_Middle_Drawer"
+    },
+    {
+      "step": 1314,
+      "action": "stall",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "stalled",
+      "notes": "04_Close_Middle_Drawer:80"
+    },
+    {
+      "step": 1230,
+      "action": "subtask_update",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1419,
+      "action": "stage_complete",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "success",
+      "notes": "04_Close_Middle_Drawer"
+    },
+    {
+      "step": 1499,
+      "action": "stall",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "stalled",
+      "notes": "05_Open_Bottom_Drawer:80"
+    },
+    {
+      "step": 1490,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1620,
+      "action": "subtask_update",
+      "instruction": "Pull the drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1790,
+      "action": "subtask_update",
+      "instruction": "Open the drawer to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1920,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2065,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Open the relevant drawer to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 398,
+      "action": "stage_complete",
+      "instruction": "Open the relevant drawer to inspect its contents.",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 185,
+      "action": "subtask_update",
+      "instruction": "Open the drawer and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 463,
+      "action": "stage_complete",
+      "instruction": "Open the drawer and inspect its contents.",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 380,
+      "action": "subtask_update",
+      "instruction": "Pull open the drawer to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 543,
+      "action": "stall",
+      "instruction": "Pull open the drawer to inspect its contents.",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 515,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 635,
+      "action": "subtask_update",
+      "instruction": "Pull the drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 805,
+      "action": "subtask_update",
+      "instruction": "Pull the drawer open to observe its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 960,
+      "action": "subtask_update",
+      "instruction": "Grip the handle of the next drawer in order and pull it straight out to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1130,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1435,
+      "action": "subtask_update",
+      "instruction": "Open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1710,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1815,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1935,
+      "action": "subtask_update",
+      "instruction": "Move to the next drawer’s handle and pull it open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2095,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 144,
+      "action": "stage_complete",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 224,
+      "action": "stall",
+      "instruction": "Open the top drawer to inspect its contents.",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 150,
+      "action": "subtask_update",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 435,
+      "action": "subtask_update",
+      "instruction": "Push the open drawer closed.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 590,
+      "action": "subtask_update",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 872,
+      "action": "stage_complete",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 952,
+      "action": "stall",
+      "instruction": "Close the currently open drawer.",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 915,
+      "action": "subtask_update",
+      "instruction": "Open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1030,
+      "action": "subtask_update",
+      "instruction": "Pull the relevant drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1185,
+      "action": "subtask_update",
+      "instruction": "Pull the drawer open and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1305,
+      "action": "subtask_update",
+      "instruction": "Pull open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1435,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1570,
+      "action": "subtask_update",
+      "instruction": "Pull open the next drawer in order and inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1710,
+      "action": "subtask_update",
+      "instruction": "Pull the next drawer open to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Move to the top drawer, pull it open, and observe its contents."
+    },
+    {
+      "step": 5,
+      "action": "subtask",
+      "prompt": "Open the relevant drawer and inspect its contents."
+    },
+    {
+      "step": 165,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1260,
+      "action": "subtask",
+      "prompt": "Reach for the next drawer’s handle, grip it, and pull the drawer open to inspect its contents."
+    },
+    {
+      "step": 1440,
+      "action": "subtask",
+      "prompt": "Open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 1575,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open and inspect its contents."
+    },
+    {
+      "step": 1800,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 2170,
+      "action": "subtask",
+      "prompt": "Open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 2310,
+      "action": "subtask",
+      "prompt": "Pull open the next drawer in order to inspect its contents."
+    },
+    {
+      "step": 125,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach to the top drawer and pull it open to inspect its contents."
+    },
+    {
+      "step": 304,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "Reach to the top drawer and pull it open to inspect its contents."
+    },
+    {
+      "step": 165,
+      "action": "subtask",
+      "prompt": "Close the currently open drawer."
+    },
+    {
+      "step": 310,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open and inspect its contents."
+    },
+    {
+      "step": 445,
+      "action": "subtask",
+      "prompt": "Pull the drawer open and inspect its contents."
+    },
+    {
+      "step": 630,
+      "action": "subtask",
+      "prompt": "Open the relevant drawer and observe its contents."
+    },
+    {
+      "step": 755,
+      "action": "subtask",
+      "prompt": "Grip the next drawer's handle and pull it open to inspect its contents."
+    },
+    {
+      "step": 860,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1234,
+      "action": "stage_complete",
+      "stage": "03_Open_Middle_Drawer",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1230,
+      "action": "subtask",
+      "prompt": "Close the currently open drawer."
+    },
+    {
+      "step": 1419,
+      "action": "stage_complete",
+      "stage": "04_Close_Middle_Drawer",
+      "prompt": "Close the currently open drawer."
+    },
+    {
+      "step": 1490,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1620,
+      "action": "subtask",
+      "prompt": "Pull the drawer open and inspect its contents."
+    },
+    {
+      "step": 1790,
+      "action": "subtask",
+      "prompt": "Open the drawer to inspect its contents."
+    },
+    {
+      "step": 1920,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open and inspect its contents."
+    },
+    {
+      "step": 2065,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Open the relevant drawer to inspect its contents."
+    },
+    {
+      "step": 398,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "Open the relevant drawer to inspect its contents."
+    },
+    {
+      "step": 185,
+      "action": "subtask",
+      "prompt": "Open the drawer and inspect its contents."
+    },
+    {
+      "step": 463,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "Open the drawer and inspect its contents."
+    },
+    {
+      "step": 380,
+      "action": "subtask",
+      "prompt": "Pull open the drawer to inspect its contents."
+    },
+    {
+      "step": 515,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 635,
+      "action": "subtask",
+      "prompt": "Pull the drawer open and inspect its contents."
+    },
+    {
+      "step": 805,
+      "action": "subtask",
+      "prompt": "Pull the drawer open to observe its contents."
+    },
+    {
+      "step": 960,
+      "action": "subtask",
+      "prompt": "Grip the handle of the next drawer in order and pull it straight out to inspect its contents."
+    },
+    {
+      "step": 1130,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1435,
+      "action": "subtask",
+      "prompt": "Open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 1710,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open and inspect its contents."
+    },
+    {
+      "step": 1815,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1935,
+      "action": "subtask",
+      "prompt": "Move to the next drawer’s handle and pull it open to inspect its contents."
+    },
+    {
+      "step": 2095,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 144,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Open the top drawer to inspect its contents."
+    },
+    {
+      "step": 150,
+      "action": "subtask",
+      "prompt": "Close the currently open drawer."
+    },
+    {
+      "step": 435,
+      "action": "subtask",
+      "prompt": "Push the open drawer closed."
+    },
+    {
+      "step": 590,
+      "action": "subtask",
+      "prompt": "Close the currently open drawer."
+    },
+    {
+      "step": 872,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "Close the currently open drawer."
+    },
+    {
+      "step": 915,
+      "action": "subtask",
+      "prompt": "Open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 1030,
+      "action": "subtask",
+      "prompt": "Pull the relevant drawer open and inspect its contents."
+    },
+    {
+      "step": 1185,
+      "action": "subtask",
+      "prompt": "Pull the drawer open and inspect its contents."
+    },
+    {
+      "step": 1305,
+      "action": "subtask",
+      "prompt": "Pull open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 1435,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    },
+    {
+      "step": 1570,
+      "action": "subtask",
+      "prompt": "Pull open the next drawer in order and inspect its contents."
+    },
+    {
+      "step": 1710,
+      "action": "subtask",
+      "prompt": "Pull the next drawer open to inspect its contents."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 50.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer",
+        "03_Open_Middle_Drawer",
+        "04_Close_Middle_Drawer"
+      ],
+      "stalled_stage": "05_Open_Bottom_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 50.0,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [
+      "01_Open_Top_Drawer",
+      "02_Close_Top_Drawer",
+      "03_Open_Middle_Drawer",
+      "04_Close_Middle_Drawer"
+    ],
+    "stalled_stage": "05_Open_Bottom_Drawer"
+  }
+}

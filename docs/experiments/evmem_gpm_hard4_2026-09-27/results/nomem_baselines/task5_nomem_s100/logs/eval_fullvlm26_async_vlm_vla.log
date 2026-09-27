@@ -1,0 +1,49 @@
+[INFO] PLANNER_BACKEND=api (skip local VLM checkpoint checks)
+[INFO] PLANNER_API_MODEL=gpt-6-luna
+[INFO] PLANNER_API_BASE_URL=https://api.closeai-asia.com/v1
+[INFO] PLANNER_API_KEY_LINE=1
+[INFO] OUT_ROOT=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100
+[INFO] TASK_CONFIG=/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/fullvlm_v2_26_memory_tasks.json
+[INFO] VLM_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+[INFO] VLA_CONFIG=pi05_robomemarena
+[INFO] VLA_CKPT=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask
+[INFO] NORM_STATS_PATH=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vla_alltask/assets/policy_assets/norm_stats.json
+[INFO] PrediMem revision=e645741c2f34f27e1596bfa89e856d6f3560ed90
+[INFO] TASKS_JSON=[5]
+[INFO] starting VLA server on port 44243
+[INFO] VLA server ready at try 11
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /project/peilab/why/RoboMemArena/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+2026-09-26 14:38:15,233 | INFO | Harness v2: max_retries=0 stall_steps=80 vlm_context=False vla_hints=False api_planner=False smart_retry=False skip_score=95.0
+2026-09-26 14:38:15,239 | INFO | Waiting for server at ws://127.0.0.1:44243...
+2026-09-26 14:38:15,243 | INFO | Planner backend=api model=gpt-6-luna base_url=https://api.closeai-asia.com/v1
+2026-09-26 14:38:15,243 | ERROR | AIM install failed; continuing WITHOUT memory
+Traceback (most recent call last):
+  File "/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/eval_fullvlm26_async_vlm_vla.py", line 2358, in main
+    from aim.adapters.robomemarena import install as _aim_install
+ModuleNotFoundError: No module named 'aim'
+2026-09-26 14:38:15,243 | ERROR | SRH install failed; continuing WITHOUT memory
+Traceback (most recent call last):
+  File "/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/eval_fullvlm26_async_vlm_vla.py", line 2378, in main
+    from srh.adapters.robomemarena import install as _srh_install
+ModuleNotFoundError: No module named 'srh'
+2026-09-26 14:38:15,244 | ERROR | ALH install failed; continuing WITHOUT ALH
+Traceback (most recent call last):
+  File "/project/peilab/why/RoboMemArena/evaluation_benchmark/async_vlm26_reference/eval_fullvlm26_async_vlm_vla.py", line 2395, in main
+    from alh.adapters.robomemarena import install as _alh_install
+ModuleNotFoundError: No module named 'alh'
+2026-09-26 14:38:15,244 | INFO | PACT disabled (PACT_REWIND unset)
+task5:   0%|          | 0/10 [00:00<?, ?it/s]task5:  10%|█         | 1/10 [01:53<17:01, 113.47s/it]task5:  20%|██        | 2/10 [03:32<14:00, 105.02s/it]task5:  30%|███       | 3/10 [05:11<11:55, 102.22s/it]task5:  40%|████      | 4/10 [06:48<10:01, 100.20s/it]task5:  50%|█████     | 5/10 [08:27<08:19, 99.80s/it] task5:  60%|██████    | 6/10 [10:08<06:41, 100.27s/it]task5:  70%|███████   | 7/10 [11:47<04:59, 99.90s/it] task5:  80%|████████  | 8/10 [13:26<03:19, 99.58s/it]task5:  90%|█████████ | 9/10 [15:05<01:39, 99.13s/it]task5: 100%|██████████| 10/10 [16:43<00:00, 98.86s/it]task5: 100%|██████████| 10/10 [16:43<00:00, 100.33s/it]
+2026-09-26 14:55:01,769 | INFO | task=5 status=completed stage_score=13.8 stage_success=0.000 goal=0.1375
+2026-09-26 14:55:01,772 | INFO | done aggregate={'macro_stage_score_pct': 13.75, 'macro_stage_success_rate': 0.0, 'macro_goal_success_rate': 0.1375, 'num_tasks': 1, 'num_goal_scored_tasks': 1, 'harness_enabled': True, 'planner_decisions': 0, 'planner_latency_s_total': 0.0, 'planner_decisions_p50_per_episode': 0, 'planner_latency_s_per_call': None, 'cadence_mode': 'async_latency_determined', 'cadence_interval_env': 5, 'cadence_episodes_observed': 10, 'harness_max_retries': 0, 'harness_stall_steps': 80, 'harness_vlm_context': False, 'harness_vla_hints': False, 'harness_api_planner': False} summary=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/summary.tsv
+[INFO] eval rc=0
+[INFO] SERVER_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/logs/serve_policy.log
+[INFO] EVAL_LOG=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/logs/eval_fullvlm26_async_vlm_vla.log
+[INFO] SUMMARY_JSON=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/summary.json
+[INFO] SUMMARY_TSV=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/summary.tsv
+[INFO] AGGREGATE=/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/task5_h0_controls/h0/nomem_s100/aggregate.json

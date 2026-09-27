@@ -1,0 +1,14 @@
+==============================================================================
+Stage-1 grid
+  job id                          = 615189
+  profiles                        = h0
+  arms                            = evmem
+  PLANNER_API_MODEL               = gpt-6-luna
+  PLANNER_API_MAX_TOKENS          = 2048
+  PLANNER_MAX_CONSECUTIVE_FAILURES= 3
+  EARLY_STOP_ON_QUOTA             = 1
+  tasks                           = [5]   <-- SUBSET, not a protocol number
+  seeds                           = 100   <-- one cell per seed, 10 trials each
+  wall budget                     = 7200s
+  artifact root                   = /project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/evmem_gpm_t5_evmem_h0_1x10
+==============================================================================

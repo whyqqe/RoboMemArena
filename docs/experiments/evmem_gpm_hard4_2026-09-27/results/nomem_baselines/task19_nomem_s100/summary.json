@@ -1,0 +1,12 @@
+[
+  {
+    "task_id": 19,
+    "status": "completed",
+    "error": "",
+    "stage_score_pct": 13.3,
+    "stage_success_rate": 0.0,
+    "goal_success_rate": 0.1333,
+    "video_dir": "/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/hard3_t19_nomem_h0_3x10/h0/nomem_s100/videos/task19",
+    "duration_sec": 1018.34
+  }
+]

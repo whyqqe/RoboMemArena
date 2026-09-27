@@ -1,0 +1,273 @@
+2026-09-26 20:07:04,970 | INFO | task_id=19 bddl=/project/peilab/why/RoboMemArena/bddl/19_tomato_milk_orange_cabinet.bddl vlm_ckpt=/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500
+2026-09-26 20:07:07,085 | INFO | async VLM enabled: single-slot subtask buffer
+2026-09-26 20:07:07,326 | INFO | [t=10] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:07,584 | INFO | [t=20] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:07,848 | INFO | [t=30] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:08,109 | INFO | [t=40] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:08,367 | INFO | [t=50] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:08,627 | INFO | [t=60] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:08,886 | INFO | [t=70] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:09,145 | INFO | [t=80] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:09,404 | INFO | [t=90] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:09,664 | INFO | [t=100] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:09,925 | INFO | [t=110] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:10,186 | INFO | [t=120] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:10,455 | INFO | [t=130] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:10,755 | INFO | [t=140] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:11,050 | INFO | [t=150] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:11,349 | INFO | [t=160] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:11,654 | INFO | [t=170] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:11,962 | INFO | [t=180] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:12,275 | INFO | [t=190] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:12,592 | INFO | [t=200] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:12,916 | INFO | [t=210] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:13,242 | INFO | [t=220] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:13,576 | INFO | [t=230] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:13,916 | INFO | [t=240] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:14,261 | INFO | [t=250] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:14,609 | INFO | [t=260] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:14,958 | INFO | [t=270] VLA chunk prompt=Pick and place tomato sauce, milk, and orange juice from cabinet1 to cabinet2.
+2026-09-26 20:07:15,164 | INFO | API VLM @t=0 task=19 subtask=Reach into cabinet1 to grasp the tomato sauce. keyframes=[]
+2026-09-26 20:07:15,255 | INFO | [t=280] VLM prompt update from step=0: Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:15,305 | INFO | [t=280] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:15,644 | INFO | [t=290] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:15,984 | INFO | [t=300] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:16,323 | INFO | [t=310] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:16,664 | INFO | [t=320] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:17,005 | INFO | [t=330] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:17,347 | INFO | [t=340] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:17,688 | INFO | [t=350] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:18,032 | INFO | [t=360] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:18,375 | INFO | [t=370] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:18,714 | INFO | [t=380] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:19,052 | INFO | [t=390] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:19,391 | INFO | [t=400] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:19,729 | INFO | [t=410] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:20,070 | INFO | [t=420] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:20,414 | INFO | [t=430] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:20,759 | INFO | [t=440] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:21,106 | INFO | [t=450] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:21,451 | INFO | [t=460] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:21,796 | INFO | [t=470] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:22,141 | INFO | [t=480] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:22,487 | INFO | [t=490] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:22,829 | INFO | [t=500] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:23,168 | INFO | [t=510] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:23,502 | INFO | [t=520] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:23,835 | INFO | [t=530] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:07:23,918 | INFO | API VLM @t=265 task=19 subtask=open the cabinet door keyframes=[]
+2026-09-26 20:07:24,119 | INFO | [t=540] VLM prompt update from step=265: open the cabinet door
+2026-09-26 20:07:24,169 | INFO | [t=540] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:24,502 | INFO | [t=550] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:24,835 | INFO | [t=560] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:25,170 | INFO | [t=570] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:25,507 | INFO | [t=580] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:25,846 | INFO | [t=590] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:26,184 | INFO | [t=600] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:26,522 | INFO | [t=610] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:26,861 | INFO | [t=620] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:27,199 | INFO | [t=630] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:27,538 | INFO | [t=640] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:27,877 | INFO | [t=650] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:28,217 | INFO | [t=660] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:28,556 | INFO | [t=670] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:28,895 | INFO | [t=680] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:29,233 | INFO | [t=690] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:29,572 | INFO | [t=700] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:29,911 | INFO | [t=710] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:30,250 | INFO | [t=720] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:30,589 | INFO | [t=730] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:30,927 | INFO | [t=740] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:31,266 | INFO | [t=750] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:31,604 | INFO | [t=760] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:31,944 | INFO | [t=770] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:32,284 | INFO | [t=780] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:32,626 | INFO | [t=790] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:32,963 | INFO | [t=800] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:33,297 | INFO | [t=810] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:33,628 | INFO | [t=820] VLA chunk prompt=open the cabinet door
+2026-09-26 20:07:33,850 | INFO | API VLM @t=520 task=19 subtask=Move the next item from cabinet1 toward cabinet2 and place it inside. keyframes=[]
+2026-09-26 20:07:33,914 | INFO | [t=830] VLM prompt update from step=520: Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:33,964 | INFO | [t=830] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:34,285 | INFO | [t=840] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:34,606 | INFO | [t=850] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:34,931 | INFO | [t=860] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:35,258 | INFO | [t=870] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:35,581 | INFO | [t=880] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:35,901 | INFO | [t=890] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:36,222 | INFO | [t=900] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:36,543 | INFO | [t=910] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:36,868 | INFO | [t=920] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:37,193 | INFO | [t=930] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:37,518 | INFO | [t=940] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:37,847 | INFO | [t=950] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:38,178 | INFO | [t=960] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:38,516 | INFO | [t=970] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:38,860 | INFO | [t=980] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:39,200 | INFO | [t=990] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:39,537 | INFO | [t=1000] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:39,871 | INFO | [t=1010] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:40,207 | INFO | [t=1020] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:40,536 | INFO | [t=1030] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:40,864 | INFO | [t=1040] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:41,193 | INFO | [t=1050] VLA chunk prompt=Move the next item from cabinet1 toward cabinet2 and place it inside.
+2026-09-26 20:07:41,253 | INFO | API VLM @t=815 task=19 subtask=Grasp the next item from cabinet1 keyframes=[]
+2026-09-26 20:07:41,475 | INFO | [t=1060] VLM prompt update from step=815: Grasp the next item from cabinet1
+2026-09-26 20:07:41,524 | INFO | [t=1060] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:41,853 | INFO | [t=1070] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:42,208 | INFO | [t=1080] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:42,562 | INFO | [t=1090] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:42,912 | INFO | [t=1100] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:43,256 | INFO | [t=1110] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:43,609 | INFO | [t=1120] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:43,964 | INFO | [t=1130] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:44,313 | INFO | [t=1140] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:44,657 | INFO | [t=1150] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:44,991 | INFO | [t=1160] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:45,342 | INFO | [t=1170] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:45,684 | INFO | [t=1180] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:46,023 | INFO | [t=1190] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:46,358 | INFO | [t=1200] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:46,691 | INFO | [t=1210] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:47,017 | INFO | [t=1220] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:47,341 | INFO | [t=1230] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:47,664 | INFO | [t=1240] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:47,986 | INFO | [t=1250] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:48,313 | INFO | [t=1260] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:48,641 | INFO | [t=1270] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:48,964 | INFO | [t=1280] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:49,284 | INFO | [t=1290] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:49,613 | INFO | [t=1300] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:49,950 | INFO | [t=1310] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:50,294 | INFO | [t=1320] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:50,636 | INFO | [t=1330] VLA chunk prompt=Grasp the next item from cabinet1
+2026-09-26 20:07:50,897 | INFO | API VLM @t=1040 task=19 subtask=Open cabinet1 to access the next item. keyframes=[]
+2026-09-26 20:07:50,931 | INFO | [t=1340] VLM prompt update from step=1040: Open cabinet1 to access the next item.
+2026-09-26 20:07:50,981 | INFO | [t=1340] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:51,319 | INFO | [t=1350] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:51,657 | INFO | [t=1360] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:51,996 | INFO | [t=1370] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:52,333 | INFO | [t=1380] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:52,670 | INFO | [t=1390] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:53,007 | INFO | [t=1400] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:53,347 | INFO | [t=1410] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:53,689 | INFO | [t=1420] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:54,031 | INFO | [t=1430] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:54,372 | INFO | [t=1440] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:54,713 | INFO | [t=1450] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:55,054 | INFO | [t=1460] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:55,394 | INFO | [t=1470] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:55,739 | INFO | [t=1480] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:56,083 | INFO | [t=1490] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:56,427 | INFO | [t=1500] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:56,771 | INFO | [t=1510] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:57,113 | INFO | [t=1520] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:57,456 | INFO | [t=1530] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:57,797 | INFO | [t=1540] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:58,139 | INFO | [t=1550] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:58,481 | INFO | [t=1560] VLA chunk prompt=Open cabinet1 to access the next item.
+2026-09-26 20:07:58,674 | INFO | API VLM @t=1325 task=19 subtask=Reach into cabinet1 to grasp the next item, tomato sauce. keyframes=[]
+2026-09-26 20:07:58,775 | INFO | [t=1570] VLM prompt update from step=1325: Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:07:58,825 | INFO | [t=1570] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:07:59,168 | INFO | [t=1580] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:07:59,509 | INFO | [t=1590] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:07:59,850 | INFO | [t=1600] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:00,189 | INFO | [t=1610] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:00,526 | INFO | [t=1620] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:00,864 | INFO | [t=1630] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:01,202 | INFO | [t=1640] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:01,540 | INFO | [t=1650] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:01,880 | INFO | [t=1660] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:02,218 | INFO | [t=1670] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:02,554 | INFO | [t=1680] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:02,892 | INFO | [t=1690] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:03,229 | INFO | [t=1700] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:03,567 | INFO | [t=1710] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:03,902 | INFO | [t=1720] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:04,238 | INFO | [t=1730] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:04,574 | INFO | [t=1740] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:04,910 | INFO | [t=1750] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:05,246 | INFO | [t=1760] VLA chunk prompt=Reach into cabinet1 to grasp the next item, tomato sauce.
+2026-09-26 20:08:05,334 | INFO | API VLM @t=1555 task=19 subtask=Reach into cabinet1 to pick up the tomato sauce. keyframes=[]
+2026-09-26 20:08:05,536 | INFO | [t=1770] VLM prompt update from step=1555: Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:05,586 | INFO | [t=1770] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:05,922 | INFO | [t=1780] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:06,256 | INFO | [t=1790] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:06,586 | INFO | [t=1800] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:06,914 | INFO | [t=1810] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:07,243 | INFO | [t=1820] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:07,570 | INFO | [t=1830] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:07,899 | INFO | [t=1840] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:08,228 | INFO | [t=1850] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:08,556 | INFO | [t=1860] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:08,882 | INFO | [t=1870] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:09,210 | INFO | [t=1880] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:09,538 | INFO | [t=1890] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:09,869 | INFO | [t=1900] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:10,200 | INFO | [t=1910] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:10,532 | INFO | [t=1920] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:10,862 | INFO | [t=1930] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:11,190 | INFO | [t=1940] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:11,519 | INFO | [t=1950] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:11,846 | INFO | [t=1960] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:12,174 | INFO | [t=1970] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:12,502 | INFO | [t=1980] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:12,829 | INFO | [t=1990] VLA chunk prompt=Reach into cabinet1 to pick up the tomato sauce.
+2026-09-26 20:08:12,858 | INFO | API VLM @t=1750 task=19 subtask=Reach into cabinet1 to grasp the tomato sauce. keyframes=[]
+2026-09-26 20:08:13,110 | INFO | [t=2000] VLM prompt update from step=1750: Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:13,160 | INFO | [t=2000] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:13,487 | INFO | [t=2010] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:13,813 | INFO | [t=2020] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:14,138 | INFO | [t=2030] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:14,463 | INFO | [t=2040] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:14,788 | INFO | [t=2050] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:15,113 | INFO | [t=2060] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:15,437 | INFO | [t=2070] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:15,761 | INFO | [t=2080] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:16,087 | INFO | [t=2090] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:16,413 | INFO | [t=2100] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:16,740 | INFO | [t=2110] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:17,070 | INFO | [t=2120] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:17,398 | INFO | [t=2130] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:17,727 | INFO | [t=2140] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:18,054 | INFO | [t=2150] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:18,380 | INFO | [t=2160] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:18,707 | INFO | [t=2170] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:19,032 | INFO | [t=2180] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:19,359 | INFO | [t=2190] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:19,687 | INFO | [t=2200] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:20,015 | INFO | [t=2210] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:20,343 | INFO | [t=2220] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:20,672 | INFO | [t=2230] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:20,978 | INFO | API VLM @t=1980 task=19 subtask=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce. keyframes=[]
+2026-09-26 20:08:21,000 | INFO | [t=2240] VLA chunk prompt=Reach into cabinet1 to grasp the tomato sauce.
+2026-09-26 20:08:21,278 | INFO | [t=2250] VLM prompt update from step=1980: Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:21,327 | INFO | [t=2250] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:21,655 | INFO | [t=2260] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:21,982 | INFO | [t=2270] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:22,308 | INFO | [t=2280] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:22,634 | INFO | [t=2290] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:22,959 | INFO | [t=2300] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:23,286 | INFO | [t=2310] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:23,612 | INFO | [t=2320] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:23,937 | INFO | [t=2330] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:24,261 | INFO | [t=2340] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:24,587 | INFO | [t=2350] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:24,912 | INFO | [t=2360] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:25,236 | INFO | [t=2370] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:25,561 | INFO | [t=2380] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:25,885 | INFO | [t=2390] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:26,208 | INFO | [t=2400] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:26,532 | INFO | [t=2410] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:26,856 | INFO | [t=2420] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:27,181 | INFO | [t=2430] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:27,506 | INFO | [t=2440] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:27,831 | INFO | [t=2450] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:28,156 | INFO | [t=2460] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:28,481 | INFO | [t=2470] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:28,806 | INFO | [t=2480] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:29,131 | INFO | [t=2490] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:29,456 | INFO | [t=2500] VLA chunk prompt=Reach into source cabinet1 to pick up the next item in sequence, tomato sauce.
+2026-09-26 20:08:29,488 | INFO | API VLM @t=2230 task=19 subtask=Grasping the tomato sauce from cabinet1 keyframes=[]
+2026-09-26 20:08:32,754 | INFO | attempt=0 stage_score=0.0 stage_success=False failure_reason=incomplete_stage
+2026-09-26 20:08:32,754 | INFO | Episode 5 seed=105 stage_score=0.0 stage_success=0 goal=0.000 failure_reason=incomplete_stage | 01_Place_Tomato_Sauce_Cabinet2=N | 02_Place_Milk_Cabinet2=N | 03_Place_Orange_Juice_Cabinet2=N

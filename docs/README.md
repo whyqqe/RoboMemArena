@@ -16,6 +16,8 @@ This index covers the RoboMemArena benchmark, the PrediMem reference evaluator, 
 | [Reproducibility](experiments/REPRODUCIBILITY.md) | Official benchmark and recommended extension runs |
 | [Harness & memory design](design/harness_memory_system_design.md) | Architecture, configuration, and module reference |
 | [Dual-track report](experiments/dual_track_report.md) | Decoupled evaluation of memory vs. execution harness |
+| [PrediMem error patterns](experiments/predimem_error_pattern_534999.md) | Trajectory-level failure modes from job 534999 |
+| [EvMem-GPM hard4 package](experiments/evmem_gpm_hard4_2026-09-27/REPORT.md) | nomem vs GPM on tasks {5,8,19,22} (code + results snapshot) |
 
 ## Supplementary material
 

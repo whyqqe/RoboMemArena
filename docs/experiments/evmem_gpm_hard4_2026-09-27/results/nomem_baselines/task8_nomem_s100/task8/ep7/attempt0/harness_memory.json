@@ -1,0 +1,1668 @@
+{
+  "task_id": 8,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Pick up the chocolate and place it into the frypan"
+    ],
+    [
+      220,
+      "Pick up the chocolate and place it into the frypan."
+    ],
+    [
+      575,
+      "pick up the tomato sauce bottle"
+    ],
+    [
+      785,
+      "Place the tomato sauce bottle into the bowl drainer"
+    ],
+    [
+      970,
+      "Pour tomato sauce over the chocolate in the frypan."
+    ],
+    [
+      1225,
+      "pick up the tomato sauce bottle"
+    ],
+    [
+      1495,
+      "pour tomato sauce over the chocolate in the frypan"
+    ],
+    [
+      1705,
+      "Pour the tomato sauce over the chocolate in the frypan."
+    ],
+    [
+      1990,
+      "pick up the tomato sauce bottle"
+    ],
+    [
+      2245,
+      "Place the tomato sauce bottle into the bowl drainer."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 1240,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1570,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2012,
+      "event_type": "stage_complete",
+      "subtask": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 1800,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2092,
+      "event_type": "stall",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 2045,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "pick up the chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 220,
+      "event_type": "subtask",
+      "subtask": "Reach for and pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 544,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and pick up the tomato sauce bottle",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 624,
+      "event_type": "stall",
+      "subtask": "Reach for and pick up the tomato sauce bottle",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 630,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and pick up the tomato sauce bottle",
+      "stage_name": "02_Pour_One",
+      "metadata": {}
+    },
+    {
+      "step": 710,
+      "event_type": "stall",
+      "subtask": "Reach for and pick up the tomato sauce bottle",
+      "stage_name": "03_Pour_Two",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 515,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 700,
+      "event_type": "subtask",
+      "subtask": "Pour tomato sauce over the chocolate in the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 960,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer; the task appears complete.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1325,
+      "event_type": "subtask",
+      "subtask": "pour tomato sauce over the chocolate in the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1540,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1670,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle to pour it over the chocolate in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1830,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2020,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 180,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 575,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1205,
+      "event_type": "subtask",
+      "subtask": "place the tomato sauce bottle into the bowl drainer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1440,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1735,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle to begin pouring it over the chocolate in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1985,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "pick up the chocolate and place it in the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 280,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 500,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 680,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate from the table",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 950,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate from the table to place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1125,
+      "event_type": "subtask",
+      "subtask": "pick up the chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1375,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it into the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1580,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate to place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1740,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle to pour it over the chocolate.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1980,
+      "event_type": "subtask",
+      "subtask": "pick up the chocolate",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2180,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the chocolate to place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 220,
+      "event_type": "subtask",
+      "subtask": "Pour tomato sauce over the chocolate in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 575,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 835,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1060,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1540,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1760,
+      "event_type": "subtask",
+      "subtask": "Reach for and pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1930,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2150,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it into the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 564,
+      "event_type": "stage_complete",
+      "subtask": "Pick up the chocolate and place it into the frypan",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 220,
+      "event_type": "subtask",
+      "subtask": "Pick up the chocolate and place it into the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 644,
+      "event_type": "stall",
+      "subtask": "Pick up the chocolate and place it into the frypan.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 575,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 785,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 970,
+      "event_type": "subtask",
+      "subtask": "Pour tomato sauce over the chocolate in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1225,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1495,
+      "event_type": "subtask",
+      "subtask": "pour tomato sauce over the chocolate in the frypan",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1705,
+      "event_type": "subtask",
+      "subtask": "Pour the tomato sauce over the chocolate in the frypan.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1990,
+      "event_type": "subtask",
+      "subtask": "pick up the tomato sauce bottle",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2245,
+      "event_type": "subtask",
+      "subtask": "Place the tomato sauce bottle into the bowl drainer.",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 445,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 695,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate block to place it in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 885,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1225,
+      "action": "subtask_update",
+      "instruction": "pour tomato sauce over the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1500,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1720,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1935,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2120,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 305,
+      "action": "subtask_update",
+      "instruction": "pick up the chocolate from the table",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 763,
+      "action": "stage_complete",
+      "instruction": "pick up the chocolate from the table",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 841,
+      "action": "stage_complete",
+      "instruction": "pick up the chocolate from the table",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 650,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 921,
+      "action": "stall",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 860,
+      "action": "subtask_update",
+      "instruction": "Pour tomato sauce over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1110,
+      "action": "subtask_update",
+      "instruction": "place the tomato sauce bottle into the bowl drainer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1350,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1825,
+      "action": "subtask_update",
+      "instruction": "Pour tomato sauce over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2140,
+      "action": "subtask_update",
+      "instruction": "place the tomato sauce bottle into the bowl drainer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 230,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 435,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 620,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 830,
+      "action": "subtask_update",
+      "instruction": "pick up the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1040,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1240,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1570,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2012,
+      "action": "stage_complete",
+      "instruction": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 1800,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2092,
+      "action": "stall",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 2045,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "pick up the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 220,
+      "action": "subtask_update",
+      "instruction": "Reach for and pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 544,
+      "action": "stage_complete",
+      "instruction": "Reach for and pick up the tomato sauce bottle",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 624,
+      "action": "stall",
+      "instruction": "Reach for and pick up the tomato sauce bottle",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 630,
+      "action": "stage_complete",
+      "instruction": "Reach for and pick up the tomato sauce bottle",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 710,
+      "action": "stall",
+      "instruction": "Reach for and pick up the tomato sauce bottle",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 515,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 700,
+      "action": "subtask_update",
+      "instruction": "Pour tomato sauce over the chocolate in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 960,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer; the task appears complete.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1325,
+      "action": "subtask_update",
+      "instruction": "pour tomato sauce over the chocolate in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1540,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1670,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle to pour it over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1830,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2020,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 180,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 575,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1205,
+      "action": "subtask_update",
+      "instruction": "place the tomato sauce bottle into the bowl drainer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1440,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1735,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle to begin pouring it over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1985,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "pick up the chocolate and place it in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 280,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 500,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 680,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 950,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate from the table to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1125,
+      "action": "subtask_update",
+      "instruction": "pick up the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1375,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1580,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1740,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle to pour it over the chocolate.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1980,
+      "action": "subtask_update",
+      "instruction": "pick up the chocolate",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2180,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the chocolate to place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 220,
+      "action": "subtask_update",
+      "instruction": "Pour tomato sauce over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 575,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 835,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1060,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1540,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1760,
+      "action": "subtask_update",
+      "instruction": "Reach for and pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1930,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2150,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pick and place chocolate into the frypan, pour tomato sauce over it twice, then place the sauce bottle into the bowl drainer.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 564,
+      "action": "stage_complete",
+      "instruction": "Pick up the chocolate and place it into the frypan",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 220,
+      "action": "subtask_update",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 644,
+      "action": "stall",
+      "instruction": "Pick up the chocolate and place it into the frypan.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 575,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 785,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 970,
+      "action": "subtask_update",
+      "instruction": "Pour tomato sauce over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1225,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1495,
+      "action": "subtask_update",
+      "instruction": "pour tomato sauce over the chocolate in the frypan",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1705,
+      "action": "subtask_update",
+      "instruction": "Pour the tomato sauce over the chocolate in the frypan.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1990,
+      "action": "subtask_update",
+      "instruction": "pick up the tomato sauce bottle",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2245,
+      "action": "subtask_update",
+      "instruction": "Place the tomato sauce bottle into the bowl drainer.",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan."
+    },
+    {
+      "step": 445,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 695,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate block to place it in the frypan"
+    },
+    {
+      "step": 885,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 1225,
+      "action": "subtask",
+      "prompt": "pour tomato sauce over the chocolate"
+    },
+    {
+      "step": 1500,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 1720,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 1935,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan."
+    },
+    {
+      "step": 2120,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 305,
+      "action": "subtask",
+      "prompt": "pick up the chocolate from the table"
+    },
+    {
+      "step": 763,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "pick up the chocolate from the table"
+    },
+    {
+      "step": 841,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "pick up the chocolate from the table"
+    },
+    {
+      "step": 650,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 860,
+      "action": "subtask",
+      "prompt": "Pour tomato sauce over the chocolate in the frypan."
+    },
+    {
+      "step": 1110,
+      "action": "subtask",
+      "prompt": "place the tomato sauce bottle into the bowl drainer"
+    },
+    {
+      "step": 1350,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer."
+    },
+    {
+      "step": 1825,
+      "action": "subtask",
+      "prompt": "Pour tomato sauce over the chocolate in the frypan."
+    },
+    {
+      "step": 2140,
+      "action": "subtask",
+      "prompt": "place the tomato sauce bottle into the bowl drainer"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan"
+    },
+    {
+      "step": 230,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 435,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan"
+    },
+    {
+      "step": 620,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate to place it in the frypan."
+    },
+    {
+      "step": 830,
+      "action": "subtask",
+      "prompt": "pick up the chocolate"
+    },
+    {
+      "step": 1040,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table."
+    },
+    {
+      "step": 1240,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle"
+    },
+    {
+      "step": 1570,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan."
+    },
+    {
+      "step": 2012,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan."
+    },
+    {
+      "step": 1800,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer."
+    },
+    {
+      "step": 2045,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "pick up the chocolate"
+    },
+    {
+      "step": 220,
+      "action": "subtask",
+      "prompt": "Reach for and pick up the tomato sauce bottle"
+    },
+    {
+      "step": 544,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Reach for and pick up the tomato sauce bottle"
+    },
+    {
+      "step": 630,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Reach for and pick up the tomato sauce bottle"
+    },
+    {
+      "step": 515,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle."
+    },
+    {
+      "step": 700,
+      "action": "subtask",
+      "prompt": "Pour tomato sauce over the chocolate in the frypan"
+    },
+    {
+      "step": 960,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer; the task appears complete."
+    },
+    {
+      "step": 1325,
+      "action": "subtask",
+      "prompt": "pour tomato sauce over the chocolate in the frypan"
+    },
+    {
+      "step": 1540,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer."
+    },
+    {
+      "step": 1670,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle to pour it over the chocolate in the frypan."
+    },
+    {
+      "step": 1830,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 2020,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 180,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan"
+    },
+    {
+      "step": 575,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 1205,
+      "action": "subtask",
+      "prompt": "place the tomato sauce bottle into the bowl drainer"
+    },
+    {
+      "step": 1440,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer"
+    },
+    {
+      "step": 1735,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle to begin pouring it over the chocolate in the frypan."
+    },
+    {
+      "step": 1985,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "pick up the chocolate and place it in the frypan"
+    },
+    {
+      "step": 280,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate"
+    },
+    {
+      "step": 500,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 680,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table"
+    },
+    {
+      "step": 950,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate from the table to place it in the frypan."
+    },
+    {
+      "step": 1125,
+      "action": "subtask",
+      "prompt": "pick up the chocolate"
+    },
+    {
+      "step": 1375,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan."
+    },
+    {
+      "step": 1580,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate to place it in the frypan."
+    },
+    {
+      "step": 1740,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle to pour it over the chocolate."
+    },
+    {
+      "step": 1980,
+      "action": "subtask",
+      "prompt": "pick up the chocolate"
+    },
+    {
+      "step": 2180,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the chocolate to place it in the frypan."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it in the frypan."
+    },
+    {
+      "step": 220,
+      "action": "subtask",
+      "prompt": "Pour tomato sauce over the chocolate in the frypan."
+    },
+    {
+      "step": 575,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 835,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer."
+    },
+    {
+      "step": 1060,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle"
+    },
+    {
+      "step": 1540,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle."
+    },
+    {
+      "step": 1760,
+      "action": "subtask",
+      "prompt": "Reach for and pick up the tomato sauce bottle"
+    },
+    {
+      "step": 1930,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle to pour it over the chocolate in the pan."
+    },
+    {
+      "step": 2150,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan"
+    },
+    {
+      "step": 564,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pick up the chocolate and place it into the frypan"
+    },
+    {
+      "step": 220,
+      "action": "subtask",
+      "prompt": "Pick up the chocolate and place it into the frypan."
+    },
+    {
+      "step": 575,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 785,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer"
+    },
+    {
+      "step": 970,
+      "action": "subtask",
+      "prompt": "Pour tomato sauce over the chocolate in the frypan."
+    },
+    {
+      "step": 1225,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 1495,
+      "action": "subtask",
+      "prompt": "pour tomato sauce over the chocolate in the frypan"
+    },
+    {
+      "step": 1705,
+      "action": "subtask",
+      "prompt": "Pour the tomato sauce over the chocolate in the frypan."
+    },
+    {
+      "step": 1990,
+      "action": "subtask",
+      "prompt": "pick up the tomato sauce bottle"
+    },
+    {
+      "step": 2245,
+      "action": "subtask",
+      "prompt": "Place the tomato sauce bottle into the bowl drainer."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One"
+      ],
+      "stalled_stage": "03_Pour_Two"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce"
+      ],
+      "stalled_stage": "02_Pour_One"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One"
+      ],
+      "stalled_stage": "03_Pour_Two"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce"
+      ],
+      "stalled_stage": "02_Pour_One"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 66.66666666666667,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [
+      "01_Lift_Tomato_Sauce",
+      "02_Pour_One"
+    ],
+    "stalled_stage": "03_Pour_Two"
+  }
+}

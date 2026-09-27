@@ -1,0 +1,49 @@
+[
+  {
+    "task": 5,
+    "metric": "stage_score_pct",
+    "protocol": "h0 seed100 1x10",
+    "nomem": 13.8,
+    "nomem_job": "614243",
+    "gpm": 20.0,
+    "gpm_job": "615189",
+    "delta": 6.2
+  },
+  {
+    "task": 8,
+    "metric": "stage_score_pct",
+    "protocol": "h0 seed100 1x10",
+    "nomem": 26.7,
+    "nomem_job": "614797",
+    "gpm": 46.7,
+    "gpm_job": "615169",
+    "delta": 20.0
+  },
+  {
+    "task": 19,
+    "metric": "stage_score_pct",
+    "protocol": "h0 seed100 1x10",
+    "nomem": 13.3,
+    "nomem_job": "614799",
+    "gpm": 26.7,
+    "gpm_job": "615190",
+    "delta": 13.4
+  },
+  {
+    "task": 22,
+    "metric": "stage_score_pct",
+    "protocol": "h0 seed100 1x10",
+    "nomem": 73.3,
+    "nomem_job": "614801",
+    "gpm": 73.3,
+    "gpm_job": "615191",
+    "delta": 0.0
+  },
+  {
+    "task": "macro_mean_4",
+    "metric": "stage_score_pct",
+    "nomem": 31.775,
+    "gpm": 41.675,
+    "delta": 9.9
+  }
+]

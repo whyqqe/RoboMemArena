@@ -1,0 +1,1134 @@
+{
+  "task_id": 5,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Open the top drawer to inspect whether it is empty."
+    ],
+    [
+      330,
+      "Reach to pick up the butter from the tabletop"
+    ],
+    [
+      570,
+      "place the butter into the remembered empty drawer"
+    ],
+    [
+      805,
+      "place the butter into the open target drawer"
+    ],
+    [
+      1050,
+      "Open the current drawer by pulling its handle."
+    ],
+    [
+      1190,
+      "Pull open the drawer to inspect it."
+    ],
+    [
+      1400,
+      "open the top drawer"
+    ],
+    [
+      1565,
+      "Open the currently targeted drawer to inspect whether it is empty."
+    ],
+    [
+      1815,
+      "Open the top drawer to inspect it."
+    ],
+    [
+      2085,
+      "pick up the butter"
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "reach toward the top drawer to open it",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "reach toward the top drawer to open it",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 660,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 805,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer by pulling its handle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 935,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1085,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1330,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1540,
+      "event_type": "subtask",
+      "subtask": "Pull open the drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1720,
+      "event_type": "subtask",
+      "subtask": "Open the current drawer to inspect its contents.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1990,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2170,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer by pulling its handle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 125,
+      "event_type": "stage_complete",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 205,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 277,
+      "event_type": "stage_complete",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Pick up the butter and place it in the open empty drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 357,
+      "event_type": "stall",
+      "subtask": "Pick up the butter and place it in the open empty drawer.",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 305,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 450,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 690,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 895,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1095,
+      "event_type": "subtask",
+      "subtask": "Reach for the drawer handle to open the drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1508,
+      "event_type": "stage_complete",
+      "subtask": "Reach for the drawer handle to open the drawer.",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 1345,
+      "event_type": "subtask",
+      "subtask": "Open the current drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1588,
+      "event_type": "stall",
+      "subtask": "Open the current drawer",
+      "stage_name": "04_Close_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 1530,
+      "event_type": "subtask",
+      "subtask": "place the butter into the remembered empty drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1765,
+      "event_type": "subtask",
+      "subtask": "pick up the butter from the tabletop",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2000,
+      "event_type": "subtask",
+      "subtask": "pick up the butter",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Inspect the open top drawer to determine whether it is empty.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 240,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 470,
+      "event_type": "subtask",
+      "subtask": "open drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 600,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 740,
+      "event_type": "subtask",
+      "subtask": "open drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 950,
+      "event_type": "subtask",
+      "subtask": "open the drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1435,
+      "event_type": "subtask",
+      "subtask": "open the middle drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1725,
+      "event_type": "subtask",
+      "subtask": "Place the butter into the remembered empty drawer.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1845,
+      "event_type": "subtask",
+      "subtask": "Move the butter toward the remembered empty drawer to place it inside.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2080,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 144,
+      "event_type": "stage_complete",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "01_Open_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 224,
+      "event_type": "stall",
+      "subtask": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer to inspect whether it is empty.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 330,
+      "event_type": "subtask",
+      "subtask": "Reach to pick up the butter from the tabletop",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 570,
+      "event_type": "subtask",
+      "subtask": "place the butter into the remembered empty drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 894,
+      "event_type": "stage_complete",
+      "subtask": "place the butter into the remembered empty drawer",
+      "stage_name": "02_Close_Top_Drawer",
+      "metadata": {}
+    },
+    {
+      "step": 974,
+      "event_type": "stall",
+      "subtask": "place the butter into the remembered empty drawer",
+      "stage_name": "03_Open_Middle_Drawer",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 805,
+      "event_type": "subtask",
+      "subtask": "place the butter into the open target drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1050,
+      "event_type": "subtask",
+      "subtask": "Open the current drawer by pulling its handle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1190,
+      "event_type": "subtask",
+      "subtask": "Pull open the drawer to inspect it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1400,
+      "event_type": "subtask",
+      "subtask": "open the top drawer",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1565,
+      "event_type": "subtask",
+      "subtask": "Open the currently targeted drawer to inspect whether it is empty.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1815,
+      "event_type": "subtask",
+      "subtask": "Open the top drawer to inspect it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2085,
+      "event_type": "subtask",
+      "subtask": "pick up the butter",
+      "stage_name": null,
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "reach toward the top drawer to open it",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "reach toward the top drawer to open it",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 660,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 805,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer by pulling its handle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 935,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1085,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1330,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1540,
+      "action": "subtask_update",
+      "instruction": "Pull open the drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1720,
+      "action": "subtask_update",
+      "instruction": "Open the current drawer to inspect its contents.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1990,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2170,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer by pulling its handle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 125,
+      "action": "stage_complete",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 205,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 277,
+      "action": "stage_complete",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Pick up the butter and place it in the open empty drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 357,
+      "action": "stall",
+      "instruction": "Pick up the butter and place it in the open empty drawer.",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 305,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 450,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 690,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 895,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1095,
+      "action": "subtask_update",
+      "instruction": "Reach for the drawer handle to open the drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1508,
+      "action": "stage_complete",
+      "instruction": "Reach for the drawer handle to open the drawer.",
+      "outcome": "success",
+      "notes": "03_Open_Middle_Drawer"
+    },
+    {
+      "step": 1345,
+      "action": "subtask_update",
+      "instruction": "Open the current drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1588,
+      "action": "stall",
+      "instruction": "Open the current drawer",
+      "outcome": "stalled",
+      "notes": "04_Close_Middle_Drawer:80"
+    },
+    {
+      "step": 1530,
+      "action": "subtask_update",
+      "instruction": "place the butter into the remembered empty drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1765,
+      "action": "subtask_update",
+      "instruction": "pick up the butter from the tabletop",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2000,
+      "action": "subtask_update",
+      "instruction": "pick up the butter",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Inspect the open top drawer to determine whether it is empty.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 240,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 470,
+      "action": "subtask_update",
+      "instruction": "open drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 600,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 740,
+      "action": "subtask_update",
+      "instruction": "open drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 950,
+      "action": "subtask_update",
+      "instruction": "open the drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1435,
+      "action": "subtask_update",
+      "instruction": "open the middle drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1725,
+      "action": "subtask_update",
+      "instruction": "Place the butter into the remembered empty drawer.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1845,
+      "action": "subtask_update",
+      "instruction": "Move the butter toward the remembered empty drawer to place it inside.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2080,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "01_Open_Top_Drawer:80"
+    },
+    {
+      "step": 144,
+      "action": "stage_complete",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "success",
+      "notes": "01_Open_Top_Drawer"
+    },
+    {
+      "step": 224,
+      "action": "stall",
+      "instruction": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer.",
+      "outcome": "stalled",
+      "notes": "02_Close_Top_Drawer:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer to inspect whether it is empty.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 330,
+      "action": "subtask_update",
+      "instruction": "Reach to pick up the butter from the tabletop",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 570,
+      "action": "subtask_update",
+      "instruction": "place the butter into the remembered empty drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 894,
+      "action": "stage_complete",
+      "instruction": "place the butter into the remembered empty drawer",
+      "outcome": "success",
+      "notes": "02_Close_Top_Drawer"
+    },
+    {
+      "step": 974,
+      "action": "stall",
+      "instruction": "place the butter into the remembered empty drawer",
+      "outcome": "stalled",
+      "notes": "03_Open_Middle_Drawer:80"
+    },
+    {
+      "step": 805,
+      "action": "subtask_update",
+      "instruction": "place the butter into the open target drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1050,
+      "action": "subtask_update",
+      "instruction": "Open the current drawer by pulling its handle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1190,
+      "action": "subtask_update",
+      "instruction": "Pull open the drawer to inspect it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1400,
+      "action": "subtask_update",
+      "instruction": "open the top drawer",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1565,
+      "action": "subtask_update",
+      "instruction": "Open the currently targeted drawer to inspect whether it is empty.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1815,
+      "action": "subtask_update",
+      "instruction": "Open the top drawer to inspect it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2085,
+      "action": "subtask_update",
+      "instruction": "pick up the butter",
+      "outcome": "active",
+      "notes": ""
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "reach toward the top drawer to open it"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 660,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 805,
+      "action": "subtask",
+      "prompt": "Open the top drawer by pulling its handle."
+    },
+    {
+      "step": 935,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1085,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 1330,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1540,
+      "action": "subtask",
+      "prompt": "Pull open the drawer."
+    },
+    {
+      "step": 1720,
+      "action": "subtask",
+      "prompt": "Open the current drawer to inspect its contents."
+    },
+    {
+      "step": 1990,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 2170,
+      "action": "subtask",
+      "prompt": "Open the top drawer by pulling its handle."
+    },
+    {
+      "step": 125,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer."
+    },
+    {
+      "step": 277,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Pick up the butter and place it in the open empty drawer."
+    },
+    {
+      "step": 305,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 450,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 690,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 895,
+      "action": "subtask",
+      "prompt": "Open the top drawer."
+    },
+    {
+      "step": 1095,
+      "action": "subtask",
+      "prompt": "Reach for the drawer handle to open the drawer."
+    },
+    {
+      "step": 1508,
+      "action": "stage_complete",
+      "stage": "03_Open_Middle_Drawer",
+      "prompt": "Reach for the drawer handle to open the drawer."
+    },
+    {
+      "step": 1345,
+      "action": "subtask",
+      "prompt": "Open the current drawer"
+    },
+    {
+      "step": 1530,
+      "action": "subtask",
+      "prompt": "place the butter into the remembered empty drawer"
+    },
+    {
+      "step": 1765,
+      "action": "subtask",
+      "prompt": "pick up the butter from the tabletop"
+    },
+    {
+      "step": 2000,
+      "action": "subtask",
+      "prompt": "pick up the butter"
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Inspect the open top drawer to determine whether it is empty."
+    },
+    {
+      "step": 240,
+      "action": "subtask",
+      "prompt": "Open the top drawer."
+    },
+    {
+      "step": 470,
+      "action": "subtask",
+      "prompt": "open drawer"
+    },
+    {
+      "step": 600,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 740,
+      "action": "subtask",
+      "prompt": "open drawer"
+    },
+    {
+      "step": 950,
+      "action": "subtask",
+      "prompt": "open the drawer"
+    },
+    {
+      "step": 1435,
+      "action": "subtask",
+      "prompt": "open the middle drawer"
+    },
+    {
+      "step": 1725,
+      "action": "subtask",
+      "prompt": "Place the butter into the remembered empty drawer."
+    },
+    {
+      "step": 1845,
+      "action": "subtask",
+      "prompt": "Move the butter toward the remembered empty drawer to place it inside."
+    },
+    {
+      "step": 2080,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 144,
+      "action": "stage_complete",
+      "stage": "01_Open_Top_Drawer",
+      "prompt": "Open all drawers in order, remember the empty drawer, then put butter into that empty drawer."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Open the top drawer to inspect whether it is empty."
+    },
+    {
+      "step": 330,
+      "action": "subtask",
+      "prompt": "Reach to pick up the butter from the tabletop"
+    },
+    {
+      "step": 570,
+      "action": "subtask",
+      "prompt": "place the butter into the remembered empty drawer"
+    },
+    {
+      "step": 894,
+      "action": "stage_complete",
+      "stage": "02_Close_Top_Drawer",
+      "prompt": "place the butter into the remembered empty drawer"
+    },
+    {
+      "step": 805,
+      "action": "subtask",
+      "prompt": "place the butter into the open target drawer"
+    },
+    {
+      "step": 1050,
+      "action": "subtask",
+      "prompt": "Open the current drawer by pulling its handle."
+    },
+    {
+      "step": 1190,
+      "action": "subtask",
+      "prompt": "Pull open the drawer to inspect it."
+    },
+    {
+      "step": 1400,
+      "action": "subtask",
+      "prompt": "open the top drawer"
+    },
+    {
+      "step": 1565,
+      "action": "subtask",
+      "prompt": "Open the currently targeted drawer to inspect whether it is empty."
+    },
+    {
+      "step": 1815,
+      "action": "subtask",
+      "prompt": "Open the top drawer to inspect it."
+    },
+    {
+      "step": 2085,
+      "action": "subtask",
+      "prompt": "pick up the butter"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 37.5,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer",
+        "03_Open_Middle_Drawer"
+      ],
+      "stalled_stage": "04_Close_Middle_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Open_Top_Drawer"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 25.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Open_Top_Drawer",
+        "02_Close_Top_Drawer"
+      ],
+      "stalled_stage": "03_Open_Middle_Drawer"
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 37.5,
+    "stage_success": false,
+    "failure_reason": "incomplete_stage",
+    "completed_stages": [
+      "01_Open_Top_Drawer",
+      "02_Close_Top_Drawer",
+      "03_Open_Middle_Drawer"
+    ],
+    "stalled_stage": "04_Close_Middle_Drawer"
+  }
+}

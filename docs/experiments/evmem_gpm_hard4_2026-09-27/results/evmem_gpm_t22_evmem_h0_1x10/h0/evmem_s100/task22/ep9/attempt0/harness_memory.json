@@ -1,0 +1,2066 @@
+{
+  "task_id": 22,
+  "global_rules": [
+    "If grasp fails, re-localize the target before retrying contact.",
+    "Do not advance to the next subtask until the current stage predicate is satisfied.",
+    "Prefer analytic recovery (re-localize, release gripper) when progress stalls on a stage.",
+    "Use historical keyframes to recall objects that are no longer visible.",
+    "After a failed attempt, focus on the earliest incomplete stage first."
+  ],
+  "working": [
+    [
+      0,
+      "Reach for and grasp the tomato sauce bottle, then lift it."
+    ],
+    [
+      145,
+      "Grasp the tomato sauce bottle and lift it up."
+    ],
+    [
+      250,
+      "Tilt the sauce bottle over the cookie to pour sauce onto it once."
+    ]
+  ],
+  "episodic": [
+    {
+      "step": 393,
+      "event_type": "stall",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 285,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the cookie to pour once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 470,
+      "event_type": "subtask",
+      "subtask": "Pour the sauce over the cookies a second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 630,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the cookies to pour a second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 740,
+      "event_type": "subtask",
+      "subtask": "Pour the tomato sauce over the cookies a second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 870,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour onto the cookies again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1015,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle and pour over the cookies again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1140,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle and pour onto the target again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1285,
+      "event_type": "subtask",
+      "subtask": "Move the sauce bottle over the cookie and tilt it to pour sauce onto the cookie again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1435,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1575,
+      "event_type": "subtask",
+      "subtask": "Move the sauce bottle over the cookies and tilt it to pour sauce onto them again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1710,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2054,
+      "event_type": "stage_complete",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 154,
+      "event_type": "stage_complete",
+      "subtask": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach for and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 234,
+      "event_type": "stall",
+      "subtask": "Reach for and lift the tomato sauce bottle.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 343,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and lift the tomato sauce bottle.",
+      "stage_name": "02_Pour_One",
+      "metadata": {}
+    },
+    {
+      "step": 195,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle to pour onto the cookie.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 423,
+      "event_type": "stall",
+      "subtask": "Tilt the tomato sauce bottle to pour onto the cookie.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 549,
+      "event_type": "stage_complete",
+      "subtask": "Tilt the tomato sauce bottle to pour onto the cookie.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {}
+    },
+    {
+      "step": 390,
+      "event_type": "subtask",
+      "subtask": "Pour the sauce over the cookies a second time.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 174,
+      "event_type": "stage_complete",
+      "subtask": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 254,
+      "event_type": "stall",
+      "subtask": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 195,
+      "event_type": "subtask",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 430,
+      "event_type": "subtask",
+      "subtask": "Pick up the tomato sauce bottle and pour it over the cookies once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 580,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies to pour sauce onto them.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 740,
+      "event_type": "subtask",
+      "subtask": "Tilt the bottle to pour sauce onto the target once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 880,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1040,
+      "event_type": "subtask",
+      "subtask": "Pour the sauce onto the target once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1165,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookie once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1340,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1510,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1645,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies and pour sauce onto them once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1780,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1935,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2240,
+      "event_type": "subtask",
+      "subtask": "Tilt the bottle to pour sauce onto the target once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 184,
+      "event_type": "stage_complete",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 264,
+      "event_type": "stall",
+      "subtask": "Grasp and lift the tomato sauce bottle.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 160,
+      "event_type": "subtask",
+      "subtask": "Grasp the tomato sauce bottle and lift it off the table.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 305,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 435,
+      "event_type": "subtask",
+      "subtask": "Pour sauce from the bottle onto the cookies.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 585,
+      "event_type": "subtask",
+      "subtask": "Tilt the tomato sauce bottle over the cookies to pour sauce once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 725,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 865,
+      "event_type": "subtask",
+      "subtask": "Tilt the bottle to pour sauce onto the target once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1020,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies and pour sauce onto them once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1180,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1325,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1460,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the target once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1740,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 1890,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the target once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 2030,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 80,
+      "event_type": "stall",
+      "subtask": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 0,
+      "event_type": "subtask",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 242,
+      "event_type": "stage_complete",
+      "subtask": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "stage_name": "01_Lift_Tomato_Sauce",
+      "metadata": {}
+    },
+    {
+      "step": 145,
+      "event_type": "subtask",
+      "subtask": "Grasp the tomato sauce bottle and lift it up.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 322,
+      "event_type": "stall",
+      "subtask": "Grasp the tomato sauce bottle and lift it up.",
+      "stage_name": "02_Pour_One",
+      "metadata": {
+        "stall_steps": 80
+      }
+    },
+    {
+      "step": 408,
+      "event_type": "stage_complete",
+      "subtask": "Grasp the tomato sauce bottle and lift it up.",
+      "stage_name": "02_Pour_One",
+      "metadata": {}
+    },
+    {
+      "step": 250,
+      "event_type": "subtask",
+      "subtask": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "stage_name": null,
+      "metadata": {}
+    },
+    {
+      "step": 456,
+      "event_type": "stage_complete",
+      "subtask": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "stage_name": "03_Pour_Two",
+      "metadata": {}
+    }
+  ],
+  "episode_evidence": [
+    {
+      "step": 5,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle from the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 164,
+      "action": "stage_complete",
+      "instruction": "Grasp and lift the tomato sauce bottle from the table.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 244,
+      "action": "stall",
+      "instruction": "Grasp and lift the tomato sauce bottle from the table.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 256,
+      "action": "stage_complete",
+      "instruction": "Grasp and lift the tomato sauce bottle from the table.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 145,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 336,
+      "action": "stall",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 380,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 194,
+      "action": "stage_complete",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 274,
+      "action": "stall",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 311,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 180,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 391,
+      "action": "stall",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 320,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle and pour over the cookies a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 527,
+      "action": "stage_complete",
+      "instruction": "Tilt the sauce bottle and pour over the cookies a second time.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 155,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 305,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it clear of the tabletop.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 435,
+      "action": "subtask_update",
+      "instruction": "Reach down, grasp the tomato sauce bottle securely, and lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 575,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 750,
+      "action": "subtask_update",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it until it is raised.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 905,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1175,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1310,
+      "action": "subtask_update",
+      "instruction": "Reach for and pick up the tomato sauce bottle, lifting it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1465,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it until it is raised.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1615,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it up.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1765,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2180,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 164,
+      "action": "stage_complete",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 244,
+      "action": "stall",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 180,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 338,
+      "action": "stage_complete",
+      "instruction": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 418,
+      "action": "stall",
+      "instruction": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 410,
+      "action": "subtask_update",
+      "instruction": "Pour tomato sauce over the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 573,
+      "action": "stage_complete",
+      "instruction": "Pour tomato sauce over the cookies again.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 137,
+      "action": "stage_complete",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 217,
+      "action": "stall",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 271,
+      "action": "stage_complete",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 351,
+      "action": "stall",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 180,
+      "action": "subtask_update",
+      "instruction": "Tilt the held sauce bottle over the cookie to pour once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 350,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 515,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle to prepare for the second pour.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 740,
+      "action": "subtask_update",
+      "instruction": "Pour the tomato sauce onto the cookies a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 870,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1030,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1135,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle and pour onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1275,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1400,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle and pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1710,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1990,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2145,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2290,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 184,
+      "action": "stage_complete",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 264,
+      "action": "stall",
+      "instruction": "Reach for the tomato sauce bottle, grasp it, and lift it off the table.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 160,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 313,
+      "action": "stage_complete",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 393,
+      "action": "stall",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 285,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the cookie to pour once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 470,
+      "action": "subtask_update",
+      "instruction": "Pour the sauce over the cookies a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 630,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the cookies to pour a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 740,
+      "action": "subtask_update",
+      "instruction": "Pour the tomato sauce over the cookies a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 870,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1015,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle and pour over the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1140,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle and pour onto the target again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1285,
+      "action": "subtask_update",
+      "instruction": "Move the sauce bottle over the cookie and tilt it to pour sauce onto the cookie again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1435,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1575,
+      "action": "subtask_update",
+      "instruction": "Move the sauce bottle over the cookies and tilt it to pour sauce onto them again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1710,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2054,
+      "action": "stage_complete",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies again.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 154,
+      "action": "stage_complete",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 234,
+      "action": "stall",
+      "instruction": "Reach for and lift the tomato sauce bottle.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 343,
+      "action": "stage_complete",
+      "instruction": "Reach for and lift the tomato sauce bottle.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 195,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle to pour onto the cookie.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 423,
+      "action": "stall",
+      "instruction": "Tilt the tomato sauce bottle to pour onto the cookie.",
+      "outcome": "stalled",
+      "notes": "03_Pour_Two:80"
+    },
+    {
+      "step": 549,
+      "action": "stage_complete",
+      "instruction": "Tilt the tomato sauce bottle to pour onto the cookie.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    },
+    {
+      "step": 390,
+      "action": "subtask_update",
+      "instruction": "Pour the sauce over the cookies a second time.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 174,
+      "action": "stage_complete",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 254,
+      "action": "stall",
+      "instruction": "Grasp the tomato sauce bottle and lift it until it is raised.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 195,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 430,
+      "action": "subtask_update",
+      "instruction": "Pick up the tomato sauce bottle and pour it over the cookies once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 580,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 740,
+      "action": "subtask_update",
+      "instruction": "Tilt the bottle to pour sauce onto the target once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 880,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1040,
+      "action": "subtask_update",
+      "instruction": "Pour the sauce onto the target once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1165,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookie once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1340,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1510,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1645,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies and pour sauce onto them once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1780,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1935,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2240,
+      "action": "subtask_update",
+      "instruction": "Tilt the bottle to pour sauce onto the target once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 184,
+      "action": "stage_complete",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 264,
+      "action": "stall",
+      "instruction": "Grasp and lift the tomato sauce bottle.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 160,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it off the table.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 305,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 435,
+      "action": "subtask_update",
+      "instruction": "Pour sauce from the bottle onto the cookies.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 585,
+      "action": "subtask_update",
+      "instruction": "Tilt the tomato sauce bottle over the cookies to pour sauce once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 725,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 865,
+      "action": "subtask_update",
+      "instruction": "Tilt the bottle to pour sauce onto the target once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1020,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies and pour sauce onto them once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1180,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1325,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1460,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the target once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1740,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookies to pour sauce onto them once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 1890,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the target once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 2030,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle to pour sauce onto the cookies once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 80,
+      "action": "stall",
+      "instruction": "Pour tomato sauce over cookies twice, then put the cookies into the microwave.",
+      "outcome": "stalled",
+      "notes": "01_Lift_Tomato_Sauce:80"
+    },
+    {
+      "step": 0,
+      "action": "subtask_update",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 242,
+      "action": "stage_complete",
+      "instruction": "Reach for and grasp the tomato sauce bottle, then lift it.",
+      "outcome": "success",
+      "notes": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "step": 145,
+      "action": "subtask_update",
+      "instruction": "Grasp the tomato sauce bottle and lift it up.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 322,
+      "action": "stall",
+      "instruction": "Grasp the tomato sauce bottle and lift it up.",
+      "outcome": "stalled",
+      "notes": "02_Pour_One:80"
+    },
+    {
+      "step": 408,
+      "action": "stage_complete",
+      "instruction": "Grasp the tomato sauce bottle and lift it up.",
+      "outcome": "success",
+      "notes": "02_Pour_One"
+    },
+    {
+      "step": 250,
+      "action": "subtask_update",
+      "instruction": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "outcome": "active",
+      "notes": ""
+    },
+    {
+      "step": 456,
+      "action": "stage_complete",
+      "instruction": "Tilt the sauce bottle over the cookie to pour sauce onto it once.",
+      "outcome": "success",
+      "notes": "03_Pour_Two"
+    }
+  ],
+  "task_trace": [
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it."
+    },
+    {
+      "step": 5,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle from the table."
+    },
+    {
+      "step": 164,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Grasp and lift the tomato sauce bottle from the table."
+    },
+    {
+      "step": 256,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Grasp and lift the tomato sauce bottle from the table."
+    },
+    {
+      "step": 145,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 380,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 194,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pour tomato sauce over cookies twice, then put the cookies into the microwave."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    },
+    {
+      "step": 311,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    },
+    {
+      "step": 180,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 320,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle and pour over the cookies a second time."
+    },
+    {
+      "step": 527,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Tilt the sauce bottle and pour over the cookies a second time."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and lift the tomato sauce bottle."
+    },
+    {
+      "step": 155,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it off the table."
+    },
+    {
+      "step": 305,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it clear of the tabletop."
+    },
+    {
+      "step": 435,
+      "action": "subtask",
+      "prompt": "Reach down, grasp the tomato sauce bottle securely, and lift it off the table."
+    },
+    {
+      "step": 575,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 750,
+      "action": "subtask",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it until it is raised."
+    },
+    {
+      "step": 905,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 1175,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it off the table."
+    },
+    {
+      "step": 1310,
+      "action": "subtask",
+      "prompt": "Reach for and pick up the tomato sauce bottle, lifting it off the table."
+    },
+    {
+      "step": 1465,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it until it is raised."
+    },
+    {
+      "step": 1615,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it up."
+    },
+    {
+      "step": 1765,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 2180,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 164,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pour tomato sauce over cookies twice, then put the cookies into the microwave."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 180,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookie to pour sauce onto it once."
+    },
+    {
+      "step": 338,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Tilt the sauce bottle over the cookie to pour sauce onto it once."
+    },
+    {
+      "step": 410,
+      "action": "subtask",
+      "prompt": "Pour tomato sauce over the cookies again."
+    },
+    {
+      "step": 573,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Pour tomato sauce over the cookies again."
+    },
+    {
+      "step": 137,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pour tomato sauce over cookies twice, then put the cookies into the microwave."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it off the table."
+    },
+    {
+      "step": 271,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it off the table."
+    },
+    {
+      "step": 180,
+      "action": "subtask",
+      "prompt": "Tilt the held sauce bottle over the cookie to pour once."
+    },
+    {
+      "step": 350,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them a second time."
+    },
+    {
+      "step": 515,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle to prepare for the second pour."
+    },
+    {
+      "step": 740,
+      "action": "subtask",
+      "prompt": "Pour the tomato sauce onto the cookies a second time."
+    },
+    {
+      "step": 870,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 1030,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them a second time."
+    },
+    {
+      "step": 1135,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle and pour onto the cookies again."
+    },
+    {
+      "step": 1275,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 1400,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle and pour sauce onto the cookies again."
+    },
+    {
+      "step": 1710,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 1990,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them a second time."
+    },
+    {
+      "step": 2145,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies a second time."
+    },
+    {
+      "step": 2290,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it off the table."
+    },
+    {
+      "step": 184,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Reach for the tomato sauce bottle, grasp it, and lift it off the table."
+    },
+    {
+      "step": 160,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 313,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 285,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the cookie to pour once."
+    },
+    {
+      "step": 470,
+      "action": "subtask",
+      "prompt": "Pour the sauce over the cookies a second time."
+    },
+    {
+      "step": 630,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the cookies to pour a second time."
+    },
+    {
+      "step": 740,
+      "action": "subtask",
+      "prompt": "Pour the tomato sauce over the cookies a second time."
+    },
+    {
+      "step": 870,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour onto the cookies again."
+    },
+    {
+      "step": 1015,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle and pour over the cookies again."
+    },
+    {
+      "step": 1140,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle and pour onto the target again."
+    },
+    {
+      "step": 1285,
+      "action": "subtask",
+      "prompt": "Move the sauce bottle over the cookie and tilt it to pour sauce onto the cookie again."
+    },
+    {
+      "step": 1435,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 1575,
+      "action": "subtask",
+      "prompt": "Move the sauce bottle over the cookies and tilt it to pour sauce onto them again."
+    },
+    {
+      "step": 1710,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 2054,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies again."
+    },
+    {
+      "step": 154,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pour tomato sauce over cookies twice, then put the cookies into the microwave."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and lift the tomato sauce bottle."
+    },
+    {
+      "step": 343,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Reach for and lift the tomato sauce bottle."
+    },
+    {
+      "step": 195,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle to pour onto the cookie."
+    },
+    {
+      "step": 549,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Tilt the tomato sauce bottle to pour onto the cookie."
+    },
+    {
+      "step": 390,
+      "action": "subtask",
+      "prompt": "Pour the sauce over the cookies a second time."
+    },
+    {
+      "step": 174,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Pour tomato sauce over cookies twice, then put the cookies into the microwave."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it until it is raised."
+    },
+    {
+      "step": 195,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 430,
+      "action": "subtask",
+      "prompt": "Pick up the tomato sauce bottle and pour it over the cookies once."
+    },
+    {
+      "step": 580,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them."
+    },
+    {
+      "step": 740,
+      "action": "subtask",
+      "prompt": "Tilt the bottle to pour sauce onto the target once."
+    },
+    {
+      "step": 880,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies."
+    },
+    {
+      "step": 1040,
+      "action": "subtask",
+      "prompt": "Pour the sauce onto the target once."
+    },
+    {
+      "step": 1165,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookie once."
+    },
+    {
+      "step": 1340,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies once."
+    },
+    {
+      "step": 1510,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them once."
+    },
+    {
+      "step": 1645,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies and pour sauce onto them once."
+    },
+    {
+      "step": 1780,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies."
+    },
+    {
+      "step": 1935,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies once."
+    },
+    {
+      "step": 2240,
+      "action": "subtask",
+      "prompt": "Tilt the bottle to pour sauce onto the target once."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 184,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Grasp and lift the tomato sauce bottle."
+    },
+    {
+      "step": 160,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it off the table."
+    },
+    {
+      "step": 305,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them once."
+    },
+    {
+      "step": 435,
+      "action": "subtask",
+      "prompt": "Pour sauce from the bottle onto the cookies."
+    },
+    {
+      "step": 585,
+      "action": "subtask",
+      "prompt": "Tilt the tomato sauce bottle over the cookies to pour sauce once."
+    },
+    {
+      "step": 725,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies once."
+    },
+    {
+      "step": 865,
+      "action": "subtask",
+      "prompt": "Tilt the bottle to pour sauce onto the target once."
+    },
+    {
+      "step": 1020,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies and pour sauce onto them once."
+    },
+    {
+      "step": 1180,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies once."
+    },
+    {
+      "step": 1325,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them once."
+    },
+    {
+      "step": 1460,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the target once."
+    },
+    {
+      "step": 1740,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookies to pour sauce onto them once."
+    },
+    {
+      "step": 1890,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the target once."
+    },
+    {
+      "step": 2030,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle to pour sauce onto the cookies once."
+    },
+    {
+      "step": 0,
+      "action": "subtask",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 242,
+      "action": "stage_complete",
+      "stage": "01_Lift_Tomato_Sauce",
+      "prompt": "Reach for and grasp the tomato sauce bottle, then lift it."
+    },
+    {
+      "step": 145,
+      "action": "subtask",
+      "prompt": "Grasp the tomato sauce bottle and lift it up."
+    },
+    {
+      "step": 408,
+      "action": "stage_complete",
+      "stage": "02_Pour_One",
+      "prompt": "Grasp the tomato sauce bottle and lift it up."
+    },
+    {
+      "step": 250,
+      "action": "subtask",
+      "prompt": "Tilt the sauce bottle over the cookie to pour sauce onto it once."
+    },
+    {
+      "step": 456,
+      "action": "stage_complete",
+      "stage": "03_Pour_Two",
+      "prompt": "Tilt the sauce bottle over the cookie to pour sauce onto it once."
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 0.0,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [],
+      "stalled_stage": "01_Lift_Tomato_Sauce"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 66.66666666666667,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One"
+      ],
+      "stalled_stage": "03_Pour_Two"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce"
+      ],
+      "stalled_stage": "02_Pour_One"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 33.333333333333336,
+      "stage_success": false,
+      "failure_reason": "incomplete_stage",
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce"
+      ],
+      "stalled_stage": "02_Pour_One"
+    },
+    {
+      "attempt_idx": 0,
+      "stage_score_pct": 100.0,
+      "stage_success": true,
+      "failure_reason": null,
+      "completed_stages": [
+        "01_Lift_Tomato_Sauce",
+        "02_Pour_One",
+        "03_Pour_Two"
+      ],
+      "stalled_stage": null
+    }
+  ],
+  "best_partial": {
+    "attempt_idx": 0,
+    "stage_score_pct": 100.0,
+    "stage_success": true,
+    "failure_reason": null,
+    "completed_stages": [
+      "01_Lift_Tomato_Sauce",
+      "02_Pour_One",
+      "03_Pour_Two"
+    ],
+    "stalled_stage": null
+  }
+}
