@@ -1,0 +1,22 @@
+{
+ "n_ledgers": 10,
+ "n_obligations": 90,
+ "n_events": 163,
+ "n_plan_steps": 163,
+ "n_act": 62,
+ "n_retrieve": 85,
+ "n_derive": 0,
+ "n_advance": 0,
+ "n_stagnant": 16,
+ "n_fluent_steps": 62,
+ "n_evidence_mode_steps": 101,
+ "n_auto_looks": 101,
+ "n_looks_new_frames": 32,
+ "n_gate_rejects": 0,
+ "n_offgraph_rejects": 0,
+ "n_dep_rejects": 0,
+ "n_unmatched": 8,
+ "n_derived_recomputes": 537,
+ "n_settled_events": 6,
+ "n_evidence_carried": 47
+}

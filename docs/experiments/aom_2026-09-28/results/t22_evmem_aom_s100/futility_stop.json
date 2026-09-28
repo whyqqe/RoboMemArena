@@ -1,0 +1,1 @@
+{"stop": true, "reason": "consec_zero", "trials_scored": 9, "mean_stage_score_pct": 33.3333, "max_stage_score_pct": 100, "threshold_trials": 3, "mean_floor_pct": 25, "consec_zero_m": 3, "score_series": "100,0,0,66.7,33.3,100,0,0,0"}

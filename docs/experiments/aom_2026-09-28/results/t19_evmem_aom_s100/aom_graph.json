@@ -1,0 +1,23 @@
+{
+ "n_ledgers": 10,
+ "ledger0": {
+  "coverage": {
+   "n_actual": 6,
+   "n_perceptual": 0,
+   "n_needs_look": 3,
+   "n_derived": 3,
+   "n_stagnant_steps": 2
+  },
+  "exec_labels": [
+   "pick tomato sauce",
+   "place tomato sauce cabinet2",
+   "pick milk",
+   "place milk cabinet2",
+   "pick orange juice",
+   "place orange juice cabinet2"
+  ],
+  "name_objects": true,
+  "stage_names": null,
+  "errors": null
+ }
+}

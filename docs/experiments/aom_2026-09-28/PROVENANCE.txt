@@ -1,0 +1,51 @@
+AOM (Arbitrated Obligation Memory) series package
+=================================================
+
+Generated        : 2026-09-28
+Repository root  : /project/peilab/why/RoboMemArena
+Base commit      : 8e95f41be18e4de3350f9a8febfc35b66cdb74c9
+                   ("Package EvMem-GPM hard4 results with nomem baselines for GitHub archival.")
+Suite / profile  : mem_efficacy, h0
+Seed             : 100 (single seed; 1x10 per cell)
+Planner          : gemini-3.8-flash over the external API
+VLA              : frozen pi05_robomemarena
+
+Runs in this package (v6 = the code snapshot under code/)
+  job 617727  task  5  arm evmem_aom  tag v6   COMPLETED  mean 36.25
+  job 617728  task  8  arm evmem_aom  tag v6   COMPLETED  mean 50.02
+  job 617508  task 19  arm evmem_aom  tag v6   COMPLETED  mean 19.99
+  job 617729  task 22  arm evmem_aom  tag v6   EARLY-STOP (consec_zero @k=9) mean 33.33
+
+Historic AOM runs referenced in REPORT.md (NOT resubmitted here; traces read from the
+working tree under experiments/mem_efficacy/results/):
+  617134-617137  v1/v2 series        t5,t8,t22,t19   (only t5 v2, t8 v2, t19 v2 archived here)
+  617263         v3s                 t19             mean 16.66
+  617307         v4                  t19             EARLY-STOP (floor 15 @k=9) mean 14.80  -> TRUNCATION
+  617408         v5                  t19             mean 23.33 (719 grasps / 0 places)
+
+Baselines in baselines/ (copied verbatim from the working tree)
+  t5  nomem      results/task5_h0_controls/h0/nomem_s100/prompt_trace.tsv
+  t5  evmem_gpm  results/evmem_gpm_t5_evmem_h0_1x10/h0/evmem_s100/prompt_trace.tsv
+  t8  nomem      results/hard3_t8_nomem_h0_3x10/h0/nomem_s100/prompt_trace.tsv
+  t8  evmem_gpm  results/evmem_gpm_t8_evmem_h0_1x10/h0/evmem_s100/prompt_trace.tsv
+  t19 nomem      results/hard3_t19_nomem_h0_3x10/h0/nomem_s100/prompt_trace.tsv
+  t19 pullmem_er results/hard3_t19_pullmem_er_h0_3x10/h0/pullmem_er_s100/prompt_trace.tsv
+  t19 evmem      results/evmem_t19_evmem_h0_1x10/h0/evmem_s100/prompt_trace.tsv
+  t19 evmem_gpm  results/evmem_gpm_t19_evmem_h0_1x10/h0/evmem_s100/prompt_trace.tsv
+  t22 nomem      results/hard3_t22_nomem_h0_3x10/h0/nomem_s100/prompt_trace.tsv
+  t22 evmem_gpm  results/evmem_gpm_t22_evmem_h0_1x10/h0/evmem_s100/prompt_trace.tsv
+
+Raw artifacts are NOT tracked in git (`.gitignore` covers experiments/**/results/), so the
+per-cell files under results/ and baselines/ are the archival copies. The full working-tree
+cell also contains replay videos, service logs and per-step board audits; those are omitted
+for size. `memexp_aom_report.steps.json` in each cell is the RICHEST per-step report
+(max n_plan_steps) of that cell, not the final write.
+
+Known caveats to carry forward
+  1. Single seed (100). The task-19 table is underpowered at n=10 (see REPORT.md section 5.3).
+  2. Task 22's v6 cell is truncated by the consecutive-zero rule at k=9; it is not a
+     10-trial mean and is marked with an asterisk everywhere it appears.
+  3. AOM t19 v4's 14.80 is a TRUNCATION caused by a mis-calibrated floor, not a measurement.
+  4. The working tree carries uncommitted modifications to tracked harness files
+     (controller.py, stage_mapper.py, config.py, ...) and 889 untracked files. This package
+     snapshots only the code AOM needs; the rest was left untouched.

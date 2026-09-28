@@ -1,0 +1,16 @@
+{
+ "n_ledgers": 10,
+ "ledger0": {
+  "coverage": {
+   "n_actual": 3,
+   "n_perceptual": 0,
+   "n_needs_look": 0,
+   "n_derived": 2,
+   "n_stagnant_steps": 0
+  },
+  "exec_labels": [],
+  "name_objects": false,
+  "stage_names": null,
+  "errors": null
+ }
+}
