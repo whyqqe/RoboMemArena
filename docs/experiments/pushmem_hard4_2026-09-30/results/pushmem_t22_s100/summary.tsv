@@ -1,0 +1,2 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+22	completed		70.0	0.5000	0.7000	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/pushmem_t22_pushmem_h0_1x10_v1/h0/pushmem_s100/videos/task22	606.57

@@ -1,0 +1,50 @@
+PushMem hard4 package (tasks 5 / 8 / 19 / 22)
+=============================================
+
+Generated        : 2026-09-30
+Repository root  : /project/peilab/why/RoboMemArena
+Suite / profile  : mem_efficacy, h0
+Seed             : 100 (single seed; 1x10 per task)
+Trials           : 10 per task, EVERY trial scored
+Early stop       : OFF (FUTILITY_STOP_TRIALS=0, FUTILITY_MEAN_FLOOR_PCT=0, FUTILITY_CONSEC_ZERO_M=0)
+Planner          : gpt-6-luna over the external API (base_url api.closeai-asia.com)
+VLA              : frozen pi05_robomemarena (checkpoints/PrediMem/vlm_tasks1to26_ckpt74500)
+
+Runs in this package
+  job 626590  task  5  arm pushmem  COMPLETED  elapsed 00:18:56  rc 0:0  mean 23.75
+  job 626591  task  8  arm pushmem  COMPLETED  elapsed 00:16:41  rc 0:0  mean 33.35
+  job 626592  task 19  arm pushmem  COMPLETED  elapsed 00:18:56  rc 0:0  mean 23.33
+  job 626593  task 22  arm pushmem  COMPLETED  elapsed 00:11:39  rc 0:0  mean 70.00
+
+Arm definition
+  arms/pushmem.sh sources arms/nomem.sh, then arms/_memexp_pysite.sh (MEMEXP_MEMFIX_ENABLE=1),
+  then turns on channel B (MEM_STAGE_ANCHOR=1, MEM_KF_NOMINATION_PROMPT=1, MEM_KF_SPREAD=1,
+  MEM_KF_STORE_INTERVAL=5, N_RECENT=7 K_MAX=8 D_MERGE=4). Channel A stays OFF.
+  DECLARED DIFF: VLM_USE_KEYFRAME_MEMORY MEM_STAGE_ANCHOR K_MAX D_MERGE N_RECENT
+                 MEM_KF_SPREAD MEM_KF_NOMINATION_PROMPT MEM_KF_STORE_INTERVAL PYTHONPATH
+
+Gate status in each job (from the Slurm .out)
+  [GATE 0] arm-specific pre-flight PASS
+  [GATE 1] arm integrity: pushmem diff == declared diff PASS
+  [CHECK 6] channel B resolves as designed: use_keyframe_memory=True PASS
+  stage-anchored bank NON-EMPTY without nominations PASS
+  census PASSED: each arm's memory channels are in their designed state
+  NOTE: [STAGE1] H0 read-path whitelist check was SKIPPED (only one arm in scope); it asserts
+        nothing about a cross-arm comparison and is not claimed here.
+
+Baselines in baselines/ (copied verbatim from the working tree)
+  t5  nomem  results/task5_h0_controls/h0/nomem_s100         mean 13.75
+  t8  nomem  results/hard3_t8_nomem_h0_3x10/h0/nomem_s100    mean 26.67
+  t19 nomem  results/hard3_t19_nomem_h0_3x10/h0/nomem_s100   mean 13.32
+  t22 nomem  results/hard3_t22_nomem_h0_3x10/h0/nomem_s100   mean 73.34
+  t*  GPM    results/evmem_gpm_t*_evmem_h0_1x10/h0/evmem_s100
+
+Noise floor (from MEMORY_LINEAGE.md §2)
+  per-trial stage_score_pct SD ~32 pp; 10-trial mean SE ~14 pp. Every delta in the summary
+  table below is inside 1 SE, so treat scores as weak evidence and the channel-state gates
+  as the strong evidence. This run's claim is "pushmem measured under a matched h0 cell",
+  NOT "pushmem beats any arm".
+
+Severity note
+  The planner-model line in this run is gpt-6-luna. It differs from older pushmem archives
+  (which used gemini-3.8-flash). Do not mix this table with the 2026-09-18 pull_push report.
