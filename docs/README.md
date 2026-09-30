@@ -19,6 +19,7 @@ This index covers the RoboMemArena benchmark, the PrediMem reference evaluator, 
 | [PrediMem error patterns](experiments/predimem_error_pattern_534999.md) | Trajectory-level failure modes from job 534999 |
 | [EvMem-GPM hard4 package](experiments/evmem_gpm_hard4_2026-09-27/REPORT.md) | nomem vs GPM on tasks {5,8,19,22} (code + results snapshot) |
 | [AOM series package](experiments/aom_2026-09-28/REPORT.md) | Arbitrated Obligation Memory: scoring-vs-execution partition defect, fix, and seed-100 results on tasks {5,8,19,22} (code + results snapshot) |
+| [BOLT / DIAL / ECHO package](experiments/bolt_dial_echo_2026-09-30/REPORT.md) | Post-AOM architectures under Planner+VLA+Harness+Memory; seed-100 results and failure modes vs GPM |
 
 ## Supplementary material
 

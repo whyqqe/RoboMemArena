@@ -1,0 +1,630 @@
+{
+  "n_records": 9495,
+  "canonical": {
+    "evmem": {
+      "5": {
+        "mean": 20.0,
+        "n": 10,
+        "zeros": 5,
+        "tag": "evmem_gpm_t5_evmem_h0_1x10",
+        "trials": [
+          0.0,
+          50.0,
+          25.0,
+          25.0,
+          25.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          75.0
+        ]
+      },
+      "8": {
+        "mean": 46.67999999999999,
+        "n": 10,
+        "zeros": 4,
+        "tag": "evmem_gpm_t8_evmem_h0_1x10",
+        "trials": [
+          66.7,
+          100.0,
+          66.7,
+          0.0,
+          66.7,
+          100.0,
+          0.0,
+          0.0,
+          66.7,
+          0.0
+        ]
+      },
+      "19": {
+        "mean": 26.669999999999998,
+        "n": 10,
+        "zeros": 5,
+        "tag": "evmem_gpm_t19_evmem_h0_1x10",
+        "trials": [
+          0.0,
+          33.3,
+          66.7,
+          0.0,
+          66.7,
+          0.0,
+          33.3,
+          0.0,
+          66.7,
+          0.0
+        ]
+      },
+      "22": {
+        "mean": 73.33,
+        "n": 10,
+        "zeros": 1,
+        "tag": "evmem_gpm_t22_evmem_h0_1x10",
+        "trials": [
+          100.0,
+          100.0,
+          0.0,
+          100.0,
+          66.7,
+          100.0,
+          100.0,
+          33.3,
+          33.3,
+          100.0
+        ]
+      }
+    },
+    "aom": {
+      "5": {
+        "mean": 45.0,
+        "n": 10,
+        "zeros": 3,
+        "tag": "aom_t5_evmem_aom_h0_1x10_v2",
+        "trials": [
+          75.0,
+          75.0,
+          0.0,
+          50.0,
+          50.0,
+          0.0,
+          25.0,
+          75.0,
+          0.0,
+          100.0
+        ]
+      },
+      "8": {
+        "mean": 50.019999999999996,
+        "n": 10,
+        "zeros": 2,
+        "tag": "aom_t8_evmem_aom_h0_1x10_v6",
+        "trials": [
+          66.7,
+          66.7,
+          0.0,
+          33.3,
+          66.7,
+          66.7,
+          66.7,
+          66.7,
+          0.0,
+          66.7
+        ]
+      },
+      "19": {
+        "mean": 23.32,
+        "n": 10,
+        "zeros": 4,
+        "tag": "aom_t19_evmem_aom_h0_1x10_v2",
+        "trials": [
+          33.3,
+          33.3,
+          33.3,
+          0.0,
+          66.7,
+          0.0,
+          33.3,
+          0.0,
+          33.3,
+          0.0
+        ]
+      },
+      "22": {
+        "mean": 33.333333333333336,
+        "n": 9,
+        "zeros": 5,
+        "tag": "aom_t22_evmem_aom_h0_1x10_v6",
+        "trials": [
+          100.0,
+          0.0,
+          0.0,
+          66.7,
+          33.3,
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bolt": {
+      "5": {
+        "mean": 13.75,
+        "n": 10,
+        "zeros": 4,
+        "tag": "bolt_t5_bolt_h0_1x10_v1",
+        "trials": [
+          0.0,
+          25.0,
+          0.0,
+          37.5,
+          25.0,
+          0.0,
+          25.0,
+          12.5,
+          0.0,
+          12.5
+        ]
+      },
+      "8": {
+        "mean": 40.01,
+        "n": 10,
+        "zeros": 4,
+        "tag": "bolt_t8_bolt_h0_1x10_v9",
+        "trials": [
+          0.0,
+          66.7,
+          0.0,
+          33.3,
+          0.0,
+          100.0,
+          66.7,
+          66.7,
+          0.0,
+          66.7
+        ]
+      },
+      "19": {
+        "mean": 23.320000000000004,
+        "n": 10,
+        "zeros": 4,
+        "tag": "bolt_t19_bolt_h0_1x10_v1",
+        "trials": [
+          0.0,
+          33.3,
+          66.7,
+          0.0,
+          33.3,
+          0.0,
+          33.3,
+          33.3,
+          33.3,
+          0.0
+        ]
+      },
+      "22": {
+        "mean": 40.0,
+        "n": 10,
+        "zeros": 5,
+        "tag": "bolt_t22_bolt_h0_1x10_v1",
+        "trials": [
+          66.7,
+          100.0,
+          0.0,
+          100.0,
+          33.3,
+          0.0,
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "T1": {
+    "n_usable": 9495,
+    "n_credited": 465,
+    "n_cells": 32,
+    "chi2_obs": 492.98,
+    "p_permutation": 0.0004997501249375312,
+    "loglik_family_only": -0.18404,
+    "loglik_family_plus_cell": -0.18041,
+    "cell_gain_nats": 0.00363,
+    "cell_helps": true,
+    "within_family_contrast": {
+      "lift": {
+        "grasp_lift": {
+          "fail": 740,
+          "cred": 74,
+          "rate": 0.091
+        },
+        "pick_up": {
+          "fail": 198,
+          "cred": 33,
+          "rate": 0.143
+        },
+        "grasp": {
+          "fail": 187,
+          "cred": 20,
+          "rate": 0.097
+        },
+        "lift": {
+          "fail": 95,
+          "cred": 11,
+          "rate": 0.104
+        },
+        "pour": {
+          "fail": 24,
+          "cred": 8,
+          "rate": 0.25
+        }
+      },
+      "pour": {
+        "pour": {
+          "fail": 2630,
+          "cred": 100,
+          "rate": 0.037
+        },
+        "grasp_lift": {
+          "fail": 333,
+          "cred": 26,
+          "rate": 0.072
+        },
+        "grasp": {
+          "fail": 62,
+          "cred": 4,
+          "rate": 0.061
+        },
+        "pick_up": {
+          "fail": 59,
+          "cred": 3,
+          "rate": 0.048
+        },
+        "lift": {
+          "fail": 19,
+          "cred": 1,
+          "rate": 0.05
+        }
+      },
+      "place": {
+        "place": {
+          "fail": 2375,
+          "cred": 50,
+          "rate": 0.021
+        },
+        "grasp_lift": {
+          "fail": 113,
+          "cred": 21,
+          "rate": 0.157
+        },
+        "grasp": {
+          "fail": 38,
+          "cred": 9,
+          "rate": 0.191
+        },
+        "pick_up": {
+          "fail": 31,
+          "cred": 0,
+          "rate": 0.0
+        },
+        "reach": {
+          "fail": 12,
+          "cred": 3,
+          "rate": 0.2
+        }
+      },
+      "open": {
+        "open": {
+          "fail": 1995,
+          "cred": 66,
+          "rate": 0.032
+        },
+        "close": {
+          "fail": 16,
+          "cred": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "passes": true
+  },
+  "T2": {
+    "cross_arm": {
+      "rows": [
+        {
+          "arm": "evmem",
+          "gate_conditions": 4,
+          "mean": 41.67,
+          "n": 40,
+          "zero_frac": 0.375,
+          "gates_where": "memexp_evmem.control_reject_reason: dep / attractor / unsafe-primitive / repeat"
+        },
+        {
+          "arm": "aom",
+          "gate_conditions": 7,
+          "mean": 38.04,
+          "n": 39,
+          "zero_frac": 0.359,
+          "gates_where": "memexp_aom: 3-mode obligation + dep closure + proof + ordinal + verbatim"
+        },
+        {
+          "arm": "bolt",
+          "gate_conditions": 11,
+          "mean": 29.27,
+          "n": 40,
+          "zero_frac": 0.425,
+          "gates_where": "bolt/graph.py I1-I5 + arbiter stage-gate + verbatim + ordinal + closure"
+        }
+      ],
+      "pearson_gates_vs_mean": -0.988,
+      "strictly_monotone_decreasing": true,
+      "ordering_supported": true,
+      "confound": "arms differ in architecture, not only in gate count, so the arm-level ordering is consistent with the gate story but does not isolate it"
+    },
+    "within_arm": {
+      "task": 8,
+      "ladder": [
+        {
+          "version": "v1",
+          "tag": "bolt_t8_bolt_h0_1x10_v1",
+          "n": 3,
+          "mean": 0.0,
+          "zero_frac": 1.0,
+          "change": "solvability closure at its strictest: unreachable deps deadlock (0.0 x3)",
+          "trials": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "version": "v5",
+          "tag": "bolt_t8_bolt_h0_1x10_v5",
+          "n": 10,
+          "mean": 30.0,
+          "zero_frac": 0.5,
+          "change": "dependency semantics relaxed -> prep work becomes reachable",
+          "trials": [
+            0.0,
+            66.7,
+            33.3,
+            0.0,
+            0.0,
+            33.3,
+            0.0,
+            100.0,
+            0.0,
+            66.7
+          ]
+        },
+        {
+          "version": "v6",
+          "tag": "bolt_t8_bolt_h0_1x10_v6",
+          "n": 10,
+          "mean": 26.67,
+          "zero_frac": 0.6,
+          "change": "stage gate tightened without lift requirement",
+          "trials": [
+            0.0,
+            66.7,
+            33.3,
+            0.0,
+            66.7,
+            0.0,
+            100.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "version": "v7",
+          "tag": "bolt_t8_bolt_h0_1x10_v7",
+          "n": 3,
+          "mean": 0.0,
+          "zero_frac": 1.0,
+          "change": "served rungs lose explicit lift verbs (0.0 x3)",
+          "trials": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "version": "v8",
+          "tag": "bolt_t8_bolt_h0_1x10_v8",
+          "n": 5,
+          "mean": 13.34,
+          "zero_frac": 0.8,
+          "change": "identifier leak: board prints actionable phase names, planner copies them",
+          "trials": [
+            0.0,
+            66.7,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "version": "v9",
+          "tag": "bolt_t8_bolt_h0_1x10_v9",
+          "n": 10,
+          "mean": 40.01,
+          "zero_frac": 0.4,
+          "change": "board uses non-imperative stage tags + runtime I5 rewrite",
+          "trials": [
+            0.0,
+            66.7,
+            0.0,
+            33.3,
+            0.0,
+            100.0,
+            66.7,
+            66.7,
+            0.0,
+            66.7
+          ]
+        }
+      ],
+      "mean_spread": 40.01,
+      "unconfounded": true
+    },
+    "passes": true,
+    "honest_verdict": "cross-arm gate ordering is monotone decreasing (pearson(gates,mean)=-0.988), consistent with the gate story but confounded by architecture; the within-arm ladder on one task moves the mean by 40.01 points with the architecture fixed, which is the unconfounded evidence the no-BLOCK action space rests on."
+  },
+  "T3": {
+    "n": 94,
+    "mean": 51.01,
+    "median": 25,
+    "p90": 130,
+    "max": 685,
+    "horizons": {
+      "evmem": 8,
+      "aom": 12,
+      "bolt": 80
+    },
+    "frac_lag_gt_horizon_evmem": 0.798,
+    "frac_lag_gt_horizon_aom": 0.66,
+    "frac_lag_gt_horizon_bolt": 0.17,
+    "median_exceeds_all_horizons": false,
+    "passes": true
+  },
+  "T4": {
+    "n": 119,
+    "zero_frac": 0.387,
+    "top_frac": 0.353,
+    "interior_frac": 0.261,
+    "distinct_values": [
+      0.0,
+      12.5,
+      25.0,
+      33.3,
+      37.5,
+      50.0,
+      66.7,
+      75.0,
+      100.0
+    ],
+    "largest_gap": {
+      "size": 25.0,
+      "between": [
+        75.0,
+        100.0
+      ]
+    },
+    "per_run": [
+      {
+        "arm": "evmem",
+        "task": 5,
+        "tag": "evmem_gpm_t5_evmem_h0_1x10",
+        "n": 10,
+        "zeros": 5,
+        "tops": 1,
+        "interior": 4
+      },
+      {
+        "arm": "evmem",
+        "task": 8,
+        "tag": "evmem_gpm_t8_evmem_h0_1x10",
+        "n": 10,
+        "zeros": 4,
+        "tops": 6,
+        "interior": 0
+      },
+      {
+        "arm": "evmem",
+        "task": 19,
+        "tag": "evmem_gpm_t19_evmem_h0_1x10",
+        "n": 10,
+        "zeros": 5,
+        "tops": 3,
+        "interior": 2
+      },
+      {
+        "arm": "evmem",
+        "task": 22,
+        "tag": "evmem_gpm_t22_evmem_h0_1x10",
+        "n": 10,
+        "zeros": 1,
+        "tops": 7,
+        "interior": 2
+      },
+      {
+        "arm": "aom",
+        "task": 5,
+        "tag": "aom_t5_evmem_aom_h0_1x10_v2",
+        "n": 10,
+        "zeros": 3,
+        "tops": 4,
+        "interior": 3
+      },
+      {
+        "arm": "aom",
+        "task": 8,
+        "tag": "aom_t8_evmem_aom_h0_1x10_v6",
+        "n": 10,
+        "zeros": 2,
+        "tops": 7,
+        "interior": 1
+      },
+      {
+        "arm": "aom",
+        "task": 19,
+        "tag": "aom_t19_evmem_aom_h0_1x10_v2",
+        "n": 10,
+        "zeros": 4,
+        "tops": 1,
+        "interior": 5
+      },
+      {
+        "arm": "aom",
+        "task": 22,
+        "tag": "aom_t22_evmem_aom_h0_1x10_v6",
+        "n": 9,
+        "zeros": 5,
+        "tops": 3,
+        "interior": 1
+      },
+      {
+        "arm": "bolt",
+        "task": 5,
+        "tag": "bolt_t5_bolt_h0_1x10_v1",
+        "n": 10,
+        "zeros": 4,
+        "tops": 0,
+        "interior": 6
+      },
+      {
+        "arm": "bolt",
+        "task": 8,
+        "tag": "bolt_t8_bolt_h0_1x10_v9",
+        "n": 10,
+        "zeros": 4,
+        "tops": 5,
+        "interior": 1
+      },
+      {
+        "arm": "bolt",
+        "task": 19,
+        "tag": "bolt_t19_bolt_h0_1x10_v1",
+        "n": 10,
+        "zeros": 4,
+        "tops": 1,
+        "interior": 5
+      },
+      {
+        "arm": "bolt",
+        "task": 22,
+        "tag": "bolt_t22_bolt_h0_1x10_v1",
+        "n": 10,
+        "zeros": 5,
+        "tops": 4,
+        "interior": 1
+      }
+    ],
+    "passes": true,
+    "implication": "mean score is a poor objective; the KPI is P(escape 0.0) and the scheduler should be judged on how many seeds leave the zero mass"
+  }
+}

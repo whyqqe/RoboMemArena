@@ -60,7 +60,28 @@ source "$(dirname "${BASH_SOURCE[0]}")/official_protocol.sh"
 # `HARNESS_STAGE_LEDGER_GUARD` is purged for the same serial-sourcing reason. The `rsiguard`
 # arm (local path) puts its treatment on that prefix; without this line a subsequent nomem
 # would inherit the action-level override channel.
-for _pv in $(compgen -v 2>/dev/null | grep -E '^(PMH_|PACT_|KAIROS_|PROACTIVE_|ACE_|PCAM_|HPM_|SCEC_|CGMH_|MUSCLE_|SEAM|MEM_|MEMEXP_|HARNESS_CROSS_TASK_LTM|HARNESS_STAGE_LEDGER_GUARD)' || true); do
+#
+# `SRH_` is purged for exactly the same reason as `AIM_`, and it arrived the same way: as a
+# fourth instance of the defect rather than as a widening of it. The `srh` arm carries its
+# treatment on `SRH_ARM`, and the failing direction is the same one -- arms run in sequence in
+# one shell, so `aim_aim` after `srh` would inherit `SRH_ARM=srh` and install SRH in an AIM arm,
+# while `nomem` after `srh` would install it in the CONTROL. Caught by CHECK 9 before any GPU
+# was spent (`srh->aim_aim: differs in ['SRH_ARM', ...]`). `srh.sh` sets `SRH_ARM` after
+# sourcing this file, so it inherits the purge and then arms the treatment deliberately.
+#
+# `ALH_` is the same scar, fifth instance: the `alh` arm puts its treatment on `ALH_ARM`.
+# Without this purge, `alh -> nomem` / `alh -> aim_*` leave ALH installed in the next arm
+# (CHECK 9 on job 613260: `alh->aim_aim: differs in ['ALH_ARM', ...]`).
+#
+# `AIM_` is purged for exactly the same reason, and it closes the hole in the OTHER direction
+# too. The AIM arms (`aim_none` / `aim_aim` / `aim_ammi`) carry their treatment on `AIM_ARM`,
+# so `AIM_ARM=aim` left behind by a preceding AIM arm would make this baseline install the AIM
+# subsystem and start delivering memory to the "no memory" control. The failure would be
+# invisible in the score and would look like a memory effect with the treatment installed in
+# the control -- precisely the `MEMEXP_PULL_ENABLE` incident this list already exists for.
+# `aim_*.sh` source this file first, so they inherit the purge and then set `AIM_ARM`
+# deliberately; neither half is sufficient alone.
+for _pv in $(compgen -v 2>/dev/null | grep -E '^(PMH_|PACT_|KAIROS_|PROACTIVE_|ACE_|PCAM_|HPM_|SCEC_|CGMH_|MUSCLE_|SEAM|MEM_|MEMEXP_|AIM_|SRH_|ALH_|HARNESS_CROSS_TASK_LTM|HARNESS_STAGE_LEDGER_GUARD)' || true); do
   unset "${_pv}"
 done
 unset _pv
@@ -90,6 +111,18 @@ if [[ -n "${PYTHONPATH:-}" ]]; then
     # Anything under mem_efficacy may carry the hook; drop it.
     case "${_py_p}" in
       *mem_efficacy*) continue ;;
+    esac
+    # ROOT itself is dropped for the same reason, and this entry was added when the AIM arms
+    # arrived. `arms/_aim_env.sh` prepends ROOT so that `import aim` resolves, and ROOT contains
+    # no "mem_efficacy" substring, so the case above does not reach it: `nomem` running after
+    # `aim_aim` in the same job kept ROOT on PYTHONPATH. That is not a memory channel -- `aim`
+    # is imported only when `install()` runs, which needs AIM_ARM, which the purge above removes
+    # -- but it makes the recorded PYTHONPATH depend on arm ORDER, which makes CHECK 9 fail and,
+    # worse, means two runs of the same arm can carry different recorded environments. The
+    # invariant this strip enforces is "an arm's environment does not depend on what ran before
+    # it", not "no memory variables leak", so the fix belongs here.
+    case "${_py_p}" in
+      "${ROOT}") continue ;;
     esac
     _py_keep="${_py_keep:+${_py_keep}:}${_py_p}"
   done
@@ -178,9 +211,17 @@ export HARNESS_VLM_CONTEXT=0
 #     -> the "Historical keyframes from moments before the current step" block never enters
 #        the Planner prompt
 #
-#   N_RECENT / K_MAX / D_MERGE keep their OFFICIAL values from official_protocol.sh, so the
-#   two arms still see an identical RECENT window (that is the current observation, not
-#   memory) and the only difference is whether past frames may be injected.
+#   N_RECENT / K_MAX / D_MERGE keep their OFFICIAL values from official_protocol.sh here, so
+#   THIS ARM ALONE runs the official current-observation window (N_RECENT=5).
+#
+#   CORRECTION (2026-09-23): the sentence that used to sit here -- "so the two arms still see an
+#   identical RECENT window" -- was FALSE, and it is the comment that hid the defect. The two
+#   treatment arms set N_RECENT=7 (their own declared bank hyperparameters), so under H0 the
+#   deltas against this baseline contained two extra CURRENT frames per step, which is context
+#   and not memory. `profiles/h0.sh` now pins the window to 7 for every arm, which is the stage-1
+#   contract; under that profile this arm is therefore NOT the official nomem and its score is
+#   not comparable to official PrediMem numbers. Under `hlegacy` the 09-18 design stands
+#   unchanged (baseline 5 vs treatment 7), because that profile exists to explain the old runs.
 # =========================================================================================
 export VLM_USE_KEYFRAME_MEMORY=0
 

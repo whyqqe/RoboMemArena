@@ -1,0 +1,7 @@
+{
+  "macro_stage_score_pct": 40.0,
+  "macro_stage_success_rate": 0.3,
+  "macro_goal_success_rate": 0.4,
+  "num_tasks": 1,
+  "num_goal_scored_tasks": 1
+}

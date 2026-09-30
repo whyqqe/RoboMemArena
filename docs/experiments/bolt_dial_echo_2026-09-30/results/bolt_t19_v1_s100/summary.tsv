@@ -1,0 +1,2 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+19	completed		23.3	0.0000	0.2333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/bolt_t19_bolt_h0_1x10_v1/h0/bolt_s100/videos/task19	971.74

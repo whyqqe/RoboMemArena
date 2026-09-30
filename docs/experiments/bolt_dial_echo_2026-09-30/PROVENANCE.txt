@@ -1,0 +1,38 @@
+BOLT / DIAL / ECHO post-AOM package
+===================================
+
+Generated        : 2026-09-30
+Repository root  : /project/peilab/why/RoboMemArena
+Suite / profile  : mem_efficacy, h0
+Seed             : 100 (1x10 unless early-stopped)
+Planner          : gpt-6-luna over the external API (same as contemporaneous GPM/AOM jobs)
+VLA              : frozen pi05_robomemarena
+
+Primary runs archived here
+  BOLT t8  v9          job (see code_provenance)  COMPLETED  mean 40.0
+  BOLT t5  v1                                     COMPLETED  mean 13.8
+  BOLT t19 v1                                     COMPLETED  mean 23.3
+  BOLT t22 v1                                     COMPLETED  mean 40.0
+  DIAL t8  v1                                     EARLY-STOP all-zero @k=3  mean 0.0
+  ECHO t8  v1          job 626108                 COMPLETED  mean 33.3
+  ECHO t8  v2_strict40 job 626132                 EARLY-STOP below_floor@40 @k=3  mean 22.2
+
+Baselines in baselines/
+  t8  evmem_gpm  experiments/mem_efficacy/results/evmem_gpm_t8_evmem_h0_1x10/h0/evmem_s100/prompt_trace.tsv
+                 mean 46.7  series 66.7,100,66.7,0,66.7,100,0,0,66.7,0
+  t8  nomem      (copied when present under hard3_t8_nomem)
+
+Working-tree live code (also snapshotted under code/)
+  experiments/mem_efficacy/bolt/
+  experiments/mem_efficacy/dial/
+  experiments/mem_efficacy/echo/
+  experiments/mem_efficacy/memexp_{bolt,dial,echo}_bind.py
+  experiments/mem_efficacy/arms/{bolt,dial,echo}.sh
+  experiments/mem_efficacy/run_{bolt,dial,echo}*.sh
+  experiments/mem_efficacy/pysite/sitecustomize.py  (MEMEXP_BOLT / MEMEXP_DIAL / MEMEXP_ECHO hooks)
+
+Design notes
+  BOLT.md                 (repo root)
+  MEMORY_LINEAGE.md       (repo root; lineage through AOM; this package continues after AOM)
+  AOM_HANDOFF.md          (prior series)
+  this package REPORT.md

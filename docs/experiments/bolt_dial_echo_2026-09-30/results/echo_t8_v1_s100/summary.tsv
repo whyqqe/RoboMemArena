@@ -1,0 +1,2 @@
+task_id	status	error	stage_score_pct	stage_success_rate	goal_success_rate	video_dir	duration_sec
+8	completed		33.3	0.1000	0.3333	/project/peilab/why/RoboMemArena/experiments/mem_efficacy/results/echo_t8_echo_h0_1x10_v1/h0/echo_s100/videos/task8	837.32

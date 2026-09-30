@@ -1,0 +1,4 @@
+task_id	trial	seed	vlm_ckpt	vla_prompt_last	stage_success	goal_success	stage_score_pct	extra_pour_detected	failure_reason
+8	0	100	/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500		0	0.0000	0.0	0	incomplete_stage
+8	1	101	/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500		0	0.0000	0.0	0	incomplete_stage
+8	2	102	/project/peilab/why/RoboMemArena/checkpoints/PrediMem/vlm_tasks1to26_ckpt74500		0	0.0000	0.0	0	incomplete_stage
